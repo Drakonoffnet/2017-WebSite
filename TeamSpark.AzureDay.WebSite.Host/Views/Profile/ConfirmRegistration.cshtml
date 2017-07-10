@@ -1,0 +1,33 @@
+﻿@using TeamSpark.AzureDay.WebSite.Config
+@{
+	ViewBag.Title = $"AzureDay {Configuration.Year} - подтверждение регистрации";
+}
+
+<div class="boxedcontent">
+	@Html.Action("Header", "Layout")
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<div>
+					&nbsp;
+				</div>
+
+				<h1>Регистрация подтверждена</h1>
+
+				<p>Через несколько секунд вы будете автоматически перенапралены на главную страницу.</p>
+
+			</div>
+		</div>
+	</div>
+
+	<script>
+		setTimeout(function () {
+			window.location.href = '/';
+		}, 5000)
+	</script>
+
+	@Html.Action("Footer", "Layout")
+
+</div>

@@ -7,96 +7,64 @@ namespace TeamSpark.AzureDay.WebSite.Config
 	{
 		#region general
 
-		public static string Year
-		{
-			get { return "2017"; }
-		}
+		public static string Year => "2017";
 
 		#endregion
 
 		#region cdn
 
-		public static string CdnEndpointWeb
-		{
-			get { return ConfigurationManager.AppSettings.Get("CdnEndpointWeb"); }
-		}
+		public static string CdnEndpointWeb => GetConfigVariable("CdnEndpointWeb");
 
-		public static string CdnEndpointStorage
-		{
-			get { return ConfigurationManager.AppSettings.Get("CdnEndpointStorage"); }
-		}
+		public static string CdnEndpointStorage => GetConfigVariable("CdnEndpointStorage");
 
 		#endregion
 
 		#region azure storage
 
-		public static string AzureStorageAccountName
-		{
-			get { return ConfigurationManager.AppSettings.Get("AzureStorageAccountName"); }
-		}
-
-		public static string AzureStorageAccountKey
-		{
-			get { return ConfigurationManager.AppSettings.Get("AzureStorageAccountKey"); }
-		}
+		public static string AzureStorageAccountName => GetConfigVariable("AzureStorageAccountName");
+		public static string AzureStorageAccountKey => GetConfigVariable("AzureStorageAccountKey");
 
 		#endregion
 
 		#region application insight
 
-		public static string ApplicationInsightInstrumentationKey
-		{
-			get { return ConfigurationManager.AppSettings.Get("ApplicationInsightInstrumentationKey"); }
-		}
-
-		public static string ApplicationInsightEnvironmentTag
-		{
-			get { return ConfigurationManager.AppSettings.Get("ApplicationInsightEnvironmentTag"); }
-		}
+		public static string ApplicationInsightInstrumentationKey => GetConfigVariable("ApplicationInsightInstrumentationKey");
+		public static string ApplicationInsightEnvironmentTag => GetConfigVariable("ApplicationInsightEnvironmentTag");
 
 		#endregion
 
 		#region sendgrid
 
-		public static string SendGridApiKey
-		{
-			get { return ConfigurationManager.AppSettings.Get("SendGridApiKey"); }
-		}
-
-		public static string SendGridFromEmail
-		{
-			get { return ConfigurationManager.AppSettings.Get("SendGridFromEmail"); }
-		}
-
-		public static string SendGridFromName
-		{
-			get { return ConfigurationManager.AppSettings.Get("SendGridFromName"); }
-		}
+		public static string SendGridApiKey => GetConfigVariable("SendGridApiKey");
+		public static string SendGridFromEmail => GetConfigVariable("SendGridFromEmail");
+		public static string SendGridFromName => GetConfigVariable("SendGridFromName");
 
 		#endregion
 
-		#region kaznackey
+		#region kaznachey
 
-		public static Guid KaznackeyMerchantId
-		{
-			get { return Guid.Parse(ConfigurationManager.AppSettings.Get("KaznackeyMerchantId")); }
-		}
-
-		public static string KaznackeyMerchantSecreet
-		{
-			get { return ConfigurationManager.AppSettings.Get("KaznackeyMerchantSecreet"); }
-		}
-
-		public static Guid LiqPayMerchantId
-		{
-			get { return Guid.Parse(ConfigurationManager.AppSettings.Get("LiqPayMerchantId")); }
-		}
-
-		public static string LiqPayMerchantSecreet
-		{
-			get { return ConfigurationManager.AppSettings.Get("LiqPayMerchantSecreet"); }
-		}
+		public static Guid KaznackeyMerchantId => Guid.Parse(GetConfigVariable("KaznackeyMerchantId"));
+		public static string KaznackeyMerchantSecreet => GetConfigVariable("KaznackeyMerchantSecreet");
+		public static Guid LiqPayMerchantId => Guid.Parse(GetConfigVariable("LiqPayMerchantId"));
+		public static string LiqPayMerchantSecreet => GetConfigVariable("LiqPayMerchantSecreet");
 
 		#endregion
+
+		private static string GetConfigVariable(string name)
+		{
+			var value = Environment.GetEnvironmentVariable(name);
+
+			if (string.IsNullOrEmpty(value))
+			{
+				value = ConfigurationManager.AppSettings.Get(name);
+			}
+
+			if (string.IsNullOrEmpty(value))
+			{
+				return string.Empty;
+			}
+
+			return value;
+		}
 	}
 }

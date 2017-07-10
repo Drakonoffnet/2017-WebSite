@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{FD8F50
 		deploy.cmd = deploy.cmd
 	EndProjectSection
 EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "TeamSpark.AzureDay.WebSite.ResourceGroup", "TeamSpark.AzureDay.WebSite.ResourceGroup\TeamSpark.AzureDay.WebSite.ResourceGroup.deployproj", "{B7CAA1D7-6B28-4D35-9224-58F7A569648B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{4046E6C4-B151-47C9-9076-16E13F0CEC14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4046E6C4-B151-47C9-9076-16E13F0CEC14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4046E6C4-B151-47C9-9076-16E13F0CEC14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7CAA1D7-6B28-4D35-9224-58F7A569648B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7CAA1D7-6B28-4D35-9224-58F7A569648B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7CAA1D7-6B28-4D35-9224-58F7A569648B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7CAA1D7-6B28-4D35-9224-58F7A569648B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

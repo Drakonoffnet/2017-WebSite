@@ -1,0 +1,219 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"Environment-Name": {
+			"type": "string",
+			"minLength": 2,
+			"maxLength": 6,
+			"defaultValue": "local"
+		},
+		"WebFarm-Sku": {
+			"type": "string",
+			"defaultValue": "F1",
+			"allowedValues": [
+				"F1",
+				"B1",
+				"B2",
+				"B3",
+				"S1",
+				"S2",
+				"S3"
+			],
+			"metadata": {
+				"description": "Describes plan's pricing tier and capacity. Check details at https://azure.microsoft.com/en-us/pricing/details/app-service/"
+			}
+		},
+		"Storage-Type": {
+			"type": "string",
+			"defaultValue": "Standard_LRS",
+			"allowedValues": [
+				"Standard_LRS",
+				"Standard_GRS"
+			]
+		}
+	},
+	"variables": {
+		"UniqueId": "[uniqueString(resourceGroup().id)]",
+
+		"WebFarm-Name": "[concat('webfarm-', variables('UniqueId'))]",
+
+		"WebSite-Name": "[concat('azureday-', variables('UniqueId'))]",
+		"WebSite-Url": "[concat(variables('WebSite-Name'), '.azurewebsites.net/')]",
+
+		"CdnProfile-Name": "[concat('azureday-', variables('UniqueId'))]",
+
+		"CdnEndpoint-Web-Name": "[concat('web-azureday-', variables('UniqueId'))]",
+		"CdnEndpoint-Web-Url": "[concat(variables('CdnEndpoint-Web-Name'), '.azureedge.net')]",
+
+		"CdnEndpoint-Storage-Name": "[concat('files-azureday-', variables('UniqueId'))]",
+		"CdnEndpoint-Storage-Url": "[concat(variables('CdnEndpoint-Web-Name'), '.azureedge.net')]",
+
+		"Storage-Name": "[concat('Storage', variables('UniqueId'))]",
+		"Storage-Url-Blob": "[concat('https://', variables('Storage-Name'), '.blob.core.windows.net/')]"
+	},
+	"resources": [
+		{
+			"name": "[variables('WebFarm-Name')]",
+			"type": "Microsoft.Web/serverfarms",
+			"location": "[resourceGroup().location]",
+			"apiVersion": "2015-08-01",
+			"sku": {
+				"name": "[parameters('WebFarm-Sku')]"
+			},
+			"dependsOn": [],
+			"tags": {
+				"displayName": "WebFarm"
+			},
+			"properties": {
+				"name": "[variables('WebFarm-Name')]",
+				"numberOfWorkers": 1
+			}
+		},
+		{
+			"name": "[variables('WebSite-Name')]",
+			"type": "Microsoft.Web/sites",
+			"location": "[resourceGroup().location]",
+			"apiVersion": "2015-08-01",
+			"dependsOn": [
+				"[resourceId('Microsoft.Web/serverfarms', variables('WebFarm-Name'))]"
+			],
+			"tags": {
+				"[concat('hidden-related:', resourceId('Microsoft.Web/serverfarms', variables('WebFarm-Name')))]": "Resource",
+				"displayName": "WebSite"
+			},
+			"properties": {
+				"name": "[variables('WebSite-Name')]",
+				"serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('WebFarm-Name'))]"
+			},
+			"resources": [
+				{
+					"name": "appsettings",
+					"type": "config",
+					"apiVersion": "2015-08-01",
+					"dependsOn": [
+						"[resourceId('Microsoft.Web/sites', variables('WebSite-Name'))]",
+						"[resourceId('Microsoft.Storage/storageAccounts', variables('Storage-Name'))]"
+					],
+					"tags": {
+						"displayName": "WebSiteSettings"
+					},
+					"properties": {
+						"KaznackeyMerchantId": "",
+						"KaznackeyMerchantSecreet": "",
+
+						"CdnEndpointWeb": "[variables('CdnEndpoint-Web-Url')]",
+						"CdnEndpointStorage": "[variables('CdnEndpoint-Storage-Url')]",
+
+						"AzureStorageAccountName": "",
+						"AzureStorageAccountKey": "",
+
+						"SendGridApiKey": "",
+						"SendGridFromEmail": "",
+						"SendGridFromName": "",
+
+						"ApplicationInsightInstrumentationKey": "",
+						"ApplicationInsightEnvironmentTag": "[parameters('Environment-Name')]"
+					}
+				}
+			]
+		},
+		{
+			"name": "[variables('CdnProfile-Name')]",
+			"type": "Microsoft.Cdn/profiles",
+			"location": "[resourceGroup().location]",
+			"apiVersion": "2016-04-02",
+			"sku": {
+				"name": "Standard_Verizon"
+			},
+			"dependsOn": [],
+			"tags": {
+				"displayName": "CdnProfile"
+			},
+			"resources": [
+				{
+					"name": "[variables('CdnEndpoint-Web-Name')]",
+					"type": "endpoints",
+					"location": "[resourceGroup().location]",
+					"apiVersion": "2016-04-02",
+					"dependsOn": [
+						"[resourceId('Microsoft.Cdn/profiles', variables('CdnProfile-Name'))]"
+					],
+					"tags": {
+						"displayName": "CdnWeb"
+					},
+					"properties": {
+						"originHostHeader": "[variables('WebSite-Url')]",
+						"isHttpAllowed": true,
+						"isHttpsAllowed": true,
+						"queryStringCachingBehavior": "IgnoreQueryString",
+						"contentTypesToCompress": [
+							"text/plain",
+							"text/html",
+							"text/css",
+							"application/x-javascript",
+							"text/javascript"
+						],
+						"isCompressionEnabled": "True",
+						"origins": [
+							{
+								"name": "origin1",
+								"properties": {
+									"hostName": "[variables('WebSite-Url')]"
+								}
+							}
+						]
+					}
+				},
+				{
+					"name": "[variables('CdnEndpoint-Storage-Name')]",
+					"type": "endpoints",
+					"location": "[resourceGroup().location]",
+					"apiVersion": "2016-04-02",
+					"dependsOn": [
+						"[resourceId('Microsoft.Cdn/profiles', variables('CdnProfile-Name'))]"
+					],
+					"tags": {
+						"displayName": "CdnStorage"
+					},
+					"properties": {
+						"originHostHeader": "[variables('Storage-Url-Blob')]",
+						"isHttpAllowed": true,
+						"isHttpsAllowed": true,
+						"queryStringCachingBehavior": "IgnoreQueryString",
+						"contentTypesToCompress": [
+							"text/plain",
+							"text/html",
+							"text/css",
+							"application/x-javascript",
+							"text/javascript"
+						],
+						"isCompressionEnabled": "True",
+						"origins": [
+							{
+								"name": "origin1",
+								"properties": {
+									"hostName": "[variables('Storage-Url-Blob')]"
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "[variables('Storage-Name')]",
+			"type": "Microsoft.Storage/storageAccounts",
+			"location": "[resourceGroup().location]",
+			"apiVersion": "2015-06-15",
+			"dependsOn": [],
+			"tags": {
+				"displayName": "Storage"
+			},
+			"properties": {
+				"accountType": "[parameters('Storage-Type')]"
+			}
+		}
+	],
+	"outputs": {}
+}

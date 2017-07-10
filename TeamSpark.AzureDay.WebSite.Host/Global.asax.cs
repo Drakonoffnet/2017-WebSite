@@ -8,31 +8,31 @@ using TeamSpark.AzureDay.WebSite.Config;
 
 namespace TeamSpark.AzureDay.WebSite.Host
 {
-    public class MvcApplication : HttpApplication
-    {
-        protected void Application_Start()
-        {
+	public class MvcApplication : HttpApplication
+	{
+		protected void Application_Start()
+		{
 			#region application insight
 
-	        TelemetryConfiguration.Active.InstrumentationKey = Configuration.ApplicationInsightInstrumentationKey;
+			TelemetryConfiguration.Active.InstrumentationKey = Configuration.ApplicationInsightInstrumentationKey;
 
 			#endregion
 
 			#region asp net mvc
 
-            AreaRegistration.RegisterAllAreas();
-            GlobalConfiguration.Configure(WebApiConfig.Register);
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
+			AreaRegistration.RegisterAllAreas();
+			GlobalConfiguration.Configure(WebApiConfig.Register);
+			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+			RouteConfig.RegisterRoutes(RouteTable.Routes);
+			BundleConfig.RegisterBundles(BundleTable.Bundles);
 
 			#endregion
 
 			#region initialize
 
-	        //DataFactory.InitializeAsync().Wait();
+			//DataFactory.InitializeAsync().Wait();
 
-	        #endregion
-        }
-    }
+			#endregion
+		}
+	}
 }

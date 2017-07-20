@@ -117,13 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Address" xml:space="preserve">
+    <value>Адрес: г. Киев, ул. Госпитальная 12, President Hotel</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>8го и 9го сентября</value>
+  </data>
+  <data name="Get_in_touch" xml:space="preserve">
+    <value>Свяжитесь с нами:</value>
+  </data>
   <data name="Subtitle1" xml:space="preserve">
-    <value>технологии, люди, опыт, инновации и сообщество профессионалов.</value>
+    <value>Технологии, люди, опыт, инновации и сообщество профессионалов.</value>
   </data>
   <data name="Subtitle2" xml:space="preserve">
     <value>Зарубежные докладчики, слушатели и последователи конференции в других странах.</value>
   </data>
+  <data name="Time" xml:space="preserve">
+    <value>года в 9-00</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>AzureDay</value>
+  </data>
+  <data name="Where_and_when" xml:space="preserve">
+    <value>Где и когда:</value>
   </data>
 </root>

@@ -374,6 +374,7 @@
     <Content Include="Theme\img\glyphicons-halflings-white.png" />
     <Content Include="Theme\img\glyphicons-halflings.png" />
     <Content Include="Theme\img\headers\1.jpg" />
+    <Content Include="Theme\img\logo-en.png" />
     <Content Include="Theme\img\logo.png" />
     <Content Include="Theme\img\m.png" />
     <Content Include="Theme\img\part-btn-search.png" />
@@ -381,6 +382,12 @@
     <Content Include="Theme\img\sh.png" />
     <Content Include="Theme\img\slider-shadow.png" />
     <Content Include="Theme\img\t.png" />
+    <Content Include="Theme\img\_bgnd\2017\002.jpg" />
+    <Content Include="Theme\img\_bgnd\2017\004.jpg" />
+    <Content Include="Theme\img\_bgnd\2017\007.jpg" />
+    <Content Include="Theme\img\_bgnd\2017\009.jpg" />
+    <Content Include="Theme\img\_bgnd\2017\010.jpg" />
+    <Content Include="Theme\img\_bgnd\2017\011.jpg" />
     <Content Include="Theme\img\_bgnd\bgnd01b.jpg" />
     <Content Include="Theme\img\_bgnd\bgnd02b.JPG" />
     <Content Include="Theme\img\_bgnd\bgnd03b.JPG" />
@@ -389,6 +396,24 @@
     <Content Include="Theme\img\_slides\02.jpg" />
     <Content Include="Theme\img\_slides\03.jpg" />
     <Content Include="Theme\img\_slides\04.jpg" />
+    <Content Include="Theme\img\_slides\2017\01-ru.jpg" />
+    <Content Include="Theme\img\_slides\2017\02-ru.jpg" />
+    <Content Include="Theme\img\_slides\2017\03-ru.jpg" />
+    <Content Include="Theme\img\_slides\2017\04.jpg" />
+    <Content Include="Theme\img\_slides\2017\audience\001.jpg" />
+    <Content Include="Theme\img\_slides\2017\audience\002.jpg" />
+    <Content Include="Theme\img\_slides\2017\audience\003.jpg" />
+    <Content Include="Theme\img\_slides\2017\audience\004.jpg" />
+    <Content Include="Theme\img\_slides\2017\audience\005.jpg" />
+    <Content Include="Theme\img\_slides\2017\audience\006.jpg" />
+    <Content Include="Theme\img\_slides\2017\audience\007.jpg" />
+    <Content Include="Theme\img\_slides\2017\audience\008.jpg" />
+    <Content Include="Theme\img\_slides\2017\audience\009.jpg" />
+    <Content Include="Theme\img\_slides\2017\audience\010.jpg" />
+    <Content Include="Theme\img\_slides\2017\audience\011.jpg" />
+    <Content Include="Theme\img\_slides\2017\audience\012.jpg" />
+    <Content Include="Theme\img\_slides\2017\audience\013.jpg" />
+    <Content Include="Theme\img\_slides\2017\date.jpg" />
     <Content Include="Theme\img\_slides\date.jpg" />
     <Content Include="Theme\img\_slides\date.png" />
     <Content Include="Theme\img\_slides\kyiv01.jpg" />
@@ -498,7 +523,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Language\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

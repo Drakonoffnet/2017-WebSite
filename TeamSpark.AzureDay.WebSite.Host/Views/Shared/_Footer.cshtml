@@ -32,7 +32,7 @@
 				<!-- col 3 -->
 				<div class="col-md-3 footer-widget">
 					<aside id="text-4" class="widget widget_text">
-						<h1>Свяжитесь с нами:</h1>
+						<h1>@_Footer.Get_in_touch</h1>
 						<div class="textwidget">
 							<p>
 								<strong>Email: </strong><a href="mailto:info@azureday.net">info@azureday.net</a>
@@ -47,13 +47,13 @@
 				<!-- col 4 -->
 				<div class="col-md-3 footer-widget">
 					<aside id="text-5" class="widget widget_text">
-						<h1>Где и когда:</h1>
+						<h1>@_Footer.Where_and_when</h1>
 						<div class="textwidget">
 							<p>
-								8го и 9го сентября @{ Write(Configuration.Year); } года в 9-00
+								@_Footer.Date @{ Write(Configuration.Year); } @_Footer.Time
 							</p>
 							<p>
-								Адрес: г. Киев, ул. Госпитальная 12, President Hotel
+								@_Footer.Address
 							</p>
 						</div>
 					</aside>

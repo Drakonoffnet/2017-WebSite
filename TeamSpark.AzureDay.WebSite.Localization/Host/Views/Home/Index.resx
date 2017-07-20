@@ -117,30 +117,133 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Address" xml:space="preserve">
-    <value>Kyiv, Hospitalna str. 12, President Hotel</value>
+  <data name="About" xml:space="preserve">
+    <value>About AzureDAY</value>
   </data>
-  <data name="Date" xml:space="preserve">
-    <value>September 8th and 9th</value>
+  <data name="About01a" xml:space="preserve">
+    <value>The purpose of AzureDAY is to gather professionals that already have</value>
   </data>
-  <data name="Get_in_touch" xml:space="preserve">
-    <value>Contact us:</value>
+  <data name="About01b" xml:space="preserve">
+    <value>practical experience in Azure</value>
   </data>
-  <data name="Subtitle1" xml:space="preserve">
-    <value>Technologies, people, experience, innovations and community of professionals.</value>
-    <comment>технологии, люди, опыт, инновации и сообщество профессионалов.</comment>
+  <data name="About01c" xml:space="preserve">
+    <value>and also beginners that only embark on their Azure journey for effective knowledge sharing.</value>
   </data>
-  <data name="Subtitle2" xml:space="preserve">
-    <value>Foreign speakers, attendees and folowers in other countries.</value>
-    <comment>Зарубежные докладчики, слушатели и последователи конференции в других странах.</comment>
+  <data name="About02a" xml:space="preserve">
+    <value>AzureDAY has</value>
   </data>
-  <data name="Time" xml:space="preserve">
-    <value>at 9-00</value>
+  <data name="About02b" xml:space="preserve">
+    <value>separate technology threads</value>
   </data>
-  <data name="Title" xml:space="preserve">
-    <value>AzureDay</value>
+  <data name="About02c" xml:space="preserve">
+    <value>that profoundly cover various dimensions cloud technologies have. </value>
   </data>
-  <data name="Where_and_when" xml:space="preserve">
-    <value>When and where:</value>
+  <data name="About03" xml:space="preserve">
+    <value>AzureDAY speakers are foreign and domestic cloud experts, trainers, enthusiasts and business owners.</value>
+  </data>
+  <data name="About04a" xml:space="preserve">
+    <value>AzureDAY is a paid event. </value>
+  </data>
+  <data name="About04b" xml:space="preserve">
+    <value>A ticket includes free coffee breaks</value>
+  </data>
+  <data name="About04c" xml:space="preserve">
+    <value>. We have early bird discount, students' discount and partners' discount. </value>
+  </data>
+  <data name="About05a" xml:space="preserve">
+    <value>During AzureDAY you can</value>
+  </data>
+  <data name="About05b" xml:space="preserve">
+    <value>take part in practical workshops</value>
+  </data>
+  <data name="About05c" xml:space="preserve">
+    <value>that are being held on 8th of September. Please note that if you want to participate in any workshop, you need a dedicated workshop ticket.</value>
+  </data>
+  <data name="About06" xml:space="preserve">
+    <value>Workshop attendance is limited by physical limits of trainer's attention, therefore we ask you to tell us which workshop you want to attend during ticket purchase. </value>
+  </data>
+  <data name="AzureDAY01" xml:space="preserve">
+    <value>is the 3rd annual</value>
+  </data>
+  <data name="AzureDAY01a" xml:space="preserve">
+    <value>cloud</value>
+  </data>
+  <data name="AzureDAY01b" xml:space="preserve">
+    <value>conference in Ukraine -</value>
+  </data>
+  <data name="AzureDAY01c" xml:space="preserve">
+    <value>a meeting of technologies, people, experiences, innovations and professional community.</value>
+  </data>
+  <data name="AzureDAY02" xml:space="preserve">
+    <value>AzureDAY will have</value>
+  </data>
+  <data name="AzureDAY02a" xml:space="preserve">
+    <value>separate technology threads</value>
+  </data>
+  <data name="AzureDAY02b" xml:space="preserve">
+    <value>that profoundly cover various dimensions cloud technologies have,</value>
+  </data>
+  <data name="AzureDAY02c" xml:space="preserve">
+    <value>and also a full day (8th of September)</value>
+  </data>
+  <data name="AzureDAY02d" xml:space="preserve">
+    <value>or practical workshops.</value>
+  </data>
+  <data name="Icon_box_01" xml:space="preserve">
+    <value>OUTSIDE UKRAINE</value>
+  </data>
+  <data name="Icon_box_01_text" xml:space="preserve">
+    <value>Foreign speakers, Microsoft Most Valuable Professionals, attendees and followers from differet countries</value>
+  </data>
+  <data name="Icon_box_02" xml:space="preserve">
+    <value>IDEAS AND INNOVATIONS</value>
+  </data>
+  <data name="Icon_box_02_text" xml:space="preserve">
+    <value>Learn new ideas and innovative techniques from the best foreign and domestic experts</value>
+  </data>
+  <data name="Icon_box_03" xml:space="preserve">
+    <value>Practical workshops</value>
+  </data>
+  <data name="Icon_box_03_text" xml:space="preserve">
+    <value>All speakers have extensive practical knowledge. You can take part in specialized practical workshops. </value>
+  </data>
+  <data name="Icon_box_04" xml:space="preserve">
+    <value>COMMUNITY AND CONTACTS</value>
+  </data>
+  <data name="Icon_box_04_text" xml:space="preserve">
+    <value>Become a member of cloud community and meet new colleagues, partners or employees</value>
+  </data>
+  <data name="Sponsors01" xml:space="preserve">
+    <value>Want to become a partner?</value>
+  </data>
+  <data name="Sponsors01a" xml:space="preserve">
+    <value>If you want to support AzureDAY by providing us with speakers, gifts and/or food for attendees, help with promoting our conference - let's start a partnership. </value>
+  </data>
+  <data name="Sponsors01b" xml:space="preserve">
+    <value>You can learn details about partnership programs by contacting conference organizers. </value>
+  </data>
+  <data name="Sponsors01c" xml:space="preserve">
+    <value>Contact us</value>
+  </data>
+  <data name="Sponsors02" xml:space="preserve">
+    <value>What kind of partner will you be?</value>
+  </data>
+  <data name="Sponsors03" xml:space="preserve">
+    <value>Gold partner</value>
+  </data>
+  <data name="Sponsors03a" xml:space="preserve">
+    <value>Support us financially by providing funds for coffee breaks and lunches of attendees.</value>
+  </data>
+  <data name="Sponsors04" xml:space="preserve">
+    <value>Gift partner</value>
+  </data>
+  <data name="Sponsors04a" xml:space="preserve">
+    <value>Provide your own gift or prizes to be distributed or raffled among attendees.</value>
+  </data>
+  <data name="Sponsors05" xml:space="preserve">
+    <value>Informational partner</value>
+  </data>
+  <data name="Sponsors05a" xml:space="preserve">
+    <value>Help us promote AzureDAY among your partners, clients and/or employees. </value>
   </data>
 </root>

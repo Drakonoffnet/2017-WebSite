@@ -22,14 +22,14 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class _Footer {
+    public class _MenuItems {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal _Footer() {
+        internal _MenuItems() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared._Footer", typeof(_Footer).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared._MenuItems", typeof(_MenuItems).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,74 +61,65 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kyiv, Hospitalna str. 12, President Hotel.
+        ///   Looks up a localized string similar to Agenda.
         /// </summary>
-        public static string Address {
+        public static string Agenda {
             get {
-                return ResourceManager.GetString("Address", resourceCulture);
+                return ResourceManager.GetString("Agenda", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to September 8th and 9th.
+        ///   Looks up a localized string similar to Buy tickets.
         /// </summary>
-        public static string Date {
+        public static string Buy_Tickets {
             get {
-                return ResourceManager.GetString("Date", resourceCulture);
+                return ResourceManager.GetString("Buy_Tickets", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Contact us:.
+        ///   Looks up a localized string similar to Home.
         /// </summary>
-        public static string Get_in_touch {
+        public static string Home {
             get {
-                return ResourceManager.GetString("Get_in_touch", resourceCulture);
+                return ResourceManager.GetString("Home", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Technologies, people, experience, innovations and community of professionals..
+        ///   Looks up a localized string similar to Login.
         /// </summary>
-        public static string Subtitle1 {
+        public static string Login {
             get {
-                return ResourceManager.GetString("Subtitle1", resourceCulture);
+                return ResourceManager.GetString("Login", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Foreign speakers, attendees and folowers in other countries..
+        ///   Looks up a localized string similar to Logout.
         /// </summary>
-        public static string Subtitle2 {
+        public static string Logout {
             get {
-                return ResourceManager.GetString("Subtitle2", resourceCulture);
+                return ResourceManager.GetString("Logout", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to at 9-00.
+        ///   Looks up a localized string similar to Partners.
         /// </summary>
-        public static string Time {
+        public static string Partners {
             get {
-                return ResourceManager.GetString("Time", resourceCulture);
+                return ResourceManager.GetString("Partners", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AzureDay.
+        ///   Looks up a localized string similar to Profile.
         /// </summary>
-        public static string Title {
+        public static string Profile {
             get {
-                return ResourceManager.GetString("Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to When and where:.
-        /// </summary>
-        public static string Where_and_when {
-            get {
-                return ResourceManager.GetString("Where_and_when", resourceCulture);
+                return ResourceManager.GetString("Profile", resourceCulture);
             }
         }
     }

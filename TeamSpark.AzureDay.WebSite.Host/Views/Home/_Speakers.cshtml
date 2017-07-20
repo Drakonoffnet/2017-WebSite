@@ -1,4 +1,5 @@
-﻿@model TeamSpark.AzureDay.WebSite.Host.Models.Home.SpeakersModel
+﻿@using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home
+@model TeamSpark.AzureDay.WebSite.Host.Models.Home.SpeakersModel
 
 <section class="whites testimonial fullwidth flexslider" id="testimonials-slider">
 	<div class="container">
@@ -16,7 +17,7 @@
 								<div class="col-md-10">
 									<div class="titleborder left">
 										<div>
-											<h1 class="animated fadeInRightBig">Наши докладчики</h1>
+											<h1 class="animated fadeInRightBig">@_Speakers.Speakers01</h1>
 										</div>
 									</div>
 								</div>

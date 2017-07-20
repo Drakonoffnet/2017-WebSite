@@ -1,4 +1,5 @@
 ﻿@using TeamSpark.AzureDay.WebSite.Config
+@using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home
 @model TeamSpark.AzureDay.WebSite.Host.Models.Home.IndexModel
 
 @{
@@ -16,8 +17,8 @@
 				<div class="col-md-12 text-center">
 					<h1>
 						<span class="animated fadeInDown">
-							AzureDAY @{ Write(Configuration.Year); } - 3я ежегодная <span class='colortext'>облачная</span> конференция в Украине, -<br>
-							это технологии, люди, опыт, инновации и сообщество профессионалов.
+							AzureDAY @{ Write(Configuration.Year); } @Index.AzureDAY01 <span class='colortext'>@Index.AzureDAY01a</span> @Index.AzureDAY01b<br>
+							@Index.AzureDAY01c
 						</span>
 					</h1>
 				</div>
@@ -34,9 +35,9 @@
 						<a href="#">
 							<i class="fontawesome-icon medium circle-white center fa fa-plane"></i>
 						</a>
-						<h1>ЗА ПРЕДЕЛАМИ УКРАИНЫ</h1>
+						<h1>@Index.Icon_box_01</h1>
 						<p>
-							Зарубежные докладчики, Microsoft Most Valuable Professionals, слушатели и последователи из других стран.
+							@Index.Icon_box_01_text
 						</p>
 					</div>
 				</div>
@@ -45,9 +46,9 @@
 						<a href="#">
 							<i class="fontawesome-icon medium circle-white center fa fa-rocket"></i>
 						</a>
-						<h1>ИДЕИ И ИННОВАЦИИ</h1>
+						<h1>@Index.Icon_box_02</h1>
 						<p>
-							Опыт и инновации из мира облаков, представленные экспертами зарубежного и украинского рынков.
+							@Index.Icon_box_02_text
 						</p>
 					</div>
 				</div>
@@ -56,9 +57,9 @@
 						<a href="#">
 							<i class="fontawesome-icon medium circle-white center fa fa-code"></i>
 						</a>
-						<h1>ПРАКТИЧЕСКИЕ ВОРКШОПЫ</h1>
+						<h1>@Index.Icon_box_03</h1>
 						<p>
-							Все докладчики имеют богатый практический опыт. Вы можете посетить однодневные специализированные воркшопы.
+							@Index.Icon_box_03_text
 						</p>
 					</div>
 				</div>
@@ -67,9 +68,9 @@
 						<a href="#">
 							<i class="fontawesome-icon medium circle-white center fa fa-users"></i>
 						</a>
-						<h1>СООБЩЕСТВО И КОНТАКТЫ</h1>
+						<h1>@Index.Icon_box_04</h1>
 						<p>
-							Станьте частью облачного сообщества и познакомьтесь с новыми коллегами, партнерами, сотрудниками.
+							@Index.Icon_box_04_text
 						</p>
 					</div>
 				</div>
@@ -83,7 +84,7 @@
 			<div class="col-md-12">
 				<div class="titleborder center">
 					<div>
-						<h1 class="animated fadeInDownBig">Кратко об AzureDAY</h1>
+						<h1 class="animated fadeInDownBig">@Index.About</h1>
 					</div>
 				</div>
 
@@ -91,13 +92,13 @@
 					<div class="col-md-6">
 						<!-- begin box shadow -->
 						<div class="box effect2">
-							Цель AzureDAY - собрать вместе профессионалов, которые уже имеют <span class='colortext'>практический опыт использования Azure</span>, а также новичков, которые только начинают с ним работать, для эффективного обмена опытом и знаниями.
+							@Index.About01a <span class='colortext'>@Index.About01b</span> @Index.About01c
 						</div>
 						<!-- end box shadow -->
 					</div>
 					<div class="col-md-6">
 						<div class="box effect2">
-							На AzureDAY представлены <span class='colortext'>распределённые потоки докладов</span>, которые смогут наиболее полно покрыть всю гамму направлений работы с облачными технологиями.
+							@Index.About02a <span class='colortext'>@Index.About02b</span> @Index.About02c
 						</div>
 					</div>
 				</div>
@@ -106,13 +107,13 @@
 					<div class="col-md-6">
 						<!-- begin box shadow -->
 						<div class="box effect6">
-							Докладчики на AzureDAY - как украинские, так и приглашенные из других стран облачные эксперты и владельцы бизнеса.
+							@Index.About03
 						</div>
 						<!-- end box shadow -->
 					</div>
 					<div class="col-md-6">
 						<div class="box effect6">
-							Участие в AzureDAY платное, <span class='colortext'>в стоимость билета входят кофе брейки</span>. Есть скидки для студентов, партнёров и скидки по программе early bird.
+							@Index.About04a <span class='colortext'>@Index.About04b</span>@Index.About04c
 						</div>
 					</div>
 				</div>
@@ -121,13 +122,13 @@
 					<div class="col-md-6">
 						<!-- begin box shadow -->
 						<div class="box effect2">
-							В рамках AzureDAY вы можете <span class='colortext'>посетить практические воркшопы</span>, которые пройдут 8го сентября. Обратите внимание, что день воркшопов оплачивается отдельно от дня конференции.
+							@Index.About05a <span class='colortext'>@Index.About05b</span> @Index.About05c
 </div>
 						<!-- end box shadow -->
 					</div>
 					<div class="col-md-6">
 						<div class="box effect2">
-							Количество мест на воркшопы ограничено из-за физического лимита распределения внимания на практических занятиях, поэтому при покупке билета мы просим вас указать, какой именно воркшоп вы желаете посетить.
+							@Index.About06
 						</div>
 					</div>
 				</div>
@@ -157,7 +158,13 @@
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<h1>
-						<span class="animated fadeInRightBig">На AzureDAY будут <span class='colortext'>распределённые потоки докладов</span>, которые смогут наиболее полно покрыть всю гамму направлений работы с облачными технологиями, <br />а также день (8е сентября) <span class='colortext'>специализированных воркшопов</span>.</span>
+						<span class="animated fadeInRightBig">
+							@Index.AzureDAY02 
+							<span class='colortext'>@Index.AzureDAY02a</span>
+							@Index.AzureDAY02b<br />
+							 @Index.AzureDAY02c
+							<span class='colortext'>@Index.AzureDAY02d</span>
+						</span>
 					</h1>
 				</div>
 			</div>
@@ -185,12 +192,12 @@
 		<div class="row">
 			<div class="panel1">
 				<div class="col-md-9">
-					<h4 class="animated fadeInLeft">Хотите поддержать AzureDAY?</h4>
-					Если вы хотите поддержать AzureDAY - предоставить конференции докладчика, призы для участников или же стать информационным партнёром, - принимайте участие в нашей партнерской программе.<br />
-					Более подробно о партнерской программе вы можете узнать, связавшись с организаторами конференции.
+					<h4 class="animated fadeInLeft">@Index.Sponsors01</h4>
+					@Index.Sponsors01a 
+					@Index.Sponsors01b
 				</div>
 				<div class="col-md-3">
-					<a href="mailto:partner@azureday.net" class="sbutton square noshadow medium mainthemebgcolor"><i class="fa fa-comment"></i> Свяжитесь с нами</a>
+					<a href="mailto:partner@azureday.net" class="sbutton square noshadow medium mainthemebgcolor"><i class="fa fa-comment"></i> @Index.Sponsors01c</a>
 				</div>
 				<div class="clearfix">
 				</div>
@@ -205,43 +212,43 @@
 		<div class="container">
 			<div class="row text-center">
 				<div class="col-md-12">
-					<h1 class="maintitle">Каким партнером вы хотите стать?</h1>
+					<h1 class="maintitle">@Index.Sponsors02</h1>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
 					<i class="fa fa-star infoareaicon"></i>
 					<div class="infoareawrap">
-						<h1 class="text-center subtitle">Золотой партнер</h1>
+						<h1 class="text-center subtitle">@Index.Sponsors03</h1>
 						<p>
-							Поддержите конференцию финансово, помогая со средствами на обеды и кофе-брейки для участников.
+							@Index.Sponsors03a
 						</p>
 						<p class='text-center'>
-							<a href='mailto:partner@azureday.net'>Свяжитесь с нами</a>
+							<a href='mailto:partner@azureday.net'>@Index.Sponsors01c</a>
 						</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<i class="fa fa-moon-o infoareaicon"></i>
 					<div class="infoareawrap">
-						<h1 class="text-center subtitle">Партнер по призам</h1>
+						<h1 class="text-center subtitle">@Index.Sponsors04</h1>
 						<p>
-							Предоставьте свои призы и/или сувениры для розыграша или распространения среди участников конференции.
+							@Index.Sponsors04a
 						</p>
 						<p class='text-center'>
-							<a href='mailto:partner@azureday.net'>Свяжитесь с нами</a>
+							<a href='mailto:partner@azureday.net'>@Index.Sponsors01c</a>
 						</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<i class="fa fa-bullhorn infoareaicon"></i>
 					<div class="infoareawrap">
-						<h1 class="text-center subtitle">Информационный партнер</h1>
+						<h1 class="text-center subtitle">@Index.Sponsors05</h1>
 						<p>
-							Помогите распространить информацию о конференции среди своих партнеров и/или клиентов. 
+							@Index.Sponsors05a
 						</p>
 						<p class='text-center'>
-							<a href='mailto:partner@azureday.net'>Свяжитесь с нами</a>
+							<a href='mailto:partner@azureday.net'>@Index.Sponsors01c</a>
 						</p>
 					</div>
 				</div>

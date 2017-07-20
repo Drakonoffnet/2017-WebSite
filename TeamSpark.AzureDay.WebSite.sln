@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamSpark.AzureDay.WebSite.Host", "TeamSpark.AzureDay.WebSite.Host\TeamSpark.AzureDay.WebSite.Host.csproj", "{360FD399-F923-4DB7-961D-910A9FF96D77}"
 EndProject
@@ -30,6 +30,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{FD8F50
 	EndProjectSection
 EndProject
 Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "TeamSpark.AzureDay.WebSite.ResourceGroup", "TeamSpark.AzureDay.WebSite.ResourceGroup\TeamSpark.AzureDay.WebSite.ResourceGroup.deployproj", "{B7CAA1D7-6B28-4D35-9224-58F7A569648B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamSpark.AzureDay.WebSite.Localization", "TeamSpark.AzureDay.WebSite.Localization\TeamSpark.AzureDay.WebSite.Localization.csproj", "{F4505160-E810-4927-9BF8-BD27D54735CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{B7CAA1D7-6B28-4D35-9224-58F7A569648B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7CAA1D7-6B28-4D35-9224-58F7A569648B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7CAA1D7-6B28-4D35-9224-58F7A569648B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4505160-E810-4927-9BF8-BD27D54735CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4505160-E810-4927-9BF8-BD27D54735CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4505160-E810-4927-9BF8-BD27D54735CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4505160-E810-4927-9BF8-BD27D54735CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

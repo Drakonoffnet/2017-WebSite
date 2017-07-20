@@ -21,6 +21,12 @@ namespace TeamSpark.AzureDay.WebSite.Host
 			);
 
 			routes.MapRoute(
+				name: "Language",
+				url: "language/{culture}",
+				defaults: new { controller = "Language", action = "Index" }
+			);
+
+			routes.MapRoute(
 				name: "Default",
 				url: "{controller}/{action}"
 			);

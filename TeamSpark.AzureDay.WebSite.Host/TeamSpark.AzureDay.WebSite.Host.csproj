@@ -219,6 +219,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\Api\PriceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LanguageController.cs" />
     <Compile Include="Controllers\LayoutController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Filter\ApplicationInsightHandleErrorAttribute.cs" />
@@ -497,6 +498,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Language\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -517,6 +519,10 @@
     <ProjectReference Include="..\TeamSpark.AzureDay.WebSite.Data\TeamSpark.AzureDay.WebSite.Data.csproj">
       <Project>{161e6bb3-0647-4de0-b474-b75e5f3c9913}</Project>
       <Name>TeamSpark.AzureDay.WebSite.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TeamSpark.AzureDay.WebSite.Localization\TeamSpark.AzureDay.WebSite.Localization.csproj">
+      <Project>{f4505160-e810-4927-9bf8-bd27d54735cf}</Project>
+      <Name>TeamSpark.AzureDay.WebSite.Localization</Name>
     </ProjectReference>
     <ProjectReference Include="..\TeamSpark.AzureDay.WebSite.Notification\TeamSpark.AzureDay.WebSite.Notification.csproj">
       <Project>{cb86a71d-89f5-4851-8cca-5e6592c1dca8}</Project>

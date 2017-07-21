@@ -23,7 +23,7 @@
 		<div class="row">
 			@for (var i = 0; i < Model.Rooms.Count; i++)
 			{
-				<div class="col-md-3 col-sm-3">
+				<div class="col-md-2 col-sm-2">
 					<div class="box effect2 @($"myAreaContainer{Model.Rooms[i].ColorNumber}")">
 						@Model.Rooms[i].Title
 					</div>
@@ -58,11 +58,11 @@
 									@($"{timetables[0].TimeStartHours}:{timetables[0].TimeStartMinutes.ToString("D2")}") -
 									@($"{timetables[0].TimeEndHours}:{timetables[0].TimeEndMinutes.ToString("D2")}")
 								</div>
-								@if (timetables[0].Topic.Speakers.Any())
+								@if (timetables[0].Topic.Speaker != null)
 								{
-								<div class="mySlotAuthor">
-									@string.Join(", ", timetables[0].Topic.Speakers.Select(s => s.FullName))
-								</div>
+									<div class="mySlotAuthor">
+										@timetables[0].Topic.Speaker.FullName
+									</div>
 								}
 								<div style="text-align: center;">
 									<b>@timetables[0].Topic.Title</b><br /><br />
@@ -80,16 +80,16 @@
 				{
 					for (var i = 0; i < timetables.Count; i++)
 					{
-						<div class="col-md-3 col-sm-3" style="@Html.Raw(timetables[i].HasLanguage ? string.Empty : "opacity: 0.5;")">
+						<div class="col-md-2 col-sm-2" style="@Html.Raw(timetables[i].HasLanguage ? string.Empty : "opacity: 0.5;")">
 							<div class="box effect2 @($"myAreaBoxBorder{timetables[i].Room.ColorNumber}")">
 								<div class="mySlotTime">
 									@($"{timetables[i].TimeStartHours}:{timetables[i].TimeStartMinutes.ToString("D2")}") -
 									@($"{timetables[i].TimeEndHours}:{timetables[i].TimeEndMinutes.ToString("D2")}")
 								</div>
-								@if (timetables[i].Topic.Speakers.Any())
+								@if (timetables[0].Topic.Speaker != null)
 								{
 									<div class="mySlotAuthor">
-										@Html.Raw(string.Join(",<br/>", timetables[i].Topic.Speakers.Select(s => s.FullName)))
+										@timetables[0].Topic.Speaker.FullName
 									</div>
 								}
 								<div>

@@ -12,11 +12,10 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		public async Task<List<Speaker>> GetSpeakersAsync()
 		{
 			var speakersTask = DataFactory.SpeakerService.Value.GetByPartitionKeyAsync(Configuration.Year);
-			var countriesTask = DataFactory.CountryService.Value.GetByPartitionKeyAsync(Configuration.Year);
 
-			await Task.WhenAll(speakersTask, countriesTask);
+			await Task.WhenAll(speakersTask);
 
-			var countries = await countriesTask;
+			var countries = new CountryService().GetCountries();
 
 			var speakers = (await speakersTask)
 				.OrderBy(s => s.FirstName)

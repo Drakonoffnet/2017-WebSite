@@ -104,6 +104,7 @@
     <Compile Include="Enum\RegistrationConfirmationResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\AttendeeService.cs" />
+    <Compile Include="Service\LanguageService.cs" />
     <Compile Include="Service\CountryService.cs" />
     <Compile Include="Service\CouponService.cs" />
     <Compile Include="Service\PartnerService.cs" />
@@ -125,6 +126,10 @@
     <ProjectReference Include="..\TeamSpark.AzureDay.WebSite.Data\TeamSpark.AzureDay.WebSite.Data.csproj">
       <Project>{161e6bb3-0647-4de0-b474-b75e5f3c9913}</Project>
       <Name>TeamSpark.AzureDay.WebSite.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TeamSpark.AzureDay.WebSite.Localization\TeamSpark.AzureDay.WebSite.Localization.csproj">
+      <Project>{f4505160-e810-4927-9bf8-bd27d54735cf}</Project>
+      <Name>TeamSpark.AzureDay.WebSite.Localization</Name>
     </ProjectReference>
     <ProjectReference Include="..\TeamSpark.AzureDay.WebSite.Notification\TeamSpark.AzureDay.WebSite.Notification.csproj">
       <Project>{cb86a71d-89f5-4851-8cca-5e6592c1dca8}</Project>

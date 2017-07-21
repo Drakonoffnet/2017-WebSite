@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace TeamSpark.AzureDay.WebSite.App.Entity
 {
@@ -10,12 +9,12 @@ namespace TeamSpark.AzureDay.WebSite.App.Entity
 		public string Description { get; set; }
 		public Language Language { get; set; }
 
-		public List<Speaker> Speakers { get; set; }
+		public Speaker Speaker { get; set; }
 
 		public Topic()
 		{
 			Language = new Language();
-			Speakers = new List<Speaker>();
+			Speaker = new Speaker();
 		}
 	}
 }

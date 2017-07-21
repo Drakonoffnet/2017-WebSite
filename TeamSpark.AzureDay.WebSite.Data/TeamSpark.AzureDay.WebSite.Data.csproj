@@ -74,14 +74,9 @@
     <Compile Include="Entity\Table\Coupon.cs" />
     <Compile Include="Entity\Table\QuickAuthToken.cs" />
     <Compile Include="Entity\Table\Partner.cs" />
-    <Compile Include="Entity\Table\SpeakerTopic.cs" />
-    <Compile Include="Entity\Table\Country.cs" />
     <Compile Include="Entity\Table\Ticket.cs" />
-    <Compile Include="Entity\Table\Timetable.cs" />
     <Compile Include="Entity\Table\Topic.cs" />
     <Compile Include="Entity\Table\Speaker.cs" />
-    <Compile Include="Entity\Table\Room.cs" />
-    <Compile Include="Entity\Table\Language.cs" />
     <Compile Include="Enum\DiscountType.cs" />
     <Compile Include="Enum\PartnerType.cs" />
     <Compile Include="Enum\RoomType.cs" />
@@ -91,14 +86,9 @@
     <Compile Include="Service\Table\TicketService.cs" />
     <Compile Include="Service\Table\CouponService.cs" />
     <Compile Include="Service\Table\AttendeeService.cs" />
-    <Compile Include="Service\Table\LanguageService.cs" />
-    <Compile Include="Service\Table\CountryService.cs" />
     <Compile Include="Service\Table\QuickAuthTokenService.cs" />
     <Compile Include="Service\Table\PartnerService.cs" />
-    <Compile Include="Service\Table\RoomService.cs" />
-    <Compile Include="Service\Table\SpeakerTopicService.cs" />
     <Compile Include="Service\Table\TopicService.cs" />
-    <Compile Include="Service\Table\TimetableService.cs" />
     <Compile Include="Service\Table\SpeakerService.cs" />
     <Compile Include="Service\Table\TableServiceBase.cs" />
   </ItemGroup>

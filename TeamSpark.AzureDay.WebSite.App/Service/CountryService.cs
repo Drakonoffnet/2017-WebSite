@@ -1,21 +1,24 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using TeamSpark.AzureDay.WebSite.App.Entity;
-using TeamSpark.AzureDay.WebSite.Data;
 
 namespace TeamSpark.AzureDay.WebSite.App.Service
 {
 	public sealed class CountryService
 	{
-		public async Task<List<Country>> GetCountriesAsync()
+		public IEnumerable<Country> GetCountries()
 		{
-			var countries = await DataFactory.CountryService.Value.GetByPartitionKeyAsync(Config.Configuration.Year);
+			var countries = new List<Country>
+			{
+				new Country {Id = 1, Title = Localization.App.Service.Country.Ukraine},
+				new Country {Id = 2, Title = Localization.App.Service.Country.Russia},
+				new Country {Id = 3, Title = Localization.App.Service.Country.Belarus},
+				new Country {Id = 4, Title = Localization.App.Service.Country.France},
+				new Country {Id = 5, Title = Localization.App.Service.Country.Sweden}
+			}
+			.OrderBy(x => x.Title);
 
-			return countries
-				.OrderBy(c => c.Title)
-				.Select(c => AppFactory.Mapper.Value.Map<Country>(c))
-				.ToList();
+			return countries;
 		}
 	}
 }

@@ -17,7 +17,7 @@ namespace TeamSpark.AzureDay.WebSite.Data.Entity.Table
 		public string LastName { get; set; }
 		public string PhotoUrl { get; set; }
 		public string Bio { get; set; }
-		public Guid CountryId { get; set; }
+		public int CountryId { get; set; }
 
 		public string FacebookUrl { get; set; }
 		public string LinkedInUrl { get; set; }

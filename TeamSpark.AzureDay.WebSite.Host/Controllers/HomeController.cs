@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using System.Web.Security;
 using TeamSpark.AzureDay.WebSite.App;
 using TeamSpark.AzureDay.WebSite.App.Entity;
+using TeamSpark.AzureDay.WebSite.App.Service;
 using TeamSpark.AzureDay.WebSite.Data.Enum;
 using TeamSpark.AzureDay.WebSite.Host.Filter;
 using TeamSpark.AzureDay.WebSite.Host.Models.Home;
@@ -73,24 +74,19 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 
 		public async Task<ActionResult> Schedule()
 		{
-			var roomsTask = AppFactory.RoomService.Value.GetAllRoomsAsync();
 			var timetableTask = AppFactory.TimetableService.Value.GetTimetableAsync();
 
 			await Task.WhenAll(
-				roomsTask,
 				timetableTask
 			);
 
 			var model = new ScheduleModel();
 
-			model.Rooms = roomsTask.Result
-				.Where(r => r.RoomType != RoomType.CoffeeRoom)
-				.OrderBy(r => r.ColorNumber)
-				.ToList();
+			model.Rooms = new RoomService().GetRooms().ToList();
 
 			model.Timetables = timetableTask.Result
 				.GroupBy(
-					t => t.TimeStartHours * 100 + t.TimeStartMinutes,
+					t => t.TimeStart,
 					(key, timetables) => timetables.OrderBy(t => t.Room.ColorNumber).ToList())
 				.ToList();
 

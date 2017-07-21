@@ -2384,6 +2384,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .maintitle {
 	line-height: 1.2;
 }
 
+.myAreaContainer5 {
+	background-color: #f0f;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.myAreaBoxBorder5 {
+	border-left: 5px #f0f solid;
+	line-height: 1.2;
+}
+
 .mySlotTime {
 	text-align: center;
 	font-weight: bold;

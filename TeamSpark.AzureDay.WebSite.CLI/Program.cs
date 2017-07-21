@@ -11,10 +11,6 @@ namespace TeamSpark.AzureDay.WebSite.CLI
 			DataFactory.InitializeAsync().Wait();
 
 			//Speaker.Add();
-			//Country.Add();
-			//Room.Add();
-			//Language.Add();
-			//Timetable.Add();
 			//Timetable.Move();
 			//SpeakerTopic.Add();
 			//Partner.Add();

@@ -17,23 +17,11 @@ namespace TeamSpark.AzureDay.WebSite.App
 				cfg.CreateMap<Speaker, Data.Entity.Table.Speaker>();
 				cfg.CreateMap<Data.Entity.Table.Speaker, Speaker>();
 
-				cfg.CreateMap<Country, Data.Entity.Table.Country>();
-				cfg.CreateMap<Data.Entity.Table.Country, Country>();
-
 				cfg.CreateMap<QuickAuthToken, Data.Entity.Table.QuickAuthToken>();
 				cfg.CreateMap<Data.Entity.Table.QuickAuthToken, QuickAuthToken>();
 
-				cfg.CreateMap<Room, Data.Entity.Table.Room>();
-				cfg.CreateMap<Data.Entity.Table.Room, Room>();
-
-				cfg.CreateMap<Timetable, Data.Entity.Table.Timetable>();
-				cfg.CreateMap<Data.Entity.Table.Timetable, Timetable>();
-
 				cfg.CreateMap<Topic, Data.Entity.Table.Topic>();
 				cfg.CreateMap<Data.Entity.Table.Topic, Topic>();
-
-				cfg.CreateMap<Language, Data.Entity.Table.Language>();
-				cfg.CreateMap<Data.Entity.Table.Language, Language>();
 
 				cfg.CreateMap<Partner, Data.Entity.Table.Partner>();
 				cfg.CreateMap<Data.Entity.Table.Partner, Partner>();

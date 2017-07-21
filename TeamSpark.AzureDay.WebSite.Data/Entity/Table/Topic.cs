@@ -14,7 +14,8 @@ namespace TeamSpark.AzureDay.WebSite.Data.Entity.Table
 		}
 		public string Title { get; set; }
 		public string Description { get; set; }
-		public Guid LanguageId { get; set; }
+		public int LanguageId { get; set; }
+		public Guid SpeakerId { get; set; }
 
 		public Topic()
 		{

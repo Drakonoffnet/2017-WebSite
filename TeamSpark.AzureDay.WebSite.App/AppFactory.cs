@@ -17,9 +17,6 @@ namespace TeamSpark.AzureDay.WebSite.App
 				cfg.CreateMap<QuickAuthToken, Data.Entity.Table.QuickAuthToken>();
 				cfg.CreateMap<Data.Entity.Table.QuickAuthToken, QuickAuthToken>();
 
-				cfg.CreateMap<Topic, Data.Entity.Table.Topic>();
-				cfg.CreateMap<Data.Entity.Table.Topic, Topic>();
-
 				cfg.CreateMap<Partner, Data.Entity.Table.Partner>();
 				cfg.CreateMap<Data.Entity.Table.Partner, Partner>();
 

@@ -72,17 +72,11 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 
 		public async Task<ActionResult> Schedule()
 		{
-			var timetableTask = AppFactory.TimetableService.Value.GetTimetableAsync();
-
-			await Task.WhenAll(
-				timetableTask
-			);
-
 			var model = new ScheduleModel();
 
 			model.Rooms = new RoomService().GetRooms().ToList();
 
-			model.Timetables = timetableTask.Result
+			model.Timetables = new TimetableService().GetTimetable()
 				.GroupBy(
 					t => t.TimeStart,
 					(key, timetables) => timetables.OrderBy(t => t.Room.ColorNumber).ToList())

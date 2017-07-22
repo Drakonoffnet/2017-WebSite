@@ -68,7 +68,7 @@
 									<b>@timetables[0].Topic.Title</b><br /><br />
 									@if (timetables[0].Topic.Language != null && !string.IsNullOrEmpty(timetables[0].Topic.Language.Title))
 									{
-										@Html.Raw($"Язык: {timetables[0].Topic.Language.Title}")
+										@Html.Raw($"{Schedule.Language}: {timetables[0].Topic.Language.Title}")
 									}
 									@*@timetables[0].Topic.Description*@
 								</div>
@@ -86,10 +86,10 @@
 									@($"{timetables[i].TimeStartHours}:{timetables[i].TimeStartMinutes.ToString("D2")}") -
 									@($"{timetables[i].TimeEndHours}:{timetables[i].TimeEndMinutes.ToString("D2")}")
 								</div>
-								@if (timetables[0].Topic.Speaker != null)
+								@if (timetables[i].Topic.Speaker != null)
 								{
 									<div class="mySlotAuthor">
-										@timetables[0].Topic.Speaker.FullName
+										@timetables[i].Topic.Speaker.FullName
 									</div>
 								}
 								<div>

@@ -10,7 +10,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			new Language {Id = 1, Title = Localization.App.Service.Language.Ukrainian},
 			new Language {Id = 2, Title = Localization.App.Service.Language.Russian},
-			new Language {Id = 2, Title = Localization.App.Service.Language.English}
+			new Language {Id = 3, Title = Localization.App.Service.Language.English}
 		};
 
 		public IEnumerable<Language> GetLanguages()

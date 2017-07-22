@@ -8,10 +8,11 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 	{
 		public const string LANGUAGE_COOKIE = "AzureDay.Ukraine.2017.Language";
 
-		// GET: Language
 		public ActionResult Index(string culture)
 		{
-			var languageCookie = HttpContext.Request.Cookies[LANGUAGE_COOKIE];
+			var request = HttpContext.Request;
+
+			var languageCookie = request.Cookies[LANGUAGE_COOKIE];
 			if (languageCookie == null)
 			{
 				languageCookie = new HttpCookie(LANGUAGE_COOKIE, culture);
@@ -23,7 +24,14 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			}
 			HttpContext.Response.Cookies.Add(languageCookie);
 
-			return RedirectToAction("Index", "Home");
+			if (request.UrlReferrer != null)
+			{
+				return Redirect(request.UrlReferrer.AbsoluteUri);
+			}
+			else
+			{
+				return RedirectToAction("Index", "Home");
+			}
 		}
 	}
 }

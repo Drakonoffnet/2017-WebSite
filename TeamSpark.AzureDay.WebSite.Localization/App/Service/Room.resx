@@ -118,18 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AInML" xml:space="preserve">
-    <value>AI &amp; ML</value>
+    <value>Red room</value>
   </data>
   <data name="DevOps" xml:space="preserve">
-    <value>DevOps</value>
+    <value>Green room</value>
   </data>
   <data name="IoT" xml:space="preserve">
-    <value>Internet of Things</value>
+    <value>Blue room</value>
   </data>
   <data name="ITPro" xml:space="preserve">
-    <value>IT Pro</value>
+    <value>Violet room</value>
   </data>
   <data name="WebDev" xml:space="preserve">
-    <value>Web development</value>
+    <value>Orange room</value>
   </data>
 </root>

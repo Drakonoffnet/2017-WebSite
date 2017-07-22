@@ -118,18 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Belarus" xml:space="preserve">
-    <value>Belarus</value>
+    <value>Беларусь</value>
   </data>
   <data name="France" xml:space="preserve">
-    <value>France</value>
+    <value>Франция</value>
   </data>
   <data name="Russia" xml:space="preserve">
-    <value>Russia</value>
+    <value>Россия</value>
   </data>
   <data name="Sweden" xml:space="preserve">
-    <value>Sweden</value>
+    <value>Швеция</value>
   </data>
   <data name="Ukraine" xml:space="preserve">
-    <value>Ukraine</value>
+    <value>Украина</value>
   </data>
 </root>

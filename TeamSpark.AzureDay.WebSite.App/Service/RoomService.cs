@@ -15,7 +15,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				new Room {Id = 2, ColorNumber = 2, RoomType = RoomType.LectureRoom, Title = Localization.App.Service.Room.IoT },
 				new Room {Id = 3, ColorNumber = 3, RoomType = RoomType.LectureRoom, Title = Localization.App.Service.Room.AInML },
 				new Room {Id = 4, ColorNumber = 4, RoomType = RoomType.LectureRoom, Title = Localization.App.Service.Room.DevOps },
-				new Room {Id = 5, ColorNumber = 5, RoomType = RoomType.LectureRoom, Title = Localization.App.Service.Room.IoT },
+				new Room {Id = 5, ColorNumber = 5, RoomType = RoomType.LectureRoom, Title = Localization.App.Service.Room.ITPro },
 				new Room {Id = 999, ColorNumber = 0, RoomType = RoomType.CoffeeRoom }
 			}
 			.OrderBy(x => x.Id);

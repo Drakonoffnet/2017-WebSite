@@ -1,9 +1,10 @@
 ﻿@using TeamSpark.AzureDay.WebSite.Config
 @using TeamSpark.AzureDay.WebSite.Data.Enum
+@using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home
 @model TeamSpark.AzureDay.WebSite.Host.Models.Home.ScheduleModel
 
 @{
-	ViewBag.Title = $"AzureDay {Configuration.Year} - расписание";
+	ViewBag.Title = $"AzureDay {Configuration.Year} - {Schedule.Title}";
 }
 
 <div class="boxedcontent">
@@ -14,7 +15,7 @@
 			<div class="col-md-12">
 				<div class="titleborder center">
 					<div>
-						<h1 class="animated fadeInDownBig">Расписание AzureDay</h1>
+						<h1 class="animated fadeInDownBig" style="text-transform: capitalize">@Schedule.Title AzureDay</h1>
 					</div>
 				</div>
 			</div>
@@ -96,7 +97,7 @@
 									<b>@timetables[i].Topic.Title</b><br /><br />
 									@if (timetables[i].HasLanguage)
 									{
-										@Html.Raw($"Язык: {timetables[i].Topic.Language.Title}<br /><br />")
+										@Html.Raw($"{Schedule.Language}: {timetables[i].Topic.Language.Title}<br /><br />")
 									}
 									@timetables[i].Topic.Description
 								</div>

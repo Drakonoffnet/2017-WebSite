@@ -265,6 +265,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Index.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="Host\Views\Home\Schedule.ru.Designer.cs">
+      <DependentUpon>Schedule.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Host\Views\Home\Schedule.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Schedule.resx</DependentUpon>
+    </Compile>
     <Compile Include="Host\Views\Home\_Partners.ru.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -504,6 +514,14 @@
     <EmbeddedResource Include="Host\Views\Home\Index.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Index.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\Schedule.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Schedule.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\Schedule.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Schedule.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Home\_Partners.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

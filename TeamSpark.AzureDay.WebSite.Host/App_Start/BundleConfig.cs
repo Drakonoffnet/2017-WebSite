@@ -20,19 +20,7 @@ namespace TeamSpark.AzureDay.WebSite.Host
 			//          "~/Content/bootstrap.css",
 			//          "~/Content/site.css"));
 
-			bundles.Add(new StyleBundle("~/cdn/theme/css").Include(
-				"~/Theme/css/bootstrap.min.css",
-				"~/Theme/inc/shortcodes/css/shortcodes.css",
-				"~/Theme/css/animate.css",
-				"~/Theme/css/wowslider.css",
-				"~/Theme/style.css"));
-
-			bundles.Add(new StyleBundle("~/cdn/jqueryui/css").Include(
-				"~/Content/themes/base/all.css"));
-
 			bundles.Add(new ScriptBundle("~/cdn/theme/js").Include(
-				//"~/Theme/js/jquery.js",
-				//"~/Theme/js/bootstrap.js",
 				"~/Theme/js/jquery.fitvids.js",
 				"~/Theme/js/jquery.easing.1.3.js",
 				"~/Theme/js/common.js",

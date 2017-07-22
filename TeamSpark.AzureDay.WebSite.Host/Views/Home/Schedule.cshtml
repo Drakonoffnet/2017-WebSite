@@ -80,7 +80,7 @@
 				{
 					for (var i = 0; i < timetables.Count; i++)
 					{
-						<div class="col-md-2 col-sm-2" style="@Html.Raw(timetables[i].HasLanguage ? string.Empty : "opacity: 0.5;")">
+						<div class="col-md-2 col-sm-2 col-schedule" style="padding: 0px 5px 0px 5px; @Html.Raw(timetables[i].HasLanguage ? string.Empty : "opacity: 0.5;")">
 							<div class="box effect2 @($"myAreaBoxBorder{timetables[i].Room.ColorNumber}")">
 								<div class="mySlotTime">
 									@($"{timetables[i].TimeStartHours}:{timetables[i].TimeStartMinutes.ToString("D2")}") -

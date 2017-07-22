@@ -25,6 +25,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			},
 			{ 1, new List<Timetable>
 				{
+					new Timetable { TimeStart = "9:00", TimeEnd = "10:15" },
 					new Timetable { TimeStart = "10:30", TimeEnd = "11:30" },
 					new Timetable { TimeStart = "12:00", TimeEnd = "13:00" },
 					new Timetable { TimeStart = "13:15", TimeEnd = "14:15" },

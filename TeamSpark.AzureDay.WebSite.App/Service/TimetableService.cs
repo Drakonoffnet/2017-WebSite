@@ -82,18 +82,14 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			var languages = new LanguageService().GetLanguages();
 
 			var topicsTask = DataFactory.TopicService.Value.GetByPartitionKeyAsync(Configuration.Year);
-			var speakersTask = DataFactory.SpeakerService.Value.GetByPartitionKeyAsync(Configuration.Year);
 
 			await Task.WhenAll(
-				topicsTask,
-				speakersTask);
+				topicsTask);
 
 			var topics = topicsTask.Result
 				.ToList();
 
-			var speakers = speakersTask.Result
-				.Select(t => AppFactory.Mapper.Value.Map<Speaker>(t))
-				.ToList();
+			var speakers = new SpeakerService().GetSpeakers();
 
 			var timetables = new List<Timetable>();
 

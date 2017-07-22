@@ -5,7 +5,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Entity
 {
 	public class Speaker
 	{
-		public Guid Id { get; set; }
+		public int Id { get; set; }
 		public string FirstName { get; set; }
 		public string LastName { get; set; }
 
@@ -26,6 +26,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Entity
 		public string MsdnUrl { get; set; }
 		public string MvpUrl { get; set; }
 		public string GitHubUrl { get; set; }
+		public string WebUrl { get; set; }
 
 		public List<Topic> Topics { get; set; }
 

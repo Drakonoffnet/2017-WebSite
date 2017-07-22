@@ -9,7 +9,6 @@ namespace TeamSpark.AzureDay.WebSite.Data
 	{
 		public static readonly Lazy<AttendeeService> AttendeeService = new Lazy<AttendeeService>(() => new AttendeeService(Configuration.AzureStorageAccountName, Configuration.AzureStorageAccountKey));
 		public static readonly Lazy<QuickAuthTokenService> QuickAuthTokenService = new Lazy<QuickAuthTokenService>(() => new QuickAuthTokenService(Configuration.AzureStorageAccountName, Configuration.AzureStorageAccountKey));
-		public static readonly Lazy<SpeakerService> SpeakerService = new Lazy<SpeakerService>(() => new SpeakerService(Configuration.AzureStorageAccountName, Configuration.AzureStorageAccountKey));
 		public static readonly Lazy<TopicService> TopicService = new Lazy<TopicService>(() => new TopicService(Configuration.AzureStorageAccountName, Configuration.AzureStorageAccountKey));
 		public static readonly Lazy<PartnerService> PartnerService = new Lazy<PartnerService>(() => new PartnerService(Configuration.AzureStorageAccountName, Configuration.AzureStorageAccountKey));
 		public static readonly Lazy<CouponService> CouponService = new Lazy<CouponService>(() => new CouponService(Configuration.AzureStorageAccountName, Configuration.AzureStorageAccountKey));
@@ -20,7 +19,6 @@ namespace TeamSpark.AzureDay.WebSite.Data
 			await Task.WhenAll(
 				AttendeeService.Value.InitializeAsync(),
 				QuickAuthTokenService.Value.InitializeAsync(),
-				SpeakerService.Value.InitializeAsync(),
 				TopicService.Value.InitializeAsync(),
 				PartnerService.Value.InitializeAsync(),
 				CouponService.Value.InitializeAsync(),

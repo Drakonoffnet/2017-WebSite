@@ -65,6 +65,156 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Speaker\SKryshtop.ru.Designer.cs">
+      <DependentUpon>SKryshtop.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\VThavonekham.ru.Designer.cs">
+      <DependentUpon>VThavonekham.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\VThavonekham.Designer.cs">
+      <DependentUpon>VThavonekham.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\ASurkov.Designer.cs">
+      <DependentUpon>ASurkov.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\ASurkov.ru.Designer.cs">
+      <DependentUpon>ASurkov.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\IReznykov.ru.Designer.cs">
+      <DependentUpon>IReznykov.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\IReznykov.Designer.cs">
+      <DependentUpon>IReznykov.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\DReznik.ru.Designer.cs">
+      <DependentUpon>DReznik.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\DReznik.Designer.cs">
+      <DependentUpon>DReznik.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\EPolonychko.ru.Designer.cs">
+      <DependentUpon>EPolonychko.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\ILeontiev.Designer.cs">
+      <DependentUpon>ILeontiev.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\ILeontiev.ru.Designer.cs">
+      <DependentUpon>ILeontiev.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\MMartensson.ru.Designer.cs">
+      <DependentUpon>MMartensson.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\MMartensson.Designer.cs">
+      <DependentUpon>MMartensson.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\EPolonychko.Designer.cs">
+      <DependentUpon>EPolonychko.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\SKryshtop.Designer.cs">
+      <DependentUpon>SKryshtop.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\SKorzh.ru.Designer.cs">
+      <DependentUpon>SKorzh.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\SKorzh.Designer.cs">
+      <DependentUpon>SKorzh.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\DIvanov.ru.Designer.cs">
+      <DependentUpon>DIvanov.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\DIvanov.Designer.cs">
+      <DependentUpon>DIvanov.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\IFesenko.Designer.cs">
+      <DependentUpon>IFesenko.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\IFesenko.ru.Designer.cs">
+      <DependentUpon>IFesenko.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\DDurasau.ru.Designer.cs">
+      <DependentUpon>DDurasau.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\DDurasau.Designer.cs">
+      <DependentUpon>DDurasau.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\OChorny.ru.Designer.cs">
+      <DependentUpon>OChorny.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\OChorny.Designer.cs">
+      <DependentUpon>OChorny.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\ALaysha.ru.Designer.cs">
+      <DependentUpon>ALaysha.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\ALaysha.Designer.cs">
+      <DependentUpon>ALaysha.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\ABoyko.ru.Designer.cs">
+      <DependentUpon>ABoyko.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\ABoyko.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ABoyko.resx</DependentUpon>
+    </Compile>
     <Compile Include="Host\Views\Home\Index.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -154,6 +304,126 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Room.ru.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\SKryshtop.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SKryshtop.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\VThavonekham.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VThavonekham.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\VThavonekham.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VThavonekham.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ASurkov.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ASurkov.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ASurkov.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ASurkov.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\IReznykov.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>IReznykov.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\IReznykov.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>IReznykov.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\DReznik.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DReznik.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\DReznik.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DReznik.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\EPolonychko.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EPolonychko.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ILeontiev.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ILeontiev.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ILeontiev.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ILeontiev.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\MMartensson.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MMartensson.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\MMartensson.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MMartensson.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\EPolonychko.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EPolonychko.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\SKryshtop.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SKryshtop.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\SKorzh.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SKorzh.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\SKorzh.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SKorzh.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\DIvanov.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DIvanov.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\DIvanov.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DIvanov.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\IFesenko.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>IFesenko.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\IFesenko.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>IFesenko.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\DDurasau.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DDurasau.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\DDurasau.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DDurasau.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\OChorny.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OChorny.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\OChorny.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OChorny.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ALaysha.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ALaysha.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ALaysha.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ALaysha.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ABoyko.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ABoyko.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ABoyko.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ABoyko.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Home\Index.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

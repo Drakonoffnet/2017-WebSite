@@ -76,7 +76,6 @@
     <Compile Include="Entity\Table\Partner.cs" />
     <Compile Include="Entity\Table\Ticket.cs" />
     <Compile Include="Entity\Table\Topic.cs" />
-    <Compile Include="Entity\Table\Speaker.cs" />
     <Compile Include="Enum\DiscountType.cs" />
     <Compile Include="Enum\PartnerType.cs" />
     <Compile Include="Enum\RoomType.cs" />
@@ -89,7 +88,6 @@
     <Compile Include="Service\Table\QuickAuthTokenService.cs" />
     <Compile Include="Service\Table\PartnerService.cs" />
     <Compile Include="Service\Table\TopicService.cs" />
-    <Compile Include="Service\Table\SpeakerService.cs" />
     <Compile Include="Service\Table\TableServiceBase.cs" />
   </ItemGroup>
   <ItemGroup>

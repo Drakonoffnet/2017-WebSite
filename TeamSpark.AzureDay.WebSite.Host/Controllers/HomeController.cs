@@ -17,7 +17,6 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 	{
 		public async Task<ActionResult> Index()
 		{
-			var speakersTask = AppFactory.SpeakerService.Value.GetSpeakersAsync();
 			var partnersTask = AppFactory.PartnerService.Value.GetPartnersAsync();
 
 			var model = new IndexModel
@@ -33,11 +32,10 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			};
 
 			await Task.WhenAll(
-				speakersTask,
 				partnersTask
 			);
 
-			var speakers = speakersTask.Result;
+			var speakers = new SpeakerService().GetSpeakers();
 			var i = 0;
 			foreach (var speaker in speakers)
 			{

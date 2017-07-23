@@ -82,7 +82,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			};
 		}
 
-		public IEnumerable<Topic> GeTopics()
+		public IEnumerable<Topic> GetTopics()
 		{
 			return _topics;
 		}

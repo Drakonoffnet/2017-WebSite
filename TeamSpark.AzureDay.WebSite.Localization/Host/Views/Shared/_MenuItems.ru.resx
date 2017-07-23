@@ -138,4 +138,7 @@
   <data name="Profile" xml:space="preserve">
     <value>Личный кабинет</value>
   </data>
+  <data name="Workshops" xml:space="preserve">
+    <value>Лабораторные работы</value>
+  </data>
 </root>

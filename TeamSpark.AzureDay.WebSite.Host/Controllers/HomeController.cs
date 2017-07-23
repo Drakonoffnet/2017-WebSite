@@ -79,6 +79,17 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			return View(model);
 		}
 
+		public async Task<ActionResult> Workshops()
+		{
+			var model = new WorkshopsModel();
+
+			model.Workshops = new WorkshopService()
+				.GetWorkshops()
+				.ToList();
+
+			return View(model);
+		}
+
 		public async Task<ActionResult> Partners()
 		{
 			var model = new PartnersModel();

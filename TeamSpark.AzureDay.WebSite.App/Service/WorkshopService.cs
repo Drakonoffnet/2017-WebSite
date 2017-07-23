@@ -8,6 +8,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 	{
 		private readonly LanguageService _languageService = new LanguageService();
 		private readonly SpeakerService _speakerService = new SpeakerService();
+		private readonly RoomService _roomService = new RoomService();
 
 		private readonly List<Workshop> _workshops = new List<Workshop>();
 
@@ -19,6 +20,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 1,
 					Language = _languageService.English,
+					Room = _roomService.Workshop1,
 					Speaker = _speakerService.MMartensson(),
 					Title = Localization.App.Service.Workshops.MMartensson_01.Title,
 					Description = Localization.App.Service.Workshops.MMartensson_01.Description
@@ -27,6 +29,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 2,
 					Language = _languageService.Russian,
+					Room = _roomService.Workshop2,
 					Speaker = _speakerService.DIvanov(),
 					Title = Localization.App.Service.Workshops.DIvanov_01.Title,
 					Description = Localization.App.Service.Workshops.DIvanov_01.Description
@@ -35,6 +38,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 3,
 					Language = _languageService.Russian,
+					Room = _roomService.Workshop3,
 					Speaker = _speakerService.EPolonychko(),
 					Title = Localization.App.Service.Workshops.EPolonychko_02.Title,
 					Description = Localization.App.Service.Workshops.EPolonychko_02.Description
@@ -43,6 +47,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 4,
 					Language = _languageService.Russian,
+					Room = _roomService.Workshop4,
 					Speaker = _speakerService.ILeontiev(),
 					Title = Localization.App.Service.Workshops.ILeontiev_01.Title,
 					Description = Localization.App.Service.Workshops.ILeontiev_01.Description
@@ -51,6 +56,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 5,
 					Language = _languageService.Russian,
+					Room = _roomService.Workshop5,
 					Speaker = _speakerService.ASurkov(),
 					Title = Localization.App.Service.Workshops.ASurkov_01.Title,
 					Description = Localization.App.Service.Workshops.ASurkov_01.Description
@@ -59,6 +65,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 6,
 					Language = _languageService.Russian,
+					Room = _roomService.Workshop6,
 					Speaker = _speakerService.IReznykov(),
 					Title = Localization.App.Service.Workshops.IReznykov_01.Title,
 					Description = Localization.App.Service.Workshops.IReznykov_01.Description

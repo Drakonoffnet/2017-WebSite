@@ -124,12 +124,12 @@
     <value>/Theme/img/_slides/2017/audience/001.jpg</value>
   </data>
   <data name="Date" xml:space="preserve">
-    <value>/Theme/img/_slides/2017/en/00-date-en.jpg</value>
+    <value>/Theme/img/_slides/2017/date.jpg</value>
   </data>
   <data name="Last_year" xml:space="preserve">
-    <value>/Theme/img/_slides/2017/en/01-2016.jpg</value>
+    <value>/Theme/img/_slides/2017/01-ru.jpg</value>
   </data>
   <data name="Tickets" xml:space="preserve">
-    <value>/Theme/img/_slides/2017/en/02-discounts-en.jpg</value>
+    <value>/Theme/img/_slides/2017/02-ru.jpg</value>
   </data>
 </root>

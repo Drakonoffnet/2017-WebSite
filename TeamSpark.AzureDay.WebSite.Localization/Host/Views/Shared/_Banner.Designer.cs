@@ -22,7 +22,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class _Banner {
+    public class _Banner {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared._Banner", typeof(_Banner).Assembly);
@@ -51,12 +51,57 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /Theme/img/_slides/2017/audience/013.jpg.
+        /// </summary>
+        public static string Audience01 {
+            get {
+                return ResourceManager.GetString("Audience01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /Theme/img/_slides/2017/audience/001.jpg.
+        /// </summary>
+        public static string Audience02 {
+            get {
+                return ResourceManager.GetString("Audience02", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /Theme/img/_slides/2017/en/00-date-en.jpg.
+        /// </summary>
+        public static string Date {
+            get {
+                return ResourceManager.GetString("Date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /Theme/img/_slides/2017/en/01-2016.jpg.
+        /// </summary>
+        public static string Last_year {
+            get {
+                return ResourceManager.GetString("Last_year", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /Theme/img/_slides/2017/en/02-discounts-en.jpg.
+        /// </summary>
+        public static string Tickets {
+            get {
+                return ResourceManager.GetString("Tickets", resourceCulture);
             }
         }
     }

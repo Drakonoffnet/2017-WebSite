@@ -1,4 +1,6 @@
-﻿ <!-- style="height:350px;" -->
+﻿ @using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared
+ 
+ <!-- style="height:350px;" -->
  <!--
 <section class="homeslider fullwidth flexslider" id="home-slider" style="max-height: 350px;">
 	<ul class="slides">
@@ -35,19 +37,19 @@
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner" role="listbox">
 		<div class="item active">
-			<img src="~/Theme/img/_slides/2017/date.jpg" alt="Azureday 2017 Ukraine date and location">
+			<img src="@_Banner.Date" alt="Azureday 2017 Ukraine date and location">
 		</div>
 		<div class="item">
-			<img src="~/Theme/img/_slides/2017/02-ru.jpg" alt="Azureday 2017 Ukraine">
+			<img src="@_Banner.Tickets" alt="Azureday 2017 Ukraine">
 		</div>
 		<div class="item">
-			<img src="~/Theme/img/_slides/2017/01-ru.jpg" alt="Azureday 2017 Ukraine">
+			<img src="@_Banner.Last_year" alt="Azureday 2017 Ukraine">
 		</div>
 		<div class="item">
-			<img src="~/Theme/img/_slides/2017/audience/013.jpg" alt="Azureday 2017 Ukraine">
+			<img src="@_Banner.Audience01" alt="Azureday 2017 Ukraine">
 		</div>
 		<div class="item">
-			<img src="~/Theme/img/_slides/2017/audience/001.jpg" alt="Azureday 2017 Ukraine">
+			<img src="@_Banner.Audience02" alt="Azureday 2017 Ukraine">
 		</div>
 	</div>
 

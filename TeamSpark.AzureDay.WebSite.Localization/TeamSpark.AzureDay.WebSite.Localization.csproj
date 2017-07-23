@@ -90,6 +90,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_Speakers.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="Host\Views\Shared\_Banner.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Banner.resx</DependentUpon>
+    </Compile>
     <Compile Include="Host\Views\Shared\_Footer.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -174,6 +179,10 @@
     <EmbeddedResource Include="Host\Views\Home\_Speakers.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>_Speakers.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Shared\_Banner.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>_Banner.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Shared\_Footer.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

@@ -78,6 +78,14 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Speaker = _speakerService.VThavonekham(),
 					Title = Localization.App.Service.Topics.VThavonekham_01.Title,
 					Description = Localization.App.Service.Topics.VThavonekham_01.Description
+				},
+				new Topic
+				{
+					Id = 9,
+					Language = _languageService.English,
+					Speaker = _speakerService.MSmereczynski(),
+					Title = Localization.App.Service.Topics.MSmereczynski_01.Title,
+					Description = Localization.App.Service.Topics.MSmereczynski_01.Description
 				}
 			};
 		}
@@ -95,5 +103,6 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		public Topic OChorny_01 { get { return _topics.Single(x => x.Id == 6); } }
 		public Topic SKryshtop_01 { get { return _topics.Single(x => x.Id == 7); } }
 		public Topic VThavonekham_01 { get { return _topics.Single(x => x.Id == 8); } }
+		public Topic MSmereczynski_01 { get { return _topics.Single(x => x.Id == 9); } }
 	}
 }

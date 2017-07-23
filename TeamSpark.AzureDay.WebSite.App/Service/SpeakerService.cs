@@ -29,6 +29,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			_speakers.Add(DIvanov());
 			_speakers.Add(IReznykov());
 			_speakers.Add(VThavonekham());
+			_speakers.Add(MSmereczynski());
 
 			foreach (var speaker in _speakers.Where(x => string.IsNullOrEmpty(x.PhotoUrl)))
 			{
@@ -366,6 +367,28 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				MsdnUrl = "",
 				MvpUrl = "",
 				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = ""
+			};
+		}
+
+		public Speaker MSmereczynski()
+		{
+			return new Speaker
+			{
+				Id = 15,
+				FirstName = Localization.App.Service.Speaker.MSmereczynski.FirstName,
+				LastName = Localization.App.Service.Speaker.MSmereczynski.LastName,
+				Bio = Localization.App.Service.Speaker.MSmereczynski.Bio,
+				Country = _countryService.Poland,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/MSmereczynski.jpg",
+				FacebookUrl = "",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "https://www.linkedin.com/in/smereczynski/",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "https://twitter.com/smereczynski",
 				YouTubeUrl = "",
 				WebUrl = ""
 			};

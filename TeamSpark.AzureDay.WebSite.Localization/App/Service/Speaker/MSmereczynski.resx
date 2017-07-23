@@ -117,22 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Belarus" xml:space="preserve">
-    <value>Беларусь</value>
+  <data name="Bio" xml:space="preserve">
+    <value>Cloud Solution Architect.
+Interoperability, Technology, Open Source Software, Open Standards evangelist. Microsoft Azure MVP.</value>
   </data>
-  <data name="France" xml:space="preserve">
-    <value>Франция</value>
+  <data name="FirstName" xml:space="preserve">
+    <value>Michał</value>
   </data>
-  <data name="Poland" xml:space="preserve">
-    <value>Польша</value>
-  </data>
-  <data name="Russia" xml:space="preserve">
-    <value>Россия</value>
-  </data>
-  <data name="Sweden" xml:space="preserve">
-    <value>Швеция</value>
-  </data>
-  <data name="Ukraine" xml:space="preserve">
-    <value>Украина</value>
+  <data name="LastName" xml:space="preserve">
+    <value>Smereczyński</value>
   </data>
 </root>

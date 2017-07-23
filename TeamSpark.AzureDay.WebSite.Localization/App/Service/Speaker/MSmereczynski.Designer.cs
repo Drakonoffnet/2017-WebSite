@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TeamSpark.AzureDay.WebSite.Localization.App.Service {
+namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Country {
+    public class MSmereczynski {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Country() {
+        internal MSmereczynski() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.App.Service.Country", typeof(Country).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker.MSmereczynski", typeof(MSmereczynski).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,56 +61,30 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Belarus.
+        ///   Looks up a localized string similar to Cloud Solution Architect.
+        ///Interoperability, Technology, Open Source Software, Open Standards evangelist. Microsoft Azure MVP..
         /// </summary>
-        public static string Belarus {
+        public static string Bio {
             get {
-                return ResourceManager.GetString("Belarus", resourceCulture);
+                return ResourceManager.GetString("Bio", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to France.
+        ///   Looks up a localized string similar to Michał.
         /// </summary>
-        public static string France {
+        public static string FirstName {
             get {
-                return ResourceManager.GetString("France", resourceCulture);
+                return ResourceManager.GetString("FirstName", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Poland.
+        ///   Looks up a localized string similar to Smereczyński.
         /// </summary>
-        public static string Poland {
+        public static string LastName {
             get {
-                return ResourceManager.GetString("Poland", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Russia.
-        /// </summary>
-        public static string Russia {
-            get {
-                return ResourceManager.GetString("Russia", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sweden.
-        /// </summary>
-        public static string Sweden {
-            get {
-                return ResourceManager.GetString("Sweden", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Ukraine.
-        /// </summary>
-        public static string Ukraine {
-            get {
-                return ResourceManager.GetString("Ukraine", resourceCulture);
+                return ResourceManager.GetString("LastName", resourceCulture);
             }
         }
     }

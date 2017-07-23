@@ -123,6 +123,9 @@
   <data name="France" xml:space="preserve">
     <value>France</value>
   </data>
+  <data name="Poland" xml:space="preserve">
+    <value>Poland</value>
+  </data>
   <data name="Russia" xml:space="preserve">
     <value>Russia</value>
   </data>

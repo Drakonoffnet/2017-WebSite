@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.WindowsAzure.Storage.Table;
+﻿using Microsoft.WindowsAzure.Storage.Table;
 using TeamSpark.AzureDay.WebSite.Config;
 using TeamSpark.AzureDay.WebSite.Data.Enum;
 

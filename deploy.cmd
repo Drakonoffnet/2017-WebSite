@@ -57,9 +57,9 @@ IF DEFINED CLEAN_LOCAL_DEPLOYMENT_TEMP (
   mkdir "%DEPLOYMENT_TEMP%"
 )
 
-IF DEFINED MSBUILD_PATH goto MsbuildPathDefined
+::IF DEFINED MSBUILD_PATH goto MsbuildPathDefined
 SET MSBUILD_PATH=%ProgramFiles(x86)%\MSBuild-15.3-preview\MSBuild\15.0\Bin\MSBuild.exe
-:MsbuildPathDefined
+:::MsbuildPathDefined
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: Deployment

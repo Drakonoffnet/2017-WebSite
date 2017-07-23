@@ -100,6 +100,7 @@
     <Compile Include="Entity\Speaker.cs" />
     <Compile Include="Entity\Ticket.cs" />
     <Compile Include="Entity\Timetable.cs" />
+    <Compile Include="Entity\Workshop.cs" />
     <Compile Include="Entity\Topic.cs" />
     <Compile Include="Enum\RegistrationConfirmationResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -113,6 +114,7 @@
     <Compile Include="Service\SpeakerService.cs" />
     <Compile Include="Service\TicketService.cs" />
     <Compile Include="Service\TimetableService.cs" />
+    <Compile Include="Service\WorkshopService.cs" />
     <Compile Include="Service\TopicService.cs" />
   </ItemGroup>
   <ItemGroup>

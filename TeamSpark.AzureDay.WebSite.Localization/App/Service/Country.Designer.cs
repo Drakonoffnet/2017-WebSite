@@ -79,6 +79,15 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Poland.
+        /// </summary>
+        public static string Poland {
+            get {
+                return ResourceManager.GetString("Poland", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Russia.
         /// </summary>
         public static string Russia {

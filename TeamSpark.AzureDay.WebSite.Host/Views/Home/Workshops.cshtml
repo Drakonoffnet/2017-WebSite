@@ -1,0 +1,51 @@
+﻿@using TeamSpark.AzureDay.WebSite.Config
+@using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home
+@model TeamSpark.AzureDay.WebSite.Host.Models.Home.WorkshopsModel
+@{
+	ViewBag.Title = $"AzureDay {Configuration.Year} - {Workshops.Title}";
+}
+
+<div class="boxedcontent">
+	@Html.Action("Header", "Layout")
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="titleborder center">
+					<div>
+						<h1 class="animated fadeInDownBig" style="text-transform: capitalize">@Workshops.Title AzureDay</h1>
+						<h2 class="animated fadeInDownBig">@Workshops.Date</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		@foreach (var workshop in Model.Workshops)
+		{
+			<div class="col-md-12 col-sm-12">
+				<div class="box effect6 @($"myAreaBoxBorder{workshop.Room.ColorNumber}")">
+					@if (workshop.Speaker != null)
+					{
+						<div class="mySlotAuthor">
+							@workshop.Speaker.FullName
+						</div>
+					}
+					<div style="text-align: center;">
+						<div class="mySlotTime">
+							9:00 - 17:00
+						</div>
+						<b>@workshop.Title</b><br/><br/>
+						@if (workshop.Language != null && !string.IsNullOrEmpty(workshop.Language.Title))
+						{
+							@Html.Raw($"{Schedule.Language}: {workshop.Language.Title}")
+						}
+					</div>
+				</div>
+			</div>
+		}
+
+	</div>
+
+	@Html.Action("Footer", "Layout")
+
+</div><!-- end boxedcontent -->

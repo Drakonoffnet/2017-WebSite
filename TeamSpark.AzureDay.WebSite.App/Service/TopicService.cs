@@ -17,6 +17,14 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			{
 				new Topic
 				{
+					Id = 0,
+					Language = _languageService.Russian,
+					Speaker = _speakerService.ABoyko(),
+					Title = Localization.App.Service.Topics.Keynote.Title,
+					Description = Localization.App.Service.Topics.Keynote.Description
+				},
+				new Topic
+				{
 					Id = 1,
 					Language = _languageService.English,
 					Speaker = _speakerService.MMartensson(),
@@ -78,15 +86,24 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Speaker = _speakerService.VThavonekham(),
 					Title = Localization.App.Service.Topics.VThavonekham_01.Title,
 					Description = Localization.App.Service.Topics.VThavonekham_01.Description
+				},
+				new Topic
+				{
+					Id = 9,
+					Language = _languageService.English,
+					Speaker = _speakerService.MSmereczynski(),
+					Title = Localization.App.Service.Topics.MSmereczynski_01.Title,
+					Description = Localization.App.Service.Topics.MSmereczynski_01.Description
 				}
 			};
 		}
 
-		public IEnumerable<Topic> GeTopics()
+		public IEnumerable<Topic> GetTopics()
 		{
 			return _topics;
 		}
 
+		public Topic Keynote { get { return _topics.Single(x => x.Id == 0); } }
 		public Topic MMartensson_05 { get { return _topics.Single(x => x.Id == 1); } }
 		public Topic ALaysha_01 { get { return _topics.Single(x => x.Id == 2); } }
 		public Topic ASurkov_01 { get { return _topics.Single(x => x.Id == 3); } }
@@ -95,5 +112,6 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		public Topic OChorny_01 { get { return _topics.Single(x => x.Id == 6); } }
 		public Topic SKryshtop_01 { get { return _topics.Single(x => x.Id == 7); } }
 		public Topic VThavonekham_01 { get { return _topics.Single(x => x.Id == 8); } }
+		public Topic MSmereczynski_01 { get { return _topics.Single(x => x.Id == 9); } }
 	}
 }

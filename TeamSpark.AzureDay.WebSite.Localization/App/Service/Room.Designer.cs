@@ -104,5 +104,59 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service {
                 return ResourceManager.GetString("WebDev", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1.
+        /// </summary>
+        public static string Workshop1 {
+            get {
+                return ResourceManager.GetString("Workshop1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2.
+        /// </summary>
+        public static string Workshop2 {
+            get {
+                return ResourceManager.GetString("Workshop2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3.
+        /// </summary>
+        public static string Workshop3 {
+            get {
+                return ResourceManager.GetString("Workshop3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4.
+        /// </summary>
+        public static string Workshop4 {
+            get {
+                return ResourceManager.GetString("Workshop4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5.
+        /// </summary>
+        public static string Workshop5 {
+            get {
+                return ResourceManager.GetString("Workshop5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6.
+        /// </summary>
+        public static string Workshop6 {
+            get {
+                return ResourceManager.GetString("Workshop6", resourceCulture);
+            }
+        }
     }
 }

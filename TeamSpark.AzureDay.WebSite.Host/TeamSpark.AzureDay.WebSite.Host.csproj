@@ -230,6 +230,7 @@
     <Compile Include="Helpers\CdnHelper.cs" />
     <Compile Include="Models\Home\IndexModel.cs" />
     <Compile Include="Models\Home\PartnersModel.cs" />
+    <Compile Include="Models\Home\WorkshopsModel.cs" />
     <Compile Include="Models\Home\ScheduleModel.cs" />
     <Compile Include="Models\Home\SpeakersModel.cs" />
     <Compile Include="Models\Profile\LoginModel.cs" />
@@ -526,6 +527,7 @@
     <Content Include="Views\Profile\PayForm.cshtml" />
     <Content Include="Views\Home\Partners.cshtml" />
     <Content Include="Views\Profile\RestorePassword.cshtml" />
+    <Content Include="Views\Home\Workshops.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

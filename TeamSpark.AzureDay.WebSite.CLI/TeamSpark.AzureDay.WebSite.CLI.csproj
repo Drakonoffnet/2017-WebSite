@@ -90,7 +90,6 @@
   <ItemGroup>
     <Compile Include="Data\Coupon.cs" />
     <Compile Include="Data\KaznacheyTest.cs" />
-    <Compile Include="Data\Partner.cs" />
     <Compile Include="Data\Ticket.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

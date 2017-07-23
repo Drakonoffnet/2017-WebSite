@@ -27,6 +27,14 @@ namespace TeamSpark.AzureDay.WebSite.App.Entity
 		public string GitHubUrl { get; set; }
 		public string WebUrl { get; set; }
 
+		public string CompanyName { get; set; }
+		public string JobTitle { get; set; }
+
+		public string Ocupation
+		{
+			get { return $"{JobTitle} @ {CompanyName}"; }
+		}
+
 		public List<Topic> Topics { get; set; }
 
 		public Speaker()

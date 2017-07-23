@@ -73,7 +73,7 @@
 										<b>@timetables[0].Topic.Title</b><br /><br />
 										@if (timetables[0].Topic.Language != null && !string.IsNullOrEmpty(timetables[0].Topic.Language.Title))
 										{
-										@Html.Raw($"{Schedule.Language}: {timetables[0].Topic.Language.Title}")
+											@Html.Raw($"{Schedule.Language}: {timetables[0].Topic.Language.Title}")
 										}
 										@*@timetables[0].Topic.Description*@
 									</div>

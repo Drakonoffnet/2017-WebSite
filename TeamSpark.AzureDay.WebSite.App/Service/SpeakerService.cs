@@ -55,7 +55,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				MvpUrl = "https://mvp.microsoft.com/en-us/PublicProfile/5000824",
 				TwitterUrl = "https://twitter.com/BoykoAnt",
 				YouTubeUrl = "",
-				WebUrl = ""
+				WebUrl = "",
+				CompanyName = "Ciklum",
+				JobTitle = "Solution Architect"
 			};
 		}
 
@@ -77,7 +79,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				MvpUrl = "",
 				TwitterUrl = "https://twitter.com/layshaalexander",
 				YouTubeUrl = "",
-				WebUrl = ""
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
 			};
 		}
 
@@ -90,7 +94,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				LastName = Localization.App.Service.Speaker.OChorny.LastName,
 				Bio = Localization.App.Service.Speaker.OChorny.Bio,
 				Country = _countryService.Ukraine,
-				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/OChorny2.jpg",
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",
@@ -99,7 +103,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				MvpUrl = "",
 				TwitterUrl = "",
 				YouTubeUrl = "",
-				WebUrl = ""
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
 			};
 		}
 
@@ -112,7 +118,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				LastName = Localization.App.Service.Speaker.DDurasau.LastName,
 				Bio = Localization.App.Service.Speaker.DDurasau.Bio,
 				Country = _countryService.Belarus,
-				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/DDurasau.jpg",
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",
@@ -121,7 +127,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				MvpUrl = "",
 				TwitterUrl = "",
 				YouTubeUrl = "",
-				WebUrl = ""
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
 			};
 		}
 
@@ -143,7 +151,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				MvpUrl = "",
 				TwitterUrl = "https://twitter.com/Ky7m",
 				YouTubeUrl = "",
-				WebUrl = "https://www.ifesenko.com/"
+				WebUrl = "https://www.ifesenko.com/",
+				CompanyName = "",
+				JobTitle = ""
 			};
 		}
 
@@ -165,7 +175,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				MvpUrl = "",
 				TwitterUrl = "",
 				YouTubeUrl = "",
-				WebUrl = ""
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
 			};
 }
 
@@ -187,7 +199,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				MvpUrl = "",
 				TwitterUrl = "",
 				YouTubeUrl = "",
-				WebUrl = ""
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
 			};
 		}
 
@@ -200,7 +214,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				LastName = Localization.App.Service.Speaker.SKryshtop.LastName,
 				Bio = Localization.App.Service.Speaker.SKryshtop.Bio,
 				Country = _countryService.Ukraine,
-				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/SKryshtop01.jpg",
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",
@@ -209,7 +223,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				MvpUrl = "",
 				TwitterUrl = "",
 				YouTubeUrl = "",
-				WebUrl = ""
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
 			};
 		}
 
@@ -222,7 +238,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				LastName = Localization.App.Service.Speaker.ILeontiev.LastName,
 				Bio = Localization.App.Service.Speaker.ILeontiev.Bio,
 				Country = _countryService.France,
-				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/ILeontyev01.jpg",
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",
@@ -231,7 +247,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				MvpUrl = "",
 				TwitterUrl = "",
 				YouTubeUrl = "",
-				WebUrl = ""
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
 			};
 		}
 
@@ -253,7 +271,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				MvpUrl = "",
 				TwitterUrl = "https://twitter.com/noopman",
 				YouTubeUrl = "",
-				WebUrl = ""
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
 			};
 		}
 
@@ -275,7 +295,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				MvpUrl = "",
 				TwitterUrl = "",
 				YouTubeUrl = "",
-				WebUrl = ""
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
 			};
 		}
 
@@ -297,7 +319,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				MvpUrl = "",
 				TwitterUrl = "https://twitter.com/DenisReznik",
 				YouTubeUrl = "",
-				WebUrl = ""
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
 			};
 		}
 
@@ -319,7 +343,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				MvpUrl = "",
 				TwitterUrl = "",
 				YouTubeUrl = "",
-				WebUrl = "https://ireznykov.com"
+				WebUrl = "https://ireznykov.com",
+				CompanyName = "",
+				JobTitle = ""
 			};
 		}
 
@@ -341,7 +367,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				MvpUrl = "https://mvp.microsoft.com/ru-ru/PublicProfile/5002197",
 				TwitterUrl = "https://twitter.com/AOSurkov",
 				YouTubeUrl = "",
-				WebUrl = ""
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
 			};
 		}
 
@@ -363,7 +391,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				MvpUrl = "",
 				TwitterUrl = "",
 				YouTubeUrl = "",
-				WebUrl = ""
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
 			};
 		}
 
@@ -385,7 +415,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				MvpUrl = "",
 				TwitterUrl = "https://twitter.com/smereczynski",
 				YouTubeUrl = "",
-				WebUrl = ""
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
 			};
 		}
 	}

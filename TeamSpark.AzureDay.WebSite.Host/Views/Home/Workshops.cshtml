@@ -44,7 +44,7 @@
 								<b>@workshop.Title</b><br /><br />
 								@if (workshop.Language != null && !string.IsNullOrEmpty(workshop.Language.Title))
 								{
-								@Html.Raw($"{Schedule.Language}: {workshop.Language.Title}")
+									@Html.Raw($"{Schedule.Language}: {workshop.Language.Title}")
 								}
 							</div>
 

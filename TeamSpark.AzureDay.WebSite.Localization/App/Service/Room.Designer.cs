@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AI &amp; ML.
+        ///   Looks up a localized string similar to Red room.
         /// </summary>
         public static string AInML {
             get {
@@ -70,7 +70,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DevOps.
+        ///   Looks up a localized string similar to Green room.
         /// </summary>
         public static string DevOps {
             get {
@@ -79,7 +79,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Internet of Things.
+        ///   Looks up a localized string similar to Blue room.
         /// </summary>
         public static string IoT {
             get {
@@ -88,7 +88,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IT Pro.
+        ///   Looks up a localized string similar to Violet room.
         /// </summary>
         public static string ITPro {
             get {
@@ -97,7 +97,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Web development.
+        ///   Looks up a localized string similar to Orange room.
         /// </summary>
         public static string WebDev {
             get {

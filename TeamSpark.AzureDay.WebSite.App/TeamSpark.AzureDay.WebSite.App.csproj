@@ -113,6 +113,7 @@
     <Compile Include="Service\SpeakerService.cs" />
     <Compile Include="Service\TicketService.cs" />
     <Compile Include="Service\TimetableService.cs" />
+    <Compile Include="Service\TopicService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

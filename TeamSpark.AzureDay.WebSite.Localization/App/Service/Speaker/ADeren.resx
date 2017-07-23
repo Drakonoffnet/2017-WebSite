@@ -117,40 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AInML" xml:space="preserve">
-    <value>Красный зал</value>
+  <data name="Bio" xml:space="preserve">
+    <value>Participated in development, management and launch of dozens software products and enterprise-level solutions since 2009 as Software Architect, Technical Lead, CTO and CEO.
+Co-founder and CEO at Dreams Innovative Technologies LLC company since 2012. Company specialized in complex solutions development for Enterprise market using BigData, Data Science, AI/ML, Cloud and other modern progressive technologies. Co-founder and CEO at Onlizer LLC since 2015. Onlizer team develops cloud-based platform for business processes automation. Active speaker and member of Ukrainian Azure Community. Speaker and co-organizer at many events – iForum, Software Engineering Conference , Ternopil JS, Vinnytsia JS.</value>
   </data>
-  <data name="DevOps" xml:space="preserve">
-    <value>Зеленый зал</value>
+  <data name="FirstName" xml:space="preserve">
+    <value>Andrey</value>
   </data>
-  <data name="IoT" xml:space="preserve">
-    <value>Синий зал</value>
-  </data>
-  <data name="ITPro" xml:space="preserve">
-    <value>Фиолетовый зал</value>
-  </data>
-  <data name="WebDev" xml:space="preserve">
-    <value>Оранжевый зал</value>
-  </data>
-  <data name="Workshop1" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Workshop2" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Workshop3" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Workshop4" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="Workshop5" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="Workshop6" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="Workshop7" xml:space="preserve">
-    <value>7</value>
+  <data name="LastName" xml:space="preserve">
+    <value>Deren</value>
   </data>
 </root>

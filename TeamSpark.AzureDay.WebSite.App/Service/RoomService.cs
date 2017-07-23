@@ -21,6 +21,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			new Room {Id = 104, ColorNumber = 4, RoomType = RoomType.WorkshopRoom, Title = Localization.App.Service.Room.Workshop4 },
 			new Room {Id = 105, ColorNumber = 5, RoomType = RoomType.WorkshopRoom, Title = Localization.App.Service.Room.Workshop5 },
 			new Room {Id = 106, ColorNumber = 6, RoomType = RoomType.WorkshopRoom, Title = Localization.App.Service.Room.Workshop6 },
+			new Room {Id = 107, ColorNumber = 7, RoomType = RoomType.WorkshopRoom, Title = Localization.App.Service.Room.Workshop7 },
 
 			new Room {Id = 999, ColorNumber = 0, RoomType = RoomType.CoffeeRoom }
 		};
@@ -44,5 +45,6 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		public Room Workshop4 { get { return _rooms.Single(x => x.Id == 104); } }
 		public Room Workshop5 { get { return _rooms.Single(x => x.Id == 105); } }
 		public Room Workshop6 { get { return _rooms.Single(x => x.Id == 106); } }
+		public Room Workshop7 { get { return _rooms.Single(x => x.Id == 107); } }
 	}
 }

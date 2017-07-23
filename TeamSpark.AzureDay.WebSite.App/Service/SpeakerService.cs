@@ -30,6 +30,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			_speakers.Add(IReznykov());
 			_speakers.Add(VThavonekham());
 			_speakers.Add(MSmereczynski());
+
+			_speakers.Add(ADeren());
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
@@ -80,8 +82,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				TwitterUrl = "https://twitter.com/layshaalexander",
 				YouTubeUrl = "",
 				WebUrl = "",
-				CompanyName = "",
-				JobTitle = ""
+				CompanyName = "EPAM",
+				JobTitle = "Solution Architect"
 			};
 		}
 
@@ -104,7 +106,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				TwitterUrl = "",
 				YouTubeUrl = "",
 				WebUrl = "",
-				CompanyName = "",
+				CompanyName = "Ciklum",
 				JobTitle = ""
 			};
 		}
@@ -128,8 +130,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				TwitterUrl = "",
 				YouTubeUrl = "",
 				WebUrl = "",
-				CompanyName = "",
-				JobTitle = ""
+				CompanyName = "EPAM Systems",
+				JobTitle = "Solution Architect"
 			};
 		}
 
@@ -152,8 +154,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				TwitterUrl = "https://twitter.com/Ky7m",
 				YouTubeUrl = "",
 				WebUrl = "https://www.ifesenko.com/",
-				CompanyName = "",
-				JobTitle = ""
+				CompanyName = "SoftServe Inc.",
+				JobTitle = "Application Architect"
 			};
 		}
 
@@ -176,8 +178,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				TwitterUrl = "",
 				YouTubeUrl = "",
 				WebUrl = "",
-				CompanyName = "",
-				JobTitle = ""
+				CompanyName = "Developex",
+				JobTitle = "developer"
 			};
 }
 
@@ -200,8 +202,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				TwitterUrl = "",
 				YouTubeUrl = "",
 				WebUrl = "",
-				CompanyName = "",
-				JobTitle = ""
+				CompanyName = "Korzh.com",
+				JobTitle = "CEO"
 			};
 		}
 
@@ -224,8 +226,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				TwitterUrl = "",
 				YouTubeUrl = "",
 				WebUrl = "",
-				CompanyName = "",
-				JobTitle = ""
+				CompanyName = "EPAM",
+				JobTitle = "Software Engineering Manager"
 			};
 		}
 
@@ -248,8 +250,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				TwitterUrl = "",
 				YouTubeUrl = "",
 				WebUrl = "",
-				CompanyName = "",
-				JobTitle = ""
+				CompanyName = "Viseo",
+				JobTitle = "Azure Architect"
 			};
 		}
 
@@ -272,8 +274,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				TwitterUrl = "https://twitter.com/noopman",
 				YouTubeUrl = "",
 				WebUrl = "",
-				CompanyName = "",
-				JobTitle = ""
+				CompanyName = "Loftysoft",
+				JobTitle = "CEO"
 			};
 		}
 
@@ -297,7 +299,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				YouTubeUrl = "",
 				WebUrl = "",
 				CompanyName = "",
-				JobTitle = ""
+				JobTitle = "BI architect"
 			};
 		}
 
@@ -320,8 +322,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				TwitterUrl = "https://twitter.com/DenisReznik",
 				YouTubeUrl = "",
 				WebUrl = "",
-				CompanyName = "",
-				JobTitle = ""
+				CompanyName = "Intapp, Inc.",
+				JobTitle = "Data Architect"
 			};
 		}
 
@@ -345,7 +347,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				YouTubeUrl = "",
 				WebUrl = "https://ireznykov.com",
 				CompanyName = "",
-				JobTitle = ""
+				JobTitle = "Private employee"
 			};
 		}
 
@@ -367,9 +369,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				MvpUrl = "https://mvp.microsoft.com/ru-ru/PublicProfile/5002197",
 				TwitterUrl = "https://twitter.com/AOSurkov",
 				YouTubeUrl = "",
-				WebUrl = "",
-				CompanyName = "",
-				JobTitle = ""
+				WebUrl = "https://www.meetup.com/IoTCommunity/",
+				CompanyName = "Inprosystem Ltd",
+				JobTitle = "CTO"
 			};
 		}
 
@@ -392,7 +394,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				TwitterUrl = "",
 				YouTubeUrl = "",
 				WebUrl = "",
-				CompanyName = "",
+				CompanyName = "VISEO",
 				JobTitle = ""
 			};
 		}
@@ -401,7 +403,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = 15,
+				Id = 16,
 				FirstName = Localization.App.Service.Speaker.MSmereczynski.FirstName,
 				LastName = Localization.App.Service.Speaker.MSmereczynski.LastName,
 				Bio = Localization.App.Service.Speaker.MSmereczynski.Bio,
@@ -416,8 +418,32 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				TwitterUrl = "https://twitter.com/smereczynski",
 				YouTubeUrl = "",
 				WebUrl = "",
-				CompanyName = "",
-				JobTitle = ""
+				CompanyName = "Free Media",
+				JobTitle = "CEO, CTO, CFO, CMO, COO, C3PO"
+			};
+		}
+
+		public Speaker ADeren()
+		{
+			return new Speaker
+			{
+				Id = 17,
+				FirstName = Localization.App.Service.Speaker.ADeren.FirstName,
+				LastName = Localization.App.Service.Speaker.ADeren.LastName,
+				Bio = Localization.App.Service.Speaker.ADeren.Bio,
+				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/ADeren.jpg",
+				FacebookUrl = "https://www.facebook.com/dalligieri",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "https://linkedin.com/in/andriy-deren-9a872029",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "https://twitter.com/dralligieri",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "Onlizer LLC",
+				JobTitle = "CEO"
 			};
 		}
 	}

@@ -65,6 +65,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Speaker\ADeren.ru.Designer.cs">
+      <DependentUpon>ADeren.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\ADeren.Designer.cs">
+      <DependentUpon>ADeren.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Speaker\MSmereczynski.Designer.cs">
       <DependentUpon>MSmereczynski.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -265,6 +275,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>OChorny_01.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Workshops\ADeren_01.Designer.cs">
+      <DependentUpon>ADeren_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Workshops\ASurkov_01.Designer.cs">
       <DependentUpon>ASurkov_01.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -414,6 +429,14 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Room.ru.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ADeren.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ADeren.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ADeren.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ADeren.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\MSmereczynski.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -574,6 +597,10 @@
     <EmbeddedResource Include="App\Service\Topics\OChorny_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>OChorny_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Workshops\ADeren_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ADeren_01.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Workshops\ASurkov_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

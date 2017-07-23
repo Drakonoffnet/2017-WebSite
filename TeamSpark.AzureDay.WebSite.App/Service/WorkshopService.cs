@@ -70,7 +70,16 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Title = Localization.App.Service.Workshops.IReznykov_01.Title,
 					Description = Localization.App.Service.Workshops.IReznykov_01.Description
 				}
-
+				,
+				new Workshop
+				{
+					Id = 7,
+					Language = _languageService.Russian,
+					Room = _roomService.Workshop7,
+					Speaker = _speakerService.ADeren(),
+					Title = Localization.App.Service.Workshops.ADeren_01.Title,
+					Description = Localization.App.Service.Workshops.ADeren_01.Description
+				}
 			};
 		}
 
@@ -85,6 +94,6 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		public Workshop ILeontiev_01 { get { return _workshops.Single(x => x.Id == 4); } }
 		public Workshop ASurkov_01 { get { return _workshops.Single(x => x.Id == 5); } }
 		public Workshop IReznykov_01 { get { return _workshops.Single(x => x.Id == 6); } }
-
+		public Workshop ADeren_01 { get { return _workshops.Single(x => x.Id == 7); } }
 	}
 }

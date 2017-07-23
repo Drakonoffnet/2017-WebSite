@@ -17,8 +17,6 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 	{
 		public async Task<ActionResult> Index()
 		{
-			var partnersTask = AppFactory.PartnerService.Value.GetPartnersAsync();
-
 			var model = new IndexModel
 			{
 				Speakers = new SpeakersModel
@@ -30,10 +28,6 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 					PartnersCollection = new Dictionary<PartnerType, List<Partner>>()
 				}
 			};
-
-			await Task.WhenAll(
-				partnersTask
-			);
 
 			var speakers = new SpeakerService().GetSpeakers();
 			var i = 0;
@@ -62,7 +56,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 				}
 			}
 
-			var partners = partnersTask.Result;
+			var partners = new PartnerService().GetPartners();
 			model.Partners.PartnersCollection = partners
 				.GroupBy(p => p.PartnerType)
 				.ToDictionary(p => p.Key, group => group.OrderBy(p => p.OrderN).ToList());
@@ -89,7 +83,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 		{
 			var model = new PartnersModel();
 
-			model.PartnersCollection = (await AppFactory.PartnerService.Value.GetPartnersAsync())
+			model.PartnersCollection = new PartnerService().GetPartners()
 				.GroupBy(p => p.PartnerType)
 				.ToDictionary(p => p.Key, group => group.OrderBy(p => p.OrderN).ToList());
 

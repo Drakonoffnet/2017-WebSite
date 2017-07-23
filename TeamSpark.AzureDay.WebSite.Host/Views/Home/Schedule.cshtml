@@ -16,6 +16,7 @@
 				<div class="titleborder center">
 					<div>
 						<h1 class="animated fadeInDownBig" style="text-transform: capitalize">@Schedule.Title AzureDay</h1>
+						<h2 class="animated fadeInDownBig">@Schedule.Date</h2>
 					</div>
 				</div>
 			</div>
@@ -24,7 +25,7 @@
 		<div class="row">
 			@for (var i = 0; i < Model.Rooms.Count; i++)
 			{
-				<div class="col-md-2 col-sm-2">
+				<div class="col-md-2 col-sm-2 col-schedule">
 					<div class="box effect2 @($"myAreaContainer{Model.Rooms[i].ColorNumber}")">
 						@Model.Rooms[i].Title
 					</div>

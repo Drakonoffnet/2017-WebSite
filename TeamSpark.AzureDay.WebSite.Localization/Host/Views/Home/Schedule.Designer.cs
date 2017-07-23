@@ -61,6 +61,15 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 9th of September.
+        /// </summary>
+        public static string Date {
+            get {
+                return ResourceManager.GetString("Date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to language.
         /// </summary>
         public static string Language {

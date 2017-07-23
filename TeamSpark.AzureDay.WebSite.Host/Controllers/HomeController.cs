@@ -68,7 +68,10 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 		{
 			var model = new ScheduleModel();
 
-			model.Rooms = new RoomService().GetRooms().ToList();
+			model.Rooms = new RoomService()
+				.GetRooms()
+				.Where(x => x.RoomType == RoomType.LectureRoom)
+				.ToList();
 
 			model.Timetables = new TimetableService().GetTimetable()
 				.GroupBy(

@@ -65,11 +65,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.ru.resx</DependentUpon>
     </Compile>
-    <Compile Include="App\Service\Speaker\MSmereczynski.ru.Designer.cs">
-      <DependentUpon>MSmereczynski.ru.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="App\Service\Speaker\MSmereczynski.Designer.cs">
       <DependentUpon>MSmereczynski.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -77,11 +72,6 @@
     </Compile>
     <Compile Include="App\Service\Speaker\SKryshtop.ru.Designer.cs">
       <DependentUpon>SKryshtop.ru.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="App\Service\Speaker\VThavonekham.ru.Designer.cs">
-      <DependentUpon>VThavonekham.ru.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -132,11 +122,6 @@
     </Compile>
     <Compile Include="App\Service\Speaker\ILeontiev.ru.Designer.cs">
       <DependentUpon>ILeontiev.ru.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="App\Service\Speaker\MMartensson.ru.Designer.cs">
-      <DependentUpon>MMartensson.ru.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -430,10 +415,6 @@
       <LastGenOutput>Room.ru.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Service\Speaker\MSmereczynski.ru.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>MSmereczynski.ru.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\MSmereczynski.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>MSmereczynski.Designer.cs</LastGenOutput>
@@ -441,10 +422,6 @@
     <EmbeddedResource Include="App\Service\Speaker\SKryshtop.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SKryshtop.ru.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Service\Speaker\VThavonekham.ru.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>VThavonekham.ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\VThavonekham.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -485,10 +462,6 @@
     <EmbeddedResource Include="App\Service\Speaker\ILeontiev.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ILeontiev.ru.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Service\Speaker\MMartensson.ru.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>MMartensson.ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\MMartensson.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

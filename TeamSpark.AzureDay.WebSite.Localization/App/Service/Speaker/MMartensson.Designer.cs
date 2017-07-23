@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Magnus is Founder/CEO of Loftysoft a Microsoft Regional Director and a Microsoft Azure Most Valuable Professional. He is a consultant, tutor, process coach, technical lead and an international speaker. Some of his passions include connecting with audiences and organizing online and global conferences such as CloudBurst and GlobalAzure Bootcamp. As the first Azure MVP in the Nordic countries in 2012 he was awarded MVP of the year. He is also an Azure Insider, an Azure Advisor and an ASP.NET Insider and is a  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Magnus is Founder/CEO of Loftysoft, a Microsoft Regional Director and a Microsoft Azure Most Valuable Professional. He is a consultant, tutor, process coach, technical lead and an international speaker. Some of his passions include organizing online and global conferences such as CloudBurst and GlobalAzure Bootcamp. He is also an Azure Insider, an Azure Advisor and an ASP.NET Insider and is a go-to person for Microsoft regarding Enterprise Cloud Consulting, he has been a consultant for over 1½ decade and ha [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Bio {
             get {

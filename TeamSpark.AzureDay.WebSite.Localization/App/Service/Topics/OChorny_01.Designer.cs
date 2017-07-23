@@ -61,7 +61,14 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Let&apos;s discuss Site Reliability Engineering principles and practices applied to Software as Service application hosted in Azure. Such topics will be covered:
+        ///- Infrastructure as Code
+        ///- Release Engineering
+        ///- Monitoring
+        ///- Chaos Engineering
+        ///- Disaster Recovery Plan
+        ///
+        ///Also, we&apos;ll discuss real production incidents and analyze real postmortems which will be useful for anyone who wants to leverage Azure in Prod..
         /// </summary>
         public static string Description {
             get {
@@ -70,7 +77,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Containers in Azure: from infrastructure to deployment.
+        ///   Looks up a localized string similar to Site Reliability Engineering in Azure.
         /// </summary>
         public static string Title {
             get {

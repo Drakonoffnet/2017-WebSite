@@ -118,16 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Description" xml:space="preserve">
-    <value>Let's discuss Site Reliability Engineering principles and practices applied to Software as Service application hosted in Azure. Such topics will be covered:
-- Infrastructure as Code
-- Release Engineering
-- Monitoring
-- Chaos Engineering
-- Disaster Recovery Plan
-
-Also, we'll discuss real production incidents and analyze real postmortems which will be useful for anyone who wants to leverage Azure in Prod.</value>
+    <value />
   </data>
   <data name="Title" xml:space="preserve">
-    <value>Site Reliability Engineering in Azure</value>
+    <value>Containers in Azure: from infrastructure to deployment</value>
   </data>
 </root>

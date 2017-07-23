@@ -30,11 +30,6 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			_speakers.Add(IReznykov());
 			_speakers.Add(VThavonekham());
 			_speakers.Add(MSmereczynski());
-
-			foreach (var speaker in _speakers.Where(x => string.IsNullOrEmpty(x.PhotoUrl)))
-			{
-				speaker.PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png";
-			}
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
@@ -95,7 +90,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				LastName = Localization.App.Service.Speaker.OChorny.LastName,
 				Bio = Localization.App.Service.Speaker.OChorny.Bio,
 				Country = _countryService.Ukraine,
-				PhotoUrl = "",
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",
@@ -117,7 +112,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				LastName = Localization.App.Service.Speaker.DDurasau.LastName,
 				Bio = Localization.App.Service.Speaker.DDurasau.Bio,
 				Country = _countryService.Belarus,
-				PhotoUrl = "",
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",
@@ -205,7 +200,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				LastName = Localization.App.Service.Speaker.SKryshtop.LastName,
 				Bio = Localization.App.Service.Speaker.SKryshtop.Bio,
 				Country = _countryService.Ukraine,
-				PhotoUrl = "",
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",
@@ -227,7 +222,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				LastName = Localization.App.Service.Speaker.ILeontiev.LastName,
 				Bio = Localization.App.Service.Speaker.ILeontiev.Bio,
 				Country = _countryService.France,
-				PhotoUrl = "",
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",
@@ -359,7 +354,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				LastName = Localization.App.Service.Speaker.VThavonekham.LastName,
 				Bio = Localization.App.Service.Speaker.VThavonekham.Bio,
 				Country = _countryService.France,
-				PhotoUrl = "",
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",

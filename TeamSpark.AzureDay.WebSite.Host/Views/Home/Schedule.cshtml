@@ -12,7 +12,7 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="titleborder center">
 					<div>
 						<h1 class="animated fadeInDownBig" style="text-transform: capitalize">@Schedule.Title AzureDay</h1>
@@ -62,18 +62,25 @@
 								</div>
 								@if (timetables[0].Topic.Speaker != null)
 								{
-									<div class="mySlotAuthor">
+								<div class="row">
+									<div class="col-sm-2 col-md-2">
+										<img class="img-responsible" style="margin-bottom: 10px;" src="@timetables[0].Topic.Speaker.PhotoUrl" alt="@timetables[0].Topic.Speaker.FullName" />
+									</div>
+									<div class="mySlotAuthor col-sm-10 col-md-10" style="text-align: left; padding-left: 0;">
 										@timetables[0].Topic.Speaker.FullName
 									</div>
-								}
-								<div style="text-align: center;">
-									<b>@timetables[0].Topic.Title</b><br /><br />
-									@if (timetables[0].Topic.Language != null && !string.IsNullOrEmpty(timetables[0].Topic.Language.Title))
-									{
+									<div style="text-align: left;">
+										<b>@timetables[0].Topic.Title</b><br /><br />
+										@if (timetables[0].Topic.Language != null && !string.IsNullOrEmpty(timetables[0].Topic.Language.Title))
+										{
 										@Html.Raw($"{Schedule.Language}: {timetables[0].Topic.Language.Title}")
-									}
-									@*@timetables[0].Topic.Description*@
+										}
+										@*@timetables[0].Topic.Description*@
+									</div>
 								</div>
+								
+								}
+								
 							</div>
 						</div>
 					}
@@ -90,6 +97,10 @@
 								</div>
 								@if (timetables[i].Topic.Speaker != null)
 								{
+									<div>
+										<img class="img-responsible" style="margin-bottom: 10px;" src="@timetables[i].Topic.Speaker.PhotoUrl" alt="@timetables[i].Topic.Speaker.FullName" />
+									</div>
+
 									<div class="mySlotAuthor">
 										@timetables[i].Topic.Speaker.FullName
 									</div>

@@ -17,6 +17,14 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			{
 				new Topic
 				{
+					Id = 0,
+					Language = _languageService.Russian,
+					Speaker = _speakerService.ABoyko(),
+					Title = Localization.App.Service.Topics.Keynote.Title,
+					Description = Localization.App.Service.Topics.Keynote.Description
+				},
+				new Topic
+				{
 					Id = 1,
 					Language = _languageService.English,
 					Speaker = _speakerService.MMartensson(),
@@ -95,6 +103,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			return _topics;
 		}
 
+		public Topic Keynote { get { return _topics.Single(x => x.Id == 0); } }
 		public Topic MMartensson_05 { get { return _topics.Single(x => x.Id == 1); } }
 		public Topic ALaysha_01 { get { return _topics.Single(x => x.Id == 2); } }
 		public Topic ASurkov_01 { get { return _topics.Single(x => x.Id == 3); } }

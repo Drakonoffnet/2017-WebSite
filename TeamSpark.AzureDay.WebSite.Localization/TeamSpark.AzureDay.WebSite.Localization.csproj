@@ -360,6 +360,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_Banner.resx</DependentUpon>
     </Compile>
+    <Compile Include="Host\Views\Shared\_Banner.ru.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Banner.ru.resx</DependentUpon>
+    </Compile>
     <Compile Include="Host\Views\Shared\_Footer.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -658,8 +663,12 @@
       <LastGenOutput>_Speakers.ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Shared\_Banner.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>_Banner.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Shared\_Banner.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>_Banner.ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Shared\_Footer.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

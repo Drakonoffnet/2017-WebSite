@@ -2396,6 +2396,31 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .maintitle {
 	line-height: 1.2;
 }
 
+.myAreaBoxBorder6 {
+	border-left: 5px #cf9 solid;
+	line-height: 1.2;
+}
+
+.myAreaBoxBorder7 {
+	border-left: 5px #636 solid;
+	line-height: 1.2;
+}
+
+.myAreaBoxBorder8 {
+	border-left: 5px #ff6 solid;
+	line-height: 1.2;
+}
+
+.myAreaBoxBorder9 {
+	border-left: 5px #063 solid;
+	line-height: 1.2;
+}
+
+.myAreaBoxBorder10 {
+	border-left: 5px #900 solid;
+	line-height: 1.2;
+}
+
 .mySlotTime {
 	text-align: center;
 	font-weight: bold;

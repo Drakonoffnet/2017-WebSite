@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I am Microsoft Most Valuable Professional and Application Architect at SoftServe Inc. I am passionate about designing and developing scalable, flexible, cloud ready software solutions, utilizing state of art security practices. I am proficient in C#, JavaScript &amp; Azure and has managed and assessed multiple projects focusing on high performance and large data solutions. My current focus is on building and improvement of scalable and secure web applications, cloud-enabled applications and operations, and iden [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to I am Microsoft Most Valuable Professional and Application Architect at SoftServe Inc. I am passionate about designing and developing scalable, flexible, cloud-ready software solutions, utilizing state of art security practices. I am proficient in C#, JavaScript &amp; Azure and has managed and assessed multiple projects focusing on high performance and large data solutions. My current focus is on building and improvement of scalable and secure web applications, cloud-enabled applications and operations, and iden [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Bio {
             get {

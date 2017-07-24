@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bio" xml:space="preserve">
-    <value>Denis is a Data Architect at Intapp, Inc. He has more than ten years experience in software development, database design and performance tuning for cloud and on-premises solutions. In 2010 Denis became Microsoft Data Platform MVP and maintain the MVP status till now. Apart from his professional career, Denis actively participates in the development of Ukrainian SQL Community and hold the status of PASS Regional Mentor for Central and Eastern Europe.</value>
+    <value>Denis is a Data Architect at Intapp, Inc. He has more than ten years experience in software development, database design and performance tuning for cloud and on-premises solutions. In 2010 Denis became Microsoft Data Platform MVP and maintains the MVP status till now. Apart from his professional career, Denis actively participates in the development of Ukrainian SQL Community and holds the status of PASS Regional Mentor for Central and Eastern Europe.</value>
   </data>
   <data name="FirstName" xml:space="preserve">
     <value>Denis</value>

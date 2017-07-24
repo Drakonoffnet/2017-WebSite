@@ -62,7 +62,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
         
         /// <summary>
         ///   Looks up a localized string similar to Participated in development, management and launch of dozens software products and enterprise-level solutions since 2009 as Software Architect, Technical Lead, CTO and CEO.
-        ///Co-founder and CEO at Dreams Innovative Technologies LLC company since 2012. Company specialized in complex solutions development for Enterprise market using BigData, Data Science, AI/ML, Cloud and other modern progressive technologies. Co-founder and CEO at Onlizer LLC since 2015. Onlizer team develops cloud-based platform for business [rest of string was truncated]&quot;;.
+        ///Co-founder and CEO at Dreams Innovative Technologies LLC company since 2012. Company specializes in development of complex solutions for enterprise market using BigData, Data Science, AI/ML, Cloud and other modern progressive technologies. Co-founder and CEO at Onlizer LLC since 2015. Onlizer team develops cloud-based platform for busin [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Bio {
             get {

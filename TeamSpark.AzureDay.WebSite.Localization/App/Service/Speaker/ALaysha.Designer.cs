@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Solution Architect from EPAM Systems &amp; Microsoft Azure MVP, focused on cloud solutions and distributed systems. Has more then 5 years of hands-on experience in Microsoft Azure based on production projects from variety of business domains. Leader of Belarus Azure Community and speaker on local and external meetups and conferences..
+        ///   Looks up a localized string similar to Solution Architect from EPAM Systems &amp; Microsoft Azure MVP, focused on cloud solutions and distributed systems. Has more then 5 years of hands-on experience in Microsoft Azure based on production projects from variety of business domains. Leader of Belarus Azure Community and speaker at local and external meetups and conferences..
         /// </summary>
         public static string Bio {
             get {

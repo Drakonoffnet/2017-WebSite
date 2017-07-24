@@ -61,7 +61,9 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to The promise of “the cloud” is that you can get as much as you want, when you want it, and only pay for what you use. But is that the reality?
+        ///The reality is an inconsiderate usage that leads to exorbitant costs is more common than you think. That is why in this session you will see techniques and even some hacks that bring the promise of the cloud to reality. 
+        ///This presentation is a practical look at real world Azure stories that will answer many of the questions people have about moving to the cloud and  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Description {
             get {

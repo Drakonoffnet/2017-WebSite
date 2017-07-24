@@ -230,6 +230,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ABoyko.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Topics\ABoyko_02.Designer.cs">
+      <DependentUpon>ABoyko_02.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Topics\IFesenko_01.Designer.cs">
       <DependentUpon>IFesenko_01.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -591,6 +596,10 @@
     <EmbeddedResource Include="App\Service\Speaker\ABoyko.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ABoyko.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\ABoyko_02.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ABoyko_02.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\IFesenko_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

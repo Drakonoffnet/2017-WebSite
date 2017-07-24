@@ -65,82 +65,128 @@
 				<div id="divTicket" class="col-md-6">
 					<h2>@My.MyTicket</h2>
 
-					@if (Model.PayedConferenceTicket == null)
-					{
-						<div>
-							<form id="formPay" method="POST" action="/profile/pay">
+					<div>
+						<form id="formPay" method="POST" action="/profile/pay">
+							@if (Model.PayedConferenceTicket == null)
+							{
 								<div class="input-group myInputGroupdivider">
-									<span class="input-group-addon" style="width: 150px;">@My.ConfTicketType</span>
-									<select class="form-control" name="ticketType" data-bind="options: tickets, optionsValue: 'id', optionsText: 'title', value: selectedTicket" style="width: 250px;"></select>
+									<span class="input-group-addon" style="width: 150px;">Билет на конференцию</span>
+									<input type="checkbox" class="form-control" name="cbConferenceTicket" data-bind="checked: isConferenceTicket"/>
 								</div>
-								<div class="input-group myInputGroupdivider">
-									<span class="input-group-addon" style="width: 150px;">@My.ConfTicketCode</span>
-									<input class="form-control" name="promoCode" placeholder="@My.ConfTicketCode" data-bind="textInput: promoCode" style="width: 250px;" />
-								</div>
-								<div class="input-group myInputGroupdivider">
-									<span class="input-group-addon" style="width: 150px;">@My.ConfTicketPrice</span>
-									<input class="form-control" readonly="readonly" disabled="disabled" data-bind="value: currentPrice" style="width: 250px;"/>
-								</div>
-								<input id="paymentType" name="paymentType" type="hidden"/>
-								<a href="#" id="btnPayKaznackey" class="btn btn-primary">@My.PayByCard</a>
-								<a href="#" id="btnPayLiqPay" class="btn btn-primary">@My.PayViaLiqPay</a>
-								@foreach (var ticket in Model.Tickets.Where(t => !string.IsNullOrEmpty(t.TicketNotes)))
+							}
+							else
+							{
+								if (Model.PayedConferenceTicket.IsPayed)
 								{
-									<div style="width: 400px; margin-top: 15px; display: none;" data-bind="visible: '@ticket.TicketType' == selectedTicket()" class="alert alert-warning">@ticket.TicketNotes</div>
-								}
-							</form>
-						</div>
-					}
-					else
-					{
-						if (Model.PayedConferenceTicket.IsPayed)
-						{
-							<div>
-								<div class="wow-pricing-table col-md-12">
-									<div class="wow-pricing featured wow-column-">
-										<div class="wow-pricing-header" style="padding-bottom: 0px;">
-											<h5>AzureDay @Configuration.Year</h5>
-											<div class="wow-pricing-cost">
-												<img id="imgGravatar" style="display: none; padding-bottom: 10px;"/>
-												<p style="font-weight: bold;">@($"{Model.FirstName} {Model.LastName}")</p>
-												<p>@Model.Company</p>
-												<p>&nbsp;</p>
+									<div>
+										<div class="wow-pricing-table col-md-12">
+											<div class="wow-pricing featured wow-column-">
+												<div class="wow-pricing-header" style="padding-bottom: 0px;">
+													<h5>AzureDay @Configuration.Year</h5>
+													<div class="wow-pricing-cost">
+														<img id="imgGravatar" style="display: none; padding-bottom: 10px;"/>
+														<p style="font-weight: bold;">@($"{Model.FirstName} {Model.LastName}")</p>
+														<p>@Model.Company</p>
+														<p>&nbsp;</p>
+													</div>
+												</div>
+												<div class="wow-pricing-content">
+													<ul>
+														<li>
+															@My.Attendee (@Model.PayedConferenceTicket.TicketType.ToDisplayString())
+														</li>
+													</ul>
+												</div>
 											</div>
 										</div>
-										<div class="wow-pricing-content">
-											<ul>
-												<li>
-													@My.Attendee (@Model.PayedConferenceTicket.TicketType.ToDisplayString())
-												</li>
-											</ul>
+									</div>
+									<div>
+										<p>@My.HowToUseTicket</p>
+									</div>
+								}
+								else
+								{
+									<div>
+										<p>@My.ThankYouWait</p>
+										<p>@My.PayNow <a href="/Profile/PayAgain">@My.ByLink</a>.</p>
+										<p>@My.DropPayment01 <a href="/Profile/DeleteTicket">@My.ByLink</a>@My.DropPayment01a</p>
+										<p>@My.Questions01 <a href="mailto:pay@azureday.net">pay@azureday.net</a> @My.Questions01a</p>
+									</div>
+								}
+							}
+
+							@if (Model.PayedWorkshopTicket == null)
+							{
+								<div class="input-group myInputGroupdivider">
+									<span class="input-group-addon" style="width: 150px;">Билет на лабораторные работы</span>
+									<input type="checkbox" class="form-control" name="cbWorkshopTicket" data-bind="checked: isWorkshopTicket" />
+								</div>
+								<div class="input-group myInputGroupdivider" data-bind="visible: isWorkshopTicket">
+									<span class="input-group-addon" style="width: 150px;">Лабораторная работа</span>
+									<select class="form-control" name="ddlWorkshop" data-bind="options: workshops, optionsValue: 'id', optionsText: 'title', value: selectedWorkshop" style="width: 250px;"></select>
+								</div>
+							}
+							else
+							{
+								if (Model.PayedWorkshopTicket.IsPayed)
+								{
+									<div>
+										<div class="wow-pricing-table col-md-12">
+											<div class="wow-pricing featured wow-column-">
+												<div class="wow-pricing-header" style="padding-bottom: 0px;">
+													<h5>AzureDay @Configuration.Year</h5>
+													<div class="wow-pricing-cost">
+														<img id="imgGravatar" style="display: none; padding-bottom: 10px;" />
+														<p style="font-weight: bold;">@($"{Model.FirstName} {Model.LastName}")</p>
+														<p>@Model.Company</p>
+														<p>&nbsp;</p>
+													</div>
+												</div>
+												<div class="wow-pricing-content">
+													<ul>
+														<li>
+															@My.Attendee (@Model.PayedWorkshopTicket.TicketType.ToDisplayString())
+														</li>
+													</ul>
+												</div>
+											</div>
 										</div>
 									</div>
+									<div>
+										<p>@My.HowToUseTicket</p>
+									</div>
+								}
+								else
+								{
+									<div>
+										<p>@My.ThankYouWait</p>
+										<p>@My.PayNow <a href="/Profile/PayAgain">@My.ByLink</a>.</p>
+										<p>@My.DropPayment01 <a href="/Profile/DeleteTicket">@My.ByLink</a>@My.DropPayment01a</p>
+										<p>@My.Questions01 <a href="mailto:pay@azureday.net">pay@azureday.net</a> @My.Questions01a</p>
+									</div>
+								}
+							}
+								
+							@if (Model.PayedConferenceTicket == null || Model.PayedWorkshopTicket == null)
+							{
+								<div>
+									<div class="input-group myInputGroupdivider">
+										<span class="input-group-addon" style="width: 150px;">@My.TicketCode</span>
+										<input class="form-control" name="promoCode" placeholder="@My.TicketCode" data-bind="textInput: promoCode" style="width: 250px;"/>
+									</div>
+									<div class="input-group myInputGroupdivider">
+										<span class="input-group-addon" style="width: 150px;">@My.TicketPrice</span>
+										<input class="form-control" readonly="readonly" disabled="disabled" data-bind="value: currentPrice" style="width: 250px;"/>
+									</div>
+
+									<input id="paymentType" name="paymentType" type="hidden"/>
+
+									<a href="#" id="btnPayKaznachey" class="btn btn-primary">@My.PayByCard</a>
+									<a href="#" id="btnPayLiqPay" class="btn btn-primary">@My.PayViaLiqPay</a>
 								</div>
-							</div>
-							<div>
-								<p>
-									@My.HowToUseTicket
-								</p>
-							</div>
-						}
-						else
-						{
-							<div>
-								<p>
-									@My.ThankYouWait
-								</p>
-								<p>
-									@My.PayNow <a href="/Profile/PayAgain">@My.ByLink</a>.
-								</p>
-								<p>
-									@My.DropPayment01 <a href="/Profile/DeleteTicket">@My.ByLink</a>@My.DropPayment01a
-								</p>
-								<p>
-									@My.Questions01 <a href="mailto:pay@azureday.net">pay@azureday.net</a> @My.Questions01a
-								</p>
-							</div>
-						}
-					}
+							}
+						</form>
+					</div>
 
 				</div>
 			</div>
@@ -207,47 +253,75 @@
 
 			(function ticket() {
 				var ticketModel = {
-					tickets: ko.observableArray([
-						@Html.Raw(string.Join(",", Model.Tickets.Select(ticket => $"{{ id:'{ticket.TicketType}', title:'{ticket.TicketName}' }}")))
+					isConferenceTicket: ko.observable(true),
+					isWorkshopTicket: ko.observable(true),
+					selectedWorkshop: ko.observable(0),
+					workshops: ko.observableArray([
+						@Html.Raw(string.Join(",", Model.Workshops.Select(ticket => $"{{ id:'{ticket.Id}', title:'{ticket.Title}' }}")))
 					]),
-					selectedTicket: ko.observable(),
 					promoCode: ko.observable(),
 					currentPrice: ko.observable()
 				};
 
-				function calculateNewPrice(ticketType, promoCode) {
-					$.get('/api/tickets/price?ticketType=' + ticketType + '&promoCode=' + promoCode, function(data) {
-						ticketModel.currentPrice(data + ' грн.');
-					});
+				function calculateNewPrice(conferenceTicket, workshopId, promoCode) {
+					$.get('/api/tickets/price' +
+						'?conferenceTicket=' +
+						conferenceTicket +
+						'&workshopId=' +
+						workshopId +
+						'&promoCode=' +
+						promoCode,
+						function(data) {
+							ticketModel.currentPrice(data + ' @My.Currency');
+						});
 				}
+
+				ticketModel.isAnyTicketSelected = ko.computed(function() {
+					return ticketModel.isConferenceTicket()
+						|| (ticketModel.isWorkshopTicket() && ticketModel.selectedWorkshop() > 0)
+				});
 
 				ticketModel.promoCode.subscribe(function(newPromoCode) {
 					ticketModel.currentPrice(null);
-					calculateNewPrice(ticketModel.selectedTicket(), newPromoCode);
+					var workshopId = ticketModel.isWorkshopTicket() ? ticketModel.selectedWorkshop() : 0;
+					calculateNewPrice(ticketModel.isConferenceTicket(), workshopId, newPromoCode);
 				});
 
-				ticketModel.selectedTicket.subscribe(function(newTicket) {
+				ticketModel.isConferenceTicket.subscribe(function(newConferenceTicket) {
 					ticketModel.currentPrice(null);
-					calculateNewPrice(newTicket, ticketModel.promoCode());
+					var workshopId = ticketModel.isWorkshopTicket() ? ticketModel.selectedWorkshop() : 0;
+					calculateNewPrice(newConferenceTicket, workshopId, ticketModel.promoCode());
+				});
+
+				ticketModel.isWorkshopTicket.subscribe(function(newWorkshopTicket) {
+					ticketModel.currentPrice(null);
+					var workshopId = newWorkshopTicket ? ticketModel.selectedWorkshop() : 0;
+					calculateNewPrice(ticketModel.isConferenceTicket(), workshopId, ticketModel.promoCode());
+				});
+
+				ticketModel.selectedWorkshop.subscribe(function(newSelectedWorkshop) {
+					ticketModel.currentPrice(null);
+					var workshopId = ticketModel.isWorkshopTicket() ? newSelectedWorkshop : 0;
+					calculateNewPrice(ticketModel.isConferenceTicket(), workshopId, ticketModel.promoCode());
 				});
 
 				ko.applyBindings(ticketModel, document.getElementById('divTicket'));
 			})();
 
-			$('#btnPayKaznackey').click(function() {
-				$('#paymentType').val('Kaznackey');
-				setTimeout(function () {
+			$('#btnPayKaznachey').click(function() {
+				$('#paymentType').val('Kaznachey');
+				setTimeout(function() {
 					modal.showModal();
 				});
-				$('#formPay').submit();
+				$('#formPayConf').submit();
 			});
 
-			$('#btnPayLiqPay').click(function () {
+			$('#btnPayLiqPay').click(function() {
 				$('#paymentType').val('LiqPay');
-				setTimeout(function () {
+				setTimeout(function() {
 					modal.showModal();
 				});
-				$('#formPay').submit();
+				$('#formPayConf').submit();
 			});
 		});
 

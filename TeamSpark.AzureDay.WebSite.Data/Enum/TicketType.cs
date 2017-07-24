@@ -1,11 +1,13 @@
-﻿namespace TeamSpark.AzureDay.WebSite.Data.Enum
+﻿using System;
+
+namespace TeamSpark.AzureDay.WebSite.Data.Enum
 {
+	[Flags]
 	public enum TicketType
 	{
-		EarlyBird = 101,
-		Regular = 201,
-		Educational = 301,
-		Workshop = 401
+		None = 0,
+		Regular = 2,
+		Workshop = 4
 	}
 
 	public static class TicketTypeExtension
@@ -14,10 +16,6 @@
 		{
 			switch (ticketType)
 			{
-				case TicketType.EarlyBird:
-					return "Early Bird";
-				case TicketType.Educational:
-					return "Educational";
 				case TicketType.Regular:
 					return "Regular";
 				case TicketType.Workshop:

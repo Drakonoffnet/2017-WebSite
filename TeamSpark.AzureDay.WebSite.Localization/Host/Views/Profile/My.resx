@@ -126,15 +126,6 @@
   <data name="CompanyName" xml:space="preserve">
     <value>Company name</value>
   </data>
-  <data name="ConfTicketCode" xml:space="preserve">
-    <value>Conference discount code</value>
-  </data>
-  <data name="ConfTicketPrice" xml:space="preserve">
-    <value>Conference ticket price</value>
-  </data>
-  <data name="ConfTicketType" xml:space="preserve">
-    <value>Conference ticket type</value>
-  </data>
   <data name="DropPayment01" xml:space="preserve">
     <value>Если вы хотите сбросить данные в форме заказа билета, нажмите на</value>
   </data>
@@ -145,7 +136,7 @@
     <value>First name</value>
   </data>
   <data name="HowToUseTicket" xml:space="preserve">
-    <value>Для того, чтобы прийти на AzureDay, вам не нужно печатать билет. Вместо этого вам необходимо запомнить, какие ФИО и какой адрес электронной почты вы вводили при регистрации на конференцию. Эту информацию вам необходимо будет предоставить при входе на конференцию.</value>
+    <value>Для того, чтобы прийти на AzureDay, вам не нужно печатать билет. Вместо этого вам необходимо запомнить, какие ФИО и какой адрес электронной почты вы вводили при регистрации на конференцию. Эту информацию вам необходимо будет предоставить при входе на конференцию и/или лабораторные работы.</value>
   </data>
   <data name="isModelValid" xml:space="preserve">
     <value>Все поля обязательны для заполнения</value>
@@ -197,5 +188,14 @@
   </data>
   <data name="ThankYouWait" xml:space="preserve">
     <value>Большое спасибо, ваш платеж обрабатывается. Вы получите подтверждение на адрес электронной почты как только мы подтвердим оплату. Вы можете получить подтверждение о списании средств с вашей карты раньше нас, но не переживайте, мы все равно увидим вашу оплату если она была успешной.</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>грн.</value>
+  </data>
+  <data name="TicketCode" xml:space="preserve">
+    <value>Промо код</value>
+  </data>
+  <data name="TicketPrice" xml:space="preserve">
+    <value>Цена</value>
   </data>
 </root>

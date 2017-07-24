@@ -81,6 +81,12 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 
 		public decimal GetPriceWithCoupon(decimal price, Coupon coupon)
 		{
+			if (coupon == null)
+			{
+				return price == Configuration.TicketRegular + Configuration.TicketWorkshop ?
+					price * 0.9m : price;
+			}
+
 			var newPrice = price;
 
 			switch (coupon.DiscountType)
@@ -96,6 +102,14 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				case DiscountType.Percentage:
 					newPrice = price * ((100 - coupon.DiscountAmount) / 100);
 					break;
+			}
+
+			if (price == Configuration.TicketRegular + Configuration.TicketWorkshop)
+			{
+				if (price * 0.9m < newPrice)
+				{
+					newPrice = price * 0.9m;
+				}
 			}
 
 			return newPrice;

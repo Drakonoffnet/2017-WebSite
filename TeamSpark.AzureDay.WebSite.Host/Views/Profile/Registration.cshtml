@@ -102,34 +102,13 @@
 
 				<!-- begin 4 column pricing -->
 				<div class="shortcode row">
-					@if (DateTime.UtcNow.Month <= 5 && DateTime.UtcNow.Day <= 31 && DateTime.UtcNow.Year == 2016)
-					{
-						<div class="wow-pricing-table col-md-12">
-							<div class="wow-pricing featured wow-column-">
-								<div class="wow-pricing-header">
-									<h5>Early Bird</h5>
-									<div class="wow-pricing-cost">
-										500 грн.
-									</div>
-									<div class="wow-pricing-per">
-										за 1 билет
-									</div>
-								</div>
-								<div class="wow-pricing-content">
-									<ul>
-										<li>цена до 31го мая</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					}
 
 					<div class="wow-pricing-table col-md-12">
 						<div class="wow-pricing wow-column-">
 							<div class="wow-pricing-header">
-								<h5>Regular</h5>
+								<h5>Conference</h5>
 								<div class="wow-pricing-cost">
-									600 грн.
+									@Configuration.TicketRegular грн.
 								</div>
 								<div class="wow-pricing-per">
 									за 1 билет
@@ -137,18 +116,18 @@
 							</div>
 							<div class="wow-pricing-content">
 								<ul>
-									<li>цена до 17го июня</li>
+									<li>цена до 1го сентября</li>
 								</ul>
 							</div>
 						</div>
 					</div>
-
+					
 					<div class="wow-pricing-table col-md-12">
 						<div class="wow-pricing featured wow-column-">
 							<div class="wow-pricing-header">
-								<h5>Educational</h5>
+								<h5>Workshop</h5>
 								<div class="wow-pricing-cost">
-									300 грн.
+									@Configuration.TicketWorkshop грн.
 								</div>
 								<div class="wow-pricing-per">
 									за 1 билет
@@ -156,16 +135,13 @@
 							</div>
 							<div class="wow-pricing-content">
 								<ul>
-									<li>цена до 17го июня</li>
-									<li>при наличии действующего студенческого удостоверения</li>
+									<li>цена до 1го сентября</li>
 								</ul>
 							</div>
 						</div>
 					</div>
 
 				</div>
-				
-				
 
 			</div>
 

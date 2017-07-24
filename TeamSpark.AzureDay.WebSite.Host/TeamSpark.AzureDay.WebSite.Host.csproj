@@ -238,7 +238,6 @@
     <Compile Include="Models\Profile\PayFormModel.cs" />
     <Compile Include="Models\Profile\PayModel.cs" />
     <Compile Include="Models\Profile\RegistrationModel.cs" />
-    <Compile Include="Models\Profile\TicketModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

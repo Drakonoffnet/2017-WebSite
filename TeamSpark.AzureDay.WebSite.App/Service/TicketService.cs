@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using TeamSpark.AzureDay.WebSite.App.Entity;
 using TeamSpark.AzureDay.WebSite.Config;
 using TeamSpark.AzureDay.WebSite.Data;
@@ -10,18 +11,17 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 	{
 		public decimal GetTicketPrice(TicketType ticketType)
 		{
-			decimal ticketPrice = 600;
 			switch (ticketType)
 			{
-				case TicketType.EarlyBird:
-					ticketPrice = 500;
-					break;
-				case TicketType.Educational:
-					ticketPrice = 300;
-					break;
+				case TicketType.Regular:
+					return Configuration.TicketRegular;
+				case TicketType.Workshop:
+					return Configuration.TicketWorkshop;
+				case TicketType.Regular | TicketType.Workshop:
+					return Configuration.TicketRegular + Configuration.TicketWorkshop;
 			}
 
-			return ticketPrice;
+			throw new ArgumentOutOfRangeException(nameof(ticketType));
 		}
 
 		public async Task AddTicketAsync(Ticket ticket)
@@ -61,7 +61,6 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			}
 
 			var ticket = AppFactory.Mapper.Value.Map<Ticket>(data);
-			//ticket.Attendee = await AppFactory.AttendeeService.Value.GetAttendeeByEmailAsync(email);
 
 			return ticket;
 		}

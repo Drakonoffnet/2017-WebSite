@@ -51,6 +51,13 @@ namespace TeamSpark.AzureDay.WebSite.Config
 
 		#endregion
 
+		#region tickets
+
+		public static decimal TicketRegular => 750;
+		public static decimal TicketWorkshop => 1750;
+
+		#endregion
+
 		private static string GetConfigVariable(string name)
 		{
 			var value = Environment.GetEnvironmentVariable(name);

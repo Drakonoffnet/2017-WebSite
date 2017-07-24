@@ -4,28 +4,35 @@ using System.Web.Http;
 using Kaznachey.KaznacheyPayment;
 using Microsoft.ApplicationInsights;
 using TeamSpark.AzureDay.WebSite.App;
-using TeamSpark.AzureDay.WebSite.Data.Enum;
 using TeamSpark.AzureDay.WebSite.Notification;
 using TeamSpark.AzureDay.WebSite.Notification.Email.Model;
 
 namespace TeamSpark.AzureDay.WebSite.Host.Controllers.Api
 {
-    public class PriceController : ApiController
-    {
+	public class PriceController : ApiController
+	{
 		[HttpGet]
 		[Route("api/tickets/price")]
-	    public async Task<decimal> GetTicketPrice([FromUri]TicketType ticketType, [FromUri]string promoCode)
+		public async Task<decimal> GetTicketPrice(
+			[FromUri]bool conferenceTicket,
+			[FromUri]int workshopId,
+			[FromUri]string promoCode)
 		{
-			decimal ticketPrice = AppFactory.TicketService.Value.GetTicketPrice(ticketType);
+			decimal ticketPrice = 0;
 
-			if (!string.IsNullOrEmpty(promoCode))
+			if (conferenceTicket)
 			{
-				var coupon = await AppFactory.CouponService.Value.GetValidCouponByCodeAsync(promoCode);
-				if (coupon != null)
-				{
-					ticketPrice = AppFactory.CouponService.Value.GetPriceWithCoupon(ticketPrice, coupon);
-				}
+				ticketPrice += Config.Configuration.TicketRegular;
 			}
+
+			if (workshopId > 0)
+			{
+				ticketPrice += Config.Configuration.TicketWorkshop;
+			}
+
+			var coupon = await AppFactory.CouponService.Value.GetValidCouponByCodeAsync(promoCode);
+
+			ticketPrice = AppFactory.CouponService.Value.GetPriceWithCoupon(ticketPrice, coupon);
 
 			return ticketPrice;
 		}

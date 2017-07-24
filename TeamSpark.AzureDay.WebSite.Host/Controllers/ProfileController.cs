@@ -42,37 +42,9 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 				Company = attendee.Company
 			};
 
-			model.Tickets = new List<TicketModel>();
 			model.Workshops = _workshopService.GetWorkshops().ToList();
 
-			if (ticket == null)
-			{
-				if (DateTime.UtcNow.Month <= 5 && DateTime.UtcNow.Day <= 31 && DateTime.UtcNow.Year == 2016)
-				{
-					model.Tickets.Add(new TicketModel
-					{
-						TicketType = TicketType.EarlyBird,
-						TicketName = "Ранняя регистрация",
-						TicketNotes = ""
-					});
-				}
-				else
-				{
-					model.Tickets.Add(new TicketModel
-					{
-						TicketType = TicketType.Regular,
-						TicketName = "Стандартный",
-						TicketNotes = ""
-					});
-				}
-				model.Tickets.Add(new TicketModel
-				{
-					TicketType = TicketType.Educational,
-					TicketName = "Студенческий",
-					TicketNotes = "Для получения бейджа необходимо предъявить действующий студенческий билет в момент регистрации на конференцию."
-				});
-			}
-			else
+			if (ticket != null)
 			{
 				model.PayedConferenceTicket = ticket;
 			}
@@ -269,27 +241,36 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 		[HttpPost]
 		public async Task<ActionResult> Pay(PayModel model)
 		{
-			decimal ticketPrice = AppFactory.TicketService.Value.GetTicketPrice(model.TicketType);
+			if (!model.cbConferenceTicket && (!model.cbWorkshopTicket || model.ddlWorkshop == 0))
+			{
+				throw new ArgumentException(nameof(model));
+			}
+
+			var ticketType = TicketType.None;
+			if (model.cbConferenceTicket)
+			{
+				ticketType |= TicketType.Regular;
+			}
+			if (model.cbWorkshopTicket && model.ddlWorkshop > 0)
+			{
+				ticketType |= TicketType.Workshop;
+			}
 
 			var ticket = new Ticket
 			{
-				Price = (double)ticketPrice,
-				TicketType = model.TicketType,
-				PaymentType = model.PaymentType
+				TicketType = ticketType,
+				PaymentType = model.paymentType
 			};
 
-			if (!string.IsNullOrEmpty(model.PromoCode))
-			{
-				var coupon = await AppFactory.CouponService.Value.GetValidCouponByCodeAsync(model.PromoCode);
-				if (coupon != null)
-				{
-					ticketPrice = AppFactory.CouponService.Value.GetPriceWithCoupon(ticketPrice, coupon);
-					await AppFactory.CouponService.Value.UseCouponByCodeAsync(model.PromoCode);
+			var coupon = await AppFactory.CouponService.Value.GetValidCouponByCodeAsync(model.promoCode);
 
-					ticket.Price = (double)ticketPrice;
-					ticket.Coupon = coupon;
-				}
-			}
+			decimal ticketPrice = AppFactory.TicketService.Value.GetTicketPrice(ticketType);
+			ticketPrice = AppFactory.CouponService.Value.GetPriceWithCoupon(ticketPrice, coupon);
+
+			await AppFactory.CouponService.Value.UseCouponByCodeAsync(model.promoCode);
+
+			ticket.Price = (double)ticketPrice;
+			ticket.Coupon = coupon;
 
 			ticket.IsPayed = ticket.Price <= 0;
 

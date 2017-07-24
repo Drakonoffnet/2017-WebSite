@@ -88,29 +88,11 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Conference discount code.
+        ///   Looks up a localized string similar to грн..
         /// </summary>
-        public static string ConfTicketCode {
+        public static string Currency {
             get {
-                return ResourceManager.GetString("ConfTicketCode", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Conference ticket price.
-        /// </summary>
-        public static string ConfTicketPrice {
-            get {
-                return ResourceManager.GetString("ConfTicketPrice", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Conference ticket type.
-        /// </summary>
-        public static string ConfTicketType {
-            get {
-                return ResourceManager.GetString("ConfTicketType", resourceCulture);
+                return ResourceManager.GetString("Currency", resourceCulture);
             }
         }
         
@@ -142,7 +124,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Для того, чтобы прийти на AzureDay, вам не нужно печатать билет. Вместо этого вам необходимо запомнить, какие ФИО и какой адрес электронной почты вы вводили при регистрации на конференцию. Эту информацию вам необходимо будет предоставить при входе на конференцию..
+        ///   Looks up a localized string similar to Для того, чтобы прийти на AzureDay, вам не нужно печатать билет. Вместо этого вам необходимо запомнить, какие ФИО и какой адрес электронной почты вы вводили при регистрации на конференцию. Эту информацию вам необходимо будет предоставить при входе на конференцию и/или лабораторные работы..
         /// </summary>
         public static string HowToUseTicket {
             get {
@@ -300,6 +282,24 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         public static string ThankYouWait {
             get {
                 return ResourceManager.GetString("ThankYouWait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Промо код.
+        /// </summary>
+        public static string TicketCode {
+            get {
+                return ResourceManager.GetString("TicketCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Цена.
+        /// </summary>
+        public static string TicketPrice {
+            get {
+                return ResourceManager.GetString("TicketPrice", resourceCulture);
             }
         }
     }

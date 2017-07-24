@@ -41,7 +41,6 @@ namespace TeamSpark.AzureDay.WebSite.Host.Models.Profile
 			}
 		}
 
-		public List<TicketModel> Tickets { get; set; }
 		public List<Workshop> Workshops { get; set; }
 
 		public Ticket PayedConferenceTicket { get; set; }

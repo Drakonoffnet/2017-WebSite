@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using TeamSpark.AzureDay.WebSite.App.Entity;
 using TeamSpark.AzureDay.WebSite.Config;
@@ -63,6 +64,11 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			var ticket = AppFactory.Mapper.Value.Map<Ticket>(data);
 
 			return ticket;
+		}
+
+		public async Task<List<Ticket>> GetWorkshopsTickets()
+		{
+			throw new NotImplementedException();
 		}
 	}
 }

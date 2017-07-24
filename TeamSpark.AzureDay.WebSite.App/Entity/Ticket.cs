@@ -15,5 +15,6 @@ namespace TeamSpark.AzureDay.WebSite.App.Entity
 		public double Price { get; set; }
 
 		public string PaymentType { get; set; }
+		public int? WorkshopId { get; set; }
 	}
 }

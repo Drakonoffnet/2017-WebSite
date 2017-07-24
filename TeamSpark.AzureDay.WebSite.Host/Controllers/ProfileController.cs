@@ -246,25 +246,25 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 				throw new ArgumentException(nameof(model));
 			}
 
-			var ticketType = TicketType.None;
-			if (model.cbConferenceTicket)
-			{
-				ticketType |= TicketType.Regular;
-			}
-			if (model.cbWorkshopTicket && model.ddlWorkshop > 0)
-			{
-				ticketType |= TicketType.Workshop;
-			}
-
 			var ticket = new Ticket
 			{
-				TicketType = ticketType,
+				TicketType = TicketType.None,
 				PaymentType = model.paymentType
 			};
 
+			if (model.cbConferenceTicket)
+			{
+				ticket.TicketType |= TicketType.Regular;
+			}
+			if (model.cbWorkshopTicket && model.ddlWorkshop > 0)
+			{
+				ticket.TicketType |= TicketType.Workshop;
+				ticket.WorkshopId = model.ddlWorkshop;
+			}
+
 			var coupon = await AppFactory.CouponService.Value.GetValidCouponByCodeAsync(model.promoCode);
 
-			decimal ticketPrice = AppFactory.TicketService.Value.GetTicketPrice(ticketType);
+			decimal ticketPrice = AppFactory.TicketService.Value.GetTicketPrice(ticket.TicketType);
 			ticketPrice = AppFactory.CouponService.Value.GetPriceWithCoupon(ticketPrice, coupon);
 
 			await AppFactory.CouponService.Value.UseCouponByCodeAsync(model.promoCode);

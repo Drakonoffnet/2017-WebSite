@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using TeamSpark.AzureDay.WebSite.App.Entity;
 
@@ -23,7 +24,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Room = _roomService.Workshop1,
 					Speaker = _speakerService.MMartensson(),
 					Title = Localization.App.Service.Workshops.MMartensson_01.Title,
-					Description = Localization.App.Service.Workshops.MMartensson_01.Description
+					Description = Localization.App.Service.Workshops.MMartensson_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
 				new Workshop
 				{
@@ -32,7 +33,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Room = _roomService.Workshop2,
 					Speaker = _speakerService.DIvanov(),
 					Title = Localization.App.Service.Workshops.DIvanov_01.Title,
-					Description = Localization.App.Service.Workshops.DIvanov_01.Description
+					Description = Localization.App.Service.Workshops.DIvanov_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
 				new Workshop
 				{
@@ -41,7 +42,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Room = _roomService.Workshop3,
 					Speaker = _speakerService.EPolonychko(),
 					Title = Localization.App.Service.Workshops.EPolonychko_02.Title,
-					Description = Localization.App.Service.Workshops.EPolonychko_02.Description
+					Description = Localization.App.Service.Workshops.EPolonychko_02.Description.Replace(Environment.NewLine, "<br/>")
 				},
 				new Workshop
 				{
@@ -50,7 +51,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Room = _roomService.Workshop4,
 					Speaker = _speakerService.ILeontiev(),
 					Title = Localization.App.Service.Workshops.ILeontiev_01.Title,
-					Description = Localization.App.Service.Workshops.ILeontiev_01.Description
+					Description = Localization.App.Service.Workshops.ILeontiev_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
 				new Workshop
 				{
@@ -59,7 +60,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Room = _roomService.Workshop5,
 					Speaker = _speakerService.ASurkov(),
 					Title = Localization.App.Service.Workshops.ASurkov_01.Title,
-					Description = Localization.App.Service.Workshops.ASurkov_01.Description
+					Description = Localization.App.Service.Workshops.ASurkov_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
 				new Workshop
 				{
@@ -68,7 +69,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Room = _roomService.Workshop6,
 					Speaker = _speakerService.IReznykov(),
 					Title = Localization.App.Service.Workshops.IReznykov_01.Title,
-					Description = Localization.App.Service.Workshops.IReznykov_01.Description
+					Description = Localization.App.Service.Workshops.IReznykov_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
 				new Workshop
 				{
@@ -77,7 +78,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Room = _roomService.Workshop7,
 					Speaker = _speakerService.ADeren(),
 					Title = Localization.App.Service.Workshops.ADeren_01.Title,
-					Description = Localization.App.Service.Workshops.ADeren_01.Description
+					Description = Localization.App.Service.Workshops.ADeren_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
 				new Workshop
 				{
@@ -86,7 +87,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Room = _roomService.Workshop8,
 					Speaker = _speakerService.SPoplavskiy(),
 					Title = Localization.App.Service.Workshops.SPoplavskiy_02.Title,
-					Description = Localization.App.Service.Workshops.SPoplavskiy_02.Description
+					Description = Localization.App.Service.Workshops.SPoplavskiy_02.Description.Replace(Environment.NewLine, "<br/>")
 				}
 			};
 		}

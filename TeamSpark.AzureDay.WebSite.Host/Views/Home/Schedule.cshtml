@@ -111,7 +111,7 @@
 									{
 										@Html.Raw($"{Schedule.Language}: {timetables[i].Topic.Language.Title}<br /><br />")
 									}
-									@timetables[i].Topic.Description
+									@Html.Raw(timetables[i].Topic.Description)
 								</div>
 							</div>
 						</div>

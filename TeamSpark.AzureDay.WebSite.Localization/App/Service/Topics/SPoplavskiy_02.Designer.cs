@@ -22,14 +22,14 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class VThavonekham_01 {
+    public class SPoplavskiy_02 {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal VThavonekham_01() {
+        internal SPoplavskiy_02() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics.VThavonekham_01", typeof(VThavonekham_01).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics.SPoplavskiy_02", typeof(SPoplavskiy_02).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,11 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to There is only one standard that exists worldwide for Industrial IoT: OPC UA. Germany is well ahead. We will illustrate through architecture examples and Industry 4.0 uses cases why this is important, and how to work with existing communication protocols..
+        ///   Looks up a localized string similar to During this session we will look at:
+        ///- Microcontrollers, modules and sensors
+        ///- IoT Hub to gather data and identify devices
+        ///- Stream Analytics &amp; Storage
+        ///- WebApp to visualize telemetry data.
         /// </summary>
         public static string Description {
             get {
@@ -70,7 +74,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Industry 4.0 IoT standard: why Azure Cloud fits with OPC UA, IoT Edge technologies and Data Science?.
+        ///   Looks up a localized string similar to Getting started with IoT solutions in Azure.
         /// </summary>
         public static string Title {
             get {

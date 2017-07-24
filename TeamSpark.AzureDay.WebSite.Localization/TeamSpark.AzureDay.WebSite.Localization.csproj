@@ -65,6 +65,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Speaker\SPoplavskiy.ru.Designer.cs">
+      <DependentUpon>SPoplavskiy.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\SPoplavskiy.Designer.cs">
+      <DependentUpon>SPoplavskiy.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Speaker\ADeren.ru.Designer.cs">
       <DependentUpon>ADeren.ru.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -220,6 +230,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ABoyko.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Topics\SPoplavskiy_02.Designer.cs">
+      <DependentUpon>SPoplavskiy_02.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Topics\Keynote.ru.Designer.cs">
       <DependentUpon>Keynote.ru.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -274,6 +289,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>OChorny_01.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Workshops\SPoplavskiy_02.Designer.cs">
+      <DependentUpon>SPoplavskiy_02.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="App\Service\Workshops\ADeren_01.Designer.cs">
       <DependentUpon>ADeren_01.resx</DependentUpon>
@@ -430,6 +450,14 @@
       <LastGenOutput>Room.ru.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\SPoplavskiy.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SPoplavskiy.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\SPoplavskiy.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SPoplavskiy.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\ADeren.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ADeren.ru.Designer.cs</LastGenOutput>
@@ -554,6 +582,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ABoyko.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\SPoplavskiy_02.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SPoplavskiy_02.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\Keynote.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Keynote.ru.Designer.cs</LastGenOutput>
@@ -597,6 +629,10 @@
     <EmbeddedResource Include="App\Service\Topics\OChorny_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>OChorny_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Workshops\SPoplavskiy_02.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SPoplavskiy_02.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Workshops\ADeren_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

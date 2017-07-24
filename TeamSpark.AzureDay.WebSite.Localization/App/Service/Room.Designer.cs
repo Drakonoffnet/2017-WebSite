@@ -167,5 +167,14 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service {
                 return ResourceManager.GetString("Workshop7", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 8.
+        /// </summary>
+        public static string Workshop8 {
+            get {
+                return ResourceManager.GetString("Workshop8", resourceCulture);
+            }
+        }
     }
 }

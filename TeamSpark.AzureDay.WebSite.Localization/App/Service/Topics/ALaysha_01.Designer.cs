@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The session will be focused on solutions in Azure that require ingestion and handling of high-volume data in real-time. You&apos;ll get familiarized with capabilities and constraints of Azure Event Hub &amp; Apache Kafka in Azure as well as compare the difference between them. Moreover you&apos;ll learn when to use one technology versus another and get insight into architecture examples that leverage from streaming technologies..
+        ///   Looks up a localized string similar to The session will be focused on solutions in Azure that require ingestion and handling of high-volume data in real-time. You&apos;ll get familiarized with capabilities and constraints of Azure Event Hub &amp; Apache Kafka in Azure, as well as with the differences between them. Moreover you&apos;ll learn when to use one technology versus another and get insight into architecture examples that leverage from streaming technologies..
         /// </summary>
         public static string Description {
             get {

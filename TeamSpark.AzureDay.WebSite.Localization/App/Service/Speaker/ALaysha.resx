@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bio" xml:space="preserve">
-    <value>Solution Architect from EPAM Systems &amp; Microsoft Azure MVP, focused on cloud solutions and distributed systems. Has more then 5 years of hands-on experience in Microsoft Azure based on production projects from variety of business domains. Leader of Belarus Azure Community and speaker on local and external meetups and conferences.</value>
+    <value>Solution Architect from EPAM Systems &amp; Microsoft Azure MVP, focused on cloud solutions and distributed systems. Has more then 5 years of hands-on experience in Microsoft Azure based on production projects from variety of business domains. Leader of Belarus Azure Community and speaker at local and external meetups and conferences.</value>
   </data>
   <data name="FirstName" xml:space="preserve">
     <value>Alexander</value>

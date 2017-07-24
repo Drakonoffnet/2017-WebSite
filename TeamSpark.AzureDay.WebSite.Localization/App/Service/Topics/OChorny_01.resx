@@ -119,7 +119,7 @@
   </resheader>
   <data name="Description" xml:space="preserve">
     <value>Let's discuss Site Reliability Engineering principles and practices applied to Software as Service application hosted in Azure. Such topics will be covered:
-- Infrastructure as Code
+- Infrastructure as a Code
 - Release Engineering
 - Monitoring
 - Chaos Engineering

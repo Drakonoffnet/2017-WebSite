@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to How do you build a scalable, robust distributed and global application? This is large scale problem which everyone with great success has to solve in order to deliver to a rapidly growing, paying, user base! Or is it? Microsoft has solved this problem with a solution that underpins many services running mission critical workloads that they offer to millions of customers. Like Cortana for instance. The solution is now offered publicly to any developer to use instead of spending millions and years on solving  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to How do you build a scalable, robust, distributed and global application? This is large scale problem which everyone with great success has to solve in order to deliver to a rapidly growing, paying, user base! Or is it? Microsoft has solved this problem with a solution that underpins many services running mission-critical workloads that they offer to millions of customers. Like Cortana for instance. The solution is now offered publicly to any developer to use instead of spending millions and years on solving [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Description {
             get {

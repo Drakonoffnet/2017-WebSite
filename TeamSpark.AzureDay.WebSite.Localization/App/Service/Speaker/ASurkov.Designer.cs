@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Alexandr Surkov is embedded developer with more then 10 years of experience. He heads the software development department of physical defence systems in a startup since 2011. In his free time he writes articles and speaks on different events. He got Microsoft MVP award in 2016. And now he leads Russian IoT Community..
+        ///   Looks up a localized string similar to Alexandr Surkov is a developer with more than 10 years of experience. He is the head of software development department of security systems startup since 2011. In his free time he writes articles and speaks at different events. He got Microsoft MVP award in 2016  and now he leads Russian IoT Community..
         /// </summary>
         public static string Bio {
             get {

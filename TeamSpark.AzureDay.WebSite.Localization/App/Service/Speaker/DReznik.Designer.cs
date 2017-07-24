@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Denis is a Data Architect at Intapp, Inc. He has more than ten years experience in software development, database design and performance tuning for cloud and on-premises solutions. In 2010 Denis became Microsoft Data Platform MVP and maintain the MVP status till now. Apart from his professional career, Denis actively participates in the development of Ukrainian SQL Community and hold the status of PASS Regional Mentor for Central and Eastern Europe..
+        ///   Looks up a localized string similar to Denis is a Data Architect at Intapp, Inc. He has more than ten years experience in software development, database design and performance tuning for cloud and on-premises solutions. In 2010 Denis became Microsoft Data Platform MVP and maintains the MVP status till now. Apart from his professional career, Denis actively participates in the development of Ukrainian SQL Community and holds the status of PASS Regional Mentor for Central and Eastern Europe..
         /// </summary>
         public static string Bio {
             get {

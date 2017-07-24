@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bio" xml:space="preserve">
-    <value>Alexandr Surkov is embedded developer with more then 10 years of experience. He heads the software development department of physical defence systems in a startup since 2011. In his free time he writes articles and speaks on different events. He got Microsoft MVP award in 2016. And now he leads Russian IoT Community.</value>
+    <value>Alexandr Surkov is a developer with more than 10 years of experience. He is the head of software development department of security systems startup since 2011. In his free time he writes articles and speaks at different events. He got Microsoft MVP award in 2016  and now he leads Russian IoT Community.</value>
   </data>
   <data name="FirstName" xml:space="preserve">
     <value>Alexandr</value>

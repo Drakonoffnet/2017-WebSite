@@ -75,7 +75,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			}
 			else
 			{
-				model.PayedTicket = ticket;
+				model.PayedConferenceTicket = ticket;
 			}
 
 			return View(model);

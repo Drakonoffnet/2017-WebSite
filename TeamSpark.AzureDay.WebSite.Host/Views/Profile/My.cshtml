@@ -65,7 +65,7 @@
 				<div id="divTicket" class="col-md-6">
 					<h2>@My.MyTicket</h2>
 
-					@if (Model.PayedTicket == null)
+					@if (Model.PayedConferenceTicket == null)
 					{
 						<div>
 							<form id="formPay" method="POST" action="/profile/pay">
@@ -93,13 +93,13 @@
 					}
 					else
 					{
-						if (Model.PayedTicket.IsPayed)
+						if (Model.PayedConferenceTicket.IsPayed)
 						{
 							<div>
 								<div class="wow-pricing-table col-md-12">
 									<div class="wow-pricing featured wow-column-">
 										<div class="wow-pricing-header" style="padding-bottom: 0px;">
-											<h5>AzureDay @{ Write(Configuration.Year); }</h5>
+											<h5>AzureDay @Configuration.Year</h5>
 											<div class="wow-pricing-cost">
 												<img id="imgGravatar" style="display: none; padding-bottom: 10px;"/>
 												<p style="font-weight: bold;">@($"{Model.FirstName} {Model.LastName}")</p>
@@ -110,7 +110,7 @@
 										<div class="wow-pricing-content">
 											<ul>
 												<li>
-													Участник (@Model.PayedTicket.TicketType.ToDisplayString())
+													Участник (@Model.PayedConferenceTicket.TicketType.ToDisplayString())
 												</li>
 											</ul>
 										</div>

@@ -1,9 +1,10 @@
 ﻿@using TeamSpark.AzureDay.WebSite.Config
 @using TeamSpark.AzureDay.WebSite.Data.Enum
+@using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile
 @model TeamSpark.AzureDay.WebSite.Host.Models.Profile.MyProfileModel
 
 @{
-	ViewBag.Title = $"AzureDay {Configuration.Year} - личный кабинет";
+	ViewBag.Title = $"AzureDay {Configuration.Year} - {My.PersonalCabinet}";
 }
 
 <div class="boxedcontent">
@@ -17,10 +18,10 @@
 					&nbsp;
 				</div>
 
-				<h1>Личный кабинет участника <span class='colortext'>AZUREday</span></h1>
+				<h1>@My.PersonalCabinet <span class='colortext'>AzureDay @Configuration.Year</span></h1>
 
 				<div id="divProfile" class="col-md-6">
-					<h2>Мои данные</h2>
+					<h2>@My.MyProfile</h2>
 					<form method="POST" data-bind="submit: showModal">
 
 						<div class="input-group myInputGroupdivider">
@@ -29,28 +30,28 @@
 						</div>
 
 						<div class="input-group myInputGroupdivider">
-							<span class="input-group-addon" style="width: 150px;">Пароль</span>
+							<span class="input-group-addon" style="width: 150px;">@My.Password</span>
 							<input type="password" class="form-control" name="password" data-bind="textInput: password" style="width: 250px;"/>
 						</div>
 						<div class="input-group myInputGroupdivider">
-							<span class="input-group-addon" style="width: 150px;">Пароль еще раз</span>
+							<span class="input-group-addon" style="width: 150px;">@My.PasswordAgain</span>
 							<input type="password" class="form-control" name="password2" data-bind="textInput: password2" style="width: 250px;" />
 						</div>
 
 						<div class="input-group myInputGroupdivider">
-							<span class="input-group-addon" style="width: 150px;">Имя</span>
-							<input class="form-control" name="firstName" data-bind="textInput: fName" placeholder="Имя" value="@Model.FirstName" style="width: 250px;"/>
+							<span class="input-group-addon" style="width: 150px;">@My.FirstName</span>
+							<input class="form-control" name="firstName" data-bind="textInput: fName" placeholder="@My.FirstName" value="@Model.FirstName" style="width: 250px;"/>
 						</div>
 						<div class="input-group myInputGroupdivider">
-							<span class="input-group-addon" style="width: 150px;">Фамилия</span>
-							<input class="form-control" name="lastName" data-bind="textInput: lName" placeholder="Фамилия" value="@Model.LastName" style="width: 250px;"/>
+							<span class="input-group-addon" style="width: 150px;">@My.LastName</span>
+							<input class="form-control" name="lastName" data-bind="textInput: lName" placeholder="@My.LastName" value="@Model.LastName" style="width: 250px;"/>
 						</div>
 						<div class="input-group myInputGroupdivider">
-							<span class="input-group-addon" style="width: 150px;">Компания</span>
-							<input class="form-control" name="company" data-bind="textInput: company" placeholder="Компания" value="@Model.Company" style="width: 250px;"/>
+							<span class="input-group-addon" style="width: 150px;">@My.CompanyName</span>
+							<input class="form-control" name="company" data-bind="textInput: company" placeholder="@My.CompanyName" value="@Model.Company" style="width: 250px;"/>
 						</div>
 
-						<button class="btn btn-primary" type="submit" data-bind="enable: isModelValid() && isPasswordValid() && isPasswordLengthValid()">Сохранить</button>
+						<button class="btn btn-primary" type="submit" data-bind="enable: isModelValid() && isPasswordValid() && isPasswordLengthValid()">@My.Save</button>
 
 						<div style="width: 400px; margin-top: 15px; display: none;" class="alert alert-warning" data-bind="style: { display: isPasswordValid() ? 'none' : 'block' }">Пароли должны совпадать</div>
 
@@ -62,36 +63,27 @@
 				</div>
 
 				<div id="divTicket" class="col-md-6">
-					<h2>Мой билет</h2>
-
-					@*<div>
-						<p>
-							Продажа билетов будет открыта в ближайшие дни.
-						</p>
-						<p>
-							Если вы успели зарегистрироваться и видите это сообщение, то мы подарим вам <span class='colortext'>промокод на 10% скидки</span> на один билет на конференцию, как только будет открыта продажа билетов.
-						</p>
-					</div>*@
+					<h2>@My.MyTicket</h2>
 
 					@if (Model.PayedTicket == null)
 					{
 						<div>
 							<form id="formPay" method="POST" action="/profile/pay">
 								<div class="input-group myInputGroupdivider">
-									<span class="input-group-addon" style="width: 150px;">Тип билета</span>
+									<span class="input-group-addon" style="width: 150px;">@My.ConfTicketType</span>
 									<select class="form-control" name="ticketType" data-bind="options: tickets, optionsValue: 'id', optionsText: 'title', value: selectedTicket" style="width: 250px;"></select>
 								</div>
 								<div class="input-group myInputGroupdivider">
-									<span class="input-group-addon" style="width: 150px;">Промо код</span>
+									<span class="input-group-addon" style="width: 150px;">@My.ConfTicketCode</span>
 									<input class="form-control" name="promoCode" placeholder="Промо код" data-bind="textInput: promoCode" style="width: 250px;" />
 								</div>
 								<div class="input-group myInputGroupdivider">
-									<span class="input-group-addon" style="width: 150px;">Стоимость</span>
+									<span class="input-group-addon" style="width: 150px;">@My.ConfTicketPrice</span>
 									<input class="form-control" readonly="readonly" disabled="disabled" data-bind="value: currentPrice" style="width: 250px;"/>
 								</div>
 								<input id="paymentType" name="paymentType" type="hidden"/>
 								<a href="#" id="btnPayKaznackey" class="btn btn-primary">Оплатить картой</a>
-								<a href="#" id="btnPayLiqPay" class="btn btn-primary">Оплатить через LiqPay</a>
+								<a href="#" id="btnPayLiqPay" class="btn btn-primary">@My.PayViaLiqPay</a>
 								@foreach (var ticket in Model.Tickets.Where(t => !string.IsNullOrEmpty(t.TicketNotes)))
 								{
 									<div style="width: 400px; margin-top: 15px; display: none;" data-bind="visible: '@ticket.TicketType' == selectedTicket()" class="alert alert-warning">@ticket.TicketNotes</div>
@@ -210,6 +202,7 @@
 				}
 				ko.applyBindings(profileModel, document.getElementById('divProfile'));
 			})();
+
 			(function ticket() {
 				var ticketModel = {
 					tickets: ko.observableArray([
@@ -246,6 +239,7 @@
 				});
 				$('#formPay').submit();
 			});
+
 			$('#btnPayLiqPay').click(function () {
 				$('#paymentType').val('LiqPay');
 				setTimeout(function () {

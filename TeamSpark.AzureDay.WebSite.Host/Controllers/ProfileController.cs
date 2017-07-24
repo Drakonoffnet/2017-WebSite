@@ -19,7 +19,6 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 {
 	public class ProfileController : Controller
 	{
-		private readonly string _host = "https://azureday.net";
 		private readonly WorkshopService _workshopService = new WorkshopService();
 
 		[Authorize]
@@ -243,8 +242,8 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 				MerchantInternalPaymentId = $"{ticket.Attendee.EMail}-{ticket.TicketType}",
 				BuyerFirstname = ticket.Attendee.FirstName,
 				BuyerLastname = ticket.Attendee.LastName,
-				ReturnUrl = $"{_host}/profile/my",
-				StatusUrl = $"{_host}/api/tickets/paymentconfirm"
+				ReturnUrl = $"{Configuration.Host}/profile/my",
+				StatusUrl = $"{Configuration.Host}/api/tickets/paymentconfirm"
 			};
 			paymentRequest.Products = new List<Product>
 			{
@@ -252,8 +251,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 				{
 					ProductId = ticket.TicketType.ToString(),
 					ProductItemsNum = 1,
-					ProductName =
-						$"{ticket.Attendee.FirstName} {ticket.Attendee.LastName} билет на AzureDay {Configuration.Year} ({ticket.TicketType.ToDisplayString()})",
+					ProductName = $"{ticket.Attendee.FirstName} {ticket.Attendee.LastName} билет на AzureDay {Configuration.Year} ({ticket.TicketType.ToDisplayString()})",
 					ProductPrice = (decimal) ticket.Price
 				}
 			};

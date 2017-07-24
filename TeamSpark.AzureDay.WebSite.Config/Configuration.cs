@@ -8,6 +8,7 @@ namespace TeamSpark.AzureDay.WebSite.Config
 		#region general
 
 		public static string Year => "2017";
+		public static string Host => "https://azureday.net";
 
 		#endregion
 

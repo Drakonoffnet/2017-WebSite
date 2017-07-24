@@ -53,11 +53,11 @@
 
 						<button class="btn btn-primary" type="submit" data-bind="enable: isModelValid() && isPasswordValid() && isPasswordLengthValid()">@My.Save</button>
 
-						<div style="width: 400px; margin-top: 15px; display: none;" class="alert alert-warning" data-bind="style: { display: isPasswordValid() ? 'none' : 'block' }">Пароли должны совпадать</div>
+						<div style="width: 400px; margin-top: 15px; display: none;" class="alert alert-warning" data-bind="style: { display: isPasswordValid() ? 'none' : 'block' }">@My.isPasswordValid</div>
 
-						<div style="width: 400px; margin-top: 15px; display: none;" class="alert alert-warning" data-bind="style: { display: isPasswordLengthValid() ? 'none' : 'block' }">Минимальная длина пароля 6 символов</div>
+						<div style="width: 400px; margin-top: 15px; display: none;" class="alert alert-warning" data-bind="style: { display: isPasswordLengthValid() ? 'none' : 'block' }">@My.isPasswordLengthValid</div>
 
-						<div style="width: 400px; margin-top: 15px; display: none;" class="alert alert-warning" data-bind="style: { display: isModelValid() ? 'none' : 'block' }">Все поля обязательны для заполнения</div>
+						<div style="width: 400px; margin-top: 15px; display: none;" class="alert alert-warning" data-bind="style: { display: isModelValid() ? 'none' : 'block' }">@My.isModelValid</div>
 
 					</form>
 				</div>
@@ -75,14 +75,14 @@
 								</div>
 								<div class="input-group myInputGroupdivider">
 									<span class="input-group-addon" style="width: 150px;">@My.ConfTicketCode</span>
-									<input class="form-control" name="promoCode" placeholder="Промо код" data-bind="textInput: promoCode" style="width: 250px;" />
+									<input class="form-control" name="promoCode" placeholder="@My.ConfTicketCode" data-bind="textInput: promoCode" style="width: 250px;" />
 								</div>
 								<div class="input-group myInputGroupdivider">
 									<span class="input-group-addon" style="width: 150px;">@My.ConfTicketPrice</span>
 									<input class="form-control" readonly="readonly" disabled="disabled" data-bind="value: currentPrice" style="width: 250px;"/>
 								</div>
 								<input id="paymentType" name="paymentType" type="hidden"/>
-								<a href="#" id="btnPayKaznackey" class="btn btn-primary">Оплатить картой</a>
+								<a href="#" id="btnPayKaznackey" class="btn btn-primary">@My.PayByCard</a>
 								<a href="#" id="btnPayLiqPay" class="btn btn-primary">@My.PayViaLiqPay</a>
 								@foreach (var ticket in Model.Tickets.Where(t => !string.IsNullOrEmpty(t.TicketNotes)))
 								{
@@ -110,7 +110,7 @@
 										<div class="wow-pricing-content">
 											<ul>
 												<li>
-													Участник (@Model.PayedTicket.TicketType.ToDisplayString())
+													@My.Attendee (@Model.PayedTicket.TicketType.ToDisplayString())
 												</li>
 											</ul>
 										</div>
@@ -118,23 +118,25 @@
 								</div>
 							</div>
 							<div>
-								<p>Для того, чтобы прийти на AzureDay, вам не нужно печатать билет. Вместо этого вам необходимо запомнить, какие ФИО и какой адрес электронной почты вы вводили при регистрации на конференцию. Эту информацию вам необходимо будет предоставить при входе на конференцию.</p>
+								<p>
+									@My.HowToUseTicket
+								</p>
 							</div>
 						}
 						else
 						{
 							<div>
 								<p>
-									Большое спасибо, ваш платеж обрабатывается. Вы получите подтверждение на адрес электронной почты как только мы подтвердим оплату. Вы можете получить подтверждение о списании средств с вашей карты раньше нас, но не переживайте, мы все равно увидим вашу оплату если она была успешной.
+									@My.ThankYouWait
 								</p>
 								<p>
-									Если вы не совершили оплату, то вы можете повторно перейти на форму оплаты используя <a href="/Profile/PayAgain">ссылку</a>.
+									@My.PayNow <a href="/Profile/PayAgain">@My.ByLink</a>.
 								</p>
 								<p>
-									Если вы хотите сбросить данные в форме заказа билета, нажмите на <a href="/Profile/DeleteTicket">ссылку</a>. Обратите внимание, что вы не можете сбросить успешно оплаченный билет. Вы также не можете отменить оплату, если она уже прошла.
+									@My.DropPayment01 <a href="/Profile/DeleteTicket">@My.ByLink</a>@My.DropPayment01a
 								</p>
 								<p>
-									Если у вас возникли вопросы по оплате, вы можете написать письмо на адрес <a href="mailto:pay@azureday.net">pay@azureday.net</a> и мы поможем вам решить все ваши вопросы.
+									@My.Questions01 <a href="mailto:pay@azureday.net">pay@azureday.net</a> @My.Questions01a
 								</p>
 							</div>
 						}

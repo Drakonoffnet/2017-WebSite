@@ -61,6 +61,24 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Участник.
+        /// </summary>
+        public static string Attendee {
+            get {
+                return ResourceManager.GetString("Attendee", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ссылку.
+        /// </summary>
+        public static string ByLink {
+            get {
+                return ResourceManager.GetString("ByLink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Company name.
         /// </summary>
         public static string CompanyName {
@@ -97,11 +115,65 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Если вы хотите сбросить данные в форме заказа билета, нажмите на.
+        /// </summary>
+        public static string DropPayment01 {
+            get {
+                return ResourceManager.GetString("DropPayment01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to . Обратите внимание, что вы не можете сбросить успешно оплаченный билет. Вы также не можете отменить оплату, если она уже прошла..
+        /// </summary>
+        public static string DropPayment01a {
+            get {
+                return ResourceManager.GetString("DropPayment01a", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to First name.
         /// </summary>
         public static string FirstName {
             get {
                 return ResourceManager.GetString("FirstName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Для того, чтобы прийти на AzureDay, вам не нужно печатать билет. Вместо этого вам необходимо запомнить, какие ФИО и какой адрес электронной почты вы вводили при регистрации на конференцию. Эту информацию вам необходимо будет предоставить при входе на конференцию..
+        /// </summary>
+        public static string HowToUseTicket {
+            get {
+                return ResourceManager.GetString("HowToUseTicket", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Все поля обязательны для заполнения.
+        /// </summary>
+        public static string isModelValid {
+            get {
+                return ResourceManager.GetString("isModelValid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Минимальная длина пароля 6 символов.
+        /// </summary>
+        public static string isPasswordLengthValid {
+            get {
+                return ResourceManager.GetString("isPasswordLengthValid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Пароли должны совпадать.
+        /// </summary>
+        public static string isPasswordValid {
+            get {
+                return ResourceManager.GetString("isPasswordValid", resourceCulture);
             }
         }
         
@@ -160,6 +232,24 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Оплатить картой.
+        /// </summary>
+        public static string PayByCard {
+            get {
+                return ResourceManager.GetString("PayByCard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Если вы не совершили оплату, то вы можете повторно перейти на форму оплаты используя.
+        /// </summary>
+        public static string PayNow {
+            get {
+                return ResourceManager.GetString("PayNow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Pay via LiqPay.
         /// </summary>
         public static string PayViaLiqPay {
@@ -178,11 +268,38 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Если у вас возникли вопросы по оплате, вы можете написать письмо на адрес.
+        /// </summary>
+        public static string Questions01 {
+            get {
+                return ResourceManager.GetString("Questions01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to и мы поможем вам решить все ваши вопросы..
+        /// </summary>
+        public static string Questions01a {
+            get {
+                return ResourceManager.GetString("Questions01a", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Save.
         /// </summary>
         public static string Save {
             get {
                 return ResourceManager.GetString("Save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Большое спасибо, ваш платеж обрабатывается. Вы получите подтверждение на адрес электронной почты как только мы подтвердим оплату. Вы можете получить подтверждение о списании средств с вашей карты раньше нас, но не переживайте, мы все равно увидим вашу оплату если она была успешной..
+        /// </summary>
+        public static string ThankYouWait {
+            get {
+                return ResourceManager.GetString("ThankYouWait", resourceCulture);
             }
         }
     }

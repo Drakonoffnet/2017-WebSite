@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using TeamSpark.AzureDay.WebSite.App.Entity;
 
 namespace TeamSpark.AzureDay.WebSite.App.Service
@@ -32,6 +31,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			_speakers.Add(MSmereczynski());
 
 			_speakers.Add(ADeren());
+			_speakers.Add(SPoplavskiy());
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
@@ -444,6 +444,30 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				WebUrl = "",
 				CompanyName = "Onlizer LLC",
 				JobTitle = "CEO"
+			};
+		}
+
+		public Speaker SPoplavskiy()
+		{
+			return new Speaker
+			{
+				Id = 18,
+				FirstName = Localization.App.Service.Speaker.SPoplavskiy.FirstName,
+				LastName = Localization.App.Service.Speaker.SPoplavskiy.LastName,
+				Bio = Localization.App.Service.Speaker.SPoplavskiy.Bio,
+				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/SPoplavskiy.jpg",
+				FacebookUrl = "https://www.facebook.com/sergey.poplavskiy.35",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "Microsoft",
+				JobTitle = "Commercial Software Engineer, CEE"
 			};
 		}
 	}

@@ -118,9 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Description" xml:space="preserve">
-    <value>There is only one standard that exists worldwide for Industrial IoT: OPC UA. Germany is well ahead. We will illustrate through architecture examples and Industry 4.0 uses cases why this is important, and how to work with existing communication protocols.</value>
+    <value />
   </data>
   <data name="Title" xml:space="preserve">
-    <value>Industry 4.0 IoT standard: why Azure Cloud fits with OPC UA, IoT Edge technologies and Data Science?</value>
+    <value>Dive into Bot Platform: create FAQ bot using Azure, Cognitive services and Bot Framework</value>
   </data>
 </root>

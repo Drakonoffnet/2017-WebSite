@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We will talk about Azure IoT Suite as a platform for fast prototyping of IoT solutions. What is it, what are inside of it, how to use and how to start. Answers for these and many others quwstions will help you to build and deploy Iot system that can be used for presentation to customers..
+        ///   Looks up a localized string similar to We will talk about Azure IoT Suite as a platform for fast prototyping of IoT solutions. We&apos;ll talk about what it is, what is inside of it, how we can use it and how to start working with it. Answers for these and many other questions will help you to build and deploy IoT system prototypes that can be used for presentation to customers..
         /// </summary>
         public static string Description {
             get {

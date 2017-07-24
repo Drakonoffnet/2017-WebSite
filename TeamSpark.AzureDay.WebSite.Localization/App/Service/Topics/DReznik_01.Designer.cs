@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Well, yeah, there are so many options to store and operate with your data in Azure, that it is very easy to be lost in a crowd of technologies. The purpose of this session will be giving a brief intuition about the scenarios where each of these Azure services will be better than other..
+        ///   Looks up a localized string similar to Well, yeah, there are so many options to store and operate your data in Azure that it is very easy to get lost in a crowd of technologies. The purpose of this session is to give you a glimpse about the scenarios where each of these Azure services will be better suited than the others..
         /// </summary>
         public static string Description {
             get {

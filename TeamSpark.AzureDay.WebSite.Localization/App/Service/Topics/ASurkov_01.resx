@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Description" xml:space="preserve">
-    <value>We will talk about Azure IoT Suite as a platform for fast prototyping of IoT solutions. What is it, what are inside of it, how to use and how to start. Answers for these and many others quwstions will help you to build and deploy Iot system that can be used for presentation to customers.</value>
+    <value>We will talk about Azure IoT Suite as a platform for fast prototyping of IoT solutions. We'll talk about what it is, what is inside of it, how we can use it and how to start working with it. Answers for these and many other questions will help you to build and deploy IoT system prototypes that can be used for presentation to customers.</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>IoTSuite - Cloud platform for IoT Solutions</value>

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Description" xml:space="preserve">
-    <value>The session will be focused on solutions in Azure that require ingestion and handling of high-volume data in real-time. You'll get familiarized with capabilities and constraints of Azure Event Hub &amp; Apache Kafka in Azure as well as compare the difference between them. Moreover you'll learn when to use one technology versus another and get insight into architecture examples that leverage from streaming technologies.</value>
+    <value>The session will be focused on solutions in Azure that require ingestion and handling of high-volume data in real-time. You'll get familiarized with capabilities and constraints of Azure Event Hub &amp; Apache Kafka in Azure, as well as with the differences between them. Moreover you'll learn when to use one technology versus another and get insight into architecture examples that leverage from streaming technologies.</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>High-volume data streaming in Azure</value>

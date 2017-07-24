@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I will show you not only how to run Python 3.6 code as server less micro services on Azure, but also how to use Azure as a target for Python automation scripts (also as a microservices). All automating Linux deployments on Microsoft Azure cloud..
+        ///   Looks up a localized string similar to I will show you not only how to run Python 3.6 code as serverless microservices on Azure, but also how to use Azure as a target for Python automation scripts (also as a microservices). All automating Linux deployments on Microsoft Azure cloud..
         /// </summary>
         public static string Description {
             get {

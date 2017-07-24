@@ -62,7 +62,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         
         /// <summary>
         ///   Looks up a localized string similar to Let&apos;s discuss Site Reliability Engineering principles and practices applied to Software as Service application hosted in Azure. Such topics will be covered:
-        ///- Infrastructure as Code
+        ///- Infrastructure as a Code
         ///- Release Engineering
         ///- Monitoring
         ///- Chaos Engineering

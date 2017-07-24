@@ -26,6 +26,8 @@ namespace TeamSpark.AzureDay.WebSite.Data.Entity.Table
 
 		public int TicketTypeId { get; set; }
 
+		public int? WorkshopId { get; set; }
+
 		public double Price { get; set; }
 
 		public string PaymentType { get; set; }

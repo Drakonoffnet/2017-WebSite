@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 using System.Web.Security;
 using Kaznachey.KaznacheyPayment;
 using TeamSpark.AzureDay.WebSite.App;
 using TeamSpark.AzureDay.WebSite.App.Entity;
+using TeamSpark.AzureDay.WebSite.App.Service;
 using TeamSpark.AzureDay.WebSite.Config;
 using TeamSpark.AzureDay.WebSite.Data.Enum;
 using TeamSpark.AzureDay.WebSite.Host.Filter;
@@ -18,6 +20,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 	public class ProfileController : Controller
 	{
 		private readonly string _host = "https://azureday.net";
+		private readonly WorkshopService _workshopService = new WorkshopService();
 
 		[Authorize]
 		public async Task<ActionResult> My()
@@ -41,6 +44,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			};
 
 			model.Tickets = new List<TicketModel>();
+			model.Workshops = _workshopService.GetWorkshops().ToList();
 
 			if (ticket == null)
 			{

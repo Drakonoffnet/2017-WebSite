@@ -57,34 +57,34 @@
 </div>
 
 
-			@Html.Partial("_ModalWait")
+@Html.Partial("_ModalWait")
 
-			@section Scripts
+@section Scripts
 {
-				@Scripts.Render("~/cdn/knockout/js")
+	@Scripts.Render("~/cdn/knockout/js")
 
-				<script>
-					$(document).ready(function () {
-						var loginModel = {
-							email: ko.observable(''),
-							password: ko.observable('')
-						};
+	<script>
+		$(document).ready(function () {
+			var loginModel = {
+				email: ko.observable(''),
+				password: ko.observable('')
+			};
 
-						loginModel.isModelValid = ko.computed(function () {
-							var email = loginModel.email();
-							var password = loginModel.password();
+			loginModel.isModelValid = ko.computed(function () {
+				var email = loginModel.email();
+				var password = loginModel.password();
 
-							return !!email && !!password;
-						});
+				return !!email && !!password;
+			});
 
-						loginModel.showModal = function () {
-							setTimeout(function () {
-								modal.showModal();
-							});
-							return true;
-						}
-
-						ko.applyBindings(loginModel);
-					});
-				</script>
+			loginModel.showModal = function () {
+				setTimeout(function () {
+					modal.showModal();
+				});
+				return true;
 			}
+
+			ko.applyBindings(loginModel);
+		});
+	</script>
+}

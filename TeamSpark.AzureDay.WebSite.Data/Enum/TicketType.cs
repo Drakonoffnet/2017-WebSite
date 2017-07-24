@@ -4,7 +4,8 @@
 	{
 		EarlyBird = 101,
 		Regular = 201,
-		Educational = 301
+		Educational = 301,
+		Workshop = 401
 	}
 
 	public static class TicketTypeExtension
@@ -19,6 +20,8 @@
 					return "Educational";
 				case TicketType.Regular:
 					return "Regular";
+				case TicketType.Workshop:
+					return "Workshop";
 			}
 
 			return string.Empty;

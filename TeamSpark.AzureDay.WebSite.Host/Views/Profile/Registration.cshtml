@@ -21,7 +21,7 @@
 
 				<div style="padding-bottom: 25px;">
 					Для того, чтобы зарегистрироваться на AzureDay и получить возможность <span class='colortext'>купить билет на конференцию</span>, заполните форму, приведенную ниже.
-</div>
+				</div>
 				<div>
 					Регистрация <span class='colortext'>не является билетом</span> на конференцию и является бесплатной. После регистрации (создания учетной записи участника AzureDay) вам будет предложено приобрести билет.
 				</div>
@@ -175,59 +175,59 @@
 
 	@Html.Action("Footer", "Layout")
 
-		@Html.Partial("_ModalWait")
+	@Html.Partial("_ModalWait")
 
-		@section Scripts
-{
-			@Scripts.Render("~/cdn/knockout/js")
+	@section Scripts
+	{
+		@Scripts.Render("~/cdn/knockout/js")
 
-			<script>
-				$(document).ready(function () {
-					var registrationModel = {
-						email: ko.observable(''),
-						password: ko.observable(''),
-						password2: ko.observable(''),
-						fName: ko.observable(''),
-						lName: ko.observable(''),
-						company: ko.observable('')
-					};
+		<script>
+			$(document).ready(function () {
+				var registrationModel = {
+					email: ko.observable(''),
+					password: ko.observable(''),
+					password2: ko.observable(''),
+					fName: ko.observable(''),
+					lName: ko.observable(''),
+					company: ko.observable('')
+				};
 
-					registrationModel.isPasswordLengthValid = ko.computed(function () {
-						var pwd = registrationModel.password();
-						return !!pwd && pwd.length >= 6;
-					});
-
-					registrationModel.isPasswordLength2Valid = ko.computed(function () {
-						var pwd = registrationModel.password2();
-						return !!pwd && pwd.length >= 6;
-					});
-
-					registrationModel.isPasswordValid = ko.computed(function () {
-						var pwd = registrationModel.password();
-						var pwd2 = registrationModel.password2();
-
-						return pwd === pwd2 && registrationModel.isPasswordLengthValid() && registrationModel.isPasswordLength2Valid();
-					});
-
-					registrationModel.isModelValid = ko.computed(function () {
-						var email = registrationModel.email();
-						var fName = registrationModel.fName();
-						var lName = registrationModel.lName();
-						var company = registrationModel.company();
-
-						return registrationModel.isPasswordValid() && !!email && !!fName && !!lName && !!company;
-					});
-
-					registrationModel.showModal = function () {
-						setTimeout(function () {
-							modal.showModal();
-						});
-						return true;
-					}
-
-					ko.applyBindings(registrationModel);
+				registrationModel.isPasswordLengthValid = ko.computed(function () {
+					var pwd = registrationModel.password();
+					return !!pwd && pwd.length >= 6;
 				});
-			</script>
-		}
+
+				registrationModel.isPasswordLength2Valid = ko.computed(function () {
+					var pwd = registrationModel.password2();
+					return !!pwd && pwd.length >= 6;
+				});
+
+				registrationModel.isPasswordValid = ko.computed(function () {
+					var pwd = registrationModel.password();
+					var pwd2 = registrationModel.password2();
+
+					return pwd === pwd2 && registrationModel.isPasswordLengthValid() && registrationModel.isPasswordLength2Valid();
+				});
+
+				registrationModel.isModelValid = ko.computed(function () {
+					var email = registrationModel.email();
+					var fName = registrationModel.fName();
+					var lName = registrationModel.lName();
+					var company = registrationModel.company();
+
+					return registrationModel.isPasswordValid() && !!email && !!fName && !!lName && !!company;
+				});
+
+				registrationModel.showModal = function () {
+					setTimeout(function () {
+						modal.showModal();
+					});
+					return true;
+				}
+
+				ko.applyBindings(registrationModel);
+			});
+		</script>
+	}
 
 </div>

@@ -61,6 +61,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Email\Ext\ErrorPayment.cs" />
+    <Compile Include="Email\Ext\ConfirmPayment.cs" />
     <Compile Include="Email\Ext\ConfirmRegistration.cs" />
     <Compile Include="Email\Ext\RestorePassword.cs" />
     <Compile Include="Email\Model\ErrorPaymentModel.cs" />

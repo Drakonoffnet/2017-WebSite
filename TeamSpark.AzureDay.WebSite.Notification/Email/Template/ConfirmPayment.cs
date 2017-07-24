@@ -36,7 +36,14 @@ namespace TeamSpark.AzureDay.WebSite.Notification.Email.Template
 <body>
 <div style=""font-family: Tahoma, Geneva, sans-serif; color: #f90; font-size: 1.3em; font-weight: bold; padding-bottom: 10px;"">Оплата прошла успешно</div>
 <p style=""font-family: Tahoma, Geneva, sans-serif;"">
-	Большое спасибо, ваш платеж прошел успешно. Мы с нетерпением ждем вас на AzureDay 2017.
+	Большое спасибо, ваш платеж прошел успешно. Мы с нетерпением ждем вас на AzureDay ");
+            
+            #line 14 "D:\Projects\AzureDay-2017\2017-WebSite\TeamSpark.AzureDay.WebSite.Notification\Email\Template\ConfirmPayment.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Year));
+            
+            #line default
+            #line hidden
+            this.Write(@".
 </p>
 <p style=""font-family: Tahoma, Geneva, sans-serif; padding-top: 20px;"">
 	Для того, чтобы прийти на AzureDay, вам не нужно печатать билет.

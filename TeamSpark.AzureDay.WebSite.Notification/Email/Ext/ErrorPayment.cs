@@ -2,10 +2,9 @@
 
 namespace TeamSpark.AzureDay.WebSite.Notification.Email.Template
 {
-	public partial class RestorePassword
+	public partial class ErrorPayment
 	{
 		public string Year => Configuration.Year;
 		public string Host => Configuration.Host;
-		public string ConfirmationCode { get; set; }
 	}
 }

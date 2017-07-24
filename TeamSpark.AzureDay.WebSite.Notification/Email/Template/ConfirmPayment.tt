@@ -11,7 +11,7 @@
 <body>
 <div style="font-family: Tahoma, Geneva, sans-serif; color: #f90; font-size: 1.3em; font-weight: bold; padding-bottom: 10px;">Оплата прошла успешно</div>
 <p style="font-family: Tahoma, Geneva, sans-serif;">
-	Большое спасибо, ваш платеж прошел успешно. Мы с нетерпением ждем вас на AzureDay 2017.
+	Большое спасибо, ваш платеж прошел успешно. Мы с нетерпением ждем вас на AzureDay <#= Year #>.
 </p>
 <p style="font-family: Tahoma, Geneva, sans-serif; padding-top: 20px;">
 	Для того, чтобы прийти на AzureDay, вам не нужно печатать билет.

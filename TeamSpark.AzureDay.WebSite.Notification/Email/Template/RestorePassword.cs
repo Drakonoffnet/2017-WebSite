@@ -36,15 +36,28 @@ namespace TeamSpark.AzureDay.WebSite.Notification.Email.Template
 <body>
 <div style=""font-family: Tahoma, Geneva, sans-serif; color: #f90; font-size: 1.3em; font-weight: bold; padding-bottom: 10px;"">Восстановление пароля</div>
 <p style=""font-family: Tahoma, Geneva, sans-serif;"">
- Для смены пароля вашей учатной запии, пройдите по этой <a style=""color:#090; font-weight: bold;"" target=""_blank"" href=""https://AzureDay.net/Redirect?QuickAuthToken=");
+ Для смены пароля вашей учатной запии, пройдите по этой <a style=""color:#090; font-weight: bold;"" target=""_blank"" href=""");
+            
+            #line 14 "D:\Projects\AzureDay-2017\2017-WebSite\TeamSpark.AzureDay.WebSite.Notification\Email\Template\RestorePassword.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Host));
+            
+            #line default
+            #line hidden
+            this.Write("/Redirect?QuickAuthToken=");
             
             #line 14 "D:\Projects\AzureDay-2017\2017-WebSite\TeamSpark.AzureDay.WebSite.Notification\Email\Template\RestorePassword.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(ConfirmationCode));
             
             #line default
             #line hidden
-            this.Write("&RedirectUrl=https://AzureDay.net/Profile/My\">ссылке</a>.\r\n</p>\r\n</body>\r\n</html>" +
-                    "");
+            this.Write("&RedirectUrl=");
+            
+            #line 14 "D:\Projects\AzureDay-2017\2017-WebSite\TeamSpark.AzureDay.WebSite.Notification\Email\Template\RestorePassword.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Host));
+            
+            #line default
+            #line hidden
+            this.Write("/Profile/My\">ссылке</a>.\r\n</p>\r\n</body>\r\n</html>");
             return this.GenerationEnvironment.ToString();
         }
     }

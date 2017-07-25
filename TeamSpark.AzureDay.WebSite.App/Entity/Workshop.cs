@@ -7,6 +7,7 @@
 		public string Description { get; set; }
 		public Language Language { get; set; }
 		public Room Room { get; set; }
+		public int MaxTickets { get; set; }
 
 		public Speaker Speaker { get; set; }
 

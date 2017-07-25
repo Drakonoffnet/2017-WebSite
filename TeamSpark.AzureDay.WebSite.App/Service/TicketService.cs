@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using TeamSpark.AzureDay.WebSite.App.Entity;
 using TeamSpark.AzureDay.WebSite.Config;
@@ -66,9 +67,19 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			return ticket;
 		}
 
-		public async Task<List<Ticket>> GetWorkshopsTickets()
+		public async Task<List<Ticket>> GetWorkshopTickets(int workshopId)
 		{
-			throw new NotImplementedException();
+			var filter = new Dictionary<string, string>
+			{
+				{nameof(Data.Entity.Table.Ticket.PartitionKey), Configuration.Year},
+				{nameof(Data.Entity.Table.Ticket.WorkshopId), workshopId.ToString()}
+			};
+
+			var data = (await DataFactory.TicketService.Value.GetByFilterAsync(filter))
+				.Select(AppFactory.Mapper.Value.Map<Ticket>)
+				.ToList();
+
+			return data;
 		}
 	}
 }

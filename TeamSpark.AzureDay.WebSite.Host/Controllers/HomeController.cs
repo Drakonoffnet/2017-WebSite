@@ -15,6 +15,8 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 {
 	public class HomeController : Controller
 	{
+		private readonly TicketService _ticketService = new TicketService();
+
 		public async Task<ActionResult> Index()
 		{
 			var model = new IndexModel
@@ -89,6 +91,26 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			model.Workshops = new WorkshopService()
 				.GetWorkshops()
 				.ToList();
+
+			var tasks = new List<Task<List<Ticket>>>();
+			foreach (var workshop in model.Workshops)
+			{
+				tasks.Add(_ticketService.GetWorkshopTickets(workshop.Id));
+			}
+
+			await Task.WhenAll(tasks);
+
+			model.TicketsLeft = new Dictionary<int, int>();
+			for (var i = 0; i < tasks.Count; i++)
+			{
+				var ticketsLeft = model.Workshops[i].MaxTickets - tasks[i].Result.Count;
+				if (ticketsLeft < 0)
+				{
+					ticketsLeft = 0;
+				}
+
+				model.TicketsLeft.Add(model.Workshops[i].Id, ticketsLeft);
+			}
 
 			return View(model);
 		}

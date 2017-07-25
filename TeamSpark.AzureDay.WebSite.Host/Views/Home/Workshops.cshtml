@@ -47,6 +47,12 @@
 									@Html.Raw($"{Schedule.Language}: {workshop.Language.Title}")
 								}
 							</div>
+							
+							<div style="text-align: justify;">
+								@Workshops.TicketsLeft
+								:
+								@Model.TicketsLeft[workshop.Id]
+							</div>
 
 							<div style="text-align: justify;">
 								<p>

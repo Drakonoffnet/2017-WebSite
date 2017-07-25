@@ -104,7 +104,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				LastName = Localization.App.Service.Speaker.OChorny.LastName,
 				Bio = Localization.App.Service.Speaker.OChorny.Bio.Replace(Environment.NewLine, "<br/>"),
 				Country = _countryService.Ukraine,
-				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/OChorny2.jpg",
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",

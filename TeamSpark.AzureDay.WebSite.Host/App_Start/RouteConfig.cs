@@ -27,6 +27,12 @@ namespace TeamSpark.AzureDay.WebSite.Host
 			);
 
 			routes.MapRoute(
+				name: "SpeakerEntity",
+				url: "speaker/{id}",
+				defaults: new { controller = "Home", action = "SpeakerEntity" }
+			);
+
+			routes.MapRoute(
 				name: "Language",
 				url: "language/{culture}",
 				defaults: new { controller = "Language", action = "Index" }

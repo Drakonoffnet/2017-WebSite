@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using TeamSpark.AzureDay.WebSite.App.Entity;
 
 namespace TeamSpark.AzureDay.WebSite.App.Service
@@ -41,11 +42,16 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			return _speakers;
 		}
 
+		public Speaker GetSpeaker(string id)
+		{
+			return _speakers.SingleOrDefault(x => x.Id.Equals(id, StringComparison.InvariantCultureIgnoreCase));
+		}
+
 		public Speaker ABoyko()
 		{
 			return new Speaker
 			{
-				Id = 1,
+				Id = "ABoyko",
 				FirstName = Localization.App.Service.Speaker.ABoyko.FirstName,
 				LastName = Localization.App.Service.Speaker.ABoyko.LastName,
 				Bio = Localization.App.Service.Speaker.ABoyko.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -69,7 +75,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = 2,
+				Id = "ALaysha",
 				FirstName = Localization.App.Service.Speaker.ALaysha.FirstName,
 				LastName = Localization.App.Service.Speaker.ALaysha.LastName,
 				Bio = Localization.App.Service.Speaker.ALaysha.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -93,7 +99,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = 3,
+				Id = "OChorny",
 				FirstName = Localization.App.Service.Speaker.OChorny.FirstName,
 				LastName = Localization.App.Service.Speaker.OChorny.LastName,
 				Bio = Localization.App.Service.Speaker.OChorny.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -117,7 +123,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = 4,
+				Id = "DDurasau",
 				FirstName = Localization.App.Service.Speaker.DDurasau.FirstName,
 				LastName = Localization.App.Service.Speaker.DDurasau.LastName,
 				Bio = Localization.App.Service.Speaker.DDurasau.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -141,7 +147,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = 5,
+				Id = "IFesenko",
 				FirstName = Localization.App.Service.Speaker.IFesenko.FirstName,
 				LastName = Localization.App.Service.Speaker.IFesenko.LastName,
 				Bio = Localization.App.Service.Speaker.IFesenko.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -165,7 +171,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = 6,
+				Id = "DIvanov",
 				FirstName = Localization.App.Service.Speaker.DIvanov.FirstName,
 				LastName = Localization.App.Service.Speaker.DIvanov.LastName,
 				Bio = Localization.App.Service.Speaker.DIvanov.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -189,7 +195,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = 7,
+				Id = "SKorzh",
 				FirstName = Localization.App.Service.Speaker.SKorzh.FirstName,
 				LastName = Localization.App.Service.Speaker.SKorzh.LastName,
 				Bio = Localization.App.Service.Speaker.SKorzh.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -213,7 +219,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = 8,
+				Id = "SKryshtop",
 				FirstName = Localization.App.Service.Speaker.SKryshtop.FirstName,
 				LastName = Localization.App.Service.Speaker.SKryshtop.LastName,
 				Bio = Localization.App.Service.Speaker.SKryshtop.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -237,7 +243,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = 9,
+				Id = "ILeontiev",
 				FirstName = Localization.App.Service.Speaker.ILeontiev.FirstName,
 				LastName = Localization.App.Service.Speaker.ILeontiev.LastName,
 				Bio = Localization.App.Service.Speaker.ILeontiev.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -285,7 +291,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = 11,
+				Id = "EPolonychko",
 				FirstName = Localization.App.Service.Speaker.EPolonychko.FirstName,
 				LastName = Localization.App.Service.Speaker.EPolonychko.LastName,
 				Bio = Localization.App.Service.Speaker.EPolonychko.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -309,7 +315,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = 12,
+				Id = "DReznik",
 				FirstName = Localization.App.Service.Speaker.DReznik.FirstName,
 				LastName = Localization.App.Service.Speaker.DReznik.LastName,
 				Bio = Localization.App.Service.Speaker.DReznik.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -333,7 +339,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = 13,
+				Id = "IReznykov",
 				FirstName = Localization.App.Service.Speaker.IReznykov.FirstName,
 				LastName = Localization.App.Service.Speaker.IReznykov.LastName,
 				Bio = Localization.App.Service.Speaker.IReznykov.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -357,7 +363,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = 14,
+				Id = "ASurkov",
 				FirstName = Localization.App.Service.Speaker.ASurkov.FirstName,
 				LastName = Localization.App.Service.Speaker.ASurkov.LastName,
 				Bio = Localization.App.Service.Speaker.ASurkov.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -381,7 +387,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = 15,
+				Id = "VThavonekham",
 				FirstName = Localization.App.Service.Speaker.VThavonekham.FirstName,
 				LastName = Localization.App.Service.Speaker.VThavonekham.LastName,
 				Bio = Localization.App.Service.Speaker.VThavonekham.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -405,7 +411,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = 16,
+				Id = "MSmereczynski",
 				FirstName = Localization.App.Service.Speaker.MSmereczynski.FirstName,
 				LastName = Localization.App.Service.Speaker.MSmereczynski.LastName,
 				Bio = Localization.App.Service.Speaker.MSmereczynski.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -429,7 +435,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = 17,
+				Id = "MSmereczynski",
 				FirstName = Localization.App.Service.Speaker.ADeren.FirstName,
 				LastName = Localization.App.Service.Speaker.ADeren.LastName,
 				Bio = Localization.App.Service.Speaker.ADeren.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -453,7 +459,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = 18,
+				Id = "SPoplavskiy",
 				FirstName = Localization.App.Service.Speaker.SPoplavskiy.FirstName,
 				LastName = Localization.App.Service.Speaker.SPoplavskiy.LastName,
 				Bio = Localization.App.Service.Speaker.SPoplavskiy.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -477,7 +483,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = 19,
+				Id = "OKrakovetskyi",
 				FirstName = Localization.App.Service.Speaker.OKrakovetskyi.FirstName,
 				LastName = Localization.App.Service.Speaker.OKrakovetskyi.LastName,
 				Bio = Localization.App.Service.Speaker.OKrakovetskyi.Bio.Replace(Environment.NewLine, "<br/>"),

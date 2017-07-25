@@ -4,14 +4,11 @@ namespace TeamSpark.AzureDay.WebSite.App.Entity
 {
 	public class Speaker
 	{
-		public int Id { get; set; }
+		public string Id { get; set; }
 		public string FirstName { get; set; }
 		public string LastName { get; set; }
 
-		public string FullName
-		{
-			get { return $"{FirstName} {LastName}"; }
-		}
+		public string FullName => $"{FirstName} {LastName}";
 
 		public string PhotoUrl { get; set; }
 		public string Bio { get; set; }
@@ -30,10 +27,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Entity
 		public string CompanyName { get; set; }
 		public string JobTitle { get; set; }
 
-		public string Ocupation
-		{
-			get { return $"{JobTitle} @ {CompanyName}"; }
-		}
+		public string Ocupation => $"{JobTitle} @ {CompanyName}";
 
 		public List<Topic> Topics { get; set; }
 

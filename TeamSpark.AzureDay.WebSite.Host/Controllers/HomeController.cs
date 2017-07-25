@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Http;
@@ -132,6 +133,30 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			{
 				model.TicketsLeft = 0;
 			}
+
+			return View(model);
+		}
+
+		public async Task<ActionResult> SpeakerEntity(string id)
+		{
+			var model = new SpeakerEntityModel();
+
+			model.Speaker = new SpeakerService().GetSpeaker(id);
+
+			if (model.Speaker == null)
+			{
+				return RedirectToAction("Index");
+			}
+
+			model.Workshops = new WorkshopService()
+				.GetWorkshops()
+				.Where(x => x.Speaker.Id.Equals(model.Speaker.Id, StringComparison.InvariantCultureIgnoreCase))
+				.ToList();
+
+			model.Topics = new TopicService()
+				.GetTopics()
+				.Where(x => x.Speaker.Id.Equals(model.Speaker.Id, StringComparison.InvariantCultureIgnoreCase))
+				.ToList();
 
 			return View(model);
 		}

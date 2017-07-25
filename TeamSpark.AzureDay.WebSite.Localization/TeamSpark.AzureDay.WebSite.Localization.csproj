@@ -365,6 +365,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Partners.resx</DependentUpon>
     </Compile>
+    <Compile Include="Host\Views\Home\SpeakerEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpeakerEntity.resx</DependentUpon>
+    </Compile>
     <Compile Include="Host\Views\Home\WorkshopEntity.Designer.cs">
       <DependentUpon>WorkshopEntity.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -764,6 +769,10 @@
     <EmbeddedResource Include="Host\Views\Home\Partners.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Partners.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\SpeakerEntity.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SpeakerEntity.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Home\WorkshopEntity.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

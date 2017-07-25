@@ -1,4 +1,5 @@
 ﻿@using TeamSpark.AzureDay.WebSite.Config
+@using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile
 @{
 	ViewBag.Title = $"AzureDay {Configuration.Year} - подтверждение регистрации";
 }
@@ -14,9 +15,9 @@
 					&nbsp;
 				</div>
 
-				<h1>Регистрация подтверждена</h1>
+				<h1>@ConfirmRegistration.RegistrationConfirmed</h1>
 
-				<p>Через несколько секунд вы будете автоматически перенапралены на главную страницу.</p>
+				<p>@ConfirmRegistration.Routing</p>
 
 			</div>
 		</div>

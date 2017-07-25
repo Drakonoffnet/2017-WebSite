@@ -1,7 +1,9 @@
-﻿<div class="boxedcontent">
+﻿@using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile
+
+<div class="boxedcontent">
 	@Html.Action("Header", "Layout")
 
-	<h1>Feedback</h1>
+	<h1>@Feedback.Feedback</h1>
 
 	@Html.Action("Footer", "Layout")
 

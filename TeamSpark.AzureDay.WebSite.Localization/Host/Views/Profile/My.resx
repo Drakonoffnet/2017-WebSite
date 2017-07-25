@@ -198,4 +198,13 @@
   <data name="TicketPrice" xml:space="preserve">
     <value>Цена</value>
   </data>
+  <data name="Lab01" xml:space="preserve">
+    <value>Лабораторная работа</value>
+  </data>
+  <data name="Ticket01" xml:space="preserve">
+    <value>Билет на конференцию</value>
+  </data>
+  <data name="Ticket02" xml:space="preserve">
+    <value>Билет на лабораторные работы</value>
+  </data>
 </root>

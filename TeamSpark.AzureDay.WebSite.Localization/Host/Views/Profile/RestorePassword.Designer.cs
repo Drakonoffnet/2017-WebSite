@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home {
+namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Workshops {
+    public class RestorePassword {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Workshops() {
+        internal RestorePassword() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home.Workshops", typeof(Workshops).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile.RestorePassword", typeof(RestorePassword).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,38 +61,20 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to agenda.
+        ///   Looks up a localized string similar to На ваш почтовый ящик было отправлено письмо с ссылкой для восстановления пароля. Вам необходимо пройти по этой ссылке для завершения процесса восстановления пароля..
         /// </summary>
-        public static string Agenda {
+        public static string Info {
             get {
-                return ResourceManager.GetString("Agenda", resourceCulture);
+                return ResourceManager.GetString("Info", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 8th of September.
+        ///   Looks up a localized string similar to Восстановление пароля.
         /// </summary>
-        public static string Date {
+        public static string RestorePass {
             get {
-                return ResourceManager.GetString("Date", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to language.
-        /// </summary>
-        public static string Language {
-            get {
-                return ResourceManager.GetString("Language", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to workshops.
-        /// </summary>
-        public static string Title {
-            get {
-                return ResourceManager.GetString("Title", resourceCulture);
+                return ResourceManager.GetString("RestorePass", resourceCulture);
             }
         }
     }

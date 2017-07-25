@@ -169,6 +169,15 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Лабораторная работа.
+        /// </summary>
+        public static string Lab01 {
+            get {
+                return ResourceManager.GetString("Lab01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Last name.
         /// </summary>
         public static string LastName {
@@ -282,6 +291,24 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         public static string ThankYouWait {
             get {
                 return ResourceManager.GetString("ThankYouWait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Билет на конференцию.
+        /// </summary>
+        public static string Ticket01 {
+            get {
+                return ResourceManager.GetString("Ticket01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Билет на лабораторные работы.
+        /// </summary>
+        public static string Ticket02 {
+            get {
+                return ResourceManager.GetString("Ticket02", resourceCulture);
             }
         }
         

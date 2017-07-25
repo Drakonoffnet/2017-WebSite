@@ -1,5 +1,6 @@
 ﻿@using TeamSpark.AzureDay.WebSite.Config
 @using TeamSpark.AzureDay.WebSite.Data.Enum
+@using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home
 @model TeamSpark.AzureDay.WebSite.Host.Models.Home.PartnersModel
 @{
 	ViewBag.Title = $"AzureDay {Configuration.Year} - партнеры";
@@ -13,7 +14,7 @@
 			<div class="col-md-12">
 				<div class="titleborder center">
 					<div>
-						<h1 class="maintitle animated fadeInDownBig">Партнеры AZUREDAY</h1>
+						<h1 class="maintitle animated fadeInDownBig">@Partners.Partners</h1>
 					</div>
 				</div>
 			</div>

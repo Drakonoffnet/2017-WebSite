@@ -349,6 +349,8 @@
     <Content Include="Theme\css\skins\redbrown.css" />
     <Content Include="Theme\css\skins\yellow.css" />
     <Content Include="Theme\css\wowslider.css" />
+    <Content Include="Theme\fonts\fontawesome-webfont.svg" />
+    <Content Include="Theme\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Theme\img\bg\bg0.png" />
     <Content Include="Theme\img\bg\bg1.png" />
     <Content Include="Theme\img\bg\bg10.png" />
@@ -531,6 +533,15 @@
     <Content Include="Views\Home\Workshops.cshtml" />
     <Content Include="Views\Home\WorkshopEntity.cshtml" />
     <Content Include="Views\Home\SpeakerEntity.cshtml" />
+    <Content Include="Theme\fonts\fontawesome-webfont.eot" />
+    <Content Include="Theme\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Theme\fonts\fontawesome-webfont.woff" />
+    <Content Include="Theme\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Theme\fonts\FontAwesome.otf" />
+    <Content Include="Theme\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Theme\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Theme\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Theme\fonts\glyphicons-halflings-regular.woff2" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

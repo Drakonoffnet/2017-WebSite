@@ -17,15 +17,16 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			_workshops = new List<Workshop>
 			{
-				new Workshop
-				{
-					Id = 1,
-					Language = _languageService.English,
-					Room = _roomService.Workshop1,
-					Speaker = _speakerService.MMartensson(),
-					Title = Localization.App.Service.Workshops.MMartensson_01.Title,
-					Description = Localization.App.Service.Workshops.MMartensson_01.Description.Replace(Environment.NewLine, "<br/>")
-				},
+				//new Workshop
+				//{
+				//	Id = 1,
+				//	Language = _languageService.English,
+				//	Room = _roomService.Workshop1,
+				//	Speaker = _speakerService.MMartensson(),
+				//	MaxTickets = 20,
+				//	Title = Localization.App.Service.Workshops.MMartensson_01.Title,
+				//	Description = Localization.App.Service.Workshops.MMartensson_01.Description.Replace(Environment.NewLine, "<br/>")
+				//},
 				new Workshop
 				{
 					Id = 2,
@@ -97,7 +98,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			return _workshops;
 		}
 
-		public Workshop MMartensson_01 { get { return _workshops.Single(x => x.Id == 1); } }
+		//public Workshop MMartensson_01 { get { return _workshops.Single(x => x.Id == 1); } }
 		public Workshop DIvanov_01 { get { return _workshops.Single(x => x.Id == 2); } }
 		public Workshop EPolonychko_02 { get { return _workshops.Single(x => x.Id == 3); } }
 		public Workshop ILeontiev_01 { get { return _workshops.Single(x => x.Id == 4); } }

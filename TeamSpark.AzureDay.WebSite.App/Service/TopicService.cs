@@ -24,14 +24,14 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Title = Localization.App.Service.Topics.Keynote.Title,
 					Description = Localization.App.Service.Topics.Keynote.Description.Replace(Environment.NewLine, "<br/>")
 				},
-				new Topic
-				{
-					Id = 1,
-					Language = _languageService.English,
-					Speaker = _speakerService.MMartensson(),
-					Title = Localization.App.Service.Topics.MMartensson_05.Title,
-					Description = Localization.App.Service.Topics.MMartensson_05.Description.Replace(Environment.NewLine, "<br/>")
-				},
+				//new Topic
+				//{
+				//	Id = 1,
+				//	Language = _languageService.English,
+				//	Speaker = _speakerService.MMartensson(),
+				//	Title = Localization.App.Service.Topics.MMartensson_05.Title,
+				//	Description = Localization.App.Service.Topics.MMartensson_05.Description.Replace(Environment.NewLine, "<br/>")
+				//},
 				new Topic
 				{
 					Id = 2,
@@ -119,6 +119,14 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Speaker = _speakerService.ABoyko(),
 					Title = Localization.App.Service.Topics.ABoyko_02.Title,
 					Description = Localization.App.Service.Topics.ABoyko_02.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 13,
+					Language = _languageService.Ukrainian,
+					Speaker = _speakerService.OKrakovetskyi(),
+					Title = Localization.App.Service.Topics.OKrakovetskyi_02.Title,
+					Description = Localization.App.Service.Topics.OKrakovetskyi_02.Description.Replace(Environment.NewLine, "<br/>")
 				}
 			};
 		}
@@ -129,7 +137,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		}
 
 		public Topic Keynote { get { return _topics.Single(x => x.Id == 0); } }
-		public Topic MMartensson_05 { get { return _topics.Single(x => x.Id == 1); } }
+		//public Topic MMartensson_05 { get { return _topics.Single(x => x.Id == 1); } }
 		public Topic ALaysha_01 { get { return _topics.Single(x => x.Id == 2); } }
 		public Topic ASurkov_01 { get { return _topics.Single(x => x.Id == 3); } }
 		public Topic DReznik_01 { get { return _topics.Single(x => x.Id == 4); } }
@@ -141,5 +149,6 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		public Topic SPoplavskiy_02 { get { return _topics.Single(x => x.Id == 10); } }
 		public Topic IFesenko_01 { get { return _topics.Single(x => x.Id == 11); } }
 		public Topic ABoyko_02 { get { return _topics.Single(x => x.Id == 12); } }
+		public Topic OKrakovetskyi_02 { get { return _topics.Single(x => x.Id == 13); } }
 	}
 }

@@ -65,6 +65,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Speaker\OKrakovetskyi.Designer.cs">
+      <DependentUpon>OKrakovetskyi.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Speaker\SPoplavskiy.ru.Designer.cs">
       <DependentUpon>SPoplavskiy.ru.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -229,6 +234,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ABoyko.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Topics\OKrakovetskyi_02.Designer.cs">
+      <DependentUpon>OKrakovetskyi_02.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="App\Service\Topics\ABoyko_02.Designer.cs">
       <DependentUpon>ABoyko_02.resx</DependentUpon>
@@ -465,6 +475,10 @@
       <LastGenOutput>Room.ru.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\OKrakovetskyi.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OKrakovetskyi.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\SPoplavskiy.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SPoplavskiy.ru.Designer.cs</LastGenOutput>
@@ -596,6 +610,10 @@
     <EmbeddedResource Include="App\Service\Speaker\ABoyko.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ABoyko.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\OKrakovetskyi_02.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OKrakovetskyi_02.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\ABoyko_02.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

@@ -12,7 +12,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		public SpeakerService()
 		{
 			_speakers.Add(ABoyko());
-			_speakers.Add(MMartensson());
+			//_speakers.Add(MMartensson());
+			_speakers.Add(OKrakovetskyi());
 			_speakers.Add(DReznik());
 			_speakers.Add(ALaysha());
 
@@ -256,29 +257,29 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			};
 		}
 
-		public Speaker MMartensson()
-		{
-			return new Speaker
-			{
-				Id = 10,
-				FirstName = Localization.App.Service.Speaker.MMartensson.FirstName,
-				LastName = Localization.App.Service.Speaker.MMartensson.LastName,
-				Bio = Localization.App.Service.Speaker.MMartensson.Bio.Replace(Environment.NewLine, "<br/>"),
-				Country = _countryService.Sweden,
-				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/MMartensson.jpg",
-				FacebookUrl = "https://www.facebook.com/noopman",
-				GitHubUrl = "",
-				GoogleUrl = "",
-				LinkedInUrl = "https://www.linkedin.com/in/noopman",
-				MsdnUrl = "",
-				MvpUrl = "",
-				TwitterUrl = "https://twitter.com/noopman",
-				YouTubeUrl = "",
-				WebUrl = "",
-				CompanyName = "Loftysoft",
-				JobTitle = "CEO"
-			};
-		}
+		//public Speaker MMartensson()
+		//{
+		//	return new Speaker
+		//	{
+		//		Id = 10,
+		//		FirstName = Localization.App.Service.Speaker.MMartensson.FirstName,
+		//		LastName = Localization.App.Service.Speaker.MMartensson.LastName,
+		//		Bio = Localization.App.Service.Speaker.MMartensson.Bio.Replace(Environment.NewLine, "<br/>"),
+		//		Country = _countryService.Sweden,
+		//		PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/MMartensson.jpg",
+		//		FacebookUrl = "https://www.facebook.com/noopman",
+		//		GitHubUrl = "",
+		//		GoogleUrl = "",
+		//		LinkedInUrl = "https://www.linkedin.com/in/noopman",
+		//		MsdnUrl = "",
+		//		MvpUrl = "",
+		//		TwitterUrl = "https://twitter.com/noopman",
+		//		YouTubeUrl = "",
+		//		WebUrl = "",
+		//		CompanyName = "Loftysoft",
+		//		JobTitle = "CEO"
+		//	};
+		//}
 
 		public Speaker EPolonychko()
 		{
@@ -469,6 +470,30 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				WebUrl = "",
 				CompanyName = "Microsoft",
 				JobTitle = "Commercial Software Engineer, CEE"
+			};
+		}
+
+		public Speaker OKrakovetskyi()
+		{
+			return new Speaker
+			{
+				Id = 19,
+				FirstName = Localization.App.Service.Speaker.OKrakovetskyi.FirstName,
+				LastName = Localization.App.Service.Speaker.OKrakovetskyi.LastName,
+				Bio = Localization.App.Service.Speaker.OKrakovetskyi.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/OKrakovetskyi.jpg",
+				FacebookUrl = "https://www.facebook.com/alex.krakovetskiy",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "https://www.linkedin.com/in/krakovetskiy/",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "https://twitter.com/msugvnua",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "DevRain Solutions",
+				JobTitle = "CEO"
 			};
 		}
 	}

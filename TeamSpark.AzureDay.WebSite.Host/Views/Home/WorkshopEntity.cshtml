@@ -2,7 +2,7 @@
 @using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home
 @model TeamSpark.AzureDay.WebSite.Host.Models.Home.WorkshopEntityModel
 @{
-	ViewBag.Title = $"AzureDay {Configuration.Year} - {Workshops.Title}";
+	ViewBag.Title = $"AzureDay {Configuration.Year} - {Model.Workshop.Title}";
 }
 
 <div class="boxedcontent">

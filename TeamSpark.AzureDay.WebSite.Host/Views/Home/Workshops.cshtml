@@ -33,15 +33,15 @@
 						<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
 							@if (workshop.Speaker != null)
 							{
-							<div class="mySlotAuthor">
-								@workshop.Speaker.FullName
-							</div>
+								<div class="mySlotAuthor">
+									@workshop.Speaker.FullName
+								</div>
 							}
 							<div style="text-align: center;">
 								<div class="mySlotTime">
 									9:00 - 17:00
 								</div>
-								<b>@workshop.Title</b><br /><br />
+								<a style="color: #777;" href="/workshop/@workshop.Id"><b>@workshop.Title</b></a><br /><br />
 								@if (workshop.Language != null && !string.IsNullOrEmpty(workshop.Language.Title))
 								{
 									@Html.Raw($"{Schedule.Language}: {workshop.Language.Title}")

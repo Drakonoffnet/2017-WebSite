@@ -230,6 +230,7 @@
     <Compile Include="Helpers\CdnHelper.cs" />
     <Compile Include="Models\Home\IndexModel.cs" />
     <Compile Include="Models\Home\PartnersModel.cs" />
+    <Compile Include="Models\Home\WorkshopEntityModel.cs" />
     <Compile Include="Models\Home\WorkshopsModel.cs" />
     <Compile Include="Models\Home\ScheduleModel.cs" />
     <Compile Include="Models\Home\SpeakersModel.cs" />
@@ -527,6 +528,7 @@
     <Content Include="Views\Home\Partners.cshtml" />
     <Content Include="Views\Profile\RestorePassword.cshtml" />
     <Content Include="Views\Home\Workshops.cshtml" />
+    <Content Include="Views\Home\WorkshopEntity.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

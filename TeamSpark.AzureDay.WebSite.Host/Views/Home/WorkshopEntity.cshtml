@@ -1,0 +1,73 @@
+﻿@using TeamSpark.AzureDay.WebSite.Config
+@using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home
+@model TeamSpark.AzureDay.WebSite.Host.Models.Home.WorkshopEntityModel
+@{
+	ViewBag.Title = $"AzureDay {Configuration.Year} - {Workshops.Title}";
+}
+
+<div class="boxedcontent">
+	@Html.Action("Header", "Layout")
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="titleborder center">
+					<div>
+						<h1 class="animated fadeInDownBig" style="text-transform: capitalize">@Workshops.Title AzureDay</h1>
+						<h2 class="animated fadeInDownBig">@Workshops.Date</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="box effect6 @($"myAreaBoxBorder{Model.Workshop.Room.ColorNumber}")">
+					
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+						<img class="img-responsible" style="margin-bottom: 10px;" src="@Model.Workshop.Speaker.PhotoUrl" alt="@Model.Workshop.Speaker.FullName" />
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+						@if (Model.Workshop.Speaker != null)
+						{
+						<div class="mySlotAuthor">
+							@Model.Workshop.Speaker.FullName
+						</div>
+						}
+						<div style="text-align: center;">
+							<div class="mySlotTime">
+								9:00 - 17:00
+							</div>
+							<b>@Model.Workshop.Title</b><br /><br />
+							@if (Model.Workshop.Language != null && !string.IsNullOrEmpty(Model.Workshop.Language.Title))
+							{
+								@Html.Raw($"{Schedule.Language}: {Model.Workshop.Language.Title}")
+							}
+						</div>
+							
+						<div style="text-align: justify;">
+							@Workshops.TicketsLeft
+							:
+							@Model.TicketsLeft
+						</div>
+
+						<div style="text-align: justify;">
+							<p>
+								@Workshops.Agenda
+							</p>
+							<p>
+							...
+							</p>
+						</div>
+					</div>
+				</div>
+					
+			</div>
+		</div>
+
+	</div>
+
+	@Html.Action("Footer", "Layout")
+
+</div><!-- end boxedcontent -->

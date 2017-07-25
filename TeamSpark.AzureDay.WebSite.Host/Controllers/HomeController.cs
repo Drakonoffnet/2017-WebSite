@@ -115,6 +115,27 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			return View(model);
 		}
 
+		public async Task<ActionResult> WorkshopEntity(int id)
+		{
+			var model = new WorkshopEntityModel();
+
+			model.Workshop = new WorkshopService()
+				.GetWorkshop(id);
+
+			if (model.Workshop == null)
+			{
+				return RedirectToAction("Workshops");
+			}
+
+			model.TicketsLeft = model.Workshop.MaxTickets - (await _ticketService.GetWorkshopTickets(id)).Count;
+			if (model.TicketsLeft < 0)
+			{
+				model.TicketsLeft = 0;
+			}
+
+			return View(model);
+		}
+
 		public async Task<ActionResult> Partners()
 		{
 			var model = new PartnersModel();

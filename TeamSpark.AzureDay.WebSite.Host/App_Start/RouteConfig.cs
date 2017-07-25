@@ -21,6 +21,12 @@ namespace TeamSpark.AzureDay.WebSite.Host
 			);
 
 			routes.MapRoute(
+				name: "WorkshopEntity",
+				url: "workshop/{id}",
+				defaults: new { controller = "Home", action = "WorkshopEntity" }
+			);
+
+			routes.MapRoute(
 				name: "Language",
 				url: "language/{culture}",
 				defaults: new { controller = "Language", action = "Index" }

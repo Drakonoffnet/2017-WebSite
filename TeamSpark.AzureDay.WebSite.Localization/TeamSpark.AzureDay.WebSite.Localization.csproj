@@ -365,8 +365,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Partners.resx</DependentUpon>
     </Compile>
+    <Compile Include="Host\Views\Home\WorkshopEntity.Designer.cs">
+      <DependentUpon>WorkshopEntity.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Host\Views\Home\Workshops.Designer.cs">
       <DependentUpon>Workshops.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Host\Views\Home\WorkshopEntity.ru.Designer.cs">
+      <DependentUpon>WorkshopEntity.ru.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -755,9 +765,17 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Partners.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\WorkshopEntity.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>WorkshopEntity.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Home\Workshops.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Workshops.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\WorkshopEntity.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>WorkshopEntity.ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Home\Workshops.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

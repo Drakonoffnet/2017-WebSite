@@ -123,7 +123,7 @@
   <data name="Enter" xml:space="preserve">
     <value>Вход в личный кабинет участника</value>
   </data>
-  <data name="Login" xml:space="preserve">
+  <data name="LoginTxt" xml:space="preserve">
     <value>Войти</value>
   </data>
   <data name="Pass" xml:space="preserve">

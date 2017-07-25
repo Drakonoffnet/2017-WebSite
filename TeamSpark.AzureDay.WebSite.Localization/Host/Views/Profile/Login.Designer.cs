@@ -81,9 +81,9 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         /// <summary>
         ///   Looks up a localized string similar to Войти.
         /// </summary>
-        public static string Login {
+        public static string LoginTxt {
             get {
-                return ResourceManager.GetString("Login", resourceCulture);
+                return ResourceManager.GetString("LoginTxt", resourceCulture);
             }
         }
         

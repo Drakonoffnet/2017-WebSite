@@ -63,9 +63,9 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         /// <summary>
         ///   Looks up a localized string similar to Quiz.
         /// </summary>
-        public static string Quiz {
+        public static string QuizTitle {
             get {
-                return ResourceManager.GetString("Quiz", resourceCulture);
+                return ResourceManager.GetString("QuizTitle", resourceCulture);
             }
         }
     }

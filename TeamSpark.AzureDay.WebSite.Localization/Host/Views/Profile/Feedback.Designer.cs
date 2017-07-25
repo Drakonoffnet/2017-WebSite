@@ -63,9 +63,9 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         /// <summary>
         ///   Looks up a localized string similar to Feedback.
         /// </summary>
-        public static string Feedback {
+        public static string FeedbackTitle {
             get {
-                return ResourceManager.GetString("Feedback", resourceCulture);
+                return ResourceManager.GetString("FeedbackTitle", resourceCulture);
             }
         }
     }

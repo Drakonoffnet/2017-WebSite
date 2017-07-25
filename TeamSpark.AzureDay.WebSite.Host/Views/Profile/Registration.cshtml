@@ -1,4 +1,5 @@
 ﻿@using TeamSpark.AzureDay.WebSite.Config
+@using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile
 @model TeamSpark.AzureDay.WebSite.Host.Models.Profile.RegistrationModel
 
 @{
@@ -17,16 +18,16 @@
 					&nbsp;
 				</div>
 
-				<h1>Регистрация на <span class='colortext'>AzureDay</span></h1>
+				<h1>@Registration.RegisterFor<span class='colortext'>AzureDay</span></h1>
 
 				<div style="padding-bottom: 25px;">
-					Для того, чтобы зарегистрироваться на AzureDay и получить возможность <span class='colortext'>купить билет на конференцию</span>, заполните форму, приведенную ниже.
+					@Registration.ToRegister01<span class='colortext'>@Registration.ToRegister01a</span>@Registration.ToRegister01b
 				</div>
 				<div>
-					Регистрация <span class='colortext'>не является билетом</span> на конференцию и является бесплатной. После регистрации (создания учетной записи участника AzureDay) вам будет предложено приобрести билет.
+					@Registration.ToRegister02<span class='colortext'>@Registration.ToRegister02a</span>@Registration.ToRegister02b
 				</div>
 				<div style="padding-bottom: 25px;">
-					Пользователи, которые создали учетную запись AzureDay, будут получать уведомления и новости конференции.
+					@Registration.ToRegister03
 				</div>
 
 				@if (!string.IsNullOrEmpty(Model.ErrorMessage))
@@ -39,47 +40,47 @@
 				<form method="POST" data-bind="submit: showModal">
 
 					<div class="input-group myInputGroupdivider">
-						<span class="input-group-addon" style="width: 150px;">Email</span>
-						<input class="form-control" name="email" data-bind="textInput: email" placeholder="Email" style="width: 250px;" />
+						<span class="input-group-addon" style="width: 150px;">@Registration.Email</span>
+						<input class="form-control" name="email" data-bind="textInput: email" placeholder="@Registration.Email" style="width: 250px;" />
 					</div>
 
 					<div class="input-group myInputGroupdivider">
-						<span class="input-group-addon" style="width: 150px;">Пароль</span>
-						<input class="form-control" name="password" type="password" data-bind="textInput: password" placeholder="Пароль" style="width: 250px;" />
+						<span class="input-group-addon" style="width: 150px;">@Registration.Pass</span>
+						<input class="form-control" name="password" type="password" data-bind="textInput: password" placeholder="@Registration.Pass" style="width: 250px;" />
 					</div>
 
 					<div class="input-group myInputGroupdivider">
-						<span class="input-group-addon" style="width: 150px;">Повторите пароль</span>
-						<input class="form-control" type="password" data-bind="textInput: password2" placeholder="Пароль еще раз" style="width: 250px;" />
+						<span class="input-group-addon" style="width: 150px;">@Registration.RepeatPass</span>
+						<input class="form-control" type="password" data-bind="textInput: password2" placeholder="@Registration.RepeatPass" style="width: 250px;" />
 					</div>
 
-					<div style="width: 400px;" class="alert alert-danger" role="alert" data-bind="style: { display: isPasswordValid() ? 'none' : 'block' }">Пароли должны совпадать</div>
-					<div style="width: 400px;" class="alert alert-danger" role="alert" data-bind="style: { display: isPasswordLengthValid() && isPasswordLength2Valid() ? 'none' : 'block' }">Минимальная длина пароля 6 символов</div>
+					<div style="width: 400px;" class="alert alert-danger" role="alert" data-bind="style: { display: isPasswordValid() ? 'none' : 'block' }">@Registration.PassMatch</div>
+					<div style="width: 400px;" class="alert alert-danger" role="alert" data-bind="style: { display: isPasswordLengthValid() && isPasswordLength2Valid() ? 'none' : 'block' }">@Registration.PassLength</div>
 
 					<div class="input-group myInputGroupdivider">
-						<span class="input-group-addon" style="width: 150px;">Имя</span>
-						<input class="form-control" name="firstName" data-bind="textInput: fName" placeholder="Имя" style="width: 250px;" />
+						<span class="input-group-addon" style="width: 150px;">@Registration.Name</span>
+						<input class="form-control" name="firstName" data-bind="textInput: fName" placeholder="@Registration.Name" style="width: 250px;" />
 					</div>
 					<div class="input-group myInputGroupdivider">
-						<span class="input-group-addon" style="width: 150px;">Фамилия</span>
-						<input class="form-control" name="lastName" data-bind="textInput: lName" placeholder="Фамилия" style="width: 250px;" />
+						<span class="input-group-addon" style="width: 150px;">@Registration.Surname</span>
+						<input class="form-control" name="lastName" data-bind="textInput: lName" placeholder="@Registration.Surname" style="width: 250px;" />
 					</div>
 					<div class="input-group myInputGroupdivider">
-						<span class="input-group-addon" style="width: 150px;">Компания</span>
-						<input class="form-control" name="company" data-bind="textInput: company" placeholder="Компания" style="width: 250px;" />
+						<span class="input-group-addon" style="width: 150px;">@Registration.Company</span>
+						<input class="form-control" name="company" data-bind="textInput: company" placeholder="@Registration.Company" style="width: 250px;" />
 					</div>
 
-					<button class="btn btn-primary" type="submit" data-bind="enable: isModelValid">Зарегистрироваться</button>
+					<button class="btn btn-primary" type="submit" data-bind="enable: isModelValid">@Registration.Register</button>
 
-					<div style="width: 400px; margin-top: 15px;" class="alert alert-warning" data-bind="style: { display: isModelValid() ? 'none' : 'block' }">Все поля обязательны для заполнения</div>
+					<div style="width: 400px; margin-top: 15px;" class="alert alert-warning" data-bind="style: { display: isModelValid() ? 'none' : 'block' }">@Registration.FillAllFields</div>
 
 				</form>
 
 				<div>
-					Личные данные, которые вы предоставите в учетной записи участника AZUREday, не будут переданы третьим лицам и будут использованы только для идентификации вас как участника конференции AZUREday.
+					@Registration.Terms01
 				</div>
 				<div>
-					Вы соглашаетесь с этим, создавая учетную запись AZUREday.
+					@Registration.Terms01a
 				</div>
 
 			</div>
@@ -92,9 +93,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 negmtop">
-							<h1 class="pgheadertitle animated fadeInLeft pull-left">Билеты</h1>
+							<h1 class="pgheadertitle animated fadeInLeft pull-left">@Registration.Tickets</h1>
 							<span class="pagedescrarea text-right animated fadeInRight pull-right">
-								<i>Воспользуйтесь своей скидкой!</i>
+								<i>@Registration.UseYourDiscount</i>
 							</span>
 						</div>
 					</div>
@@ -106,17 +107,17 @@
 					<div class="wow-pricing-table col-md-12">
 						<div class="wow-pricing wow-column-">
 							<div class="wow-pricing-header">
-								<h5>Conference</h5>
+								<h5>@Registration.TicketType01</h5>
 								<div class="wow-pricing-cost">
-									@Configuration.TicketRegular грн.
+									@Configuration.TicketRegular UAH
 								</div>
 								<div class="wow-pricing-per">
-									за 1 билет
+									@Registration.OneTicket
 								</div>
 							</div>
 							<div class="wow-pricing-content">
 								<ul>
-									<li>цена до 1го сентября</li>
+									<li>@Registration.BestBefore01</li>
 								</ul>
 							</div>
 						</div>
@@ -125,17 +126,17 @@
 					<div class="wow-pricing-table col-md-12">
 						<div class="wow-pricing featured wow-column-">
 							<div class="wow-pricing-header">
-								<h5>Workshop</h5>
+								<h5>@Registration.TicketType02</h5>
 								<div class="wow-pricing-cost">
 									@Configuration.TicketWorkshop грн.
 								</div>
 								<div class="wow-pricing-per">
-									за 1 билет
+									@Registration.OneTicket
 								</div>
 							</div>
 							<div class="wow-pricing-content">
 								<ul>
-									<li>цена до 1го сентября</li>
+									<li>@Registration.BestBefore01</li>
 								</ul>
 							</div>
 						</div>

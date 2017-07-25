@@ -117,94 +117,82 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Attendee" xml:space="preserve">
-    <value>Участник</value>
+  <data name="BestBefore01" xml:space="preserve">
+    <value>цена до 1го сентября</value>
   </data>
-  <data name="ByLink" xml:space="preserve">
-    <value>ссылку</value>
+  <data name="Company" xml:space="preserve">
+    <value>Компания</value>
   </data>
-  <data name="CompanyName" xml:space="preserve">
-    <value>Company name</value>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
   </data>
-  <data name="DropPayment01" xml:space="preserve">
-    <value>Если вы хотите сбросить данные в форме заказа билета, нажмите на</value>
-  </data>
-  <data name="DropPayment01a" xml:space="preserve">
-    <value>. Обратите внимание, что вы не можете сбросить успешно оплаченный билет. Вы также не можете отменить оплату, если она уже прошла.</value>
-  </data>
-  <data name="FirstName" xml:space="preserve">
-    <value>First name</value>
-  </data>
-  <data name="HowToUseTicket" xml:space="preserve">
-    <value>Для того, чтобы прийти на AzureDay, вам не нужно печатать билет. Вместо этого вам необходимо запомнить, какие ФИО и какой адрес электронной почты вы вводили при регистрации на конференцию. Эту информацию вам необходимо будет предоставить при входе на конференцию и/или лабораторные работы.</value>
-  </data>
-  <data name="isModelValid" xml:space="preserve">
+  <data name="FillAllFields" xml:space="preserve">
     <value>Все поля обязательны для заполнения</value>
   </data>
-  <data name="isPasswordLengthValid" xml:space="preserve">
+  <data name="Name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="OneTicket" xml:space="preserve">
+    <value>за 1 билет</value>
+  </data>
+  <data name="Pass" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="PassLength" xml:space="preserve">
     <value>Минимальная длина пароля 6 символов</value>
   </data>
-  <data name="isPasswordValid" xml:space="preserve">
+  <data name="PassMatch" xml:space="preserve">
     <value>Пароли должны совпадать</value>
   </data>
-  <data name="JobTitle" xml:space="preserve">
-    <value>Job title</value>
+  <data name="Register" xml:space="preserve">
+    <value>Зарегистрироваться</value>
   </data>
-  <data name="LastName" xml:space="preserve">
-    <value>Last name</value>
+  <data name="RegisterFor" xml:space="preserve">
+    <value>Регистрация на</value>
   </data>
-  <data name="MyProfile" xml:space="preserve">
-    <value>My profile</value>
+  <data name="RepeatPass" xml:space="preserve">
+    <value>Повторите пароль</value>
   </data>
-  <data name="MyTicket" xml:space="preserve">
-    <value>My ticket</value>
+  <data name="Surname" xml:space="preserve">
+    <value>Фамилия</value>
   </data>
-  <data name="Password" xml:space="preserve">
-    <value>Password</value>
+  <data name="Terms01" xml:space="preserve">
+    <value>Личные данные, которые вы предоставите в учетной записи участника AZUREday, не будут переданы третьим лицам и будут использованы только для идентификации вас как участника конференции AZUREday.</value>
   </data>
-  <data name="PasswordAgain" xml:space="preserve">
-    <value>Password again</value>
+  <data name="Terms01a" xml:space="preserve">
+    <value>Вы соглашаетесь с этим, создавая учетную запись AZUREday.</value>
   </data>
-  <data name="PayByCard" xml:space="preserve">
-    <value>Оплатить картой</value>
+  <data name="Tickets" xml:space="preserve">
+    <value>Билеты</value>
   </data>
-  <data name="PayNow" xml:space="preserve">
-    <value>Если вы не совершили оплату, то вы можете повторно перейти на форму оплаты используя</value>
+  <data name="TicketType01" xml:space="preserve">
+    <value>Conference</value>
   </data>
-  <data name="PayViaLiqPay" xml:space="preserve">
-    <value>Pay via LiqPay</value>
+  <data name="TicketType02" xml:space="preserve">
+    <value>Workshop</value>
   </data>
-  <data name="PersonalCabinet" xml:space="preserve">
-    <value>Personal cabinet</value>
+  <data name="ToRegister01" xml:space="preserve">
+    <value>Для того, чтобы зарегистрироваться на AzureDay и получить возможность</value>
   </data>
-  <data name="Questions01" xml:space="preserve">
-    <value>Если у вас возникли вопросы по оплате, вы можете написать письмо на адрес</value>
+  <data name="ToRegister01a" xml:space="preserve">
+    <value>купить билет на конференцию</value>
   </data>
-  <data name="Questions01a" xml:space="preserve">
-    <value>и мы поможем вам решить все ваши вопросы.</value>
+  <data name="ToRegister01b" xml:space="preserve">
+    <value>, заполните форму, приведенную ниже.</value>
   </data>
-  <data name="Save" xml:space="preserve">
-    <value>Save</value>
+  <data name="ToRegister02" xml:space="preserve">
+    <value>Регистрация</value>
   </data>
-  <data name="ThankYouWait" xml:space="preserve">
-    <value>Большое спасибо, ваш платеж обрабатывается. Вы получите подтверждение на адрес электронной почты как только мы подтвердим оплату. Вы можете получить подтверждение о списании средств с вашей карты раньше нас, но не переживайте, мы все равно увидим вашу оплату если она была успешной.</value>
+  <data name="ToRegister02a" xml:space="preserve">
+    <value>не является билетом</value>
   </data>
-  <data name="Currency" xml:space="preserve">
-    <value>грн.</value>
+  <data name="ToRegister02b" xml:space="preserve">
+    <value>на конференцию и является бесплатной. После регистрации (создания учетной записи участника AzureDay) вам будет предложено приобрести билет.</value>
   </data>
-  <data name="TicketCode" xml:space="preserve">
-    <value>Промо код</value>
+  <data name="ToRegister03" xml:space="preserve">
+    <value>Пользователи, которые создали учетную запись AzureDay, будут получать уведомления и новости конференции.</value>
   </data>
-  <data name="TicketPrice" xml:space="preserve">
-    <value>Цена</value>
-  </data>
-  <data name="Lab01" xml:space="preserve">
-    <value>Лабораторная работа</value>
-  </data>
-  <data name="Ticket01" xml:space="preserve">
-    <value>Билет на конференцию</value>
-  </data>
-  <data name="Ticket02" xml:space="preserve">
-    <value>Билет на лабораторные работы</value>
+  <data name="UseYourDiscount" xml:space="preserve">
+    <value>Воспользуйтесь своей скидкой!</value>
   </data>
 </root>

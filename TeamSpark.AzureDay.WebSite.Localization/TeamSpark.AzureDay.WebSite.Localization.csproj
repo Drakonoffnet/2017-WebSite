@@ -360,6 +360,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Index.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="Host\Views\Home\Partners.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Partners.resx</DependentUpon>
+    </Compile>
     <Compile Include="Host\Views\Home\Workshops.Designer.cs">
       <DependentUpon>Workshops.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -395,10 +400,45 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_Speakers.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="Host\Views\Profile\ConfirmEmail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConfirmEmail.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Host\Views\Profile\ConfirmRegistration.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConfirmRegistration.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Host\Views\Profile\Feedback.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Feedback.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Host\Views\Profile\Login.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login.resx</DependentUpon>
+    </Compile>
     <Compile Include="Host\Views\Profile\My.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>My.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Host\Views\Profile\Quiz.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Quiz.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Host\Views\Profile\Registration.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Registration.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Host\Views\Profile\RestorePassword.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestorePassword.resx</DependentUpon>
     </Compile>
     <Compile Include="Host\Views\Shared\_Banner.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -711,6 +751,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Index.ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\Partners.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Partners.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Home\Workshops.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Workshops.Designer.cs</LastGenOutput>
@@ -739,9 +783,37 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>_Speakers.ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\ConfirmEmail.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConfirmEmail.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\ConfirmRegistration.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConfirmRegistration.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\Feedback.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Feedback.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\Login.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Login.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Profile\My.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>My.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\Quiz.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Quiz.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\Registration.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Registration.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\RestorePassword.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>RestorePassword.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Shared\_Banner.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

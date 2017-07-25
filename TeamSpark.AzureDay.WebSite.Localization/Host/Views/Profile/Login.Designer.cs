@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home {
+namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Workshops {
+    public class Login {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Workshops() {
+        internal Login() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home.Workshops", typeof(Workshops).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile.Login", typeof(Login).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,47 +61,47 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to agenda.
+        ///   Looks up a localized string similar to Email.
         /// </summary>
-        public static string Agenda {
+        public static string Email {
             get {
-                return ResourceManager.GetString("Agenda", resourceCulture);
+                return ResourceManager.GetString("Email", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 8th of September.
+        ///   Looks up a localized string similar to Вход в личный кабинет участника.
         /// </summary>
-        public static string Date {
+        public static string Enter {
             get {
-                return ResourceManager.GetString("Date", resourceCulture);
+                return ResourceManager.GetString("Enter", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to language.
+        ///   Looks up a localized string similar to Войти.
         /// </summary>
-        public static string Language {
+        public static string Login {
             get {
-                return ResourceManager.GetString("Language", resourceCulture);
+                return ResourceManager.GetString("Login", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to tickets left.
+        ///   Looks up a localized string similar to Пароль.
         /// </summary>
-        public static string TicketsLeft {
+        public static string Pass {
             get {
-                return ResourceManager.GetString("TicketsLeft", resourceCulture);
+                return ResourceManager.GetString("Pass", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to workshops.
+        ///   Looks up a localized string similar to Восстановить пароль.
         /// </summary>
-        public static string Title {
+        public static string RestorePass {
             get {
-                return ResourceManager.GetString("Title", resourceCulture);
+                return ResourceManager.GetString("RestorePass", resourceCulture);
             }
         }
     }

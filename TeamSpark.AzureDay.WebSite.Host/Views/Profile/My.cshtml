@@ -70,7 +70,7 @@
 							@if (Model.PayedConferenceTicket == null)
 							{
 								<div class="input-group myInputGroupdivider">
-									<span class="input-group-addon" style="width: 150px;">Билет на конференцию</span>
+									<span class="input-group-addon" style="width: 150px;">@My.Ticket01</span>
 									<input type="checkbox" class="form-control" name="cbConferenceTicket" data-bind="checked: isConferenceTicket"/>
 								</div>
 							}
@@ -118,11 +118,11 @@
 							@if (Model.PayedWorkshopTicket == null)
 							{
 								<div class="input-group myInputGroupdivider">
-									<span class="input-group-addon" style="width: 150px;">Билет на лабораторные работы</span>
+									<span class="input-group-addon" style="width: 150px;">@My.Ticket02</span>
 									<input type="checkbox" class="form-control" name="cbWorkshopTicket" data-bind="checked: isWorkshopTicket" />
 								</div>
 								<div class="input-group myInputGroupdivider" data-bind="visible: isWorkshopTicket">
-									<span class="input-group-addon" style="width: 150px;">Лабораторная работа</span>
+									<span class="input-group-addon" style="width: 150px;">@My.Lab01</span>
 									<select class="form-control" name="ddlWorkshop" data-bind="options: workshops, optionsValue: 'id', optionsText: 'title', value: selectedWorkshop" style="width: 250px;"></select>
 								</div>
 							}

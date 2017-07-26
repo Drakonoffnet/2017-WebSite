@@ -250,6 +250,31 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="App\Service\Topics\Food\Afterparty.Designer.cs">
+      <DependentUpon>Afterparty.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\Special\Endnote.Designer.cs">
+      <DependentUpon>Endnote.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\Food\Lunch.Designer.cs">
+      <DependentUpon>Lunch.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\Food\CoffeeBreak.Designer.cs">
+      <DependentUpon>CoffeeBreak.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\Food\Registration.Designer.cs">
+      <DependentUpon>Registration.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Topics\OKrakovetskyi_02.Designer.cs">
       <DependentUpon>OKrakovetskyi_02.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -270,12 +295,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="App\Service\Topics\Keynote.ru.Designer.cs">
+    <Compile Include="App\Service\Topics\Special\Keynote.ru.Designer.cs">
       <DependentUpon>Keynote.ru.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="App\Service\Topics\Keynote.Designer.cs">
+    <Compile Include="App\Service\Topics\Special\Keynote.Designer.cs">
       <DependentUpon>Keynote.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -693,6 +718,26 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AYurchenko_01.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\Food\Afterparty.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Afterparty.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\Special\Endnote.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Endnote.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\Food\Lunch.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Lunch.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\Food\CoffeeBreak.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CoffeeBreak.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\Food\Registration.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Registration.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\OKrakovetskyi_02.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>OKrakovetskyi_02.Designer.cs</LastGenOutput>
@@ -709,11 +754,11 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SPoplavskiy_02.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Service\Topics\Keynote.ru.resx">
+    <EmbeddedResource Include="App\Service\Topics\Special\Keynote.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Keynote.ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Service\Topics\Keynote.resx">
+    <EmbeddedResource Include="App\Service\Topics\Special\Keynote.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Keynote.Designer.cs</LastGenOutput>
     </EmbeddedResource>

@@ -15,13 +15,14 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			_timetables.AddRange(new List<Timetable>
 			{
-				new Timetable { TimeStart = "8:15", TimeEnd = "9:00", Room = _roomService.CoffeeBreak },
-				new Timetable { TimeStart = "10:15", TimeEnd = "10:30", Room = _roomService.CoffeeBreak },
-				new Timetable { TimeStart = "11:30", TimeEnd = "12:00", Room = _roomService.CoffeeBreak },
+				new Timetable { TimeStart = "8:15", TimeEnd = "9:00", Room = _roomService.CoffeeBreak, Topic = _topicService.Registration },
+				new Timetable { TimeStart = "10:15", TimeEnd = "10:30", Room = _roomService.CoffeeBreak},
+				new Timetable { TimeStart = "11:30", TimeEnd = "12:00", Room = _roomService.CoffeeBreak, Topic = _topicService.CoffeeBreak },
 				new Timetable { TimeStart = "13:00", TimeEnd = "13:15", Room = _roomService.CoffeeBreak },
-				new Timetable { TimeStart = "14:15", TimeEnd = "14:45", Room = _roomService.CoffeeBreak },
+				new Timetable { TimeStart = "14:15", TimeEnd = "14:45", Room = _roomService.CoffeeBreak, Topic = _topicService.Lunch },
 				new Timetable { TimeStart = "15:45", TimeEnd = "16:00", Room = _roomService.CoffeeBreak },
-				new Timetable { TimeStart = "17:00", TimeEnd = "17:30", Room = _roomService.CoffeeBreak }
+				new Timetable { TimeStart = "17:00", TimeEnd = "17:30", Room = _roomService.CoffeeBreak, Topic = _topicService.CoffeeBreak },
+				new Timetable { TimeStart = "19:15", TimeEnd = "21:00", Room = _roomService.CoffeeBreak, Topic = _topicService.Afterparty }
 			});
 
 			_timetables.AddRange(new List<Timetable> // web dev
@@ -32,7 +33,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				new Timetable { TimeStart = "13:15", TimeEnd = "14:15", Room = _roomService.Room1, Topic = _topicService.ABoyko_02 },
 				new Timetable { TimeStart = "14:45", TimeEnd = "15:45", Room = _roomService.Room1 },
 				new Timetable { TimeStart = "16:00", TimeEnd = "17:00", Room = _roomService.Room1 },
-				new Timetable { TimeStart = "17:30", TimeEnd = "18:30", Room = _roomService.Room1 }
+				new Timetable { TimeStart = "17:30", TimeEnd = "18:30", Room = _roomService.Room1 },
+				new Timetable { TimeStart = "18:30", TimeEnd = "19:15", Room = _roomService.Room1, Topic = _topicService.Endnote }
 			});
 
 			_timetables.AddRange(new List<Timetable> // iot

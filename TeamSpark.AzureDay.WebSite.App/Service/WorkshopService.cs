@@ -44,8 +44,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Room = _roomService.Workshop3,
 					Speaker = _speakerService.EPolonychko(),
 					MaxTickets = 20,
-					Title = Localization.App.Service.Workshops.EPolonychko_02.Title,
-					Description = Localization.App.Service.Workshops.EPolonychko_02.Description.Replace(Environment.NewLine, "<br/>")
+					Title = Localization.App.Service.Workshops.EPolonychko_01.Title,
+					Description = Localization.App.Service.Workshops.EPolonychko_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
 				new Workshop
 				{
@@ -112,7 +112,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 
 		//public Workshop MMartensson_01 { get { return _workshops.Single(x => x.Id == 1); } }
 		public Workshop DIvanov_01 { get { return _workshops.Single(x => x.Id == 2); } }
-		public Workshop EPolonychko_02 { get { return _workshops.Single(x => x.Id == 3); } }
+		public Workshop EPolonychko_01 { get { return _workshops.Single(x => x.Id == 3); } }
 		public Workshop ILeontiev_01 { get { return _workshops.Single(x => x.Id == 4); } }
 		public Workshop ASurkov_01 { get { return _workshops.Single(x => x.Id == 5); } }
 		public Workshop IReznykov_01 { get { return _workshops.Single(x => x.Id == 6); } }

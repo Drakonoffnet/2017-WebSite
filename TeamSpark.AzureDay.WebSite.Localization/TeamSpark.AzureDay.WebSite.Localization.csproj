@@ -375,8 +375,8 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="App\Service\Workshops\EPolonychko_02.Designer.cs">
-      <DependentUpon>EPolonychko_02.resx</DependentUpon>
+    <Compile Include="App\Service\Workshops\EPolonychko_01.Designer.cs">
+      <DependentUpon>EPolonychko_01.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -823,9 +823,9 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>IReznykov_01.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Service\Workshops\EPolonychko_02.resx">
+    <EmbeddedResource Include="App\Service\Workshops\EPolonychko_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>EPolonychko_02.Designer.cs</LastGenOutput>
+      <LastGenOutput>EPolonychko_01.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Workshops\MMartensson_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

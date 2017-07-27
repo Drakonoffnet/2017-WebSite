@@ -35,6 +35,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 
 			_speakers.Add(ADeren());
 			_speakers.Add(SPoplavskiy());
+			_speakers.Add(AYurchenko());
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
@@ -500,6 +501,30 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				WebUrl = "",
 				CompanyName = "DevRain Solutions",
 				JobTitle = "CEO"
+			};
+		}
+
+		public Speaker AYurchenko()
+		{
+			return new Speaker
+			{
+				Id = "AYurchenko",
+				FirstName = Localization.App.Service.Speaker.AYurchenko.FirstName,
+				LastName = Localization.App.Service.Speaker.AYurchenko.LastName,
+				Bio = Localization.App.Service.Speaker.AYurchenko.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/AYurchenko.jpg",
+				FacebookUrl = "https://www.facebook.com/profile.php?id=100006139864997",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "EasyPay",
+				JobTitle = "Developer"
 			};
 		}
 	}

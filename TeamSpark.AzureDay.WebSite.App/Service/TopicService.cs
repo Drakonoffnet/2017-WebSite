@@ -18,12 +18,43 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			{
 				new Topic
 				{
+					Id = -101,
+					Title = Localization.App.Service.Topics.Food.Registration.Title
+				},
+				new Topic
+				{
+					Id = -102,
+					Title = Localization.App.Service.Topics.Food.CoffeeBreak.Title
+				},
+				new Topic
+				{
+					Id = -103,
+					Title = Localization.App.Service.Topics.Food.Lunch.Title
+				},
+				new Topic
+				{
+					Id = -104,
+					Title = Localization.App.Service.Topics.Food.Afterparty.Title
+				},
+
+				new Topic
+				{
 					Id = 0,
 					Language = _languageService.Russian,
 					Speaker = _speakerService.ABoyko(),
-					Title = Localization.App.Service.Topics.Keynote.Title,
-					Description = Localization.App.Service.Topics.Keynote.Description.Replace(Environment.NewLine, "<br/>")
+					Title = Localization.App.Service.Topics.Special.Keynote.Title,
+					Description = Localization.App.Service.Topics.Special.Keynote.Description.Replace(Environment.NewLine, "<br/>")
 				},
+
+				new Topic
+				{
+					Id = -99,
+					Language = _languageService.Russian,
+					Speaker = _speakerService.ABoyko(),
+					Title = Localization.App.Service.Topics.Special.Endnote.Title,
+					Description = Localization.App.Service.Topics.Special.Endnote.Description.Replace(Environment.NewLine, "<br/>")
+				},
+
 				//new Topic
 				//{
 				//	Id = 1,
@@ -127,6 +158,14 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Speaker = _speakerService.OKrakovetskyi(),
 					Title = Localization.App.Service.Topics.OKrakovetskyi_02.Title,
 					Description = Localization.App.Service.Topics.OKrakovetskyi_02.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 14,
+					Language = _languageService.Russian,
+					Speaker = _speakerService.AYurchenko(),
+					Title = Localization.App.Service.Topics.AYurchenko_01.Title,
+					Description = Localization.App.Service.Topics.AYurchenko_01.Description.Replace(Environment.NewLine, "<br/>")
 				}
 			};
 		}
@@ -136,7 +175,14 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			return _topics;
 		}
 
+		public Topic Registration { get { return _topics.Single(x => x.Id == -101); } }
+		public Topic CoffeeBreak { get { return _topics.Single(x => x.Id == -102); } }
+		public Topic Lunch { get { return _topics.Single(x => x.Id == -103); } }
+		public Topic Afterparty { get { return _topics.Single(x => x.Id == -104); } }
+		public Topic Endnote { get { return _topics.Single(x => x.Id == -99); } }
+
 		public Topic Keynote { get { return _topics.Single(x => x.Id == 0); } }
+
 		//public Topic MMartensson_05 { get { return _topics.Single(x => x.Id == 1); } }
 		public Topic ALaysha_01 { get { return _topics.Single(x => x.Id == 2); } }
 		public Topic ASurkov_01 { get { return _topics.Single(x => x.Id == 3); } }
@@ -150,5 +196,6 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		public Topic IFesenko_01 { get { return _topics.Single(x => x.Id == 11); } }
 		public Topic ABoyko_02 { get { return _topics.Single(x => x.Id == 12); } }
 		public Topic OKrakovetskyi_02 { get { return _topics.Single(x => x.Id == 13); } }
+		public Topic AYurchenko_01 { get { return _topics.Single(x => x.Id == 14); } }
 	}
 }

@@ -118,52 +118,52 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BestBefore01" xml:space="preserve">
-    <value>цена до 1го сентября</value>
+    <value>price before 1st of September</value>
   </data>
   <data name="Company" xml:space="preserve">
-    <value>Компания</value>
+    <value>Company</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>Email</value>
   </data>
   <data name="FillAllFields" xml:space="preserve">
-    <value>Все поля обязательны для заполнения</value>
+    <value>All fields are mandatory to complete</value>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>Имя</value>
+    <value>Name</value>
   </data>
   <data name="OneTicket" xml:space="preserve">
-    <value>за 1 билет</value>
+    <value>for 1 ticket</value>
   </data>
   <data name="Pass" xml:space="preserve">
-    <value>Пароль</value>
+    <value>Password</value>
   </data>
   <data name="PassLength" xml:space="preserve">
-    <value>Минимальная длина пароля 6 символов</value>
+    <value>Minimum password lenghth is 6 charachters</value>
   </data>
   <data name="PassMatch" xml:space="preserve">
-    <value>Пароли должны совпадать</value>
+    <value>Passwords should match</value>
   </data>
   <data name="Register" xml:space="preserve">
-    <value>Зарегистрироваться</value>
+    <value>Register</value>
   </data>
   <data name="RegisterFor" xml:space="preserve">
-    <value>Регистрация на</value>
+    <value>Register for</value>
   </data>
   <data name="RepeatPass" xml:space="preserve">
-    <value>Повторите пароль</value>
+    <value>Repeat Password</value>
   </data>
   <data name="Surname" xml:space="preserve">
-    <value>Фамилия</value>
+    <value>Last Name</value>
   </data>
   <data name="Terms01" xml:space="preserve">
-    <value>Личные данные, которые вы предоставите в учетной записи участника AZUREday, не будут переданы третьим лицам и будут использованы только для идентификации вас как участника конференции AZUREday.</value>
+    <value>Personal info you provided in the AzureDay account will not be transfered to third parties and will be used only for your identification as AzureDay conference participant.</value>
   </data>
   <data name="Terms01a" xml:space="preserve">
-    <value>Вы соглашаетесь с этим, создавая учетную запись AZUREday.</value>
+    <value>You agree with these terms by creating AzureDay account.</value>
   </data>
   <data name="Tickets" xml:space="preserve">
-    <value>Билеты</value>
+    <value>Tickets</value>
   </data>
   <data name="TicketType01" xml:space="preserve">
     <value>Conference</value>
@@ -172,27 +172,27 @@
     <value>Workshop</value>
   </data>
   <data name="ToRegister01" xml:space="preserve">
-    <value>Для того, чтобы зарегистрироваться на AzureDay и получить возможность</value>
+    <value>To register for AzureDay and be able</value>
   </data>
   <data name="ToRegister01a" xml:space="preserve">
-    <value>купить билет на конференцию</value>
+    <value>to buy a ticket for a conference,</value>
   </data>
   <data name="ToRegister01b" xml:space="preserve">
-    <value>, заполните форму, приведенную ниже.</value>
+    <value>please, fill in the form below.</value>
   </data>
   <data name="ToRegister02" xml:space="preserve">
-    <value>Регистрация</value>
+    <value>Registration</value>
   </data>
   <data name="ToRegister02a" xml:space="preserve">
-    <value>не является билетом</value>
+    <value>is not a conference ticket</value>
   </data>
   <data name="ToRegister02b" xml:space="preserve">
-    <value>на конференцию и является бесплатной. После регистрации (создания учетной записи участника AzureDay) вам будет предложено приобрести билет.</value>
+    <value>and is free. After registration (creating your personal AzureDay account) you will be offered to buy a ticket.</value>
   </data>
   <data name="ToRegister03" xml:space="preserve">
-    <value>Пользователи, которые создали учетную запись AzureDay, будут получать уведомления и новости конференции.</value>
+    <value>Users that created AzureDay account will get notifications and conference news.</value>
   </data>
   <data name="UseYourDiscount" xml:space="preserve">
-    <value>Воспользуйтесь своей скидкой!</value>
+    <value>Use your discount!</value>
   </data>
 </root>

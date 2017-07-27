@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Регистрация подтверждена.
+        ///   Looks up a localized string similar to Registration confirmed.
         /// </summary>
         public static string RegistrationConfirmed {
             get {
@@ -70,7 +70,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Через несколько секунд вы будете автоматически перенапралены на главную страницу..
+        ///   Looks up a localized string similar to In few seconds you will be automatically redirected to the main page..
         /// </summary>
         public static string Routing {
             get {

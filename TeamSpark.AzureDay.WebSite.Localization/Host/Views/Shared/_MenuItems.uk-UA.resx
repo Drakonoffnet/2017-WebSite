@@ -117,10 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="RegistrationConfirmed" xml:space="preserve">
-    <value>Registration confirmed</value>
+  <data name="Agenda" xml:space="preserve">
+    <value>Розклад</value>
   </data>
-  <data name="Routing" xml:space="preserve">
-    <value>In few seconds you will be automatically redirected to the main page.</value>
+  <data name="Buy_Tickets" xml:space="preserve">
+    <value>Придбати квиток</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Головна</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Увійти</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Вийти</value>
+  </data>
+  <data name="Partners" xml:space="preserve">
+    <value>Партнери</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Особистий кабінет</value>
+  </data>
+  <data name="Workshops" xml:space="preserve">
+    <value>Лабораторні роботи</value>
   </data>
 </root>

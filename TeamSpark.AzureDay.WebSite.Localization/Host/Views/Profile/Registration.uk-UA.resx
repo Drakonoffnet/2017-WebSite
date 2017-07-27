@@ -117,10 +117,82 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="RegistrationConfirmed" xml:space="preserve">
-    <value>Registration confirmed</value>
+  <data name="BestBefore01" xml:space="preserve">
+    <value>ціна до 1го вересня</value>
   </data>
-  <data name="Routing" xml:space="preserve">
-    <value>In few seconds you will be automatically redirected to the main page.</value>
+  <data name="Company" xml:space="preserve">
+    <value>Компанія</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="FillAllFields" xml:space="preserve">
+    <value>Усі поля обов'язкові до заповнення</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Ім'я</value>
+  </data>
+  <data name="OneTicket" xml:space="preserve">
+    <value>за 1 квиток</value>
+  </data>
+  <data name="Pass" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="PassLength" xml:space="preserve">
+    <value>Мінімальна довжина паролю 6 символів</value>
+  </data>
+  <data name="PassMatch" xml:space="preserve">
+    <value>Паролі мають співпадати</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Зареєструватись</value>
+  </data>
+  <data name="RegisterFor" xml:space="preserve">
+    <value>Реєстрація на</value>
+  </data>
+  <data name="RepeatPass" xml:space="preserve">
+    <value>Повторіть пароль</value>
+  </data>
+  <data name="Surname" xml:space="preserve">
+    <value>Прізвище</value>
+  </data>
+  <data name="Terms01" xml:space="preserve">
+    <value>Особисті дані, які ви надаєте в обліковому записі учасника конференції AzureDay, не будуть передані третім особам і будуть використані лише для ідентифікації вас як учасника конференції AzureDay.</value>
+  </data>
+  <data name="Terms01a" xml:space="preserve">
+    <value>Ви погоджуєтесь з цим, створюючи обліковий запис AzureDay.</value>
+  </data>
+  <data name="Tickets" xml:space="preserve">
+    <value>Квитки</value>
+  </data>
+  <data name="TicketType01" xml:space="preserve">
+    <value>Конференція</value>
+  </data>
+  <data name="TicketType02" xml:space="preserve">
+    <value>Лабораторні роботи</value>
+  </data>
+  <data name="ToRegister01" xml:space="preserve">
+    <value>Для того, щоб зареєструватись на AzureDay і отримати можливість</value>
+  </data>
+  <data name="ToRegister01a" xml:space="preserve">
+    <value>придбати квиток на конференцію,</value>
+  </data>
+  <data name="ToRegister01b" xml:space="preserve">
+    <value>заповніть наведену нижче форму.</value>
+  </data>
+  <data name="ToRegister02" xml:space="preserve">
+    <value>Реєстрація</value>
+  </data>
+  <data name="ToRegister02a" xml:space="preserve">
+    <value>не є квитком</value>
+  </data>
+  <data name="ToRegister02b" xml:space="preserve">
+    <value>на конференцію і є безкоштовною. Після реєстрації (створення облікового запису учасника AzureDay), вам буде запропоновано придбати квиток.</value>
+  </data>
+  <data name="ToRegister03" xml:space="preserve">
+    <value>Користувачі, що створили обліковий запис AzureDay, будуть отримувати сповіщення і новини конференції.</value>
+  </data>
+  <data name="UseYourDiscount" xml:space="preserve">
+    <value>Скористайтесь своєю знижкою!</value>
   </data>
 </root>

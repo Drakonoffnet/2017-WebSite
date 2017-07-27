@@ -117,10 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="RegistrationConfirmed" xml:space="preserve">
-    <value>Registration confirmed</value>
+  <data name="Belarus" xml:space="preserve">
+    <value>Білорусь</value>
   </data>
-  <data name="Routing" xml:space="preserve">
-    <value>In few seconds you will be automatically redirected to the main page.</value>
+  <data name="France" xml:space="preserve">
+    <value>Франція</value>
+  </data>
+  <data name="Poland" xml:space="preserve">
+    <value>Польша</value>
+  </data>
+  <data name="Russia" xml:space="preserve">
+    <value>Росія</value>
+  </data>
+  <data name="Sweden" xml:space="preserve">
+    <value>Швеція</value>
+  </data>
+  <data name="Ukraine" xml:space="preserve">
+    <value>Україна</value>
   </data>
 </root>

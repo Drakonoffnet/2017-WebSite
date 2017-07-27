@@ -117,10 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="RegistrationConfirmed" xml:space="preserve">
-    <value>Registration confirmed</value>
+  <data name="Date" xml:space="preserve">
+    <value>9е вересня</value>
   </data>
-  <data name="Routing" xml:space="preserve">
-    <value>In few seconds you will be automatically redirected to the main page.</value>
+  <data name="Language" xml:space="preserve">
+    <value>мова</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>розклад</value>
   </data>
 </root>

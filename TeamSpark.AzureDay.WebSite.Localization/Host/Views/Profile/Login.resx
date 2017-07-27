@@ -121,15 +121,15 @@
     <value>Email</value>
   </data>
   <data name="Enter" xml:space="preserve">
-    <value>Вход в личный кабинет участника</value>
+    <value>Access to personal cabinet</value>
   </data>
   <data name="LoginTxt" xml:space="preserve">
-    <value>Войти</value>
+    <value>Login</value>
   </data>
   <data name="Pass" xml:space="preserve">
-    <value>Пароль</value>
+    <value>Password</value>
   </data>
   <data name="RestorePass" xml:space="preserve">
-    <value>Восстановить пароль</value>
+    <value>Restore password</value>
   </data>
 </root>

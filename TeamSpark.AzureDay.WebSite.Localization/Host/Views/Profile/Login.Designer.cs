@@ -70,7 +70,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Вход в личный кабинет участника.
+        ///   Looks up a localized string similar to Access to personal cabinet.
         /// </summary>
         public static string Enter {
             get {
@@ -79,7 +79,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Войти.
+        ///   Looks up a localized string similar to Login.
         /// </summary>
         public static string LoginTxt {
             get {
@@ -88,7 +88,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Пароль.
+        ///   Looks up a localized string similar to Password.
         /// </summary>
         public static string Pass {
             get {
@@ -97,7 +97,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Восстановить пароль.
+        ///   Looks up a localized string similar to Restore password.
         /// </summary>
         public static string RestorePass {
             get {

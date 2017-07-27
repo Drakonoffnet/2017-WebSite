@@ -117,10 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="RegistrationConfirmed" xml:space="preserve">
-    <value>Registration confirmed</value>
+  <data name="AInML" xml:space="preserve">
+    <value>Червона зала</value>
   </data>
-  <data name="Routing" xml:space="preserve">
-    <value>In few seconds you will be automatically redirected to the main page.</value>
+  <data name="DevOps" xml:space="preserve">
+    <value>Зелена зала</value>
+  </data>
+  <data name="IoT" xml:space="preserve">
+    <value>Блакитна зала</value>
+  </data>
+  <data name="ITPro" xml:space="preserve">
+    <value>Фіолетова зала</value>
+  </data>
+  <data name="WebDev" xml:space="preserve">
+    <value>Помаранчева зала</value>
+  </data>
+  <data name="Workshop1" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Workshop2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Workshop3" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Workshop4" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Workshop5" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Workshop6" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="Workshop7" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Workshop8" xml:space="preserve">
+    <value>8</value>
   </data>
 </root>

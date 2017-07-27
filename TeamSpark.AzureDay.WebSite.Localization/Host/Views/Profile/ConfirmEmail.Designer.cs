@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Подтверждение адреса электронной почты.
+        ///   Looks up a localized string similar to E-mail confirmation.
         /// </summary>
         public static string ConfirmMail {
             get {
@@ -70,7 +70,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Регистрация прошла успешно. На ваш почтовый ящик было отправлено письмо с ссылкой для подтверждение регистрации. Вам необходимо пройти по этой ссылке для завершения процесса регистрации на сайте..
+        ///   Looks up a localized string similar to Registration succesful. To complete the registration, please follow the link in the letter on your e-mail..
         /// </summary>
         public static string Success {
             get {

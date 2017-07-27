@@ -118,9 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ConfirmMail" xml:space="preserve">
-    <value>Подтверждение адреса электронной почты</value>
+    <value>E-mail confirmation</value>
   </data>
   <data name="Success" xml:space="preserve">
-    <value>Регистрация прошла успешно. На ваш почтовый ящик было отправлено письмо с ссылкой для подтверждение регистрации. Вам необходимо пройти по этой ссылке для завершения процесса регистрации на сайте.</value>
+    <value>Registration succesful. To complete the registration, please follow the link in the letter on your e-mail.</value>
   </data>
 </root>

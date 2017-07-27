@@ -117,10 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="RegistrationConfirmed" xml:space="preserve">
-    <value>Registration confirmed</value>
+  <data name="ConfirmMail" xml:space="preserve">
+    <value>Підтвердження адреси електронної пошти</value>
   </data>
-  <data name="Routing" xml:space="preserve">
-    <value>In few seconds you will be automatically redirected to the main page.</value>
+  <data name="Success" xml:space="preserve">
+    <value>Реєстрація пройшла успішно. На вашу поштову скриньку був відправлений лист з посиланням для підтвердження реєстрації. Вам необхідно перейти за цим посиланням для завершення процесу реєстрації на сайті.</value>
+    <comment>Пропозиція: Будь ласка, перейдіть за посиланням в листі для завершення реєстрації.</comment>
   </data>
 </root>

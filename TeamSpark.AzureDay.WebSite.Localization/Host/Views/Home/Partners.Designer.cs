@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Партнеры AzureDAY.
+        ///   Looks up a localized string similar to AzureDAY partners.
         /// </summary>
         public static string PartnersTitle {
             get {

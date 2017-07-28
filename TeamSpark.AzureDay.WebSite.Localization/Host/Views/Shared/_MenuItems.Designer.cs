@@ -68,7 +68,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared {
                 return ResourceManager.GetString("Agenda", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Buy tickets.
         /// </summary>
@@ -111,6 +111,15 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared {
         public static string Partners {
             get {
                 return ResourceManager.GetString("Partners", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to My schedule.
+        /// </summary>
+        public static string PersonalSchedule {
+            get {
+                return ResourceManager.GetString("PersonalSchedule", resourceCulture);
             }
         }
         

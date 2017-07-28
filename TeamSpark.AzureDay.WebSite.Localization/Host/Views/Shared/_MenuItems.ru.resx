@@ -135,6 +135,9 @@
   <data name="Partners" xml:space="preserve">
     <value>Партнеры</value>
   </data>
+  <data name="PersonalSchedule" xml:space="preserve">
+    <value>Мое расписание</value>
+  </data>
   <data name="Profile" xml:space="preserve">
     <value>Личный кабинет</value>
   </data>

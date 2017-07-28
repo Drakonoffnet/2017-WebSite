@@ -85,7 +85,25 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			return View(model);
 		}
 
-		public async Task<ActionResult> Workshops()
+        public async Task<ActionResult> PersonalSchedule()
+        {
+            var model = new ScheduleModel();
+
+            model.Rooms = new RoomService()
+                .GetRooms()
+                .Where(x => x.RoomType == RoomType.LectureRoom)
+                .ToList();
+
+            model.Timetables = new TimetableService().GetTimetable()
+                .GroupBy(
+                    t => t.TimeStart,
+                    (key, timetables) => timetables.OrderBy(t => t.Room.ColorNumber).ToList())
+                .ToList();
+
+            return View(model);
+        }
+
+        public async Task<ActionResult> Workshops()
 		{
 			var model = new WorkshopsModel();
 

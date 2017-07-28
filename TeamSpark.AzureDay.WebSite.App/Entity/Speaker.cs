@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 
 namespace TeamSpark.AzureDay.WebSite.App.Entity
 {
@@ -27,7 +28,30 @@ namespace TeamSpark.AzureDay.WebSite.App.Entity
 		public string CompanyName { get; set; }
 		public string JobTitle { get; set; }
 
-		public string Ocupation => $"{JobTitle} @ {CompanyName}";
+		public string Occupation
+		{
+			get
+			{
+				var ocupation = new StringBuilder(string.Empty);
+
+				if (!string.IsNullOrEmpty(JobTitle))
+				{
+					ocupation.Append(JobTitle);
+				}
+
+				if (!string.IsNullOrEmpty(JobTitle) && !string.IsNullOrEmpty(CompanyName))
+				{
+					ocupation.Append(" @ ");
+				}
+
+				if (!string.IsNullOrEmpty(CompanyName))
+				{
+					ocupation.Append(CompanyName);
+				}
+
+				return ocupation.ToString();
+			}
+		}
 
 		public List<Topic> Topics { get; set; }
 

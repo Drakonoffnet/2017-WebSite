@@ -80,6 +80,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Speaker\ATkachenko.Designer.cs">
+      <DependentUpon>ATkachenko.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\ATkachenko.ru.Designer.cs">
+      <DependentUpon>ATkachenko.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\ATkachenko.uk-UA.Designer.cs">
+      <DependentUpon>ATkachenko.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Speaker\AYurchenko.ru.Designer.cs">
       <DependentUpon>AYurchenko.ru.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -122,6 +137,16 @@
     </Compile>
     <Compile Include="App\Service\Speaker\SKryshtop.ru.Designer.cs">
       <DependentUpon>SKryshtop.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\VRadchuk.ru.Designer.cs">
+      <DependentUpon>VRadchuk.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\VRadchuk.Designer.cs">
+      <DependentUpon>VRadchuk.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -260,6 +285,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ABoyko.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Topics\ATkachenko_02.Designer.cs">
+      <DependentUpon>ATkachenko_02.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Topics\ILeontiev_01.Designer.cs">
       <DependentUpon>ILeontiev_01.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -369,6 +399,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>OChorny_01.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Workshops\VRadchuk_01.Designer.cs">
+      <DependentUpon>VRadchuk_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="App\Service\Workshops\SPoplavskiy_02.Designer.cs">
       <DependentUpon>SPoplavskiy_02.resx</DependentUpon>
@@ -743,6 +778,18 @@
       <LastGenOutput>Room.ru.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ATkachenko.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ATkachenko.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ATkachenko.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ATkachenko.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ATkachenko.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ATkachenko.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\AYurchenko.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AYurchenko.ru.Designer.cs</LastGenOutput>
@@ -778,6 +825,14 @@
     <EmbeddedResource Include="App\Service\Speaker\SKryshtop.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SKryshtop.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\VRadchuk.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VRadchuk.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\VRadchuk.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VRadchuk.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\VThavonekham.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -887,6 +942,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ABoyko.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\ATkachenko_02.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ATkachenko_02.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\ILeontiev_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ILeontiev_01.Designer.cs</LastGenOutput>
@@ -974,6 +1033,11 @@
     <EmbeddedResource Include="App\Service\Topics\OChorny_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>OChorny_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Workshops\VRadchuk_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VRadchuk_01.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Workshops\SPoplavskiy_02.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

@@ -117,46 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AInML" xml:space="preserve">
-    <value>Червона зала</value>
+  <data name="Bio" xml:space="preserve">
+    <value>Занимаюсь разработкой на платформе .NET с 2008 года. Работаю на позиции Lead .NET Developer в компании Cogniance. C .NET Core знаком не понаслышке - участвовал в разработке не одного коммерческого продукта на этой технологии.</value>
   </data>
-  <data name="DevOps" xml:space="preserve">
-    <value>Зелена зала</value>
+  <data name="FirstName" xml:space="preserve">
+    <value>Valentin</value>
   </data>
-  <data name="IoT" xml:space="preserve">
-    <value>Блакитна зала</value>
-  </data>
-  <data name="ITPro" xml:space="preserve">
-    <value>Фіолетова зала</value>
-  </data>
-  <data name="WebDev" xml:space="preserve">
-    <value>Помаранчева зала</value>
-  </data>
-  <data name="Workshop1" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Workshop2" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Workshop3" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Workshop4" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="Workshop5" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="Workshop6" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="Workshop7" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="Workshop8" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="Workshop9" xml:space="preserve">
-    <value>9</value>
+  <data name="LastName" xml:space="preserve">
+    <value>Radchuk</value>
   </data>
 </root>

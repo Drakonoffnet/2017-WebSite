@@ -70,7 +70,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			_timetables.AddRange(new List<Timetable> // it-pro
 			{
 				new Timetable { TimeStart = "10:30", TimeEnd = "11:30", Room = _roomService.Room5, Topic = _topicService.MSmereczynski_01 },
-				new Timetable { TimeStart = "12:00", TimeEnd = "13:00", Room = _roomService.Room5 },
+				new Timetable { TimeStart = "12:00", TimeEnd = "13:00", Room = _roomService.Room5, Topic = _topicService.ATkachenko_02 },
 				new Timetable { TimeStart = "13:15", TimeEnd = "14:15", Room = _roomService.Room5 },
 				new Timetable { TimeStart = "14:45", TimeEnd = "15:45", Room = _roomService.Room5 },
 				new Timetable { TimeStart = "16:00", TimeEnd = "17:00", Room = _roomService.Room5 },

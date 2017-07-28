@@ -36,6 +36,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			_speakers.Add(ADeren());
 			_speakers.Add(SPoplavskiy());
 			_speakers.Add(AYurchenko());
+			_speakers.Add(VRadchuk());
+
+			_speakers.Add(ATkachenko());
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
@@ -525,6 +528,54 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				WebUrl = "",
 				CompanyName = "EasyPay",
 				JobTitle = "Developer"
+			};
+		}
+
+		public Speaker VRadchuk()
+		{
+			return new Speaker
+			{
+				Id = "VRadchuk",
+				FirstName = Localization.App.Service.Speaker.VRadchuk.FirstName,
+				LastName = Localization.App.Service.Speaker.VRadchuk.LastName,
+				Bio = Localization.App.Service.Speaker.VRadchuk.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/VRadchuk.jpg",
+				FacebookUrl = "",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "https://www.linkedin.com/in/valentineradchuk/",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "Cogniance",
+				JobTitle = "Lead .NET Developer"
+			};
+		}
+
+		public Speaker ATkachenko()
+		{
+			return new Speaker
+			{
+				Id = "ATkachenko",
+				FirstName = Localization.App.Service.Speaker.ATkachenko.FirstName,
+				LastName = Localization.App.Service.Speaker.ATkachenko.LastName,
+				Bio = Localization.App.Service.Speaker.ATkachenko.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
+				FacebookUrl = "",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
 			};
 		}
 	}

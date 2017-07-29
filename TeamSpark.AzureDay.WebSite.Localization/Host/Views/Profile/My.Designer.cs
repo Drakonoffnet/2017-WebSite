@@ -329,5 +329,14 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
                 return ResourceManager.GetString("TicketPrice", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to tickets left.
+        /// </summary>
+        public static string TicketsLeft {
+            get {
+                return ResourceManager.GetString("TicketsLeft", resourceCulture);
+            }
+        }
     }
 }

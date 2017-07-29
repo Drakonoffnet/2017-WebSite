@@ -42,7 +42,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers.Api
 		public async Task<string> PaymentConfirm([FromBody]PaymentResponse response)
 		{
 			var email = response.MerchantInternalUserId;
-			var ticket = await AppFactory.TicketService.Value.GetTicketByEmailAsync(email);
+			var ticket = await AppFactory.TicketService.Value.GetTicketsByEmailAsync(email);
 
 			if (ticket != null)
 			{
@@ -85,7 +85,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers.Api
 					};
 
 					await Task.WhenAll(
-						AppFactory.TicketService.Value.SetTicketPayedAsync(email),
+						AppFactory.TicketService.Value.SetTicketsPayedAsync(email),
 						NotificationFactory.AttendeeNotificationService.Value.SendPaymentConfirmationEmailAsync(message)
 					);
 				}

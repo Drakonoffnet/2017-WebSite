@@ -33,17 +33,22 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			await DataFactory.TicketService.Value.InsertAsync(data);
 		}
 
-		public async Task SetTicketPayedAsync(string email)
+		public async Task SetTicketsPayedAsync(string email)
 		{
-			var data = await DataFactory.TicketService.Value.GetByKeysAsync(Configuration.Year, email);
+			var filter = new Dictionary<string, string> { { "RowKey", email } };
+
+			var data = await DataFactory.TicketService.Value.GetByFilterAsync(filter);
 
 			if (data == null)
 			{
 				return;
 			}
 
-			data.IsPayed = true;
-			await DataFactory.TicketService.Value.ReplaceAsync(data);
+			foreach (var ticket in data)
+			{
+				ticket.IsPayed = true;
+				await DataFactory.TicketService.Value.ReplaceAsync(ticket);
+			}
 		}
 
 		public async Task DeleteTicketAsync(string email)
@@ -53,29 +58,42 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			await DataFactory.TicketService.Value.DeleteAsync(data);
 		}
 
-		public async Task<Ticket> GetTicketByEmailAsync(string email)
+		public async Task<List<Ticket>> GetTicketsByEmailAsync(string email)
 		{
-			var data = await DataFactory.TicketService.Value.GetByKeysAsync(Configuration.Year, email);
+			var filter = new Dictionary<string, string> {{"RowKey", email}};
+
+			var data = await DataFactory.TicketService.Value.GetByFilterAsync(filter);
 
 			if (data == null)
 			{
 				return null;
 			}
 
-			var ticket = AppFactory.Mapper.Value.Map<Ticket>(data);
+			var tickets = data
+				.Select(AppFactory.Mapper.Value.Map<Ticket>)
+				.ToList();
 
-			return ticket;
+			return tickets;
 		}
 
-		public async Task<List<Ticket>> GetWorkshopTickets(int workshopId)
+		public async Task<List<Ticket>> GetWorkshopTicketsAsync(int workshopId)
 		{
 			var filter = new Dictionary<string, string>
 			{
-				{nameof(Data.Entity.Table.Ticket.PartitionKey), Configuration.Year},
+				{nameof(Data.Entity.Table.Ticket.PartitionKey), TicketType.Workshop.ToDisplayString() },
 				{nameof(Data.Entity.Table.Ticket.WorkshopId), workshopId.ToString()}
 			};
 
 			var data = (await DataFactory.TicketService.Value.GetByFilterAsync(filter))
+				.Select(AppFactory.Mapper.Value.Map<Ticket>)
+				.ToList();
+
+			return data;
+		}
+
+		public async Task<List<Ticket>> GetWorkshopsTicketsAsync()
+		{
+			var data = (await DataFactory.TicketService.Value.GetByPartitionKeyAsync(TicketType.Workshop.ToDisplayString()))
 				.Select(AppFactory.Mapper.Value.Map<Ticket>)
 				.ToList();
 

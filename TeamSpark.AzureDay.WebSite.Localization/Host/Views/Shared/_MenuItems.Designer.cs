@@ -70,7 +70,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Buy tickets.
+        ///   Looks up a localized string similar to Register.
         /// </summary>
         public static string Buy_Tickets {
             get {

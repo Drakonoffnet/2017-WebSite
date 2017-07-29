@@ -207,4 +207,7 @@
   <data name="Ticket02" xml:space="preserve">
     <value>Квиток на лабораторні роботи</value>
   </data>
+  <data name="TicketsLeft" xml:space="preserve">
+    <value>залишилось квитків</value>
+  </data>
 </root>

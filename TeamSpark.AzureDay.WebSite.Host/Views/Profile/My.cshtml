@@ -71,7 +71,7 @@
 							{
 								<div class="input-group myInputGroupdivider">
 									<span class="input-group-addon" style="width: 150px;">@My.Ticket01</span>
-									<input type="checkbox" class="form-control" name="cbConferenceTicket" data-bind="checked: isConferenceTicket"/>
+									<input type="checkbox" class="form-control" style="width: 50px;" name="cbConferenceTicket" data-bind="checked: isConferenceTicket"/>
 								</div>
 							}
 							else
@@ -119,7 +119,7 @@
 							{
 								<div class="input-group myInputGroupdivider">
 									<span class="input-group-addon" style="width: 150px;">@My.Ticket02</span>
-									<input type="checkbox" class="form-control" name="cbWorkshopTicket" data-bind="checked: isWorkshopTicket" />
+									<input type="checkbox" class="form-control"style="width: 50px;" name="cbWorkshopTicket" data-bind="checked: isWorkshopTicket" />
 								</div>
 								<div class="input-group myInputGroupdivider" data-bind="visible: isWorkshopTicket">
 									<span class="input-group-addon" style="width: 150px;">@My.Lab01</span>
@@ -256,9 +256,9 @@
 					isConferenceTicket: ko.observable(true),
 					isWorkshopTicket: ko.observable(true),
 					selectedWorkshop: ko.observable(0),
-					workshops: ko.observableArray([
-						@Html.Raw(string.Join(",", Model.Workshops.Select(ticket => $"{{ id:'{ticket.Id}', title:'{ticket.Title}' }}")))
-					]),
+					workshops: [
+						@Html.Raw(string.Join(",", Model.Workshops.Select(ticket => $"{{ id:'{ticket.Id}', title:'{ticket.Title} ({My.TicketsLeft} {Model.TicketsLeft[ticket.Id]})' }}")))
+					],
 					promoCode: ko.observable(),
 					currentPrice: ko.observable()
 				};

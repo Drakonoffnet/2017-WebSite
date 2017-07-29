@@ -40,7 +40,7 @@ namespace TeamSpark.AzureDay.WebSite.CLI.Data
 				FullName = attendee.FullName
 			};
 
-			AppFactory.TicketService.Value.SetTicketPayedAsync(attendee.EMail).Wait();
+			AppFactory.TicketService.Value.SetTicketsPayedAsync(attendee.EMail).Wait();
 			NotificationFactory.AttendeeNotificationService.Value.SendPaymentConfirmationEmailAsync(message).Wait();
 		}
 	}

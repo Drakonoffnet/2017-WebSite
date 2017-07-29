@@ -1,5 +1,4 @@
 ﻿using Microsoft.WindowsAzure.Storage.Table;
-using TeamSpark.AzureDay.WebSite.Config;
 using TeamSpark.AzureDay.WebSite.Data.Enum;
 
 namespace TeamSpark.AzureDay.WebSite.Data.Entity.Table
@@ -9,8 +8,8 @@ namespace TeamSpark.AzureDay.WebSite.Data.Entity.Table
 		[IgnoreProperty]
 		public string AttendeeEMail
 		{
-			get { return RowKey; }
-			set { RowKey = value; }
+			get => RowKey;
+			set => RowKey = value;
 		}
 
 		public bool IsPayed { get; set; }
@@ -20,11 +19,15 @@ namespace TeamSpark.AzureDay.WebSite.Data.Entity.Table
 		[IgnoreProperty]
 		public TicketType TicketType
 		{
-			get { return (TicketType)TicketTypeId; }
-			set { TicketTypeId = (int)value; }
+			get => (TicketType)TicketTypeId;
+			set => TicketTypeId = (int)value;
 		}
 
-		public int TicketTypeId { get; set; }
+		public int TicketTypeId
+		{
+			get => int.Parse(PartitionKey);
+			set => PartitionKey = ((TicketType)value).ToDisplayString();
+		}
 
 		public int? WorkshopId { get; set; }
 
@@ -34,7 +37,6 @@ namespace TeamSpark.AzureDay.WebSite.Data.Entity.Table
 
 		public Ticket()
 		{
-			PartitionKey = Configuration.Year;
 		}
 	}
 }

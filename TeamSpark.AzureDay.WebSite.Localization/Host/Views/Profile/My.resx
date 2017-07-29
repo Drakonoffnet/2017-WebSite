@@ -207,4 +207,7 @@
   <data name="Ticket02" xml:space="preserve">
     <value>Workshop ticket</value>
   </data>
+  <data name="TicketsLeft" xml:space="preserve">
+    <value>tickets left</value>
+  </data>
 </root>

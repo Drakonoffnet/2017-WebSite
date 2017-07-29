@@ -124,6 +124,15 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Speakers.
+        /// </summary>
+        public static string Speakers {
+            get {
+                return ResourceManager.GetString("Speakers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Workshops.
         /// </summary>
         public static string Workshops {

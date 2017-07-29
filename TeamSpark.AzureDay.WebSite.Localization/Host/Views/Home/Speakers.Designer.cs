@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TeamSpark.AzureDay.WebSite.Localization.App.Service {
+namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Country {
+    public class Speakers {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Country() {
+        internal Speakers() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.App.Service.Country", typeof(Country).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home.Speakers", typeof(Speakers).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,65 +61,11 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Belarus.
+        ///   Looks up a localized string similar to AzureDay Speakers.
         /// </summary>
-        public static string Belarus {
+        public static string Title {
             get {
-                return ResourceManager.GetString("Belarus", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to France.
-        /// </summary>
-        public static string France {
-            get {
-                return ResourceManager.GetString("France", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Poland.
-        /// </summary>
-        public static string Poland {
-            get {
-                return ResourceManager.GetString("Poland", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Romania.
-        /// </summary>
-        public static string Romania {
-            get {
-                return ResourceManager.GetString("Romania", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Russia.
-        /// </summary>
-        public static string Russia {
-            get {
-                return ResourceManager.GetString("Russia", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sweden.
-        /// </summary>
-        public static string Sweden {
-            get {
-                return ResourceManager.GetString("Sweden", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Ukraine.
-        /// </summary>
-        public static string Ukraine {
-            get {
-                return ResourceManager.GetString("Ukraine", resourceCulture);
+                return ResourceManager.GetString("Title", resourceCulture);
             }
         }
     }

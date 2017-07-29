@@ -129,6 +129,43 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			return View(model);
 		}
 
+		public async Task<ActionResult> Speakers()
+		{
+			var model = new SpeakersModel
+			{
+				SpeakersCollections = new List<List<Speaker>>()
+			};
+
+			var speakers = new SpeakerService().GetSpeakers();
+			var i = 0;
+			foreach (var speaker in speakers)
+			{
+				List<Speaker> list;
+				if (i == 0)
+				{
+					list = new List<Speaker>();
+					model.SpeakersCollections.Add(list);
+				}
+				else
+				{
+					list = model.SpeakersCollections.Last();
+				}
+
+				list.Add(speaker);
+
+				if (i == 3)
+				{
+					i = 0;
+				}
+				else
+				{
+					i++;
+				}
+			}
+
+			return View(model);
+		}
+
 		public async Task<ActionResult> SpeakerEntity(string id)
 		{
 			var model = new SpeakerEntityModel();

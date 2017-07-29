@@ -138,6 +138,9 @@
   <data name="Profile" xml:space="preserve">
     <value>Profile</value>
   </data>
+  <data name="Speakers" xml:space="preserve">
+    <value>Speakers</value>
+  </data>
   <data name="Workshops" xml:space="preserve">
     <value>Workshops</value>
   </data>

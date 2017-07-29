@@ -39,11 +39,12 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			_speakers.Add(VRadchuk());
 
 			_speakers.Add(ATkachenko());
+			_speakers.Add(AMang());
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
 		{
-			return _speakers;
+			return _speakers.OrderBy(x => x.Id);
 		}
 
 		public Speaker GetSpeaker(string id)
@@ -439,7 +440,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = "MSmereczynski",
+				Id = "ADeren",
 				FirstName = Localization.App.Service.Speaker.ADeren.FirstName,
 				LastName = Localization.App.Service.Speaker.ADeren.LastName,
 				Bio = Localization.App.Service.Speaker.ADeren.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -487,7 +488,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			return new Speaker
 			{
-				Id = "OKrakovetskyi",
+				Id = "AKrakovetskyi",
 				FirstName = Localization.App.Service.Speaker.OKrakovetskyi.FirstName,
 				LastName = Localization.App.Service.Speaker.OKrakovetskyi.LastName,
 				Bio = Localization.App.Service.Speaker.OKrakovetskyi.Bio.Replace(Environment.NewLine, "<br/>"),
@@ -564,6 +565,30 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				LastName = Localization.App.Service.Speaker.ATkachenko.LastName,
 				Bio = Localization.App.Service.Speaker.ATkachenko.Bio.Replace(Environment.NewLine, "<br/>"),
 				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
+				FacebookUrl = "",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
+			};
+		}
+
+		public Speaker AMang()
+		{
+			return new Speaker
+			{
+				Id = "AMang",
+				FirstName = Localization.App.Service.Speaker.AMang.FirstName,
+				LastName = Localization.App.Service.Speaker.AMang.LastName,
+				Bio = Localization.App.Service.Speaker.AMang.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Romania,
 				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
 				FacebookUrl = "",
 				GitHubUrl = "",

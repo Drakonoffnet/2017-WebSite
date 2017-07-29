@@ -80,6 +80,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Speaker\AMang.Designer.cs">
+      <DependentUpon>AMang.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Speaker\ATkachenko.Designer.cs">
       <DependentUpon>ATkachenko.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -500,6 +505,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SpeakerEntity.uk-UA.resx</DependentUpon>
     </Compile>
+    <Compile Include="Host\Views\Home\Speakers.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Speakers.resx</DependentUpon>
+    </Compile>
     <Compile Include="Host\Views\Home\WorkshopEntity.Designer.cs">
       <DependentUpon>WorkshopEntity.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -782,6 +792,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Room.ru.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\AMang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AMang.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\ATkachenko.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -1119,6 +1133,10 @@
     <EmbeddedResource Include="Host\Views\Home\SpeakerEntity.uk-UA.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SpeakerEntity.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\Speakers.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Speakers.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Home\WorkshopEntity.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

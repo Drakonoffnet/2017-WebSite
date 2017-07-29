@@ -147,6 +147,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 
 			model.Topics = new TopicService()
 				.GetTopics()
+				.Where(x => x.Speaker.Id != null) // ???
 				.Where(x => x.Speaker.Id.Equals(model.Speaker.Id, StringComparison.InvariantCultureIgnoreCase))
 				.ToList();
 

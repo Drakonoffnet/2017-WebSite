@@ -1,13 +1,13 @@
-﻿namespace Kaznachey.KaznacheyPayment
-{
+﻿using System;
 
+namespace Kaznachey.KaznacheyPayment
+{
     public interface IPaymentSystem
     {
         MerchantInfoResponse GetMerchantInformation();
 
         CreatePaymentResponse CreatePayment(PaymentRequest payment);
 
-
-        bool ValidateResponse(PaymentResponse resp);
+        Boolean ValidateResponse(PaymentResponse resp);
     }
 }

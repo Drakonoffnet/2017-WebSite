@@ -16,11 +16,9 @@ namespace Kaznachey.KaznacheyPayment
             {
                 var data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(input));
                 var sBuilder = new StringBuilder();
-	            for (var i = 0; i < data.Length; i++)
-	            {
-		            sBuilder.Append(data[i].ToString("x2"));
-	            }
-	            return sBuilder.ToString();
+                for (var i = 0; i < data.Length; i++)
+                    sBuilder.Append(data[i].ToString("x2"));
+                return sBuilder.ToString();
             }
         }
     }

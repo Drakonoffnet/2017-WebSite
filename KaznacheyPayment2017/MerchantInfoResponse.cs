@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Kaznachey.KaznacheyPayment
 {
@@ -15,6 +16,6 @@ namespace Kaznachey.KaznacheyPayment
         /// <summary>
         /// Term to use file refer
         /// </summary>
-        public string TermToUse { get; set; }
+        public String TermToUse { get; set; }
     }
 }

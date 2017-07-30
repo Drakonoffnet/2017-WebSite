@@ -1,3 +1,6 @@
+
+using System;
+
 namespace Kaznachey.KaznacheyPayment
 {
     /// <summary>
@@ -8,11 +11,11 @@ namespace Kaznachey.KaznacheyPayment
         /// <summary>
         /// Error code. 0 - if success, otherwise - fail
         /// </summary>
-        public int ErrorCode { get; set; }
+        public Int32 ErrorCode { get; set; }
 
         /// <summary>
         /// Debug message information.
         /// </summary>
-        public string DebugMessage { get; set; }
+        public String DebugMessage { get; set; }
     }
 }

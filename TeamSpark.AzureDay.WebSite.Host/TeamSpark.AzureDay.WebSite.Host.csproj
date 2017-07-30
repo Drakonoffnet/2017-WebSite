@@ -554,7 +554,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KaznacheyPayment\Kaznachey.KaznacheyPayment.csproj">
+    <ProjectReference Include="..\KaznacheyPayment2017\Kaznachey.KaznacheyPayment.csproj">
       <Project>{4046e6c4-b151-47c9-9076-16e13f0cec14}</Project>
       <Name>Kaznachey.KaznacheyPayment</Name>
     </ProjectReference>

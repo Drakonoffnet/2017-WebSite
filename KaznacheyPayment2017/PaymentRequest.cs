@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Kaznachey.KaznacheyPayment
 {
@@ -24,17 +25,17 @@ namespace Kaznachey.KaznacheyPayment
         /// <summary>
         /// Select payment system Id
         /// </summary>
-        public int SelectedPaySystemId { get; set; }
+        public Int32 SelectedPaySystemId { get; set; }
 
         /// <summary>
         /// Currency (UAH, USD, RUB, EUR)
         /// </summary>
-        public string Currency { get; set; }
+        public String Currency { get; set; }
 
         /// <summary>
         /// Language (RU, EN)
         /// </summary>
-        public string Language { get; set; }
+        public String Language { get; set; }
 
         /// <summary>
         /// Products list

@@ -1,4 +1,6 @@
-﻿namespace Kaznachey.KaznacheyPayment
+﻿using System;
+
+namespace Kaznachey.KaznacheyPayment
 {
     /// <summary>
     /// Payment system information
@@ -8,17 +10,17 @@
         /// <summary>
         /// Payment system Id
         /// </summary>
-        public int Id { get; set; }
+        public Int32 Id { get; set; }
 
         /// <summary>
         /// Payment system name
         /// </summary>
-        public string PaySystemName { get; set; }
+        public String PaySystemName { get; set; }
 
 
         /// <summary>
         /// Payment system tag(use for css style). Sample: webMoney,VisaMc,liqPay, etc
         /// </summary>
-        public string PaySystemTag { get; set; }
+        public String PaySystemTag { get; set; }
     }
 }

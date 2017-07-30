@@ -7,13 +7,13 @@ namespace Kaznachey.KaznacheyPayment
     /// <summary>
     /// Kaznachey service client implementation
     /// </summary>
-    public class KaznacheyPaymentSystem : IPaymentSystem
+    public class KaznacheyPaymentSystem: IPaymentSystem
     {
         public static readonly string ApiUrl = "https://api.assetpayments.com/api/PaymentInterface";
 
-        private readonly Guid _merchantGuid;
-        private readonly string _merchantSecretKey;
-        private readonly string _baseUrl;
+		private readonly Guid _merchantGuid;
+        private readonly String _merchantSecretKey;
+        private readonly String _baseUrl;
 
         /// <summary>
         /// Constructor
@@ -29,7 +29,7 @@ namespace Kaznachey.KaznacheyPayment
         /// <param name="merchantGuid">Merchant GUID</param>
         /// <param name="merchantSecretKey">Mechant secret key</param>
         /// <param name="apiUrl">Api url</param>
-        private KaznacheyPaymentSystem(Guid merchantGuid, string merchantSecretKey, string apiUrl)
+        private KaznacheyPaymentSystem(Guid merchantGuid, String merchantSecretKey, String apiUrl)
         {
             _merchantGuid = merchantGuid;
             _merchantSecretKey = merchantSecretKey;
@@ -45,8 +45,7 @@ namespace Kaznachey.KaznacheyPayment
             var signature = (_merchantGuid.ToString("D") + _merchantSecretKey).ToUpper().GetMd5Hash();
             var request = CreateRequest("GetMerchatInformation");
             request.AddParameter("MerchantGuid", _merchantGuid);
-	        request.AddParameter("MerchantSecretKey", _merchantSecretKey);
-			request.AddParameter("Signature", signature);
+            request.AddParameter("Signature", signature);
 
             return Execute<MerchantInfoResponse>(request);
         }
@@ -71,10 +70,10 @@ namespace Kaznachey.KaznacheyPayment
 
 	        if (response.ErrorException == null)
 	        {
-				return response.Data;
-			}
+		        return response.Data;
+	        }
 
-            const string message = "Error retrieving response. Check inner details for more info.";
+	        const string message = "Error retrieving response. Check inner details for more info.";
             throw new ApplicationException(message, response.ErrorException);
         }
 
@@ -107,7 +106,7 @@ namespace Kaznachey.KaznacheyPayment
         /// </summary>
         /// <param name="response">Payment responce object</param>
         /// <returns>True if signature valid, false - otherwise</returns>
-        public bool ValidateResponse(PaymentResponse response)
+        public Boolean ValidateResponse(PaymentResponse response)
         {
             var sourceStr = response.ErrorCode.ToString(CultureInfo.InvariantCulture) 
                 + response.OrderId

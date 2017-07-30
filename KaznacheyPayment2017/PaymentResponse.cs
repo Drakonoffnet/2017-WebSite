@@ -1,4 +1,6 @@
-﻿namespace Kaznachey.KaznacheyPayment
+﻿using System;
+
+namespace Kaznachey.KaznacheyPayment
 {
     /// <summary>
     /// PaymentResponse represent information about payment processing
@@ -13,38 +15,38 @@
         /// <summary>
         /// Order id 
         /// </summary>
-        public int OrderId { get; set; }
+        public Int32 OrderId { get; set; }
 
         /// <summary>
         /// Merchant internal payment id
         /// </summary>
-        public string MerchantInternalPaymentId { get; set; }
+        public String MerchantInternalPaymentId { get; set; }
 
         /// <summary>
         /// Merchant user internal id 
         /// </summary>
-        public string MerchantInternalUserId { get; set; }
+        public String MerchantInternalUserId { get; set; }
 
         /// <summary>
         /// Sum
         /// </summary>
-        public decimal Sum { get; set; }
+        public Decimal Sum { get; set; }
 
 
         /// <summary>
         /// Sum of merchant order
         /// </summary>
-        public decimal OrderSum { get; set; }
+        public Decimal OrderSum { get; set; }
 
         /// <summary>
         /// Currency
         /// </summary>
-        public string Currency { get; set; }
+        public String Currency { get; set; }
 
         /// <summary>
         /// Custom merchant info
         /// </summary>
-        public string CustomMerchantInfo { get; set; }
+        public String CustomMerchantInfo { get; set; }
 
         /// <summary>
         /// Should be validated. Example:
@@ -59,6 +61,6 @@
         ///              + Request.CustomMerchantInfo
         ///              + MerchantSecretKey.ToString().ToUpper();
         /// </summary>
-        public string SignatureEx { get; set; }
+        public String SignatureEx { get; set; }
     }
 }

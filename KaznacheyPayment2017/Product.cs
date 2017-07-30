@@ -1,4 +1,6 @@
-﻿namespace Kaznachey.KaznacheyPayment
+﻿using System;
+
+namespace Kaznachey.KaznacheyPayment
 {
     /// <summary>
     /// Product info
@@ -8,26 +10,26 @@
         /// <summary>
         /// Product items num
         /// </summary>
-        public decimal ProductItemsNum { get; set; }
+        public Decimal ProductItemsNum { get; set; }
 
         /// <summary>
         /// Product name
         /// </summary>
-        public string ProductName { get; set; }
+        public String ProductName { get; set; }
 
         /// <summary>
         /// Product price
         /// </summary>
-        public decimal ProductPrice { get; set; }
+        public Decimal ProductPrice { get; set; }
 
         /// <summary>
         /// Merchants cms product unique id
         /// </summary>
-        public string ProductId { get; set; }
+        public String ProductId { get; set; }
 
         /// <summary>
         /// Merchants cms product unique id
         /// </summary>
-        public string ProductImageUrl { get; set; }
+        public String ProductImageUrl { get; set; }
     }
 }

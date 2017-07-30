@@ -132,6 +132,9 @@
   <data name="Date" xml:space="preserve">
     <value>8е вересня</value>
   </data>
+  <data name="Img" xml:space="preserve">
+    <value>/Theme/img/_slides/2017/workshops-en.jpg</value>
+  </data>
   <data name="Language" xml:space="preserve">
     <value>мова</value>
   </data>

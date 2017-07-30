@@ -11,6 +11,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<img src="@Workshops.Img" alt="@Workshops.Title" class="img-responsive" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="titleborder center">
 					<div>
 						<h1 class="animated fadeInDownBig" style="text-transform: capitalize">@Workshops.Title AzureDay</h1>
@@ -45,7 +50,7 @@
 								<div class="mySlotTime">
 									9:00 - 17:00
 								</div>
-								<a style="color: #777;" href="/workshop/@workshop.Id"><b>@workshop.Title</b></a><br /><br />
+								<a style="color: #777;" href="/workshop/@workshop.Id"><b>@workshop.Title</b> <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a><br /><br />
 								@if (workshop.Language != null && !string.IsNullOrEmpty(workshop.Language.Title))
 								{
 									@Html.Raw($"{Schedule.Language}: {workshop.Language.Title}")

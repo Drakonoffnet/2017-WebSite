@@ -1,5 +1,7 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.Storage.Table;
@@ -48,20 +50,31 @@ namespace TeamSpark.AzureDay.WebSite.Data.Service.Table
 			return (await Table.ExecuteQuerySegmentedAsync(query, null)).Results;
 		}
 
-		public async Task<List<T>> GetByFilterAsync(Dictionary<string, string> filters)
+		private string GenerateFilter(string key, object value)
+		{
+			if (value is int)
+			{
+				return TableQuery.GenerateFilterConditionForInt(key, QueryComparisons.Equal, (int)value);
+			}
+
+			return TableQuery.GenerateFilterCondition(key, QueryComparisons.Equal, value.ToString());
+		}
+
+		public async Task<List<T>> GetByFilterAsync(Dictionary<string, object> filters)
 		{
 			if (filters == null || filters.Count == 0)
 			{
 				return await GetAllAsync();
 			}
 
-			var filter = TableQuery.GenerateFilterCondition(filters.First().Key, QueryComparisons.Equal, filters.First().Value);
+			var filter = GenerateFilter(filters.First().Key, filters.First().Value);
+
 			foreach (var f in filters.Skip(1))
 			{
 				filter = TableQuery.CombineFilters(
 					filter,
 					TableOperators.And,
-					TableQuery.GenerateFilterCondition(f.Key, QueryComparisons.Equal, f.Value));
+					GenerateFilter(f.Key, f.Value));
 			}
 
 			var query = new TableQuery<T>().Where(filter);

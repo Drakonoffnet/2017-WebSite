@@ -31,52 +31,7 @@
 		
 		@foreach (var workshop in Model.Workshops)
 		{
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<div class="box effect6 @($"myAreaBoxBorder{workshop.Room.ColorNumber}")">
-					
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-							<img class="img-responsible" style="margin-bottom: 10px;" src="@workshop.Speaker.PhotoUrl" alt="@workshop.Speaker.FullName" />
-						</div>
-
-						<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-							@if (workshop.Speaker != null)
-							{
-								<div class="mySlotAuthor">
-									@workshop.Speaker.FullName
-								</div>
-							}
-							<div style="text-align: center;">
-								<div class="mySlotTime">
-									9:00 - 17:00
-								</div>
-								<a style="color: #777;" href="/workshop/@workshop.Id"><b>@workshop.Title</b> <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a><br /><br />
-								@if (workshop.Language != null && !string.IsNullOrEmpty(workshop.Language.Title))
-								{
-									@Html.Raw($"{Schedule.Language}: {workshop.Language.Title}")
-								}
-							</div>
-							
-							<div style="text-align: justify; padding-bottom: 20px;">
-								<div style="margin-bottom: 10px; font-size: 1.3em; font-weight: bold;">
-									@Workshops.TicketsLeft
-									:
-									@Model.TicketsLeft[workshop.Id]
-									&nbsp;<i class="fa fa-ticket" aria-hidden="true"></i>
-								</div>
-								<div>
-									<a class="btn btn-success" href="#" role="button">@Workshops.Buy</a>
-								</div>
-							</div>
-
-							<div style="text-align: justify;">
-								@Html.Raw(workshop.Description)
-							</div>
-						</div>
-					</div>
-					
-				</div>
-			</div>
+			@Html.Partial("_Workshop", workshop)
 		}
 
 	</div>

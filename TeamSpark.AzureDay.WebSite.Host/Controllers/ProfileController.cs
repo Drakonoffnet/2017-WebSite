@@ -239,7 +239,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			{
 				EMail = tickets[0].Attendee.EMail,
 				MerchantInternalUserId = tickets[0].Attendee.EMail,
-				MerchantInternalPaymentId = $"{tickets[0].Attendee.EMail}-{string.Join("|", tickets.Select(x => x.TicketType.ToDisplayString()))}",
+				MerchantInternalPaymentId = $"{tickets[0].Attendee.EMail}-{string.Join("|", tickets.Select(x => x.TicketType.ToString()))}",
 				BuyerFirstname = tickets[0].Attendee.FirstName,
 				BuyerLastname = tickets[0].Attendee.LastName,
 				ReturnUrl = $"{Configuration.Host}/profile/my",
@@ -249,9 +249,9 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			{
 				new Product
 				{
-					ProductId = string.Join("|", tickets.Select(x => x.TicketType.ToDisplayString())),
+					ProductId = string.Join("|", tickets.Select(x => x.TicketType.ToString())),
 					ProductItemsNum = 1,
-					ProductName = $"{tickets[0].Attendee.FirstName} {tickets[0].Attendee.LastName} билет на AzureDay {Configuration.Year} ({string.Join("|", tickets.Select(x => x.TicketType.ToDisplayString()))})",
+					ProductName = $"{tickets[0].Attendee.FirstName} {tickets[0].Attendee.LastName} билет на AzureDay {Configuration.Year} ({string.Join("|", tickets.Select(x => x.TicketType.ToString()))})",
 					ProductPrice = (decimal) tickets.Sum(x => x.Price)
 				}
 			};

@@ -68,7 +68,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 
 		public async Task<List<Ticket>> GetTicketsByEmailAsync(string email)
 		{
-			var filter = new Dictionary<string, string> {{"RowKey", email}};
+			var filter = new Dictionary<string, object> {{"RowKey", email}};
 
 			var data = await DataFactory.TicketService.Value.GetByFilterAsync(filter);
 
@@ -86,10 +86,10 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 
 		public async Task<List<Ticket>> GetWorkshopTicketsAsync(int workshopId)
 		{
-			var filter = new Dictionary<string, string>
+			var filter = new Dictionary<string, object>
 			{
-				{nameof(Data.Entity.Table.Ticket.PartitionKey), TicketType.Workshop.ToDisplayString() },
-				{nameof(Data.Entity.Table.Ticket.WorkshopId), workshopId.ToString()}
+				{nameof(Data.Entity.Table.Ticket.PartitionKey), TicketType.Workshop.ToString()},
+				{nameof(Data.Entity.Table.Ticket.WorkshopId), workshopId}
 			};
 
 			var data = (await DataFactory.TicketService.Value.GetByFilterAsync(filter))
@@ -101,7 +101,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 
 		public async Task<List<Ticket>> GetWorkshopsTicketsAsync()
 		{
-			var data = (await DataFactory.TicketService.Value.GetByPartitionKeyAsync(TicketType.Workshop.ToDisplayString()))
+			var data = (await DataFactory.TicketService.Value.GetByPartitionKeyAsync(TicketType.Workshop.ToString()))
 				.Select(AppFactory.Mapper.Value.Map<Ticket>)
 				.ToList();
 

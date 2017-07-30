@@ -80,47 +80,7 @@
 
 			foreach (var workshop in Model.Workshops)
 			{
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<div class="box effect6 @($"myAreaBoxBorder{workshop.Room.ColorNumber}")">
-					
-						<div class="row">
-							
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-								@if (workshop.Speaker != null)
-								{
-									<div class="mySlotAuthor">
-										@workshop.Speaker.FullName
-									</div>
-								}
-								<div style="text-align: center;">
-									<div class="mySlotTime">
-										9:00 - 17:00
-									</div>
-									<a style="color: #777;" href="/workshop/@workshop.Id"><b>@workshop.Title</b></a><br /><br />
-									@if (workshop.Language != null && !string.IsNullOrEmpty(workshop.Language.Title))
-									{
-										@Html.Raw($"{Schedule.Language}: {workshop.Language.Title}")
-									}
-								</div>
-							
-								<div style="text-align: justify;">
-									@Workshops.TicketsLeft
-									: 
-								</div>
-
-								<div style="text-align: justify;">
-									<p>
-										@Workshops.Agenda
-									</p>
-									<p>
-										...
-									</p>
-								</div>
-							</div>
-						</div>
-					
-					</div>
-				</div>
+				@Html.Partial("_Workshop", workshop)
 			}
 		}
 		
@@ -139,31 +99,7 @@
 
 			foreach (var topic in Model.Topics)
 			{
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<div class="box effect6">
-
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-								@if (topic.Speaker != null)
-								{
-									<div class="mySlotAuthor">
-										@topic.Speaker.FullName
-									</div>
-								}
-								<div style="text-align: center;">
-									
-									<b>@topic.Title</b><br /><br />
-									@if (topic.Language != null && !string.IsNullOrEmpty(topic.Language.Title))
-									{
-										@Html.Raw($"{Schedule.Language}: {topic.Language.Title}")
-									}
-								</div>
-								
-							</div>
-						</div>
-
-					</div>
-				</div>
+				@Html.Partial("_Topic", topic)
 			}
 		}
 	</div>

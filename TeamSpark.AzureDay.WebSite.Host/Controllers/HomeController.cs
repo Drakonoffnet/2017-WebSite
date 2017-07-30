@@ -85,16 +85,15 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 
 		public async Task<ActionResult> Workshops()
 		{
-			var model = new WorkshopsModel();
+			var model = new WorkshopsModel
+			{
+				Workshops = new List<WorkshopEntityModel>()
+			};
 
-			model.Workshops = new WorkshopService()
-				.GetWorkshops()
-				.ToList();
-
+			var workshops = new WorkshopService().GetWorkshops().ToList();
 			var workshopTickets = await AppFactory.TicketService.Value.GetWorkshopsTicketsAsync();
 
-			model.TicketsLeft = new Dictionary<int, int>();
-			foreach (var workshop in model.Workshops)
+			foreach (var workshop in workshops)
 			{
 				var ticketsLeft = workshop.MaxTickets - workshopTickets.Count(x => x.WorkshopId == workshop.Id);
 				if (ticketsLeft < 0)
@@ -102,7 +101,12 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 					ticketsLeft = 0;
 				}
 
-				model.TicketsLeft.Add(workshop.Id, ticketsLeft);
+				model.Workshops.Add(new WorkshopEntityModel
+				{
+					Workshop = workshop,
+					TicketsLeft = ticketsLeft,
+					ShowSpeakerInfo = true
+				});
 			}
 
 			return View(model);
@@ -110,7 +114,10 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 
 		public async Task<ActionResult> WorkshopEntity(int id)
 		{
-			var model = new WorkshopEntityModel();
+			var model = new WorkshopEntityModel
+			{
+				ShowSpeakerInfo = true
+			};
 
 			model.Workshop = new WorkshopService()
 				.GetWorkshop(id);
@@ -177,15 +184,34 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 				return RedirectToAction("Index");
 			}
 
-			model.Workshops = new WorkshopService()
+			var workshops = new WorkshopService()
 				.GetWorkshops()
 				.Where(x => x.Speaker.Id.Equals(model.Speaker.Id, StringComparison.InvariantCultureIgnoreCase))
 				.ToList();
+
+			model.Workshops = new List<WorkshopEntityModel>();
+
+			foreach (var workshop in workshops)
+			{
+				var ticketsLeft = workshop.MaxTickets - (await AppFactory.TicketService.Value.GetWorkshopTicketsAsync(workshop.Id)).Count;
+				if (ticketsLeft < 0)
+				{
+					ticketsLeft = 0;
+				}
+
+				model.Workshops.Add(new WorkshopEntityModel
+				{
+					Workshop = workshop,
+					TicketsLeft = ticketsLeft,
+					ShowSpeakerInfo = false
+				});
+			}
 
 			model.Topics = new TopicService()
 				.GetTopics()
 				.Where(x => x.Speaker.Id != null) // ???
 				.Where(x => x.Speaker.Id.Equals(model.Speaker.Id, StringComparison.InvariantCultureIgnoreCase))
+				.OrderBy(x => x.Timetable.TimeStart)
 				.ToList();
 
 			return View(model);

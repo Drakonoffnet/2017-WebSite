@@ -1,4 +1,6 @@
-﻿namespace TeamSpark.AzureDay.WebSite.App.Entity
+﻿using System.Linq;
+
+namespace TeamSpark.AzureDay.WebSite.App.Entity
 {
 	public class Topic
 	{
@@ -8,6 +10,22 @@
 		public Language Language { get; set; }
 
 		public Speaker Speaker { get; set; }
+
+		private Timetable _timetable;
+
+		public Timetable Timetable
+		{
+			get
+			{
+				if (_timetable == null)
+				{
+					_timetable = AppFactory.TimetableService.Value.GetTimetable()
+						.Where(x => x.Topic != null)
+						.SingleOrDefault(x => x.Topic.Id == Id);
+				}
+				return _timetable;
+			}
+		}
 
 		public Topic()
 		{

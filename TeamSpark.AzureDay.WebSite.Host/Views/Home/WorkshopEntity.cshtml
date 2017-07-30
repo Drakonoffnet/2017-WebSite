@@ -18,6 +18,10 @@
 					</div>
 				</div>
 			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center; font-size: 1.2em; margin-bottom: 20px;">
+				@WorkshopEntity.About01 <br />
+				@WorkshopEntity.About01a
+			</div>
 		</div>
 		
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -46,11 +50,16 @@
 							}
 						</div>
 							
-						<div style="text-align: justify; padding-bottom: 20px;">
-							@Workshops.TicketsLeft
-							:
-							@Model.TicketsLeft
-							&nbsp;<i class="fa fa-ticket" aria-hidden="true"></i>
+						<div style="text-align: justify; margin-bottom: 10px;">
+							<div style="margin-bottom: 10px; font-size: 1.3em; font-weight: bold;">
+								@Workshops.TicketsLeft
+								:
+								@Model.TicketsLeft
+								&nbsp;<i class="fa fa-ticket" aria-hidden="true"></i>
+							</div>
+							<div>
+								<a class="btn btn-success" href="#" role="button">@WorkshopEntity.Buy</a>
+							</div>
 						</div>
 
 						<div style="text-align: justify;">

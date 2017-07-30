@@ -5,7 +5,7 @@ namespace Kaznachey.KaznacheyPayment
     /// <summary>
     /// Merchant information
     /// </summary>
-    public class MerchantInfoResponse:BaseResponse
+    public class MerchantInfoResponse: BaseResponse
     {
         /// <summary>
         /// Merchant payment system list

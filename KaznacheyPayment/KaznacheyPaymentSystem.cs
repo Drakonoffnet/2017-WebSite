@@ -9,7 +9,7 @@ namespace Kaznachey.KaznacheyPayment
     /// </summary>
     public class KaznacheyPaymentSystem : IPaymentSystem
     {
-        public static readonly string ApiUrl = "https://payment.kaznachey.net/api/PaymentInterface";
+        public static readonly string ApiUrl = "https://api.assetpayments.com/api/PaymentInterface";
 
         private readonly Guid _merchantGuid;
         private readonly string _merchantSecretKey;
@@ -45,7 +45,8 @@ namespace Kaznachey.KaznacheyPayment
             var signature = (_merchantGuid.ToString("D") + _merchantSecretKey).ToUpper().GetMd5Hash();
             var request = CreateRequest("GetMerchatInformation");
             request.AddParameter("MerchantGuid", _merchantGuid);
-            request.AddParameter("Signature", signature);
+	        request.AddParameter("MerchantSecretKey", _merchantSecretKey);
+			request.AddParameter("Signature", signature);
 
             return Execute<MerchantInfoResponse>(request);
         }

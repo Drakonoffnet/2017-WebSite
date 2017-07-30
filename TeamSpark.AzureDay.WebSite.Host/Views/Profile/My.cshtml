@@ -71,7 +71,8 @@
 							{
 								<div class="input-group myInputGroupdivider">
 									<span class="input-group-addon" style="width: 150px;">@My.Ticket01</span>
-									<input type="checkbox" class="form-control" style="width: 50px;" name="cbConferenceTicket" data-bind="checked: isConferenceTicket"/>
+									<input id="cbConferenceTicket" type="checkbox" class="form-control" style="width: 50px;" data-bind="checked: isConferenceTicket"/>
+									<input type="hidden" name="hasConferenceTicket" />
 								</div>
 							}
 							else
@@ -119,7 +120,8 @@
 							{
 								<div class="input-group myInputGroupdivider">
 									<span class="input-group-addon" style="width: 150px;">@My.Ticket02</span>
-									<input type="checkbox" class="form-control"style="width: 50px;" name="cbWorkshopTicket" data-bind="checked: isWorkshopTicket" />
+									<input id="cbWorkshopTicket" type="checkbox" class="form-control"style="width: 50px;" data-bind="checked: isWorkshopTicket" />
+									<input type="hidden" name="hasWorkshopTicket"/>
 								</div>
 								<div class="input-group myInputGroupdivider" data-bind="visible: isWorkshopTicket">
 									<span class="input-group-addon" style="width: 150px;">@My.Lab01</span>
@@ -278,7 +280,7 @@
 
 				ticketModel.isAnyTicketSelected = ko.computed(function() {
 					return ticketModel.isConferenceTicket()
-						|| (ticketModel.isWorkshopTicket() && ticketModel.selectedWorkshop() > 0)
+						|| (ticketModel.isWorkshopTicket() && ticketModel.selectedWorkshop() > 0);
 				});
 
 				ticketModel.promoCode.subscribe(function(newPromoCode) {
@@ -310,18 +312,22 @@
 
 			$('#btnPayKaznachey').click(function() {
 				$('#paymentType').val('Kaznachey');
+				$('[name="hasConferenceTicket"]').val($('#cbConferenceTicket').is(":checked"));
+				$('[name="hasWorkshopTicket"]').val($('#cbWorkshopTicket').is(":checked"));
 				setTimeout(function() {
 					modal.showModal();
 				});
-				$('#formPayConf').submit();
+				$('#formPay').submit();
 			});
 
 			$('#btnPayLiqPay').click(function() {
 				$('#paymentType').val('LiqPay');
+				$('[name="hasConferenceTicket"]').val($('#cbConferenceTicket').is(":checked"));
+				$('[name="hasWorkshopTicket"]').val($('#cbWorkshopTicket').is(":checked"));
 				setTimeout(function() {
 					modal.showModal();
 				});
-				$('#formPayConf').submit();
+				$('#formPay').submit();
 			});
 		});
 

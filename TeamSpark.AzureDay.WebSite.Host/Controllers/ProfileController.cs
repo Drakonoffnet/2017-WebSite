@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Security;
 using Kaznachey.KaznacheyPayment;
@@ -21,7 +22,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 	{
 		private readonly WorkshopService _workshopService = new WorkshopService();
 
-		[Authorize]
+		[System.Web.Mvc.Authorize]
 		public async Task<ActionResult> My()
 		{
 			var email = User.Identity.Name;
@@ -69,8 +70,8 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			return View(model);
 		}
 
-		[Authorize]
-		[HttpPost]
+		[System.Web.Mvc.Authorize]
+		[System.Web.Mvc.HttpPost]
 		public async Task<ActionResult> My(MyProfileModel model)
 		{
 			var email = User.Identity.Name;
@@ -102,7 +103,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 		}
 
 		[NonAuthorize]
-		[HttpPost]
+		[System.Web.Mvc.HttpPost]
 		public async Task<ActionResult> Registration(RegistrationModel model)
 		{
 			var attendeeExisted = await AppFactory.AttendeeService.Value.GetAttendeeByEmailAsync(model.Email);
@@ -160,7 +161,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 		}
 
 		[NonAuthorize]
-		[HttpPost]
+		[System.Web.Mvc.HttpPost]
 		public async Task<ActionResult> LogIn(LoginModel model)
 		{
 			var attendee = await AppFactory.AttendeeService.Value.GetAttendeeByEmailAsync(model.Email);
@@ -186,7 +187,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			}
 		}
 
-		[Authorize]
+		[System.Web.Mvc.Authorize]
 		public ActionResult LogOut()
 		{
 			FormsAuthentication.SignOut();
@@ -264,34 +265,34 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			return model;
 		}
 
-		[Authorize]
-		[HttpPost]
-		public async Task<ActionResult> Pay(PayModel model)
+		[System.Web.Mvc.Authorize]
+		[System.Web.Mvc.HttpPost]
+		public async Task<ActionResult> Pay([FromBody]PayModel model)
 		{
-			if (!model.cbConferenceTicket && (!model.cbWorkshopTicket || model.ddlWorkshop == 0))
+			if (!model.HasConferenceTicket && (!model.HasWorkshopTicket || model.DdlWorkshop == 0))
 			{
 				throw new ArgumentException(nameof(model));
 			}
 
 			var tickets = new List<Ticket>();
 
-			if (model.cbConferenceTicket)
+			if (model.HasConferenceTicket)
 			{
 				tickets.Add(new Ticket
 				{
 					TicketType = TicketType.Regular,
-					PaymentType = model.paymentType,
+					PaymentType = model.PaymentType,
 					Price = (double)AppFactory.TicketService.Value.GetTicketPrice(TicketType.Regular)
 				});
 			}
 
-			if (model.cbWorkshopTicket && model.ddlWorkshop > 0)
+			if (model.HasWorkshopTicket && model.DdlWorkshop > 0)
 			{
 				tickets.Add(new Ticket
 				{
 					TicketType = TicketType.Workshop,
-					PaymentType = model.paymentType,
-					WorkshopId = model.ddlWorkshop,
+					PaymentType = model.PaymentType,
+					WorkshopId = model.DdlWorkshop,
 					Price = (double)AppFactory.TicketService.Value.GetTicketPrice(TicketType.Workshop)
 				});
 			}
@@ -301,14 +302,14 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 				throw new ArgumentException(nameof(model));
 			}
 
-			var coupon = await AppFactory.CouponService.Value.GetValidCouponByCodeAsync(model.promoCode);
+			var coupon = await AppFactory.CouponService.Value.GetValidCouponByCodeAsync(model.PromoCode);
 
 			decimal ticketTotalPrice = tickets.Count > 1 ?
 				AppFactory.TicketService.Value.GetTicketPrice(TicketType.Regular | TicketType.Workshop) :
 				AppFactory.TicketService.Value.GetTicketPrice(tickets[0].TicketType);
 			ticketTotalPrice = AppFactory.CouponService.Value.GetPriceWithCoupon(ticketTotalPrice, coupon);
 
-			await AppFactory.CouponService.Value.UseCouponByCodeAsync(model.promoCode);
+			await AppFactory.CouponService.Value.UseCouponByCodeAsync(model.PromoCode);
 
 			if (tickets.Count > 1)
 			{
@@ -354,7 +355,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			}
 		}
 
-		[Authorize]
+		[System.Web.Mvc.Authorize]
 		public async Task<ActionResult> PayAgain()
 		{
 			var email = User.Identity.Name;
@@ -375,7 +376,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			return View("PayForm", model);
 		}
 
-		[Authorize]
+		[System.Web.Mvc.Authorize]
 		public async Task<ActionResult> DeleteTicket()
 		{
 			var email = User.Identity.Name;
@@ -391,7 +392,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 		}
 
 		[NonAuthorize]
-		[HttpPost]
+		[System.Web.Mvc.HttpPost]
 		public async Task<ActionResult> RestorePassword(LoginModel model)
 		{
 			var user = await AppFactory.AttendeeService.Value.GetAttendeeByEmailAsync(model.Email);

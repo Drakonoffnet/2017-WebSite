@@ -19,14 +19,14 @@ namespace TeamSpark.AzureDay.WebSite.Data.Entity.Table
 		[IgnoreProperty]
 		public TicketType TicketType
 		{
-			get => (TicketType)TicketTypeId;
-			set => TicketTypeId = (int)value;
-		}
-
-		public int TicketTypeId
-		{
-			get => int.Parse(PartitionKey);
-			set => PartitionKey = ((TicketType)value).ToDisplayString();
+			get
+			{
+				TicketType val;
+				return System.Enum.TryParse(PartitionKey, true, out val) ?
+					val :
+					TicketType.None;
+			}
+			set => PartitionKey = value.ToString();
 		}
 
 		public int? WorkshopId { get; set; }

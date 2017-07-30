@@ -222,7 +222,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 						paySystemId = kaznachey.GetMerchantInformation().PaySystems[0].Id;
 						break;
 					case "liqpay":
-						kaznachey = new KaznacheyPaymentSystem(Configuration.LiqPayMerchantId, Configuration.LiqPayMerchantSecreet);
+						kaznachey = new KaznacheyPaymentSystem(Configuration.KaznackeyMerchantId, Configuration.KaznackeyMerchantSecreet);
 						paySystemId = kaznachey.GetMerchantInformation().PaySystems[3].Id;
 						break;
 					default:
@@ -360,15 +360,12 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 		{
 			var email = User.Identity.Name;
 
-			var ticketsTask = AppFactory.TicketService.Value.GetTicketsByEmailAsync(email);
-			var attendeeTask = AppFactory.AttendeeService.Value.GetAttendeeByEmailAsync(email);
+			var attendee = await AppFactory.AttendeeService.Value.GetAttendeeByEmailAsync(email);
+			var tickets = await AppFactory.TicketService.Value.GetTicketsByEmailAsync(email);
 
-			await Task.WhenAll(ticketsTask, attendeeTask);
-
-			var tickets = ticketsTask.Result;
 			foreach (var ticket in tickets)
 			{
-				ticket.Attendee = attendeeTask.Result;
+				ticket.Attendee = attendee;
 			}
 
 			var model = GetPaymentForm(tickets);
@@ -377,17 +374,45 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 		}
 
 		[System.Web.Mvc.Authorize]
-		public async Task<ActionResult> DeleteTicket()
+		public async Task<ActionResult> DeleteTicket(string token)
 		{
 			var email = User.Identity.Name;
+			TicketType ticketType;
+			if (!Enum.TryParse(token, true, out ticketType))
+			{
+				throw new ArgumentException();
+			}
 
-			var ticket = await AppFactory.TicketService.Value.GetTicketsByEmailAsync(email);
+			var tickets = await AppFactory.TicketService.Value.GetTicketsByEmailAsync(email);
+			var ticketToDelete = tickets.Single(x => x.TicketType == ticketType);
+			var ticketToRemain = tickets.SingleOrDefault(x => x.TicketType != ticketType);
 
-			await Task.WhenAll(
-				AppFactory.TicketService.Value.DeleteTicketAsync(email),
-				AppFactory.CouponService.Value.RestoreCouponByCodeAsync(ticket[0].Coupon == null ? string.Empty : ticket[0].Coupon.Code)
-			);
-			
+			var couponCode = ticketToDelete.Coupon == null ?
+				string.Empty :
+				ticketToDelete.Coupon.Code;
+
+			var tasks = new List<Task>
+			{
+				AppFactory.TicketService.Value.DeleteTicketAsync(email, ticketToDelete.TicketType)
+			};
+
+			if (ticketToRemain == null)
+			{
+				tasks.Add(AppFactory.CouponService.Value.RestoreCouponByCodeAsync(couponCode));
+			}
+			else
+			{
+				if (ticketToRemain.Coupon != null)
+				{
+					var price = AppFactory.TicketService.Value.GetTicketPrice(ticketToRemain.TicketType);
+					price = AppFactory.CouponService.Value.GetPriceWithCoupon(price, ticketToRemain.Coupon);
+
+					tasks.Add(AppFactory.TicketService.Value.UpdateTicketPriceAsync(email, ticketToRemain.TicketType, price));
+				}
+			}
+
+			await Task.WhenAll(tasks);
+
 			return RedirectToAction("My");
 		}
 

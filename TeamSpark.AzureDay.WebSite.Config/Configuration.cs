@@ -46,8 +46,6 @@ namespace TeamSpark.AzureDay.WebSite.Config
 
 		public static Guid KaznackeyMerchantId => Guid.Parse(GetConfigVariable("KaznackeyMerchantId"));
 		public static string KaznackeyMerchantSecreet => GetConfigVariable("KaznackeyMerchantSecreet");
-		public static Guid LiqPayMerchantId => Guid.Parse(GetConfigVariable("LiqPayMerchantId"));
-		public static string LiqPayMerchantSecreet => GetConfigVariable("LiqPayMerchantSecreet");
 
 		#endregion
 

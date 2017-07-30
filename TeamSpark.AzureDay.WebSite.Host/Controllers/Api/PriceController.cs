@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Http;
 using Kaznachey.KaznacheyPayment;
@@ -42,9 +43,9 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers.Api
 		public async Task<string> PaymentConfirm([FromBody]PaymentResponse response)
 		{
 			var email = response.MerchantInternalUserId;
-			var ticket = await AppFactory.TicketService.Value.GetTicketsByEmailAsync(email);
+			var tickets = await AppFactory.TicketService.Value.GetTicketsByEmailAsync(email);
 
-			if (ticket != null)
+			if (tickets != null && tickets.Any())
 			{
 				if (response.ErrorCode != 0)
 				{
@@ -70,7 +71,6 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers.Api
 					};
 
 					await Task.WhenAll(
-						AppFactory.TicketService.Value.DeleteTicketAsync(email),
 						NotificationFactory.AttendeeNotificationService.Value.SendPaymentErrorEmailAsync(message)
 					);
 				}
@@ -84,10 +84,50 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers.Api
 						FullName = attendee.FullName
 					};
 
-					await Task.WhenAll(
-						AppFactory.TicketService.Value.SetTicketsPayedAsync(email),
-						NotificationFactory.AttendeeNotificationService.Value.SendPaymentConfirmationEmailAsync(message)
-					);
+					var orderSum = response.OrderSum;
+
+					var tasks = new List<Task>();
+					if ((decimal)tickets.Sum(x => x.Price) <= orderSum)
+					{
+						foreach (var ticket in tickets)
+						{
+							tasks.Add(AppFactory.TicketService.Value.SetTicketsPayedAsync(email, ticket.TicketType));
+						}
+						tasks.Add(NotificationFactory.AttendeeNotificationService.Value.SendPaymentConfirmationEmailAsync(message));
+					}
+					else
+					{
+						if (tickets.Count > 1)
+						{
+							if ((decimal)tickets[0].Price <= orderSum)
+							{
+								tasks.Add(AppFactory.TicketService.Value.SetTicketsPayedAsync(email, tickets[0].TicketType));
+								tasks.Add(NotificationFactory.AttendeeNotificationService.Value.SendPaymentConfirmationEmailAsync(message));
+
+								orderSum -= (decimal)tickets[0].Price;
+							}
+
+							if ((decimal)tickets[1].Price <= orderSum)
+							{
+								tasks.Add(AppFactory.TicketService.Value.SetTicketsPayedAsync(email, tickets[1].TicketType));
+							}
+							else
+							{
+								var newPrice = (decimal)tickets[1].Price - orderSum;
+								tasks.Add(AppFactory.TicketService.Value.UpdateTicketPriceAsync(email, tickets[1].TicketType, newPrice));
+							}
+						}
+						else
+						{
+							if ((decimal)tickets[0].Price <= orderSum)
+							{
+								tasks.Add(AppFactory.TicketService.Value.SetTicketsPayedAsync(email, tickets[0].TicketType));
+								tasks.Add(NotificationFactory.AttendeeNotificationService.Value.SendPaymentConfirmationEmailAsync(message));
+							}
+						}
+					}
+
+					await Task.WhenAll(tasks);
 				}
 			}
 			else

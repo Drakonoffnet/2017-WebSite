@@ -121,7 +121,7 @@
     <value>Attendee</value>
   </data>
   <data name="ByLink" xml:space="preserve">
-    <value>link.</value>
+    <value>link</value>
   </data>
   <data name="CompanyName" xml:space="preserve">
     <value>Company name</value>

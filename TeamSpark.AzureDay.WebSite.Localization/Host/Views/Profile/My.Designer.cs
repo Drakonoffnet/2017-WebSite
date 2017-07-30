@@ -70,7 +70,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to link..
+        ///   Looks up a localized string similar to link.
         /// </summary>
         public static string ByLink {
             get {

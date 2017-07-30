@@ -1,5 +1,6 @@
 ﻿@using TeamSpark.AzureDay.WebSite.Config
 @using TeamSpark.AzureDay.WebSite.Data.Enum
+@using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home
 @using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile
 @model TeamSpark.AzureDay.WebSite.Host.Models.Profile.MyProfileModel
 
@@ -85,7 +86,7 @@
 												<div class="wow-pricing-header" style="padding-bottom: 0px;">
 													<h5>AzureDay @Configuration.Year</h5>
 													<div class="wow-pricing-cost">
-														<img id="imgGravatar" style="display: none; padding-bottom: 10px;"/>
+														<img id="imgGravatar1" style="display: none; padding-bottom: 10px;"/>
 														<p style="font-weight: bold;">@($"{Model.FirstName} {Model.LastName}")</p>
 														<p>@Model.Company</p>
 														<p>&nbsp;</p>
@@ -94,24 +95,47 @@
 												<div class="wow-pricing-content">
 													<ul>
 														<li>
-															@My.Attendee (@Model.PayedConferenceTicket.TicketType.ToDisplayString())
+															@My.Attendee (@Model.PayedConferenceTicket.TicketType.ToDisplayString())<br/>
+															@Schedule.Date
 														</li>
 													</ul>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div>
-										<p>@My.HowToUseTicket</p>
-									</div>
+
+									if (Model.PayedWorkshopTicket == null)
+									{
+										<div>
+											<p>@My.HowToUseTicket</p>
+										</div>
+									}
 								}
 								else
 								{
 									<div>
-										<p>@My.ThankYouWait</p>
-										<p>@My.PayNow <a href="/Profile/PayAgain">@My.ByLink</a>.</p>
-										<p>@My.DropPayment01 <a href="/Profile/DeleteTicket">@My.ByLink</a>@My.DropPayment01a</p>
-										<p>@My.Questions01 <a href="mailto:pay@azureday.net">pay@azureday.net</a> @My.Questions01a</p>
+										<div class="wow-pricing-table col-md-12">
+											<div class="wow-pricing wow-column-">
+												<div class="wow-pricing-header" style="padding-bottom: 0px;">
+													<h5>AzureDay @Configuration.Year</h5>
+													<div class="wow-pricing-cost" style="padding: 15px;">
+														<p>@My.ThankYouWait</p>
+														<p>@My.PayNow <a href="/Profile/PayAgain/@Model.PayedConferenceTicket.TicketType">@My.ByLink</a>.
+														</p>
+														<p>@My.DropPayment01 <a href="/Profile/DeleteTicket/@Model.PayedConferenceTicket.TicketType">@My.ByLink</a>. @My.DropPayment01a</p>
+														<p>@My.Questions01 <a href="mailto:pay@azureday.net">pay@azureday.net</a> @My.Questions01a</p>
+													</div>
+												</div>
+												<div class="wow-pricing-content">
+													<ul>
+														<li>
+															@My.Attendee (@Model.PayedConferenceTicket.TicketType.ToDisplayString())<br />
+															@Schedule.Date
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
 									</div>
 								}
 							}
@@ -138,7 +162,7 @@
 												<div class="wow-pricing-header" style="padding-bottom: 0px;">
 													<h5>AzureDay @Configuration.Year</h5>
 													<div class="wow-pricing-cost">
-														<img id="imgGravatar" style="display: none; padding-bottom: 10px;" />
+														<img id="imgGravatar2" style="display: none; padding-bottom: 10px;" />
 														<p style="font-weight: bold;">@($"{Model.FirstName} {Model.LastName}")</p>
 														<p>@Model.Company</p>
 														<p>&nbsp;</p>
@@ -147,7 +171,9 @@
 												<div class="wow-pricing-content">
 													<ul>
 														<li>
-															@My.Attendee (@Model.PayedWorkshopTicket.TicketType.ToDisplayString())
+															@My.Attendee (@Model.PayedWorkshopTicket.TicketType.ToDisplayString())<br/>
+															@Workshops.Date<br/>
+															@Model.Workshops.Single(x => x.Id == Model.PayedWorkshopTicket.WorkshopId.Value).Title
 														</li>
 													</ul>
 												</div>
@@ -161,10 +187,29 @@
 								else
 								{
 									<div>
-										<p>@My.ThankYouWait</p>
-										<p>@My.PayNow <a href="/Profile/PayAgain">@My.ByLink</a>.</p>
-										<p>@My.DropPayment01 <a href="/Profile/DeleteTicket">@My.ByLink</a>@My.DropPayment01a</p>
-										<p>@My.Questions01 <a href="mailto:pay@azureday.net">pay@azureday.net</a> @My.Questions01a</p>
+										<div class="wow-pricing-table col-md-12">
+											<div class="wow-pricing wow-column-">
+												<div class="wow-pricing-header" style="padding-bottom: 0px;">
+													<h5>AzureDay @Configuration.Year</h5>
+													<div class="wow-pricing-cost" style="padding: 15px;">
+														<p>@My.ThankYouWait</p>
+														<p>
+															@My.PayNow <a href="/Profile/PayAgain/@Model.PayedWorkshopTicket.TicketType">@My.ByLink</a>.
+														</p>
+														<p>@My.DropPayment01 <a href="/Profile/DeleteTicket/@Model.PayedWorkshopTicket.TicketType">@My.ByLink</a>. @My.DropPayment01a</p>
+														<p>@My.Questions01 <a href="mailto:pay@azureday.net">pay@azureday.net</a> @My.Questions01a</p>
+													</div>
+												</div>
+												<div class="wow-pricing-content">
+													<ul>
+														<li>
+															@My.Attendee (@Model.PayedWorkshopTicket.TicketType.ToDisplayString())<br />
+															@Schedule.Date
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
 									</div>
 								}
 							}
@@ -255,8 +300,8 @@
 
 			(function ticket() {
 				var ticketModel = {
-					isConferenceTicket: ko.observable(true),
-					isWorkshopTicket: ko.observable(true),
+					isConferenceTicket: ko.observable(@{ Write((Model.PayedConferenceTicket == null).ToString().ToLowerInvariant()); }),
+					isWorkshopTicket: ko.observable(@{ Write((Model.PayedWorkshopTicket == null).ToString().ToLowerInvariant()); }),
 					selectedWorkshop: ko.observable(0),
 					workshops: [
 						@Html.Raw(string.Join(",", Model.Workshops.Select(ticket => $"{{ id:'{ticket.Id}', title:'{ticket.Title} ({My.TicketsLeft} {Model.TicketsLeft[ticket.Id]})' }}")))
@@ -336,9 +381,15 @@
 				return;
 			}
 
-			var img = $('#imgGravatar');
-			img.attr('src', profile.entry[0].thumbnailUrl);
-			img.show();
+			var avatarUrl = profile.entry[0].thumbnailUrl;
+
+			var img1 = $('#imgGravatar1');
+			img1.attr('src', avatarUrl);
+			img1.show();
+
+			var img2 = $('#imgGravatar2');
+			img2.attr('src', avatarUrl);
+			img2.show();
 		}
 	</script>
 

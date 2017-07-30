@@ -217,7 +217,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			{
 				switch (tickets[0].PaymentType.ToLowerInvariant())
 				{
-					case "kaznackey":
+					case "kaznachey":
 						kaznachey = new KaznacheyPaymentSystem(Configuration.KaznackeyMerchantId, Configuration.KaznackeyMerchantSecreet);
 						paySystemId = kaznachey.GetMerchantInformation().PaySystems[0].Id;
 						break;
@@ -402,13 +402,14 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			}
 			else
 			{
+				var price = AppFactory.TicketService.Value.GetTicketPrice(ticketToRemain.TicketType);
+
 				if (ticketToRemain.Coupon != null)
 				{
-					var price = AppFactory.TicketService.Value.GetTicketPrice(ticketToRemain.TicketType);
 					price = AppFactory.CouponService.Value.GetPriceWithCoupon(price, ticketToRemain.Coupon);
-
-					tasks.Add(AppFactory.TicketService.Value.UpdateTicketPriceAsync(email, ticketToRemain.TicketType, price));
 				}
+
+				tasks.Add(AppFactory.TicketService.Value.UpdateTicketPriceAsync(email, ticketToRemain.TicketType, price));
 			}
 
 			await Task.WhenAll(tasks);

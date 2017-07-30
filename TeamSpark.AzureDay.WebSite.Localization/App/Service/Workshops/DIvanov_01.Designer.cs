@@ -61,7 +61,20 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Workshops {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Теоретическая часть Xamarin.Forms
+        ///- Типы проектов и их отличия (Forms and Native)
+        ///- Плагины для проектов и расширения
+        ///- Аналитика поведения пользователя в приложении
+        ///- Страницы и элементов форм
+        ///- Подключение к Azure
+        ///
+        ///Практическая часть
+        ///- Создание проекта Xamarin.Froms
+        ///- Создание страниц и элементов форм
+        ///- Верстка приложения создание дизайна
+        ///- Написание логики работы приложения
+        ///- Подключение приложения к Azure
+        ///- Тестирование и анализ поведения в приложении пользователя.
         /// </summary>
         public static string Description {
             get {

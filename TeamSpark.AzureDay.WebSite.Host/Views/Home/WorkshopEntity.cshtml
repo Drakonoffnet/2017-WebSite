@@ -46,19 +46,15 @@
 							}
 						</div>
 							
-						<div style="text-align: justify;">
+						<div style="text-align: justify; padding-bottom: 20px;">
 							@Workshops.TicketsLeft
 							:
 							@Model.TicketsLeft
+							&nbsp;<i class="fa fa-ticket" aria-hidden="true"></i>
 						</div>
 
 						<div style="text-align: justify;">
-							<p>
-								@Workshops.Agenda
-							</p>
-							<p>
-							...
-							</p>
+							@Html.Raw(Model.Workshop.Description);
 						</div>
 					</div>
 				</div>

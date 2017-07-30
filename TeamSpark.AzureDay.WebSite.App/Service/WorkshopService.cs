@@ -33,7 +33,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Language = _languageService.Russian,
 					Room = _roomService.Workshop2,
 					Speaker = _speakerService.DIvanov(),
-					MaxTickets = 20,
+					MaxTickets = 10, // ok
 					Title = Localization.App.Service.Workshops.DIvanov_01.Title,
 					Description = Localization.App.Service.Workshops.DIvanov_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -53,7 +53,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Language = _languageService.Russian,
 					Room = _roomService.Workshop4,
 					Speaker = _speakerService.ILeontiev(),
-					MaxTickets = 20,
+					MaxTickets = 20, // ok
 					Title = Localization.App.Service.Workshops.ILeontiev_01.Title,
 					Description = Localization.App.Service.Workshops.ILeontiev_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -103,7 +103,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Language = _languageService.Russian,
 					Room = _roomService.Workshop9,
 					Speaker = _speakerService.VRadchuk(),
-					MaxTickets = 10,
+					MaxTickets = 10, // ok
 					Title = Localization.App.Service.Workshops.VRadchuk_01.Title,
 					Description = Localization.App.Service.Workshops.VRadchuk_01.Description.Replace(Environment.NewLine, "<br/>")
 				}

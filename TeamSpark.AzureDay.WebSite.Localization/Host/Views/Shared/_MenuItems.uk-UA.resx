@@ -126,6 +126,9 @@
   <data name="Home" xml:space="preserve">
     <value>Головна</value>
   </data>
+  <data name="Language" xml:space="preserve">
+    <value>Мова</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Увійти</value>
   </data>

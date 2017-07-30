@@ -88,6 +88,15 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        public static string Language {
+            get {
+                return ResourceManager.GetString("Language", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Login.
         /// </summary>
         public static string Login {

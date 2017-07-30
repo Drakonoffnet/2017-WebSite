@@ -2337,7 +2337,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .maintitle {
 /* MINE */
 
 .myAreaContainer1 {
-	background-color: #f90;
+	/* background-color: #f90; */
+	background: #ff9900;
+	background: -moz-linear-gradient(-45deg, #ff9900 0%, #f4b53f 100%);
+	background: -webkit-linear-gradient(-45deg, #ff9900 0%,#f4b53f 100%);
+	background: linear-gradient(135deg, #ff9900 0%,#f4b53f 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#f4b53f',GradientType=1 );
+
 	color: #fff;
 	font-size: 1.2em;
 	font-weight: bold;
@@ -2349,7 +2355,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .maintitle {
 }
 
 .myAreaContainer2 {
-	background-color: #06f;
+	/*background-color: #06f;*/
+	background: #0066ff;
+	background: -moz-linear-gradient(-45deg, #0066ff 0%, #004de8 100%);
+	background: -webkit-linear-gradient(-45deg, #0066ff 0%,#004de8 100%);
+	background: linear-gradient(135deg, #0066ff 0%,#004de8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0066ff', endColorstr='#004de8',GradientType=1 );
 	color: #fff;
 	font-size: 1.2em;
 	font-weight: bold;
@@ -2361,7 +2372,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .maintitle {
 }
 
 .myAreaContainer3 {
-	background-color: #f30;
+	/*background-color: #f30;*/
+	background: #ff3300;
+	background: -moz-linear-gradient(-45deg, #ff3300 0%, #f96666 100%);
+	background: -webkit-linear-gradient(-45deg, #ff3300 0%,#f96666 100%);
+	background: linear-gradient(135deg, #ff3300 0%,#f96666 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3300', endColorstr='#f96666',GradientType=1 );
+
 	color: #fff;
 	font-size: 1.2em;
 	font-weight: bold;
@@ -2373,7 +2390,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .maintitle {
 }
 
 .myAreaContainer4 {
-	background-color: #6c0;
+	/*background-color: #6c0;*/
+	background: #66cc00;
+	background: -moz-linear-gradient(-45deg, #66cc00 0%, #3baa00 100%);
+	background: -webkit-linear-gradient(-45deg, #66cc00 0%,#3baa00 100%);
+	background: linear-gradient(135deg, #66cc00 0%,#3baa00 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66cc00', endColorstr='#3baa00',GradientType=1 );
+
 	color: #fff;
 	font-size: 1.2em;
 	font-weight: bold;
@@ -2385,7 +2408,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .maintitle {
 }
 
 .myAreaContainer5 {
-	background-color: #f0f;
+	/*background-color: #f0f;*/
+	background: #ff00ff;
+	background: -moz-linear-gradient(-45deg, #ff00ff 0%, #b200af 100%);
+	background: -webkit-linear-gradient(-45deg, #ff00ff 0%,#b200af 100%);
+	background: linear-gradient(135deg, #ff00ff 0%,#b200af 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff00ff', endColorstr='#b200af',GradientType=1 );
+
 	color: #fff;
 	font-size: 1.2em;
 	font-weight: bold;

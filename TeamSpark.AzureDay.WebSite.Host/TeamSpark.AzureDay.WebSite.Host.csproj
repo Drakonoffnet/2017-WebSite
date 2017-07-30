@@ -426,6 +426,8 @@
     <Content Include="Theme\img\_slides\2017\en\02-discounts-en.jpg" />
     <Content Include="Theme\img\_slides\2017\en\speakers-en.jpg" />
     <Content Include="Theme\img\_slides\2017\en\workshops-en.jpg" />
+    <Content Include="Theme\img\_slides\2017\speakers-en.jpg" />
+    <Content Include="Theme\img\_slides\2017\workshops-en.jpg" />
     <Content Include="Theme\img\_slides\date.jpg" />
     <Content Include="Theme\img\_slides\date.png" />
     <Content Include="Theme\img\_slides\kyiv01.jpg" />

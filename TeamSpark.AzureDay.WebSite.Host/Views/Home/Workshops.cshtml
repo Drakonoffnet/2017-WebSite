@@ -11,12 +11,21 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<img src="@Workshops.Img" alt="@Workshops.Title" class="img-responsive" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="titleborder center">
 					<div>
 						<h1 class="animated fadeInDownBig" style="text-transform: capitalize">@Workshops.Title AzureDay</h1>
 						<h2 class="animated fadeInDownBig">@Workshops.Date</h2>
 					</div>
 				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center; font-size: 1.2em; margin-bottom: 20px;">
+				@Workshops.About01 <br />
+				@Workshops.About01a
 			</div>
 		</div>
 		
@@ -41,7 +50,7 @@
 								<div class="mySlotTime">
 									9:00 - 17:00
 								</div>
-								<a style="color: #777;" href="/workshop/@workshop.Id"><b>@workshop.Title</b></a><br /><br />
+								<a style="color: #777;" href="/workshop/@workshop.Id"><b>@workshop.Title</b> <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a><br /><br />
 								@if (workshop.Language != null && !string.IsNullOrEmpty(workshop.Language.Title))
 								{
 									@Html.Raw($"{Schedule.Language}: {workshop.Language.Title}")
@@ -49,10 +58,15 @@
 							</div>
 							
 							<div style="text-align: justify; padding-bottom: 20px;">
-								@Workshops.TicketsLeft
-								:
-								@Model.TicketsLeft[workshop.Id]
-								&nbsp;<i class="fa fa-ticket" aria-hidden="true"></i>
+								<div style="margin-bottom: 10px; font-size: 1.3em; font-weight: bold;">
+									@Workshops.TicketsLeft
+									:
+									@Model.TicketsLeft[workshop.Id]
+									&nbsp;<i class="fa fa-ticket" aria-hidden="true"></i>
+								</div>
+								<div>
+									<a class="btn btn-success" href="#" role="button">@Workshops.Buy</a>
+								</div>
 							</div>
 
 							<div style="text-align: justify;">

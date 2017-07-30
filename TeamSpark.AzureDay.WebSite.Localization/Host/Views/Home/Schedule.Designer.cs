@@ -70,6 +70,15 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to /Theme/img/_slides/2017/en/00-date-en.jpg.
+        /// </summary>
+        public static string Img {
+            get {
+                return ResourceManager.GetString("Img", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to language.
         /// </summary>
         public static string Language {

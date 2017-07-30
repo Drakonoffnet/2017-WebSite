@@ -61,6 +61,15 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Meet the speakers of our annual cloud conference AzureDAY 2017 Ukraine..
+        /// </summary>
+        public static string MeetSpeakers {
+            get {
+                return ResourceManager.GetString("MeetSpeakers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AzureDay Speakers.
         /// </summary>
         public static string Title {

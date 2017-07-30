@@ -80,6 +80,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Speaker\MFerdyn.Designer.cs">
+      <DependentUpon>MFerdyn.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Speaker\AMang.Designer.cs">
       <DependentUpon>AMang.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -289,6 +294,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ABoyko.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Topics\MFerdyn_02.Designer.cs">
+      <DependentUpon>MFerdyn_02.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="App\Service\Topics\ATkachenko_01.Designer.cs">
       <DependentUpon>ATkachenko_01.resx</DependentUpon>
@@ -793,6 +803,11 @@
       <LastGenOutput>Room.ru.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\MFerdyn.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MFerdyn.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\AMang.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AMang.Designer.cs</LastGenOutput>
@@ -960,6 +975,10 @@
     <EmbeddedResource Include="App\Service\Speaker\ABoyko.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ABoyko.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\MFerdyn_02.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MFerdyn_02.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\ATkachenko_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

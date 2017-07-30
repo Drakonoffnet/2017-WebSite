@@ -40,6 +40,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 
 			_speakers.Add(ATkachenko());
 			_speakers.Add(AMang());
+			_speakers.Add(MFerdyn());
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
@@ -109,7 +110,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				LastName = Localization.App.Service.Speaker.OChorny.LastName,
 				Bio = Localization.App.Service.Speaker.OChorny.Bio.Replace(Environment.NewLine, "<br/>"),
 				Country = _countryService.Ukraine,
-				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/OChorny.jpg",
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",
@@ -565,7 +566,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				LastName = Localization.App.Service.Speaker.ATkachenko.LastName,
 				Bio = Localization.App.Service.Speaker.ATkachenko.Bio.Replace(Environment.NewLine, "<br/>"),
 				Country = _countryService.Ukraine,
-				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/ATkachenko.jpg",
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",
@@ -589,7 +590,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				LastName = Localization.App.Service.Speaker.AMang.LastName,
 				Bio = Localization.App.Service.Speaker.AMang.Bio.Replace(Environment.NewLine, "<br/>"),
 				Country = _countryService.Romania,
-				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/AMang.jpg",
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",
@@ -601,6 +602,30 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				WebUrl = "",
 				CompanyName = "",
 				JobTitle = ""
+			};
+		}
+
+		public Speaker MFerdyn()
+		{
+			return new Speaker
+			{
+				Id = "MFerdyn",
+				FirstName = Localization.App.Service.Speaker.MFerdyn.FirstName,
+				LastName = Localization.App.Service.Speaker.MFerdyn.LastName,
+				Bio = Localization.App.Service.Speaker.MFerdyn.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Poland,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/MFerdyn.jpg",
+				FacebookUrl = "https://www.facebook.com/mariusz.ferdyn",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "",
+				MsdnUrl = "",
+				MvpUrl = "https://mvp.microsoft.com/en-us/PublicProfile/5002168",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = "Senior Administrator"
 			};
 		}
 	}

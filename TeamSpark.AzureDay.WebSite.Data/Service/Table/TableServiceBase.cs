@@ -34,7 +34,7 @@ namespace TeamSpark.AzureDay.WebSite.Data.Service.Table
 
 		public async Task<T> GetByKeysAsync(string partitionKey, string rowKey)
 		{
-			var operation = TableOperation.Retrieve<T>(partitionKey, rowKey);
+			var operation = TableOperation.Retrieve<T>(partitionKey ?? string.Empty, rowKey ?? string.Empty);
 
 			var result = await Table.ExecuteAsync(operation);
 
@@ -43,7 +43,7 @@ namespace TeamSpark.AzureDay.WebSite.Data.Service.Table
 
 		public async Task<List<T>> GetByPartitionKeyAsync(string partitionKey)
 		{
-			var filter = TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, partitionKey);
+			var filter = TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, partitionKey ?? string.Empty);
 
 			var query = new TableQuery<T>().Where(filter);
 

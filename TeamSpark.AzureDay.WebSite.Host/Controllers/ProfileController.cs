@@ -237,7 +237,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 						break;
 					case "liqpay":
 						kaznachey = new KaznacheyPaymentSystem(Configuration.KaznacheyMerchantId, Configuration.KaznacheyMerchantSecreet);
-						paySystemId = kaznachey.GetMerchantInformation().PaySystems[3].Id;
+						paySystemId = kaznachey.GetMerchantInformation().PaySystems[1].Id;
 						break;
 					default:
 						kaznachey = new KaznacheyPaymentSystem(Configuration.KaznacheyMerchantId, Configuration.KaznacheyMerchantSecreet);

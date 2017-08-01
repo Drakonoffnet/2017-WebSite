@@ -11,7 +11,7 @@ namespace TeamSpark.AzureDay.WebSite.CLI.Data
 		{
 			Console.WriteLine("Kaznachey pay");
 
-			var kaznachey = new KaznacheyPaymentSystem(Configuration.KaznackeyMerchantId, Configuration.KaznackeyMerchantSecreet);
+			var kaznachey = new KaznacheyPaymentSystem(Configuration.KaznacheyMerchantId, Configuration.KaznacheyMerchantSecreet);
 			foreach (var paySystem in kaznachey.GetMerchantInformation().PaySystems)
 			{
 				Console.WriteLine("{0} {1}",paySystem.Id, paySystem.PaySystemName);

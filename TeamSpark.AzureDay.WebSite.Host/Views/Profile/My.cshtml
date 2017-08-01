@@ -297,11 +297,29 @@
 				ko.applyBindings(profileModel, document.getElementById('divProfile'));
 			})();
 
+			(function($) {
+				$.QueryString = (function(paramsArray) {
+					var params = {};
+
+					for (var i = 0; i < paramsArray.length; ++i) {
+						var param = paramsArray[i].split('=', 2);
+
+						if (param.length !== 2) {
+							continue;
+						}
+
+						params[param[0]] = decodeURIComponent(param[1].replace(/\+/g, " "));
+					}
+
+					return params;
+				})(window.location.search.toLowerCase().substr(1).split('&'));
+			})(jQuery);
+
 			(function ticket() {
 				var ticketModel = {
 					isConferenceTicket: ko.observable(@{ Write((Model.PayedConferenceTicket == null).ToString().ToLowerInvariant()); }),
 					isWorkshopTicket: ko.observable(@{ Write((Model.PayedWorkshopTicket == null).ToString().ToLowerInvariant()); }),
-					selectedWorkshop: ko.observable(0),
+					selectedWorkshop: ko.observable($.QueryString['workshopid']),
 					workshops: [
 						@Html.Raw(string.Join(",", Model.Workshops.Select(ticket => $"{{ id:'{ticket.Id}', title:'{ticket.Title} ({My.TicketsLeft} {Model.TicketsLeft[ticket.Id]})' }}")))
 					],
@@ -323,8 +341,7 @@
 				}
 
 				ticketModel.isAnyTicketSelected = ko.computed(function() {
-					return ticketModel.isConferenceTicket()
-						|| (ticketModel.isWorkshopTicket() && ticketModel.selectedWorkshop() > 0);
+					return ticketModel.isConferenceTicket() || (ticketModel.isWorkshopTicket() && ticketModel.selectedWorkshop() > 0);
 				});
 
 				ticketModel.promoCode.subscribe(function(newPromoCode) {
@@ -352,6 +369,9 @@
 				});
 
 				ko.applyBindings(ticketModel, document.getElementById('divTicket'));
+
+				var workshopId = ticketModel.isWorkshopTicket() ? ticketModel.selectedWorkshop() : 0;
+				calculateNewPrice(ticketModel.isConferenceTicket(), workshopId, ticketModel.promoCode());
 			})();
 
 			$('#btnPayKaznachey').click(function() {

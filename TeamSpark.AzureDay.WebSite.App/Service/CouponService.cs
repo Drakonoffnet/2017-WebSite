@@ -54,6 +54,11 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 
 			var coupon = await DataFactory.CouponService.Value.GetByKeysAsync(Configuration.Year, normalizedCode);
 
+			if (coupon == null)
+			{
+				return;
+			}
+
 			if (!coupon.IsInfinite)
 			{
 				coupon.CouponsCount--;

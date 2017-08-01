@@ -12,6 +12,7 @@ using TeamSpark.AzureDay.WebSite.App.Service;
 using TeamSpark.AzureDay.WebSite.Config;
 using TeamSpark.AzureDay.WebSite.Data.Enum;
 using TeamSpark.AzureDay.WebSite.Host.Filter;
+using TeamSpark.AzureDay.WebSite.Host.Models.Home;
 using TeamSpark.AzureDay.WebSite.Host.Models.Profile;
 using TeamSpark.AzureDay.WebSite.Notification;
 using TeamSpark.AzureDay.WebSite.Notification.Email.Model;
@@ -43,12 +44,13 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 				Company = attendee.Company
 			};
 
-			model.Workshops = _workshopService.GetWorkshops().ToList();
+			var workshops = _workshopService.GetWorkshops().ToList();
+
+			model.Workshops = new List<WorkshopEntityModel>();
 
 			var workshopTickets = workshopTicketsTask.Result;
 
-			model.TicketsLeft = new Dictionary<int, int>();
-			foreach (var workshop in model.Workshops)
+			foreach (var workshop in workshops)
 			{
 				var ticketsLeft = workshop.MaxTickets - workshopTickets.Count(x => x.WorkshopId == workshop.Id);
 				if (ticketsLeft < 0)
@@ -56,7 +58,14 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 					ticketsLeft = 0;
 				}
 
-				model.TicketsLeft.Add(workshop.Id, ticketsLeft);
+				if (ticketsLeft > 0)
+				{
+					model.Workshops.Add(new WorkshopEntityModel
+					{
+						Workshop = workshop,
+						TicketsLeft = ticketsLeft
+					});
+				}
 			}
 
 			var tickets = ticketsTask.Result;
@@ -64,7 +73,12 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			if (tickets != null && tickets.Any())
 			{
 				model.PayedConferenceTicket = tickets.SingleOrDefault(x => x.TicketType == TicketType.Regular);
+
 				model.PayedWorkshopTicket = tickets.SingleOrDefault(x => x.TicketType == TicketType.Workshop);
+				if (model.PayedWorkshopTicket != null)
+				{
+					model.PayedWorkshop = _workshopService.GetWorkshop(model.PayedWorkshopTicket.WorkshopId.Value);
+				}
 			}
 
 			return View(model);

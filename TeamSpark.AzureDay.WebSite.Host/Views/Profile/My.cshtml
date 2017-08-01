@@ -172,7 +172,7 @@
 														<li>
 															@My.Attendee (@Model.PayedWorkshopTicket.TicketType.ToString())<br/>
 															@Workshops.Date<br/>
-															@Model.Workshops.Single(x => x.Id == Model.PayedWorkshopTicket.WorkshopId.Value).Title
+															@Model.PayedWorkshop.Title
 														</li>
 													</ul>
 												</div>
@@ -321,7 +321,7 @@
 					isWorkshopTicket: ko.observable(@{ Write((Model.PayedWorkshopTicket == null).ToString().ToLowerInvariant()); }),
 					selectedWorkshop: ko.observable($.QueryString['workshopid']),
 					workshops: [
-						@Html.Raw(string.Join(",", Model.Workshops.Select(ticket => $"{{ id:'{ticket.Id}', title:'{ticket.Title} ({My.TicketsLeft} {Model.TicketsLeft[ticket.Id]})' }}")))
+						@Html.Raw(string.Join(",", Model.Workshops.Select(x => $"{{ id:'{x.Workshop.Id}', title:'{x.Workshop.Title} ({My.TicketsLeft} {x.TicketsLeft})' }}")))
 					],
 					promoCode: ko.observable(),
 					currentPrice: ko.observable()

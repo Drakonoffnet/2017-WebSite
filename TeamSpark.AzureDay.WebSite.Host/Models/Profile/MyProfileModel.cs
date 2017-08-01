@@ -2,6 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 using TeamSpark.AzureDay.WebSite.App.Entity;
+using TeamSpark.AzureDay.WebSite.Host.Models.Home;
 
 namespace TeamSpark.AzureDay.WebSite.Host.Models.Profile
 {
@@ -41,10 +42,10 @@ namespace TeamSpark.AzureDay.WebSite.Host.Models.Profile
 			}
 		}
 
-		public List<Workshop> Workshops { get; set; }
-		public Dictionary<int, int> TicketsLeft { get; set; }
+		public List<WorkshopEntityModel> Workshops { get; set; }
 
 		public Ticket PayedConferenceTicket { get; set; }
 		public Ticket PayedWorkshopTicket { get; set; }
+		public Workshop PayedWorkshop { get; set; }
 	}
 }

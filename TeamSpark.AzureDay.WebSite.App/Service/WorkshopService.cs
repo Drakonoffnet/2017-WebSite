@@ -43,7 +43,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Language = _languageService.Russian,
 					Room = _roomService.Workshop3,
 					Speaker = _speakerService.EPolonychko(),
-					MaxTickets = 20,
+					MaxTickets = 10,
 					Title = Localization.App.Service.Workshops.EPolonychko_01.Title,
 					Description = Localization.App.Service.Workshops.EPolonychko_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -63,7 +63,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Language = _languageService.Russian,
 					Room = _roomService.Workshop5,
 					Speaker = _speakerService.ASurkov(),
-					MaxTickets = 20,
+					MaxTickets = 10,
 					Title = Localization.App.Service.Workshops.ASurkov_01.Title,
 					Description = Localization.App.Service.Workshops.ASurkov_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -73,7 +73,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Language = _languageService.Russian,
 					Room = _roomService.Workshop6,
 					Speaker = _speakerService.IReznykov(),
-					MaxTickets = 20,
+					MaxTickets = 10,
 					Title = Localization.App.Service.Workshops.IReznykov_01.Title,
 					Description = Localization.App.Service.Workshops.IReznykov_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -83,7 +83,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Language = _languageService.Russian,
 					Room = _roomService.Workshop7,
 					Speaker = _speakerService.ADeren(),
-					MaxTickets = 20,
+					MaxTickets = 10,
 					Title = Localization.App.Service.Workshops.ADeren_01.Title,
 					Description = Localization.App.Service.Workshops.ADeren_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -93,7 +93,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Language = _languageService.Russian,
 					Room = _roomService.Workshop8,
 					Speaker = _speakerService.SPoplavskiy(),
-					MaxTickets = 20,
+					MaxTickets = 10,
 					Title = Localization.App.Service.Workshops.SPoplavskiy_02.Title,
 					Description = Localization.App.Service.Workshops.SPoplavskiy_02.Description.Replace(Environment.NewLine, "<br/>")
 				},

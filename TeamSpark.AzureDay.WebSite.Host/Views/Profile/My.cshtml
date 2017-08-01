@@ -1,5 +1,4 @@
 ﻿@using TeamSpark.AzureDay.WebSite.Config
-@using TeamSpark.AzureDay.WebSite.Data.Enum
 @using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home
 @using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile
 @model TeamSpark.AzureDay.WebSite.Host.Models.Profile.MyProfileModel
@@ -95,7 +94,7 @@
 												<div class="wow-pricing-content">
 													<ul>
 														<li>
-															@My.Attendee (@Model.PayedConferenceTicket.TicketType.ToDisplayString())<br/>
+															@My.Attendee (@Model.PayedConferenceTicket.TicketType.ToString())<br/>
 															@Schedule.Date
 														</li>
 													</ul>
@@ -129,7 +128,7 @@
 												<div class="wow-pricing-content">
 													<ul>
 														<li>
-															@My.Attendee (@Model.PayedConferenceTicket.TicketType.ToDisplayString())<br />
+															@My.Attendee (@Model.PayedConferenceTicket.TicketType.ToString())<br />
 															@Schedule.Date
 														</li>
 													</ul>
@@ -171,7 +170,7 @@
 												<div class="wow-pricing-content">
 													<ul>
 														<li>
-															@My.Attendee (@Model.PayedWorkshopTicket.TicketType.ToDisplayString())<br/>
+															@My.Attendee (@Model.PayedWorkshopTicket.TicketType.ToString())<br/>
 															@Workshops.Date<br/>
 															@Model.Workshops.Single(x => x.Id == Model.PayedWorkshopTicket.WorkshopId.Value).Title
 														</li>
@@ -203,7 +202,7 @@
 												<div class="wow-pricing-content">
 													<ul>
 														<li>
-															@My.Attendee (@Model.PayedWorkshopTicket.TicketType.ToDisplayString())<br />
+															@My.Attendee (@Model.PayedWorkshopTicket.TicketType.ToString())<br />
 															@Schedule.Date
 														</li>
 													</ul>

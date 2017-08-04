@@ -41,6 +41,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			_speakers.Add(ATkachenko());
 			_speakers.Add(AMang());
 			_speakers.Add(MFerdyn());
+			_speakers.Add(ILiashov());
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
@@ -626,6 +627,30 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				WebUrl = "",
 				CompanyName = "",
 				JobTitle = "Senior Administrator"
+			};
+		}
+
+		public Speaker ILiashov()
+		{
+			return new Speaker
+			{
+				Id = "ILiashov",
+				FirstName = Localization.App.Service.Speaker.ILiashov.FirstName,
+				LastName = Localization.App.Service.Speaker.ILiashov.LastName,
+				Bio = Localization.App.Service.Speaker.ILiashov.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.France,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
+				FacebookUrl = "",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "METSYS",
+				JobTitle = "System Engineer"
 			};
 		}
 	}

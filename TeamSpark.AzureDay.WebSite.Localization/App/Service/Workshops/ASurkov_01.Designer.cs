@@ -61,7 +61,13 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Workshops {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Что мы будем делать:
+        ///Мы развернем облачную IoT инфраструктуру, состоящую из минимального набора компонентов и подключим к ней устройство, собранное на основе RaspberryPi. В результате мы сможем удаленно получать информацию с устройства, отображать ее и управлять элементами на данном устройстве.
+        ///
+        ///Поучаствовав в воркшопе, вы:
+        ///- узнаете как устроен внутри IoT-проект на примере сервисов Microsoft Azure;
+        ///- поймете с чего можно начать работу над IoT проектом;
+        ///- получите практические навыки работы с Microsof [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Description {
             get {
@@ -70,7 +76,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Workshops {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NodeMCU + Azure.
+        ///   Looks up a localized string similar to IoT своими руками на примере Azure и RaspberryPi с Windows 10 IoT Core.
         /// </summary>
         public static string Title {
             get {

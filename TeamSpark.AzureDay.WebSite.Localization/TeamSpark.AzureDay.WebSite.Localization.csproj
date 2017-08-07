@@ -1138,6 +1138,7 @@
     <EmbeddedResource Include="App\Service\Workshops\ASurkov_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ASurkov_01.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Workshops\IReznykov_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

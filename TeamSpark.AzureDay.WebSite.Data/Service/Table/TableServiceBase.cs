@@ -98,6 +98,7 @@ namespace TeamSpark.AzureDay.WebSite.Data.Service.Table
 
 		public async Task ReplaceAsync(T entity)
 		{
+			entity.ETag = "*";
 			var operation = TableOperation.Replace(entity);
 
 			await Table.ExecuteAsync(operation);

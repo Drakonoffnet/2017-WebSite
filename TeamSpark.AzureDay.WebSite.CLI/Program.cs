@@ -21,23 +21,23 @@ namespace TeamSpark.AzureDay.WebSite.CLI
 			//Coupon.Add();
 
 			var emails = new List<string>();
-			using (var file = new FileStream("C:\\Users\\aboyko\\Downloads\\azureday2016-registered.txt", FileMode.Open))
+			using (var file = new FileStream("C:\\Users\\aboyko\\Downloads\\community.txt", FileMode.Open))
 			{
 				using (var reader = new StreamReader(file))
 				{
 					while (!reader.EndOfStream)
 					{
-						emails.Add(reader.ReadLine());
+						emails.Add(reader.ReadLine().Replace(",", string.Empty).Trim().ToLowerInvariant());
 					}
 				}
 			}
 
-			Coupon.Add(emails, DiscountType.Percentage, 10);
+			Coupon.Add(emails, DiscountType.Percentage, 20);
 
 
 			//KaznacheyTest.Pay();
 
-				Console.WriteLine("Press 'enter' to close.");
+			Console.WriteLine("Press 'enter' to close.");
 			Console.ReadLine();
 		}
 	}

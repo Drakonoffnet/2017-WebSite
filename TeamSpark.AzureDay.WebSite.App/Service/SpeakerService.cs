@@ -42,6 +42,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			_speakers.Add(AMang());
 			_speakers.Add(MFerdyn());
 			_speakers.Add(ILiashov());
+
+			_speakers.Add(EWasilewski());
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
@@ -194,7 +196,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				YouTubeUrl = "",
 				WebUrl = "",
 				CompanyName = "Developex",
-				JobTitle = "developer"
+				JobTitle = "Developer"
 			};
 }
 
@@ -651,6 +653,30 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				WebUrl = "",
 				CompanyName = "METSYS",
 				JobTitle = "System Engineer"
+			};
+		}
+
+		public Speaker EWasilewski()
+		{
+			return new Speaker
+			{
+				Id = "EWasilewski",
+				FirstName = Localization.App.Service.Speaker.EWasilewski.FirstName,
+				LastName = Localization.App.Service.Speaker.EWasilewski.LastName,
+				Bio = Localization.App.Service.Speaker.EWasilewski.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Poland,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/EWasilewski.jpg",
+				FacebookUrl = "",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "http://www.linkedin.com/in/emilwasilewski",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "https://twitter.com/WasilewskiEmil",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "ZapytajEmila.PL",
+				JobTitle = "Cloud Solution Architect"
 			};
 		}
 	}

@@ -106,6 +106,16 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					MaxTickets = 10, // ok
 					Title = Localization.App.Service.Workshops.VRadchuk_01.Title,
 					Description = Localization.App.Service.Workshops.VRadchuk_01.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Workshop
+				{
+					Id = 10,
+					Language = _languageService.Russian,
+					Room = _roomService.Workshop10,
+					Speaker = _speakerService.AShamray(),
+					MaxTickets = 10, // ok
+					Title = Localization.App.Service.Workshops.AShamray_01.Title,
+					Description = Localization.App.Service.Workshops.AShamray_01.Description.Replace(Environment.NewLine, "<br/>")
 				}
 			};
 		}
@@ -129,5 +139,6 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		public Workshop ADeren_01 { get { return _workshops.Single(x => x.Id == 7); } }
 		public Workshop SPoplavskiy_02 { get { return _workshops.Single(x => x.Id == 8); } }
 		public Workshop VRadchuk_01 { get { return _workshops.Single(x => x.Id == 9); } }
+		public Workshop AShamray_01 { get { return _workshops.Single(x => x.Id == 9); } }
 	}
 }

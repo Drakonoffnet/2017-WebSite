@@ -117,49 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AInML" xml:space="preserve">
-    <value>Красный зал</value>
+  <data name="Bio" xml:space="preserve">
+    <value>Александр занимается проблемами командной разработки ПО уже более 10-ти лет. Основные направления профессиональной деятельности: проектное управление, управление конфигурациями и изменениями, описание и адаптация процессов разработки на основе гибких и формальных методологий. Основные инструменты реализации – это группа продуктов Microsoft Visual Studio и Project Server. Имеет статус MVP, а также является сертифицированным специалистом в области Application Lifecycle Management.</value>
   </data>
-  <data name="DevOps" xml:space="preserve">
-    <value>Зеленый зал</value>
+  <data name="FirstName" xml:space="preserve">
+    <value>Александр</value>
   </data>
-  <data name="IoT" xml:space="preserve">
-    <value>Синий зал</value>
-  </data>
-  <data name="ITPro" xml:space="preserve">
-    <value>Фиолетовый зал</value>
-  </data>
-  <data name="WebDev" xml:space="preserve">
-    <value>Оранжевый зал</value>
-  </data>
-  <data name="Workshop1" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Workshop2" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Workshop3" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Workshop4" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="Workshop5" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="Workshop6" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="Workshop7" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="Workshop8" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="Workshop9" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="Workshop10" xml:space="preserve">
-    <value>10</value>
+  <data name="LastName" xml:space="preserve">
+    <value>Шамрай</value>
   </data>
 </root>

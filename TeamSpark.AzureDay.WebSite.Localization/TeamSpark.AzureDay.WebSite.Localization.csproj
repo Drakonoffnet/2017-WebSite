@@ -80,6 +80,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Speaker\AShamray.Designer.cs">
+      <DependentUpon>AShamray.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Speaker\EWasilewski.Designer.cs">
       <DependentUpon>EWasilewski.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -305,6 +310,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ABoyko.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Topics\AShamray_01.Designer.cs">
+      <DependentUpon>AShamray_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Topics\EWasilewski_01.Designer.cs">
       <DependentUpon>EWasilewski_01.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -444,6 +454,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>OChorny_01.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Workshops\AShamray_01.Designer.cs">
+      <DependentUpon>AShamray_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="App\Service\Workshops\VRadchuk_01.Designer.cs">
       <DependentUpon>VRadchuk_01.resx</DependentUpon>
@@ -828,6 +843,10 @@
       <LastGenOutput>Room.ru.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\AShamray.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AShamray.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\EWasilewski.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>EWasilewski.Designer.cs</LastGenOutput>
@@ -1010,6 +1029,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ABoyko.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\AShamray_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AShamray_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\EWasilewski_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>EWasilewski_01.Designer.cs</LastGenOutput>
@@ -1121,6 +1144,10 @@
     <EmbeddedResource Include="App\Service\Topics\OChorny_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>OChorny_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Workshops\AShamray_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AShamray_01.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Workshops\VRadchuk_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

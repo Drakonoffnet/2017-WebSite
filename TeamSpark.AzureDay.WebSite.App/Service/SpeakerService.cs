@@ -44,6 +44,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			_speakers.Add(ILiashov());
 
 			_speakers.Add(EWasilewski());
+			_speakers.Add(AShamray());
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
@@ -677,6 +678,30 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				WebUrl = "",
 				CompanyName = "ZapytajEmila.PL",
 				JobTitle = "Cloud Solution Architect"
+			};
+		}
+
+		public Speaker AShamray()
+		{
+			return new Speaker
+			{
+				Id = "AShamray",
+				FirstName = Localization.App.Service.Speaker.AShamray.FirstName,
+				LastName = Localization.App.Service.Speaker.AShamray.LastName,
+				Bio = Localization.App.Service.Speaker.AShamray.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/AShamray.jpg",
+				FacebookUrl = "",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "SoftServe",
+				JobTitle = "ALM Consultant"
 			};
 		}
 	}

@@ -46,6 +46,9 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			_speakers.Add(EWasilewski());
 			_speakers.Add(AShamray());
 			_speakers.Add(AVidishchev());
+			_speakers.Add(JessicaEngstrom());
+
+			_speakers.Add(JimmyEngstrom());
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
@@ -727,6 +730,54 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				WebUrl = "",
 				CompanyName = "Ciklum",
 				JobTitle = "Azure MVP"
+			};
+		}
+
+		public Speaker JessicaEngstrom()
+		{
+			return new Speaker
+			{
+				Id = "JessicaEngstrom",
+				FirstName = Localization.App.Service.Speaker.JessicaEngstrom.FirstName,
+				LastName = Localization.App.Service.Speaker.JessicaEngstrom.LastName,
+				Bio = Localization.App.Service.Speaker.JessicaEngstrom.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Sweden,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/JEngstrom.jpg",
+				FacebookUrl = "",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
+			};
+		}
+
+		public Speaker JimmyEngstrom()
+		{
+			return new Speaker
+			{
+				Id = "JimmyEngstrom",
+				FirstName = Localization.App.Service.Speaker.JimmyEngstrom.FirstName,
+				LastName = Localization.App.Service.Speaker.JimmyEngstrom.LastName,
+				Bio = Localization.App.Service.Speaker.JimmyEngstrom.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Sweden,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/JmEngstrom.jpg",
+				FacebookUrl = "",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
 			};
 		}
 	}

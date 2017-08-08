@@ -80,6 +80,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Speaker\JimmyEngstrom.Designer.cs">
+      <DependentUpon>JimmyEngstrom.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\JessicaEngstrom.Designer.cs">
+      <DependentUpon>JessicaEngstrom.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Speaker\AVidishchev.Designer.cs">
       <DependentUpon>AVidishchev.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -314,6 +324,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ABoyko.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Topics\JimmyEngstrom_01.Designer.cs">
+      <DependentUpon>JimmyEngstrom_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\JessicaEngstrom_01.Designer.cs">
+      <DependentUpon>JessicaEngstrom_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="App\Service\Topics\SKorzh_01.Designer.cs">
       <DependentUpon>SKorzh_01.resx</DependentUpon>
@@ -858,6 +878,14 @@
       <LastGenOutput>Room.ru.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\JimmyEngstrom.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>JimmyEngstrom.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\JessicaEngstrom.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>JessicaEngstrom.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\AVidishchev.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AVidishchev.Designer.cs</LastGenOutput>
@@ -1047,6 +1075,14 @@
     <EmbeddedResource Include="App\Service\Speaker\ABoyko.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ABoyko.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\JimmyEngstrom_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>JimmyEngstrom_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\JessicaEngstrom_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>JessicaEngstrom_01.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\SKorzh_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

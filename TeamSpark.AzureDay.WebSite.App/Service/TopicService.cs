@@ -10,7 +10,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		private readonly LanguageService _languageService = new LanguageService();
 		private readonly SpeakerService _speakerService = new SpeakerService();
 
-		private readonly List<Topic> _topics = new List<Topic>();
+		private readonly List<Topic> _topics;
 
 		public TopicService()
 		{

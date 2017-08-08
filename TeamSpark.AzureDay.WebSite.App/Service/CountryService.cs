@@ -13,7 +13,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			new Country {Id = 3, ImageUrl = "https://azureday2017ua.blob.core.windows.net/images/flags/by.png", Title = Localization.App.Service.Country.Belarus},
 			new Country {Id = 4, ImageUrl = "https://azureday2017ua.blob.core.windows.net/images/flags/fr.png", Title = Localization.App.Service.Country.France},
 			new Country {Id = 5, ImageUrl = "https://azureday2017ua.blob.core.windows.net/images/flags/se.png", Title = Localization.App.Service.Country.Sweden},
-			new Country {Id = 6, ImageUrl = "https://azureday2017ua.blob.core.windows.net/images/flags/pl.png", Title = Localization.App.Service.Country.Poland}
+			new Country {Id = 6, ImageUrl = "https://azureday2017ua.blob.core.windows.net/images/flags/pl.png", Title = Localization.App.Service.Country.Poland},
+			new Country {Id = 7, ImageUrl = "https://azureday2017ua.blob.core.windows.net/images/flags/ro.png", Title = Localization.App.Service.Country.Romania}
 		};
 
 		public IEnumerable<Country> GetCountries()
@@ -27,5 +28,6 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		public Country France { get { return _countries.Single(x => x.Id == 4); } }
 		public Country Sweden { get { return _countries.Single(x => x.Id == 5); } }
 		public Country Poland { get { return _countries.Single(x => x.Id == 6); } }
+		public Country Romania { get { return _countries.Single(x => x.Id == 7); } }
 	}
 }

@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to На ваш почтовый ящик было отправлено письмо с ссылкой для восстановления пароля. Вам необходимо пройти по этой ссылке для завершения процесса восстановления пароля..
+        ///   Looks up a localized string similar to E-mail with the link for password restore has been sent to your address. Please, follow the link in order to complete the process..
         /// </summary>
         public static string Info {
             get {
@@ -70,7 +70,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Восстановление пароля.
+        ///   Looks up a localized string similar to Restore Password.
         /// </summary>
         public static string RestorePass {
             get {

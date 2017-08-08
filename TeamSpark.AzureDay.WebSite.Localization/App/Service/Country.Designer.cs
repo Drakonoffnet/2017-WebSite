@@ -88,6 +88,15 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Romania.
+        /// </summary>
+        public static string Romania {
+            get {
+                return ResourceManager.GetString("Romania", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Russia.
         /// </summary>
         public static string Russia {

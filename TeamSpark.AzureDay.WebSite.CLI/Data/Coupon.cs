@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using TeamSpark.AzureDay.WebSite.Config;
 using TeamSpark.AzureDay.WebSite.Data;
 using TeamSpark.AzureDay.WebSite.Data.Enum;
 
@@ -39,6 +41,41 @@ namespace TeamSpark.AzureDay.WebSite.CLI.Data
 			Console.WriteLine("Working...");
 			DataFactory.CouponService.Value.InsertAsync(coupon).Wait();
 			Console.WriteLine("Done.");
+		}
+
+		internal static void Add(List<string> emails, DiscountType discountType, decimal discountAmount)
+		{
+			foreach (var email in emails)
+			{
+				var couponTask = DataFactory.CouponService.Value.GetByKeysAsync(Configuration.Year, email);
+				couponTask.Wait();
+				var couponOld = couponTask.Result;
+
+				var coupon = new WebSite.Data.Entity.Table.Coupon
+				{
+					IsEnabled = true,
+					DiscountType = discountType,
+					DiscountAmount = discountAmount,
+					Code = email.ToLowerInvariant(),
+					IsInfinite = false,
+					CouponsCount = 2
+				};
+
+				if (couponOld == null)
+				{
+					DataFactory.CouponService.Value.InsertAsync(coupon).Wait();
+				}
+				else
+				{
+					if (coupon.DiscountType == couponOld.DiscountType)
+					{
+						if (coupon.DiscountAmount > couponOld.DiscountAmount)
+						{
+							DataFactory.CouponService.Value.ReplaceAsync(coupon).Wait();
+						}
+					}
+				}
+			}
 		}
 	}
 }

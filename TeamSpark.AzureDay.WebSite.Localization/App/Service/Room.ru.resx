@@ -156,4 +156,10 @@
   <data name="Workshop8" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="Workshop9" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="Workshop10" xml:space="preserve">
+    <value>10</value>
+  </data>
 </root>

@@ -23,7 +23,7 @@
 				<div style="padding-bottom: 25px;">
 					@Registration.ToRegister01 <span class='colortext'>@Registration.ToRegister01a</span>@Registration.ToRegister01b
 				</div>
-				<div>
+				<div style="padding-bottom: 25px;">
 					@Registration.ToRegister02 <span class='colortext'>@Registration.ToRegister02a</span> @Registration.ToRegister02b
 				</div>
 				<div style="padding-bottom: 25px;">
@@ -124,11 +124,47 @@
 					</div>
 					
 					<div class="wow-pricing-table col-md-12">
-						<div class="wow-pricing featured wow-column-">
+						<div class="wow-pricing wow-column-">
 							<div class="wow-pricing-header">
 								<h5>@Registration.TicketType02</h5>
 								<div class="wow-pricing-cost">
-									@Configuration.TicketWorkshop грн.
+									@Configuration.TicketWorkshop UAH
+								</div>
+								<div class="wow-pricing-per">
+									@Registration.OneTicket
+								</div>
+							</div>
+							<div class="wow-pricing-content">
+								<ul>
+									<li>@Registration.BestBefore01</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="wow-pricing-table col-md-12">
+						<div class="wow-pricing featured wow-column-">
+							<div class="wow-pricing-header">
+								<h5>
+									@Registration.TicketType01
+									+
+									@Registration.TicketType02
+								</h5>
+								<div class="wow-pricing-cost">
+									<span style="text-decoration: line-through;">
+										@Configuration.TicketRegular
+										+
+										@Configuration.TicketWorkshop
+									</span>
+									<br/>
+									<b>- 10%</b>
+									<br/>
+									@{
+										var price = Configuration.TicketRegular + Configuration.TicketWorkshop;
+										price *= 0.9m;
+										Write(price.ToString("G0"));
+									}
+									UAH
 								</div>
 								<div class="wow-pricing-per">
 									@Registration.OneTicket

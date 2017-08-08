@@ -70,7 +70,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared {
         }
 
         /// <summary>
-        ///   Looks up a localized string similar to Buy tickets.
+        ///   Looks up a localized string similar to Register.
         /// </summary>
         public static string Buy_Tickets {
             get {
@@ -84,6 +84,15 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared {
         public static string Home {
             get {
                 return ResourceManager.GetString("Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        public static string Language {
+            get {
+                return ResourceManager.GetString("Language", resourceCulture);
             }
         }
         
@@ -129,6 +138,15 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared {
         public static string Profile {
             get {
                 return ResourceManager.GetString("Profile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Speakers.
+        /// </summary>
+        public static string Speakers {
+            get {
+                return ResourceManager.GetString("Speakers", resourceCulture);
             }
         }
         

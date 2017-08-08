@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Security;
 using Kaznachey.KaznacheyPayment;
@@ -11,6 +12,7 @@ using TeamSpark.AzureDay.WebSite.App.Service;
 using TeamSpark.AzureDay.WebSite.Config;
 using TeamSpark.AzureDay.WebSite.Data.Enum;
 using TeamSpark.AzureDay.WebSite.Host.Filter;
+using TeamSpark.AzureDay.WebSite.Host.Models.Home;
 using TeamSpark.AzureDay.WebSite.Host.Models.Profile;
 using TeamSpark.AzureDay.WebSite.Notification;
 using TeamSpark.AzureDay.WebSite.Notification.Email.Model;
@@ -22,18 +24,18 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 	{
 		private readonly WorkshopService _workshopService = new WorkshopService();
 
-		[Authorize]
+		[System.Web.Mvc.Authorize]
 		public async Task<ActionResult> My()
 		{
 			var email = User.Identity.Name;
 
 			var attendeeTask = AppFactory.AttendeeService.Value.GetAttendeeByEmailAsync(email);
-			var ticketTask = AppFactory.TicketService.Value.GetTicketByEmailAsync(email);
+			var ticketsTask = AppFactory.TicketService.Value.GetTicketsByEmailAsync(email);
+			var workshopTicketsTask = AppFactory.TicketService.Value.GetWorkshopsTicketsAsync();
 
-			await Task.WhenAll(attendeeTask, ticketTask);
+			await Task.WhenAll(attendeeTask, ticketsTask, workshopTicketsTask);
 
 			var attendee = attendeeTask.Result;
-			var ticket = ticketTask.Result;
 
 			var model = new MyProfileModel
 			{
@@ -43,18 +45,48 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 				Company = attendee.Company
 			};
 
-			model.Workshops = _workshopService.GetWorkshops().ToList();
+			var workshops = _workshopService.GetWorkshops().ToList();
 
-			if (ticket != null)
+			model.Workshops = new List<WorkshopEntityModel>();
+
+			var workshopTickets = workshopTicketsTask.Result;
+
+			foreach (var workshop in workshops)
 			{
-				model.PayedConferenceTicket = ticket;
+				var ticketsLeft = workshop.MaxTickets - workshopTickets.Count(x => x.WorkshopId == workshop.Id);
+				if (ticketsLeft < 0)
+				{
+					ticketsLeft = 0;
+				}
+
+				if (ticketsLeft > 0)
+				{
+					model.Workshops.Add(new WorkshopEntityModel
+					{
+						Workshop = workshop,
+						TicketsLeft = ticketsLeft
+					});
+				}
+			}
+
+			var tickets = ticketsTask.Result;
+
+			if (tickets != null && tickets.Any())
+			{
+				model.PayedConferenceTicket = tickets.SingleOrDefault(x => x.TicketType == TicketType.Regular);
+
+				model.PayedWorkshopTicket = tickets.SingleOrDefault(x => x.TicketType == TicketType.Workshop);
+				if (model.PayedWorkshopTicket != null)
+				{
+					model.PayedWorkshop = _workshopService.GetWorkshop(model.PayedWorkshopTicket.WorkshopId.Value);
+				}
 			}
 
 			return View(model);
 		}
 
-		[Authorize]
-		[HttpPost]
+		[System.Web.Mvc.Authorize]
+		[System.Web.Mvc.HttpPost]
 		public async Task<ActionResult> My(MyProfileModel model)
 		{
 			var email = User.Identity.Name;
@@ -86,7 +118,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 		}
 
 		[NonAuthorize]
-		[HttpPost]
+		[System.Web.Mvc.HttpPost]
 		public async Task<ActionResult> Registration(RegistrationModel model)
 		{
 			var attendeeExisted = await AppFactory.AttendeeService.Value.GetAttendeeByEmailAsync(model.Email);
@@ -144,7 +176,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 		}
 
 		[NonAuthorize]
-		[HttpPost]
+		[System.Web.Mvc.HttpPost]
 		public async Task<ActionResult> LogIn(LoginModel model)
 		{
 			var attendee = await AppFactory.AttendeeService.Value.GetAttendeeByEmailAsync(model.Email);
@@ -170,36 +202,46 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			}
 		}
 
-		[Authorize]
+		[System.Web.Mvc.Authorize]
 		public ActionResult LogOut()
 		{
 			FormsAuthentication.SignOut();
 			return Redirect("~/");
 		}
 
-		private PayFormModel GetPaymentForm(Ticket ticket)
+		private PayFormModel GetPaymentForm(List<Ticket> tickets)
 		{
+			if (tickets == null)
+			{
+				throw new ArgumentNullException(nameof(tickets));
+			}
+
+			if (!tickets.Any())
+			{
+				throw new ArgumentException(nameof(tickets));
+			}
+
 			KaznacheyPaymentSystem kaznachey;
 			int paySystemId;
-			if (string.IsNullOrEmpty(ticket.PaymentType))
+			if (string.IsNullOrEmpty(tickets[0].PaymentType))
 			{
-				kaznachey = new KaznacheyPaymentSystem(Configuration.KaznackeyMerchantId, Configuration.KaznackeyMerchantSecreet);
+				kaznachey = new KaznacheyPaymentSystem(Configuration.KaznacheyMerchantId, Configuration.KaznacheyMerchantSecreet);
 				paySystemId = kaznachey.GetMerchantInformation().PaySystems[0].Id;
 			}
 			else
 			{
-				switch (ticket.PaymentType.ToLowerInvariant())
+				switch (tickets[0].PaymentType.ToLowerInvariant())
 				{
-					case "kaznackey":
-						kaznachey = new KaznacheyPaymentSystem(Configuration.KaznackeyMerchantId, Configuration.KaznackeyMerchantSecreet);
+					case "kaznachey":
+						kaznachey = new KaznacheyPaymentSystem(Configuration.KaznacheyMerchantId, Configuration.KaznacheyMerchantSecreet);
 						paySystemId = kaznachey.GetMerchantInformation().PaySystems[0].Id;
 						break;
 					case "liqpay":
-						kaznachey = new KaznacheyPaymentSystem(Configuration.LiqPayMerchantId, Configuration.LiqPayMerchantSecreet);
-						paySystemId = kaznachey.GetMerchantInformation().PaySystems[3].Id;
+						kaznachey = new KaznacheyPaymentSystem(Configuration.KaznacheyMerchantId, Configuration.KaznacheyMerchantSecreet);
+						paySystemId = 1021;
 						break;
 					default:
-						kaznachey = new KaznacheyPaymentSystem(Configuration.KaznackeyMerchantId, Configuration.KaznackeyMerchantSecreet);
+						kaznachey = new KaznacheyPaymentSystem(Configuration.KaznacheyMerchantId, Configuration.KaznacheyMerchantSecreet);
 						paySystemId = kaznachey.GetMerchantInformation().PaySystems[0].Id;
 						break;
 				}
@@ -210,11 +252,11 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			paymentRequest.Currency = "UAH";
 			paymentRequest.PaymentDetail = new PaymentDetails
 			{
-				EMail = ticket.Attendee.EMail,
-				MerchantInternalUserId = ticket.Attendee.EMail,
-				MerchantInternalPaymentId = $"{ticket.Attendee.EMail}-{ticket.TicketType}",
-				BuyerFirstname = ticket.Attendee.FirstName,
-				BuyerLastname = ticket.Attendee.LastName,
+				EMail = tickets[0].Attendee.EMail,
+				MerchantInternalUserId = tickets[0].Attendee.EMail,
+				MerchantInternalPaymentId = $"{tickets[0].Attendee.EMail}-{string.Join("|", tickets.Select(x => x.TicketType.ToString()))}",
+				BuyerFirstname = tickets[0].Attendee.FirstName,
+				BuyerLastname = tickets[0].Attendee.LastName,
 				ReturnUrl = $"{Configuration.Host}/profile/my",
 				StatusUrl = $"{Configuration.Host}/api/tickets/paymentconfirm"
 			};
@@ -222,10 +264,10 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			{
 				new Product
 				{
-					ProductId = ticket.TicketType.ToString(),
+					ProductId = string.Join("|", tickets.Select(x => x.TicketType.ToString())),
 					ProductItemsNum = 1,
-					ProductName = $"{ticket.Attendee.FirstName} {ticket.Attendee.LastName} билет на AzureDay {Configuration.Year} ({ticket.TicketType.ToDisplayString()})",
-					ProductPrice = (decimal) ticket.Price
+					ProductName = $"{tickets[0].Attendee.FirstName} {tickets[0].Attendee.LastName} билет на AzureDay {Configuration.Year} ({string.Join("|", tickets.Select(x => x.TicketType.ToString()))})",
+					ProductPrice = (decimal) tickets.Sum(x => x.Price)
 				}
 			};
 
@@ -238,56 +280,72 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			return model;
 		}
 
-		[Authorize]
-		[HttpPost]
-		public async Task<ActionResult> Pay(PayModel model)
+		[System.Web.Mvc.Authorize]
+		[System.Web.Mvc.HttpPost]
+		public async Task<ActionResult> Pay([FromBody]PayModel model)
 		{
-			if (!model.cbConferenceTicket && (!model.cbWorkshopTicket || model.ddlWorkshop == 0))
+			if (!model.HasConferenceTicket && (!model.HasWorkshopTicket || model.DdlWorkshop == 0))
 			{
 				throw new ArgumentException(nameof(model));
 			}
 
-			var ticket = new Ticket
-			{
-				TicketType = TicketType.None,
-				PaymentType = model.paymentType
-			};
+			var tickets = new List<Ticket>();
 
-			if (model.cbConferenceTicket)
+			if (model.HasConferenceTicket)
 			{
-				ticket.TicketType |= TicketType.Regular;
-			}
-			if (model.cbWorkshopTicket && model.ddlWorkshop > 0)
-			{
-				ticket.TicketType |= TicketType.Workshop;
-				ticket.WorkshopId = model.ddlWorkshop;
+				tickets.Add(new Ticket
+				{
+					TicketType = TicketType.Regular,
+					PaymentType = model.PaymentType,
+					Price = (double)AppFactory.TicketService.Value.GetTicketPrice(TicketType.Regular)
+				});
 			}
 
-			var coupon = await AppFactory.CouponService.Value.GetValidCouponByCodeAsync(model.promoCode);
-
-			decimal ticketPrice = AppFactory.TicketService.Value.GetTicketPrice(ticket.TicketType);
-			ticketPrice = AppFactory.CouponService.Value.GetPriceWithCoupon(ticketPrice, coupon);
-
-			await AppFactory.CouponService.Value.UseCouponByCodeAsync(model.promoCode);
-
-			ticket.Price = (double)ticketPrice;
-			ticket.Coupon = coupon;
-
-			ticket.IsPayed = ticket.Price <= 0;
-
-			if (ticket.Attendee == null)
+			if (model.HasWorkshopTicket && model.DdlWorkshop > 0)
 			{
-				var email = User.Identity.Name;
-				ticket.Attendee = await AppFactory.AttendeeService.Value.GetAttendeeByEmailAsync(email);
+				tickets.Add(new Ticket
+				{
+					TicketType = TicketType.Workshop,
+					PaymentType = model.PaymentType,
+					WorkshopId = model.DdlWorkshop,
+					Price = (double)AppFactory.TicketService.Value.GetTicketPrice(TicketType.Workshop)
+				});
 			}
 
-			await AppFactory.TicketService.Value.AddTicketAsync(ticket);
-
-			if (ticket.IsPayed)
+			if (!tickets.Any())
 			{
-				return RedirectToAction("My");
+				throw new ArgumentException(nameof(model));
+			}
+
+			var coupon = await AppFactory.CouponService.Value.GetValidCouponByCodeAsync(model.PromoCode);
+
+			decimal ticketTotalPrice = tickets.Count > 1 ?
+				AppFactory.TicketService.Value.GetTicketPrice(TicketType.Regular | TicketType.Workshop) :
+				AppFactory.TicketService.Value.GetTicketPrice(tickets[0].TicketType);
+			ticketTotalPrice = AppFactory.CouponService.Value.GetPriceWithCoupon(ticketTotalPrice, coupon);
+
+			await AppFactory.CouponService.Value.UseCouponByCodeAsync(model.PromoCode);
+
+			if (tickets.Count > 1)
+			{
+				tickets[0].Price = (double)ticketTotalPrice / 2;
+				tickets[0].Coupon = coupon;
+				tickets[0].IsPayed = tickets[0].Price <= 0;
+
+				tickets[1].Price = (double)ticketTotalPrice / 2;
+				tickets[1].Coupon = coupon;
+				tickets[1].IsPayed = tickets[1].Price <= 0;
 			}
 			else
+			{
+				tickets[0].Price = (double) ticketTotalPrice;
+				tickets[0].Coupon = coupon;
+				tickets[0].IsPayed = tickets[0].Price <= 0;
+			}
+
+			var isPayed = true;
+
+			foreach (var ticket in tickets)
 			{
 				if (ticket.Attendee == null)
 				{
@@ -295,47 +353,87 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 					ticket.Attendee = await AppFactory.AttendeeService.Value.GetAttendeeByEmailAsync(email);
 				}
 
-				var payForm = GetPaymentForm(ticket);
+				await AppFactory.TicketService.Value.AddTicketAsync(ticket);
+
+				isPayed = isPayed && ticket.IsPayed;
+			}
+
+			if (isPayed)
+			{
+				return RedirectToAction("My");
+			}
+			else
+			{
+				var payForm = GetPaymentForm(tickets);
 
 				return View("PayForm", payForm);
 			}
 		}
 
-		[Authorize]
+		[System.Web.Mvc.Authorize]
 		public async Task<ActionResult> PayAgain()
 		{
 			var email = User.Identity.Name;
 
-			var ticketTask = AppFactory.TicketService.Value.GetTicketByEmailAsync(email);
-			var attendeeTask = AppFactory.AttendeeService.Value.GetAttendeeByEmailAsync(email);
+			var attendee = await AppFactory.AttendeeService.Value.GetAttendeeByEmailAsync(email);
+			var tickets = await AppFactory.TicketService.Value.GetTicketsByEmailAsync(email);
 
-			await Task.WhenAll(ticketTask, attendeeTask);
+			foreach (var ticket in tickets)
+			{
+				ticket.Attendee = attendee;
+			}
 
-			var ticket = ticketTask.Result;
-			ticket.Attendee = attendeeTask.Result;
-
-			var model = GetPaymentForm(ticket);
+			var model = GetPaymentForm(tickets);
 
 			return View("PayForm", model);
 		}
 
-		[Authorize]
-		public async Task<ActionResult> DeleteTicket()
+		[System.Web.Mvc.Authorize]
+		public async Task<ActionResult> DeleteTicket(string token)
 		{
 			var email = User.Identity.Name;
+			TicketType ticketType;
+			if (!Enum.TryParse(token, true, out ticketType))
+			{
+				throw new ArgumentException();
+			}
 
-			var ticket = await AppFactory.TicketService.Value.GetTicketByEmailAsync(email);
+			var tickets = await AppFactory.TicketService.Value.GetTicketsByEmailAsync(email);
+			var ticketToDelete = tickets.Single(x => x.TicketType == ticketType);
+			var ticketToRemain = tickets.SingleOrDefault(x => x.TicketType != ticketType);
 
-			await Task.WhenAll(
-				AppFactory.TicketService.Value.DeleteTicketAsync(email),
-				AppFactory.CouponService.Value.RestoreCouponByCodeAsync(ticket.Coupon == null ? string.Empty : ticket.Coupon.Code)
-			);
-			
+			var couponCode = ticketToDelete.Coupon == null ?
+				string.Empty :
+				ticketToDelete.Coupon.Code;
+
+			var tasks = new List<Task>
+			{
+				AppFactory.TicketService.Value.DeleteTicketAsync(email, ticketToDelete.TicketType)
+			};
+
+			if (ticketToRemain == null)
+			{
+				tasks.Add(AppFactory.CouponService.Value.RestoreCouponByCodeAsync(couponCode));
+			}
+			else
+			{
+				var price = AppFactory.TicketService.Value.GetTicketPrice(ticketToRemain.TicketType);
+
+				if (ticketToRemain.Coupon != null)
+				{
+					price = AppFactory.CouponService.Value.GetPriceWithCoupon(price, ticketToRemain.Coupon);
+				}
+
+				tasks.Add(AppFactory.TicketService.Value.UpdateTicketPriceAsync(email, ticketToRemain.TicketType, price));
+			}
+
+			await Task.WhenAll(tasks);
+
 			return RedirectToAction("My");
 		}
 
 		[NonAuthorize]
-		[HttpPost]
+		[System.Web.Mvc.HttpPost]
 		public async Task<ActionResult> RestorePassword(LoginModel model)
 		{
 			var user = await AppFactory.AttendeeService.Value.GetAttendeeByEmailAsync(model.Email);

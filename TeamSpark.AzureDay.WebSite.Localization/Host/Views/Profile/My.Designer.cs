@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Участник.
+        ///   Looks up a localized string similar to Attendee.
         /// </summary>
         public static string Attendee {
             get {
@@ -70,7 +70,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ссылку.
+        ///   Looks up a localized string similar to link.
         /// </summary>
         public static string ByLink {
             get {
@@ -88,7 +88,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to грн..
+        ///   Looks up a localized string similar to UAH.
         /// </summary>
         public static string Currency {
             get {
@@ -97,7 +97,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Если вы хотите сбросить данные в форме заказа билета, нажмите на.
+        ///   Looks up a localized string similar to If you want to drop the info in ticket puchase form, please, press the.
         /// </summary>
         public static string DropPayment01 {
             get {
@@ -106,7 +106,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to . Обратите внимание, что вы не можете сбросить успешно оплаченный билет. Вы также не можете отменить оплату, если она уже прошла..
+        ///   Looks up a localized string similar to Pay attention: you can&apos;t drop succesfully purchased ticket. You also can&apos;t withdraw the succesful payment..
         /// </summary>
         public static string DropPayment01a {
             get {
@@ -124,7 +124,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Для того, чтобы прийти на AzureDay, вам не нужно печатать билет. Вместо этого вам необходимо запомнить, какие ФИО и какой адрес электронной почты вы вводили при регистрации на конференцию. Эту информацию вам необходимо будет предоставить при входе на конференцию и/или лабораторные работы..
+        ///   Looks up a localized string similar to You don&apos;t need to print a ticket in order to attend AzureDay. Instead you should remember name and e-mail you have entered while registering. This information you will need to provide at the entrance to the conferense and/or workshops..
         /// </summary>
         public static string HowToUseTicket {
             get {
@@ -133,7 +133,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Все поля обязательны для заполнения.
+        ///   Looks up a localized string similar to All fields are mandatory to complete.
         /// </summary>
         public static string isModelValid {
             get {
@@ -142,7 +142,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Минимальная длина пароля 6 символов.
+        ///   Looks up a localized string similar to Minimum password lenghth is 6 charachters.
         /// </summary>
         public static string isPasswordLengthValid {
             get {
@@ -151,7 +151,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Пароли должны совпадать.
+        ///   Looks up a localized string similar to Passwords should match.
         /// </summary>
         public static string isPasswordValid {
             get {
@@ -169,7 +169,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Лабораторная работа.
+        ///   Looks up a localized string similar to Workshop.
         /// </summary>
         public static string Lab01 {
             get {
@@ -223,7 +223,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Оплатить картой.
+        ///   Looks up a localized string similar to Pay by card.
         /// </summary>
         public static string PayByCard {
             get {
@@ -232,7 +232,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Если вы не совершили оплату, то вы можете повторно перейти на форму оплаты используя.
+        ///   Looks up a localized string similar to If you didn&apos;t complete the purchase, you can again go to purchase form using.
         /// </summary>
         public static string PayNow {
             get {
@@ -259,7 +259,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Если у вас возникли вопросы по оплате, вы можете написать письмо на адрес.
+        ///   Looks up a localized string similar to If you have questions regarding payment, you can contact us via e-mail.
         /// </summary>
         public static string Questions01 {
             get {
@@ -268,7 +268,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to и мы поможем вам решить все ваши вопросы..
+        ///   Looks up a localized string similar to and we will help you to solve all issues..
         /// </summary>
         public static string Questions01a {
             get {
@@ -286,7 +286,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Большое спасибо, ваш платеж обрабатывается. Вы получите подтверждение на адрес электронной почты как только мы подтвердим оплату. Вы можете получить подтверждение о списании средств с вашей карты раньше нас, но не переживайте, мы все равно увидим вашу оплату если она была успешной..
+        ///   Looks up a localized string similar to Thank you! The purchase is being processed. You will receive a confirmation e-mail as soon as we will confirm the payment. You can get a purchase notification from your bank sooner, but don&apos;t worry - we will still get your payment if it was succesful..
         /// </summary>
         public static string ThankYouWait {
             get {
@@ -295,7 +295,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Билет на конференцию.
+        ///   Looks up a localized string similar to Conference ticket.
         /// </summary>
         public static string Ticket01 {
             get {
@@ -304,7 +304,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Билет на лабораторные работы.
+        ///   Looks up a localized string similar to Workshop ticket.
         /// </summary>
         public static string Ticket02 {
             get {
@@ -313,7 +313,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Промо код.
+        ///   Looks up a localized string similar to Promocode.
         /// </summary>
         public static string TicketCode {
             get {
@@ -322,11 +322,20 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Цена.
+        ///   Looks up a localized string similar to Price.
         /// </summary>
         public static string TicketPrice {
             get {
                 return ResourceManager.GetString("TicketPrice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to tickets left.
+        /// </summary>
+        public static string TicketsLeft {
+            get {
+                return ResourceManager.GetString("TicketsLeft", resourceCulture);
             }
         }
     }

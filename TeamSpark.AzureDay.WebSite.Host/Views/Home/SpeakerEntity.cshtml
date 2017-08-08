@@ -18,6 +18,52 @@
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+				<img class="img-responsible" style="margin-bottom: 10px;" src="@Model.Speaker.PhotoUrl" alt="@Model.Speaker.FullName" />
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="text-align: justify; font-size: 1.2em;">
+				@Html.Raw(Model.Speaker.Bio)<br />
+			</div>
+			<div class="social-icons" style="text-align: right; font-size: 2em; margin-right: 30px;">
+				@if (!string.IsNullOrEmpty(Model.Speaker.FacebookUrl))
+				{
+				<a href="@Model.Speaker.FacebookUrl" target="_blank"><i class="fa fa-facebook"></i></a>
+				}
+				@if (!string.IsNullOrEmpty(Model.Speaker.LinkedInUrl))
+				{
+				<a href="@Model.Speaker..LinkedInUrl" target="_blank"><i class="fa fa-linkedin"></i></a>
+				}
+				@if (!string.IsNullOrEmpty(Model.Speaker.GoogleUrl))
+				{
+				<a href="@Model.Speaker.GoogleUrl" target="_blank"><i class="fa fa-google-plus"></i></a>
+				}
+
+				@if (!string.IsNullOrEmpty(Model.Speaker.YouTubeUrl))
+				{
+				<a href="@Model.Speaker.YouTubeUrl" target="_blank"><i class="fa fa-youtube"></i></a>
+				}
+				@if (!string.IsNullOrEmpty(Model.Speaker.TwitterUrl))
+				{
+				<a href="@Model.Speaker.TwitterUrl" target="_blank"><i class="fa fa-twitter"></i></a>
+				}
+				@*
+	@if (!string.IsNullOrEmpty(Model.Speaker.MvpUrl))
+	{
+		<a href="@Model.Speaker.MvpUrl" target="_blank"><i class="fa fa-google-plus"></i></a>
+	}
+	@if (!string.IsNullOrEmpty(Model.Speaker.MsdnUrl))
+	{
+		<a href="@Model.Speaker.MsdnUrl" target="_blank"><i class="fa fa-google-plus"></i></a>
+	}
+				*@
+				@if (!string.IsNullOrEmpty(Model.Speaker.GitHubUrl))
+				{
+				<a href="@Model.Speaker.GitHubUrl" target="_blank"><i class="fa fa-github"></i></a>
+				}
+			</div>
+
+		</div>
 		
 		@if (Model.Workshops.Any())
 		{
@@ -34,50 +80,7 @@
 
 			foreach (var workshop in Model.Workshops)
 			{
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<div class="box effect6 @($"myAreaBoxBorder{workshop.Room.ColorNumber}")">
-					
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-								<img class="img-responsible" style="margin-bottom: 10px;" src="@workshop.Speaker.PhotoUrl" alt="@workshop.Speaker.FullName" />
-							</div>
-
-							<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-								@if (workshop.Speaker != null)
-								{
-									<div class="mySlotAuthor">
-										@workshop.Speaker.FullName
-									</div>
-								}
-								<div style="text-align: center;">
-									<div class="mySlotTime">
-										9:00 - 17:00
-									</div>
-									<a style="color: #777;" href="/workshop/@workshop.Id"><b>@workshop.Title</b></a><br /><br />
-									@if (workshop.Language != null && !string.IsNullOrEmpty(workshop.Language.Title))
-									{
-										@Html.Raw($"{Schedule.Language}: {workshop.Language.Title}")
-									}
-								</div>
-							
-								<div style="text-align: justify;">
-									@Workshops.TicketsLeft
-									:
-								</div>
-
-								<div style="text-align: justify;">
-									<p>
-										@Workshops.Agenda
-									</p>
-									<p>
-										...
-									</p>
-								</div>
-							</div>
-						</div>
-					
-					</div>
-				</div>
+				@Html.Partial("_Workshop", workshop)
 			}
 		}
 		
@@ -96,35 +99,7 @@
 
 			foreach (var topic in Model.Topics)
 			{
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<div class="box effect6">
-
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-								<img class="img-responsible" style="margin-bottom: 10px;" src="@topic.Speaker.PhotoUrl" alt="@topic.Speaker.FullName" />
-							</div>
-
-							<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-								@if (topic.Speaker != null)
-								{
-									<div class="mySlotAuthor">
-										@topic.Speaker.FullName
-									</div>
-								}
-								<div style="text-align: center;">
-									
-									<b>@topic.Title</b><br /><br />
-									@if (topic.Language != null && !string.IsNullOrEmpty(topic.Language.Title))
-									{
-										@Html.Raw($"{Schedule.Language}: {topic.Language.Title}")
-									}
-								</div>
-								
-							</div>
-						</div>
-
-					</div>
-				</div>
+				@Html.Partial("_Topic", topic)
 			}
 		}
 	</div>

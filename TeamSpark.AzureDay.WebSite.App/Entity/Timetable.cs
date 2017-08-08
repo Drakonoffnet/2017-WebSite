@@ -13,7 +13,7 @@
 
 		public string TimeStart
 		{
-			get => $"{TimeStartHours}:{TimeStartMinutes}";
+			get => $"{TimeStartHours:D2}:{TimeStartMinutes:D2}";
 			set
 			{
 				var parts = value.Split(':');
@@ -24,7 +24,7 @@
 
 		public string TimeEnd
 		{
-			get => $"{TimeEndHours}:{TimeEndMinutes}";
+			get => $"{TimeEndHours:D2}:{TimeEndMinutes:D2}";
 			set
 			{
 				var parts = value.Split(':');
@@ -33,10 +33,7 @@
 			}
 		}
 
-		public bool HasLanguage
-		{
-			get { return Topic.Language != null && !string.IsNullOrEmpty(Topic.Language.Title); }
-		}
+		public bool HasLanguage => !string.IsNullOrEmpty(Topic.Language?.Title);
 
 		public Timetable()
 		{

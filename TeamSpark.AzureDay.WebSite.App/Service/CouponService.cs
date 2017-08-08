@@ -19,7 +19,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 
 			var normalizedCode = code.ToLower().Trim();
 
-			var coupon = (await DataFactory.CouponService.Value.GetByFilterAsync(new Dictionary<string, string>
+			var coupon = (await DataFactory.CouponService.Value.GetByFilterAsync(new Dictionary<string, object>
 			{
 				{ "PartitionKey", Configuration.Year },
 				{ "RowKey", normalizedCode }
@@ -53,6 +53,11 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			var normalizedCode = code.ToLower().Trim();
 
 			var coupon = await DataFactory.CouponService.Value.GetByKeysAsync(Configuration.Year, normalizedCode);
+
+			if (coupon == null)
+			{
+				return;
+			}
 
 			if (!coupon.IsInfinite)
 			{

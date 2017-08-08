@@ -121,10 +121,13 @@
     <value>Расписание</value>
   </data>
   <data name="Buy_Tickets" xml:space="preserve">
-    <value>Купить билеты</value>
+    <value>Регистрация</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Главная</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Язык</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Войти</value>
@@ -140,6 +143,9 @@
   </data>
   <data name="Profile" xml:space="preserve">
     <value>Личный кабинет</value>
+  </data>
+  <data name="Speakers" xml:space="preserve">
+    <value>Докладчики</value>
   </data>
   <data name="Workshops" xml:space="preserve">
     <value>Лабораторные работы</value>

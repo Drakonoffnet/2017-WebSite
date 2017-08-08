@@ -2,10 +2,10 @@
 {
 	public sealed class PayModel
 	{
-		public bool cbConferenceTicket { get; set; }
-		public bool cbWorkshopTicket { get; set; }
-		public int ddlWorkshop { get; set; }
-		public string paymentType { get; set; }
-		public string promoCode { get; set; }
+		public bool HasConferenceTicket { get; set; }
+		public bool HasWorkshopTicket { get; set; }
+		public int DdlWorkshop { get; set; }
+		public string PaymentType { get; set; }
+		public string PromoCode { get; set; }
 	}
 }

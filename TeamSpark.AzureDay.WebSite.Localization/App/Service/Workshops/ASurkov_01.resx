@@ -118,9 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Description" xml:space="preserve">
-    <value />
+    <value>Что мы будем делать:
+Мы развернем облачную IoT инфраструктуру, состоящую из минимального набора компонентов и подключим к ней устройство, собранное на основе RaspberryPi. В результате мы сможем удаленно получать информацию с устройства, отображать ее и управлять элементами на данном устройстве.
+
+Поучаствовав в воркшопе, вы:
+- узнаете как устроен внутри IoT-проект на примере сервисов Microsoft Azure;
+- поймете с чего можно начать работу над IoT проектом;
+- получите практические навыки работы с Microsoft Azure;
+- познакомитесь с основными сервисами Microsoft Azure для IoT и особенностями их настройки и тарификации.
+
+В итоге:
+Вы сможете быстро развернуть готовую облачную инфраструктуру для вашего IoT проекта и будете понимать где, как и что нужно будет в ней поменять, чтобы учесть ваши требования и пожелания.</value>
   </data>
   <data name="Title" xml:space="preserve">
-    <value>NodeMCU + Azure</value>
+    <value>IoT своими руками на примере Azure и RaspberryPi с Windows 10 IoT Core</value>
   </data>
 </root>

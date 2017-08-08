@@ -40,10 +40,20 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="App\Service\Country.uk-UA.Designer.cs">
+      <DependentUpon>Country.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Language.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Language.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Language.uk-UA.Designer.cs">
+      <DependentUpon>Language.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="App\Service\Language.ru.Designer.cs">
       <DependentUpon>Language.ru.resx</DependentUpon>
@@ -60,10 +70,75 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Room.uk-UA.Designer.cs">
+      <DependentUpon>Room.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Room.ru.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Speaker\EAuberix.Designer.cs">
+      <DependentUpon>EAuberix.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\JimmyEngstrom.Designer.cs">
+      <DependentUpon>JimmyEngstrom.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\JessicaEngstrom.Designer.cs">
+      <DependentUpon>JessicaEngstrom.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\AVidishchev.Designer.cs">
+      <DependentUpon>AVidishchev.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\AShamray.Designer.cs">
+      <DependentUpon>AShamray.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\EWasilewski.Designer.cs">
+      <DependentUpon>EWasilewski.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\ILiashov.Designer.cs">
+      <DependentUpon>ILiashov.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\MFerdyn.Designer.cs">
+      <DependentUpon>MFerdyn.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\AMang.Designer.cs">
+      <DependentUpon>AMang.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\ATkachenko.Designer.cs">
+      <DependentUpon>ATkachenko.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\ATkachenko.ru.Designer.cs">
+      <DependentUpon>ATkachenko.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\ATkachenko.uk-UA.Designer.cs">
+      <DependentUpon>ATkachenko.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="App\Service\Speaker\AYurchenko.ru.Designer.cs">
       <DependentUpon>AYurchenko.ru.resx</DependentUpon>
@@ -107,6 +182,16 @@
     </Compile>
     <Compile Include="App\Service\Speaker\SKryshtop.ru.Designer.cs">
       <DependentUpon>SKryshtop.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\VRadchuk.ru.Designer.cs">
+      <DependentUpon>VRadchuk.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\VRadchuk.Designer.cs">
+      <DependentUpon>VRadchuk.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -245,6 +330,76 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ABoyko.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Topics\EAuberix_02.Designer.cs">
+      <DependentUpon>EAuberix_02.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\EAuberix_01.Designer.cs">
+      <DependentUpon>EAuberix_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\JimmyEngstrom_01.Designer.cs">
+      <DependentUpon>JimmyEngstrom_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\JessicaEngstrom_01.Designer.cs">
+      <DependentUpon>JessicaEngstrom_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\SKorzh_01.Designer.cs">
+      <DependentUpon>SKorzh_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\AVidishchev_01.Designer.cs">
+      <DependentUpon>AVidishchev_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\AShamray_01.Designer.cs">
+      <DependentUpon>AShamray_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\EWasilewski_01.Designer.cs">
+      <DependentUpon>EWasilewski_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\ILiashov_02.Designer.cs">
+      <DependentUpon>ILiashov_02.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\ILiashov_01.Designer.cs">
+      <DependentUpon>ILiashov_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\MFerdyn_02.Designer.cs">
+      <DependentUpon>MFerdyn_02.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\ATkachenko_01.Designer.cs">
+      <DependentUpon>ATkachenko_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\ATkachenko_02.Designer.cs">
+      <DependentUpon>ATkachenko_02.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\ILeontiev_01.Designer.cs">
+      <DependentUpon>ILeontiev_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Topics\AYurchenko_01.Designer.cs">
       <DependentUpon>AYurchenko_01.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -350,6 +505,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>OChorny_01.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Workshops\AShamray_01.Designer.cs">
+      <DependentUpon>AShamray_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Workshops\VRadchuk_01.Designer.cs">
+      <DependentUpon>VRadchuk_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Workshops\SPoplavskiy_02.Designer.cs">
       <DependentUpon>SPoplavskiy_02.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -370,8 +535,8 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="App\Service\Workshops\EPolonychko_02.Designer.cs">
-      <DependentUpon>EPolonychko_02.resx</DependentUpon>
+    <Compile Include="App\Service\Workshops\EPolonychko_01.Designer.cs">
+      <DependentUpon>EPolonychko_01.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -390,6 +555,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Host\Views\Home\Index.uk-UA.Designer.cs">
+      <DependentUpon>Index.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Host\Views\Home\Index.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -405,15 +575,50 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Partners.resx</DependentUpon>
     </Compile>
+    <Compile Include="Host\Views\Home\Partners.ru.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Partners.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Host\Views\Home\Partners.uk-UA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Partners.uk-UA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Host\Views\Home\Schedule.uk-UA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Schedule.uk-UA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Host\Views\Home\SpeakerEntity.ru.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpeakerEntity.ru.resx</DependentUpon>
+    </Compile>
     <Compile Include="Host\Views\Home\SpeakerEntity.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SpeakerEntity.resx</DependentUpon>
     </Compile>
+    <Compile Include="Host\Views\Home\SpeakerEntity.uk-UA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpeakerEntity.uk-UA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Host\Views\Home\Speakers.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Speakers.resx</DependentUpon>
+    </Compile>
     <Compile Include="Host\Views\Home\WorkshopEntity.Designer.cs">
       <DependentUpon>WorkshopEntity.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Host\Views\Home\WorkshopEntity.uk-UA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkshopEntity.uk-UA.resx</DependentUpon>
     </Compile>
     <Compile Include="Host\Views\Home\Workshops.Designer.cs">
       <DependentUpon>Workshops.resx</DependentUpon>
@@ -440,10 +645,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Schedule.resx</DependentUpon>
     </Compile>
+    <Compile Include="Host\Views\Home\Workshops.uk-UA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Workshops.uk-UA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Host\Views\Home\_Partners.uk-UA.Designer.cs">
+      <DependentUpon>_Partners.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Host\Views\Home\_Partners.ru.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>_Partners.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Host\Views\Home\_Speakers.uk-UA.Designer.cs">
+      <DependentUpon>_Speakers.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Host\Views\Home\_Speakers.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -455,40 +675,120 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_Speakers.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="Host\Views\Profile\ConfirmEmail.uk-UA.Designer.cs">
+      <DependentUpon>ConfirmEmail.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Host\Views\Profile\ConfirmEmail.ru.Designer.cs">
+      <DependentUpon>ConfirmEmail.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Host\Views\Profile\ConfirmEmail.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ConfirmEmail.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Host\Views\Profile\ConfirmRegistration.uk-UA.Designer.cs">
+      <DependentUpon>ConfirmRegistration.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Host\Views\Profile\ConfirmRegistration.ru.Designer.cs">
+      <DependentUpon>ConfirmRegistration.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Host\Views\Profile\ConfirmRegistration.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ConfirmRegistration.resx</DependentUpon>
     </Compile>
+    <Compile Include="Host\Views\Profile\Feedback.uk-UA.Designer.cs">
+      <DependentUpon>Feedback.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Host\Views\Profile\Feedback.ru.Designer.cs">
+      <DependentUpon>Feedback.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Host\Views\Profile\Feedback.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Feedback.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Host\Views\Profile\Login.uk-UA.Designer.cs">
+      <DependentUpon>Login.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Host\Views\Profile\Login.ru.Designer.cs">
+      <DependentUpon>Login.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Host\Views\Profile\Login.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Login.resx</DependentUpon>
     </Compile>
+    <Compile Include="Host\Views\Profile\My.uk-UA.Designer.cs">
+      <DependentUpon>My.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Host\Views\Profile\My.ru.Designer.cs">
+      <DependentUpon>My.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Host\Views\Profile\My.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>My.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Host\Views\Profile\Quiz.uk-UA.Designer.cs">
+      <DependentUpon>Quiz.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Host\Views\Profile\Quiz.ru.Designer.cs">
+      <DependentUpon>Quiz.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Host\Views\Profile\Quiz.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Quiz.resx</DependentUpon>
     </Compile>
+    <Compile Include="Host\Views\Profile\Registration.uk-UA.Designer.cs">
+      <DependentUpon>Registration.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Host\Views\Profile\Registration.ru.Designer.cs">
+      <DependentUpon>Registration.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Host\Views\Profile\Registration.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Registration.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Host\Views\Profile\RestorePassword.uk-UA.Designer.cs">
+      <DependentUpon>RestorePassword.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Host\Views\Profile\RestorePassword.ru.Designer.cs">
+      <DependentUpon>RestorePassword.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Host\Views\Profile\RestorePassword.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -510,6 +810,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_Footer.resx</DependentUpon>
     </Compile>
+    <Compile Include="Host\Views\Shared\_Footer.uk-UA.Designer.cs">
+      <DependentUpon>_Footer.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Host\Views\Shared\_Footer.ru.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -530,6 +835,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_MenuItems.resx</DependentUpon>
     </Compile>
+    <Compile Include="Host\Views\Shared\_MenuItems.uk-UA.Designer.cs">
+      <DependentUpon>_MenuItems.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Host\Views\Shared\_MenuItems.ru.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -548,9 +858,17 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Country.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Country.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Country.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Language.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Language.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Language.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Language.uk-UA.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Language.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -565,10 +883,65 @@
       <LastGenOutput>Room.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Room.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Room.uk-UA.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Room.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Room.ru.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\EAuberix.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EAuberix.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\JimmyEngstrom.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>JimmyEngstrom.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\JessicaEngstrom.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>JessicaEngstrom.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\AVidishchev.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AVidishchev.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\AShamray.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AShamray.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\EWasilewski.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EWasilewski.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ILiashov.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ILiashov.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\MFerdyn.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MFerdyn.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\AMang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AMang.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ATkachenko.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ATkachenko.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ATkachenko.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ATkachenko.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ATkachenko.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ATkachenko.uk-UA.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\AYurchenko.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -605,6 +978,14 @@
     <EmbeddedResource Include="App\Service\Speaker\SKryshtop.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SKryshtop.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\VRadchuk.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VRadchuk.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\VRadchuk.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VRadchuk.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\VThavonekham.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -714,6 +1095,62 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ABoyko.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\EAuberix_02.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EAuberix_02.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\EAuberix_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EAuberix_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\JimmyEngstrom_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>JimmyEngstrom_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\JessicaEngstrom_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>JessicaEngstrom_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\SKorzh_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SKorzh_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\AVidishchev_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AVidishchev_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\AShamray_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AShamray_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\EWasilewski_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EWasilewski_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\ILiashov_02.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ILiashov_02.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\ILiashov_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ILiashov_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\MFerdyn_02.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MFerdyn_02.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\ATkachenko_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ATkachenko_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\ATkachenko_02.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ATkachenko_02.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\ILeontiev_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ILeontiev_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\AYurchenko_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AYurchenko_01.Designer.cs</LastGenOutput>
@@ -798,6 +1235,15 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>OChorny_01.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Workshops\AShamray_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AShamray_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Workshops\VRadchuk_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VRadchuk_01.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Workshops\SPoplavskiy_02.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SPoplavskiy_02.Designer.cs</LastGenOutput>
@@ -809,14 +1255,15 @@
     <EmbeddedResource Include="App\Service\Workshops\ASurkov_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ASurkov_01.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Workshops\IReznykov_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>IReznykov_01.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Service\Workshops\EPolonychko_02.resx">
+    <EmbeddedResource Include="App\Service\Workshops\EPolonychko_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>EPolonychko_02.Designer.cs</LastGenOutput>
+      <LastGenOutput>EPolonychko_01.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Workshops\MMartensson_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -830,6 +1277,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>DIvanov_01.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\Index.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Index.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Home\Index.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Index.Designer.cs</LastGenOutput>
@@ -842,13 +1293,41 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Partners.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\Partners.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Partners.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\Partners.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Partners.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\Schedule.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Schedule.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\SpeakerEntity.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SpeakerEntity.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Home\SpeakerEntity.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SpeakerEntity.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\SpeakerEntity.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SpeakerEntity.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\Speakers.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Speakers.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Home\WorkshopEntity.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>WorkshopEntity.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\WorkshopEntity.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>WorkshopEntity.uk-UA.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Home\Workshops.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -870,9 +1349,21 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Schedule.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\Workshops.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Workshops.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\_Partners.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>_Partners.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Home\_Partners.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>_Partners.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\_Speakers.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>_Speakers.uk-UA.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Home\_Speakers.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -882,33 +1373,97 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>_Speakers.ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\ConfirmEmail.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConfirmEmail.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\ConfirmEmail.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConfirmEmail.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Profile\ConfirmEmail.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ConfirmEmail.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\ConfirmRegistration.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConfirmRegistration.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\ConfirmRegistration.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConfirmRegistration.ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Profile\ConfirmRegistration.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ConfirmRegistration.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\Feedback.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Feedback.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\Feedback.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Feedback.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Profile\Feedback.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Feedback.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\Login.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Login.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\Login.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Login.ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Profile\Login.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Login.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\My.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>My.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\My.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>My.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Profile\My.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>My.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\Quiz.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Quiz.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\Quiz.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Quiz.ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Profile\Quiz.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Quiz.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\Registration.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Registration.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\Registration.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Registration.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Profile\Registration.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Registration.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\RestorePassword.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>RestorePassword.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Profile\RestorePassword.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>RestorePassword.ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Profile\RestorePassword.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -926,6 +1481,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>_Footer.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Shared\_Footer.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>_Footer.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Shared\_Footer.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>_Footer.ru.Designer.cs</LastGenOutput>
@@ -941,6 +1500,10 @@
     <EmbeddedResource Include="Host\Views\Shared\_MenuItems.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>_MenuItems.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Shared\_MenuItems.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>_MenuItems.uk-UA.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Shared\_MenuItems.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

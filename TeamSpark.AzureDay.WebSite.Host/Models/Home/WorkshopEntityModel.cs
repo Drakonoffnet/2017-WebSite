@@ -6,5 +6,6 @@ namespace TeamSpark.AzureDay.WebSite.Host.Models.Home
 	{
 		public Workshop Workshop { get; set; }
 		public int TicketsLeft { get; set; }
+		public bool ShowSpeakerInfo { get; set; }
 	}
 }

@@ -23,6 +23,11 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			var entity = await DataFactory.AttendeeService.Value.GetByKeysAsync(Configuration.Year, email);
 
+			if (entity == null)
+			{
+				return null;
+			}
+
 			return AppFactory.Mapper.Value.Map<Attendee>(entity);
 		}
 

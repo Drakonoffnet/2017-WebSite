@@ -121,10 +121,13 @@
     <value>Agenda</value>
   </data>
   <data name="Buy_Tickets" xml:space="preserve">
-    <value>Buy tickets</value>
+    <value>Register</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Login</value>
@@ -140,6 +143,9 @@
   </data>
   <data name="Profile" xml:space="preserve">
     <value>Profile</value>
+  </data>
+  <data name="Speakers" xml:space="preserve">
+    <value>Speakers</value>
   </data>
   <data name="Workshops" xml:space="preserve">
     <value>Workshops</value>

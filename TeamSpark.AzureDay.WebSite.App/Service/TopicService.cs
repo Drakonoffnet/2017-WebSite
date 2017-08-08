@@ -10,7 +10,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		private readonly LanguageService _languageService = new LanguageService();
 		private readonly SpeakerService _speakerService = new SpeakerService();
 
-		private readonly List<Topic> _topics = new List<Topic>();
+		private readonly List<Topic> _topics;
 
 		public TopicService()
 		{
@@ -39,7 +39,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 
 				new Topic
 				{
-					Id = 0,
+					Id = -1,
 					Language = _languageService.Russian,
 					Speaker = _speakerService.ABoyko(),
 					Title = Localization.App.Service.Topics.Special.Keynote.Title,
@@ -166,6 +166,118 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Speaker = _speakerService.AYurchenko(),
 					Title = Localization.App.Service.Topics.AYurchenko_01.Title,
 					Description = Localization.App.Service.Topics.AYurchenko_01.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 15,
+					Language = _languageService.Russian,
+					Speaker = _speakerService.ILeontiev(),
+					Title = Localization.App.Service.Topics.ILeontiev_01.Title,
+					Description = Localization.App.Service.Topics.ILeontiev_01.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 16,
+					Language = _languageService.Russian,
+					Speaker = _speakerService.ATkachenko(),
+					Title = Localization.App.Service.Topics.ATkachenko_02.Title,
+					Description = Localization.App.Service.Topics.ATkachenko_02.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 17,
+					Language = _languageService.Russian,
+					Speaker = _speakerService.ATkachenko(),
+					Title = Localization.App.Service.Topics.ATkachenko_01.Title,
+					Description = Localization.App.Service.Topics.ATkachenko_01.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 18,
+					Language = _languageService.English,
+					Speaker = _speakerService.MFerdyn(),
+					Title = Localization.App.Service.Topics.MFerdyn_02.Title,
+					Description = Localization.App.Service.Topics.MFerdyn_02.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 19,
+					Language = _languageService.Russian,
+					Speaker = _speakerService.ILiashov(),
+					Title = Localization.App.Service.Topics.ILiashov_01.Title,
+					Description = Localization.App.Service.Topics.ILiashov_01.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 20,
+					Language = _languageService.Russian,
+					Speaker = _speakerService.ILiashov(),
+					Title = Localization.App.Service.Topics.ILiashov_02.Title,
+					Description = Localization.App.Service.Topics.ILiashov_02.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 21,
+					Language = _languageService.English,
+					Speaker = _speakerService.EWasilewski(),
+					Title = Localization.App.Service.Topics.EWasilewski_01.Title,
+					Description = Localization.App.Service.Topics.EWasilewski_01.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 22,
+					Language = _languageService.Russian,
+					Speaker = _speakerService.AShamray(),
+					Title = Localization.App.Service.Topics.AShamray_01.Title,
+					Description = Localization.App.Service.Topics.AShamray_01.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 23,
+					Language = _languageService.Russian,
+					Speaker = _speakerService.AVidishchev(),
+					Title = Localization.App.Service.Topics.AVidishchev_01.Title,
+					Description = Localization.App.Service.Topics.AVidishchev_01.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 24,
+					Language = _languageService.Russian,
+					Speaker = _speakerService.SKorzh(),
+					Title = Localization.App.Service.Topics.SKorzh_01.Title,
+					Description = Localization.App.Service.Topics.SKorzh_01.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 25,
+					Language = _languageService.English,
+					Speaker = _speakerService.JessicaEngstrom(),
+					Title = Localization.App.Service.Topics.JessicaEngstrom_01.Title,
+					Description = Localization.App.Service.Topics.JessicaEngstrom_01.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 26,
+					Language = _languageService.English,
+					Speaker = _speakerService.JimmyEngstrom(),
+					Title = Localization.App.Service.Topics.JimmyEngstrom_01.Title,
+					Description = Localization.App.Service.Topics.JimmyEngstrom_01.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 27,
+					Language = _languageService.English,
+					Speaker = _speakerService.EAuberix(),
+					Title = Localization.App.Service.Topics.EAuberix_01.Title,
+					Description = Localization.App.Service.Topics.EAuberix_01.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 28,
+					Language = _languageService.English,
+					Speaker = _speakerService.EAuberix(),
+					Title = Localization.App.Service.Topics.EAuberix_02.Title,
+					Description = Localization.App.Service.Topics.EAuberix_02.Description.Replace(Environment.NewLine, "<br/>")
 				}
 			};
 		}
@@ -181,7 +293,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		public Topic Afterparty { get { return _topics.Single(x => x.Id == -104); } }
 		public Topic Endnote { get { return _topics.Single(x => x.Id == -99); } }
 
-		public Topic Keynote { get { return _topics.Single(x => x.Id == 0); } }
+		public Topic Keynote { get { return _topics.Single(x => x.Id == -1); } }
 
 		//public Topic MMartensson_05 { get { return _topics.Single(x => x.Id == 1); } }
 		public Topic ALaysha_01 { get { return _topics.Single(x => x.Id == 2); } }
@@ -197,5 +309,19 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		public Topic ABoyko_02 { get { return _topics.Single(x => x.Id == 12); } }
 		public Topic OKrakovetskyi_02 { get { return _topics.Single(x => x.Id == 13); } }
 		public Topic AYurchenko_01 { get { return _topics.Single(x => x.Id == 14); } }
+		public Topic ILeontiev_01 { get { return _topics.Single(x => x.Id == 15); } }
+		public Topic ATkachenko_02 { get { return _topics.Single(x => x.Id == 16); } }
+		public Topic ATkachenko_01 { get { return _topics.Single(x => x.Id == 17); } }
+		public Topic MFerdyn_02 { get { return _topics.Single(x => x.Id == 18); } }
+		public Topic ILiashov_01 { get { return _topics.Single(x => x.Id == 19); } }
+		public Topic ILiashov_02 { get { return _topics.Single(x => x.Id == 20); } }
+		public Topic EWasilewski_01 { get { return _topics.Single(x => x.Id == 21); } }
+		public Topic AShamray_01 { get { return _topics.Single(x => x.Id == 22); } }
+		public Topic AVidishchev_01 { get { return _topics.Single(x => x.Id == 23); } }
+		public Topic SKorzh_01 { get { return _topics.Single(x => x.Id == 24); } }
+		public Topic JessicaEngstrom_01 { get { return _topics.Single(x => x.Id == 25); } }
+		public Topic JimmyEngstrom_01 { get { return _topics.Single(x => x.Id == 26); } }
+		public Topic EAuberix_01 { get { return _topics.Single(x => x.Id == 27); } }
+		public Topic EAuberix_02 { get { return _topics.Single(x => x.Id == 28); } }
 	}
 }

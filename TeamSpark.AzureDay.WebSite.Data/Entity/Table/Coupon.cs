@@ -9,15 +9,15 @@ namespace TeamSpark.AzureDay.WebSite.Data.Entity.Table
 		[IgnoreProperty]
 		public string Code
 		{
-			get { return RowKey; }
-			set { RowKey = value; }
+			get => RowKey;
+			set => RowKey = value;
 		}
 
 		[IgnoreProperty]
 		public DiscountType DiscountType
 		{
-			get { return (DiscountType)DiscountTypeId; }
-			set { DiscountTypeId = (int)value; }
+			get => (DiscountType)DiscountTypeId;
+			set => DiscountTypeId = (int)value;
 		}
 
 		public int DiscountTypeId { get; set; }
@@ -25,8 +25,8 @@ namespace TeamSpark.AzureDay.WebSite.Data.Entity.Table
 		[IgnoreProperty]
 		public decimal DiscountAmount
 		{
-			get { return (decimal)DiscountAmountValue; }
-			set { DiscountAmountValue = (float)value; }
+			get => (decimal)DiscountAmountValue;
+			set => DiscountAmountValue = (float)value;
 		}
 
 		public double DiscountAmountValue { get; set; }

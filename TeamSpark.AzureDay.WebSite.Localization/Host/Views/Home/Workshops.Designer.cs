@@ -61,6 +61,24 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to During AzureDAY you can take part in practical workshops that are being held on 8th of September..
+        /// </summary>
+        public static string About01 {
+            get {
+                return ResourceManager.GetString("About01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PLEASE NOTE that if you want to participate in any workshop, you need a dedicated workshop ticket..
+        /// </summary>
+        public static string About01a {
+            get {
+                return ResourceManager.GetString("About01a", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to agenda.
         /// </summary>
         public static string Agenda {
@@ -70,11 +88,29 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Buy a ticket.
+        /// </summary>
+        public static string Buy {
+            get {
+                return ResourceManager.GetString("Buy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 8th of September.
         /// </summary>
         public static string Date {
             get {
                 return ResourceManager.GetString("Date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /Theme/img/_slides/2017/workshops-en.jpg.
+        /// </summary>
+        public static string Img {
+            get {
+                return ResourceManager.GetString("Img", resourceCulture);
             }
         }
         

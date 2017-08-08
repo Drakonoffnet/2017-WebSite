@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to цена до 1го сентября.
+        ///   Looks up a localized string similar to price before 1st of September.
         /// </summary>
         public static string BestBefore01 {
             get {
@@ -70,7 +70,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Компания.
+        ///   Looks up a localized string similar to Company.
         /// </summary>
         public static string Company {
             get {
@@ -88,7 +88,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Все поля обязательны для заполнения.
+        ///   Looks up a localized string similar to All fields are mandatory to complete.
         /// </summary>
         public static string FillAllFields {
             get {
@@ -97,7 +97,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Имя.
+        ///   Looks up a localized string similar to Name.
         /// </summary>
         public static string Name {
             get {
@@ -106,7 +106,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to за 1 билет.
+        ///   Looks up a localized string similar to for 1 ticket.
         /// </summary>
         public static string OneTicket {
             get {
@@ -115,7 +115,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Пароль.
+        ///   Looks up a localized string similar to Password.
         /// </summary>
         public static string Pass {
             get {
@@ -124,7 +124,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Минимальная длина пароля 6 символов.
+        ///   Looks up a localized string similar to Minimum password lenghth is 6 charachters.
         /// </summary>
         public static string PassLength {
             get {
@@ -133,7 +133,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Пароли должны совпадать.
+        ///   Looks up a localized string similar to Passwords should match.
         /// </summary>
         public static string PassMatch {
             get {
@@ -142,7 +142,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Зарегистрироваться.
+        ///   Looks up a localized string similar to Register.
         /// </summary>
         public static string Register {
             get {
@@ -151,7 +151,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Регистрация на.
+        ///   Looks up a localized string similar to Register for.
         /// </summary>
         public static string RegisterFor {
             get {
@@ -160,7 +160,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Повторите пароль.
+        ///   Looks up a localized string similar to Repeat Password.
         /// </summary>
         public static string RepeatPass {
             get {
@@ -169,7 +169,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Фамилия.
+        ///   Looks up a localized string similar to Last Name.
         /// </summary>
         public static string Surname {
             get {
@@ -178,7 +178,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Личные данные, которые вы предоставите в учетной записи участника AZUREday, не будут переданы третьим лицам и будут использованы только для идентификации вас как участника конференции AZUREday..
+        ///   Looks up a localized string similar to Personal info you provided in the AzureDay account will not be transfered to third parties and will be used only for your identification as AzureDay conference participant..
         /// </summary>
         public static string Terms01 {
             get {
@@ -187,7 +187,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Вы соглашаетесь с этим, создавая учетную запись AZUREday..
+        ///   Looks up a localized string similar to You agree with these terms by creating AzureDay account..
         /// </summary>
         public static string Terms01a {
             get {
@@ -196,7 +196,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Билеты.
+        ///   Looks up a localized string similar to Tickets.
         /// </summary>
         public static string Tickets {
             get {
@@ -223,7 +223,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Для того, чтобы зарегистрироваться на AzureDay и получить возможность.
+        ///   Looks up a localized string similar to To register for AzureDay and be able.
         /// </summary>
         public static string ToRegister01 {
             get {
@@ -232,7 +232,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to купить билет на конференцию.
+        ///   Looks up a localized string similar to to buy a ticket for a conference,.
         /// </summary>
         public static string ToRegister01a {
             get {
@@ -241,7 +241,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to , заполните форму, приведенную ниже..
+        ///   Looks up a localized string similar to please, fill in the form below..
         /// </summary>
         public static string ToRegister01b {
             get {
@@ -250,7 +250,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Регистрация.
+        ///   Looks up a localized string similar to Registration.
         /// </summary>
         public static string ToRegister02 {
             get {
@@ -259,7 +259,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to не является билетом.
+        ///   Looks up a localized string similar to is not a conference ticket.
         /// </summary>
         public static string ToRegister02a {
             get {
@@ -268,7 +268,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to на конференцию и является бесплатной. После регистрации (создания учетной записи участника AzureDay) вам будет предложено приобрести билет..
+        ///   Looks up a localized string similar to and is free. After registration (creating your personal AzureDay account) you will be offered to buy a ticket..
         /// </summary>
         public static string ToRegister02b {
             get {
@@ -277,7 +277,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Пользователи, которые создали учетную запись AzureDay, будут получать уведомления и новости конференции..
+        ///   Looks up a localized string similar to Users that created AzureDay account will get notifications and conference news..
         /// </summary>
         public static string ToRegister03 {
             get {
@@ -286,7 +286,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Воспользуйтесь своей скидкой!.
+        ///   Looks up a localized string similar to Use your discount!.
         /// </summary>
         public static string UseYourDiscount {
             get {

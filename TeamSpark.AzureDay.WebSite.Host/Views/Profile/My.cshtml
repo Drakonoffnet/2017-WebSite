@@ -1,5 +1,5 @@
 ﻿@using TeamSpark.AzureDay.WebSite.Config
-@using TeamSpark.AzureDay.WebSite.Data.Enum
+@using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home
 @using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile
 @model TeamSpark.AzureDay.WebSite.Host.Models.Profile.MyProfileModel
 
@@ -71,7 +71,8 @@
 							{
 								<div class="input-group myInputGroupdivider">
 									<span class="input-group-addon" style="width: 150px;">@My.Ticket01</span>
-									<input type="checkbox" class="form-control" name="cbConferenceTicket" data-bind="checked: isConferenceTicket"/>
+									<input id="cbConferenceTicket" type="checkbox" class="form-control" style="width: 50px;" data-bind="checked: isConferenceTicket"/>
+									<input type="hidden" name="hasConferenceTicket" />
 								</div>
 							}
 							else
@@ -84,7 +85,7 @@
 												<div class="wow-pricing-header" style="padding-bottom: 0px;">
 													<h5>AzureDay @Configuration.Year</h5>
 													<div class="wow-pricing-cost">
-														<img id="imgGravatar" style="display: none; padding-bottom: 10px;"/>
+														<img id="imgGravatar1" style="display: none; padding-bottom: 10px;"/>
 														<p style="font-weight: bold;">@($"{Model.FirstName} {Model.LastName}")</p>
 														<p>@Model.Company</p>
 														<p>&nbsp;</p>
@@ -93,24 +94,47 @@
 												<div class="wow-pricing-content">
 													<ul>
 														<li>
-															@My.Attendee (@Model.PayedConferenceTicket.TicketType.ToDisplayString())
+															@My.Attendee (@Model.PayedConferenceTicket.TicketType.ToString())<br/>
+															@Schedule.Date
 														</li>
 													</ul>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div>
-										<p>@My.HowToUseTicket</p>
-									</div>
+
+									if (Model.PayedWorkshopTicket == null)
+									{
+										<div>
+											<p>@My.HowToUseTicket</p>
+										</div>
+									}
 								}
 								else
 								{
 									<div>
-										<p>@My.ThankYouWait</p>
-										<p>@My.PayNow <a href="/Profile/PayAgain">@My.ByLink</a>.</p>
-										<p>@My.DropPayment01 <a href="/Profile/DeleteTicket">@My.ByLink</a>@My.DropPayment01a</p>
-										<p>@My.Questions01 <a href="mailto:pay@azureday.net">pay@azureday.net</a> @My.Questions01a</p>
+										<div class="wow-pricing-table col-md-12">
+											<div class="wow-pricing wow-column-">
+												<div class="wow-pricing-header" style="padding-bottom: 0px;">
+													<h5>AzureDay @Configuration.Year</h5>
+													<div class="wow-pricing-cost" style="padding: 15px;">
+														<p>@My.ThankYouWait</p>
+														<p>@My.PayNow <a href="/Profile/PayAgain/@Model.PayedConferenceTicket.TicketType">@My.ByLink</a>.
+														</p>
+														<p>@My.DropPayment01 <a href="/Profile/DeleteTicket/@Model.PayedConferenceTicket.TicketType">@My.ByLink</a>. @My.DropPayment01a</p>
+														<p>@My.Questions01 <a href="mailto:pay@azureday.net">pay@azureday.net</a> @My.Questions01a</p>
+													</div>
+												</div>
+												<div class="wow-pricing-content">
+													<ul>
+														<li>
+															@My.Attendee (@Model.PayedConferenceTicket.TicketType.ToString())<br />
+															@Schedule.Date
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
 									</div>
 								}
 							}
@@ -119,7 +143,8 @@
 							{
 								<div class="input-group myInputGroupdivider">
 									<span class="input-group-addon" style="width: 150px;">@My.Ticket02</span>
-									<input type="checkbox" class="form-control" name="cbWorkshopTicket" data-bind="checked: isWorkshopTicket" />
+									<input id="cbWorkshopTicket" type="checkbox" class="form-control"style="width: 50px;" data-bind="checked: isWorkshopTicket" />
+									<input type="hidden" name="hasWorkshopTicket"/>
 								</div>
 								<div class="input-group myInputGroupdivider" data-bind="visible: isWorkshopTicket">
 									<span class="input-group-addon" style="width: 150px;">@My.Lab01</span>
@@ -136,7 +161,7 @@
 												<div class="wow-pricing-header" style="padding-bottom: 0px;">
 													<h5>AzureDay @Configuration.Year</h5>
 													<div class="wow-pricing-cost">
-														<img id="imgGravatar" style="display: none; padding-bottom: 10px;" />
+														<img id="imgGravatar2" style="display: none; padding-bottom: 10px;" />
 														<p style="font-weight: bold;">@($"{Model.FirstName} {Model.LastName}")</p>
 														<p>@Model.Company</p>
 														<p>&nbsp;</p>
@@ -145,7 +170,9 @@
 												<div class="wow-pricing-content">
 													<ul>
 														<li>
-															@My.Attendee (@Model.PayedWorkshopTicket.TicketType.ToDisplayString())
+															@My.Attendee (@Model.PayedWorkshopTicket.TicketType.ToString())<br/>
+															@Workshops.Date<br/>
+															@Model.PayedWorkshop.Title
 														</li>
 													</ul>
 												</div>
@@ -159,10 +186,29 @@
 								else
 								{
 									<div>
-										<p>@My.ThankYouWait</p>
-										<p>@My.PayNow <a href="/Profile/PayAgain">@My.ByLink</a>.</p>
-										<p>@My.DropPayment01 <a href="/Profile/DeleteTicket">@My.ByLink</a>@My.DropPayment01a</p>
-										<p>@My.Questions01 <a href="mailto:pay@azureday.net">pay@azureday.net</a> @My.Questions01a</p>
+										<div class="wow-pricing-table col-md-12">
+											<div class="wow-pricing wow-column-">
+												<div class="wow-pricing-header" style="padding-bottom: 0px;">
+													<h5>AzureDay @Configuration.Year</h5>
+													<div class="wow-pricing-cost" style="padding: 15px;">
+														<p>@My.ThankYouWait</p>
+														<p>
+															@My.PayNow <a href="/Profile/PayAgain/@Model.PayedWorkshopTicket.TicketType">@My.ByLink</a>.
+														</p>
+														<p>@My.DropPayment01 <a href="/Profile/DeleteTicket/@Model.PayedWorkshopTicket.TicketType">@My.ByLink</a>. @My.DropPayment01a</p>
+														<p>@My.Questions01 <a href="mailto:pay@azureday.net">pay@azureday.net</a> @My.Questions01a</p>
+													</div>
+												</div>
+												<div class="wow-pricing-content">
+													<ul>
+														<li>
+															@My.Attendee (@Model.PayedWorkshopTicket.TicketType.ToString())<br />
+															@Schedule.Date
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
 									</div>
 								}
 							}
@@ -251,14 +297,32 @@
 				ko.applyBindings(profileModel, document.getElementById('divProfile'));
 			})();
 
+			(function($) {
+				$.QueryString = (function(paramsArray) {
+					var params = {};
+
+					for (var i = 0; i < paramsArray.length; ++i) {
+						var param = paramsArray[i].split('=', 2);
+
+						if (param.length !== 2) {
+							continue;
+						}
+
+						params[param[0]] = decodeURIComponent(param[1].replace(/\+/g, " "));
+					}
+
+					return params;
+				})(window.location.search.toLowerCase().substr(1).split('&'));
+			})(jQuery);
+
 			(function ticket() {
 				var ticketModel = {
-					isConferenceTicket: ko.observable(true),
-					isWorkshopTicket: ko.observable(true),
-					selectedWorkshop: ko.observable(0),
-					workshops: ko.observableArray([
-						@Html.Raw(string.Join(",", Model.Workshops.Select(ticket => $"{{ id:'{ticket.Id}', title:'{ticket.Title}' }}")))
-					]),
+					isConferenceTicket: ko.observable(@{ Write((Model.PayedConferenceTicket == null).ToString().ToLowerInvariant()); }),
+					isWorkshopTicket: ko.observable(@{ Write((Model.PayedWorkshopTicket == null).ToString().ToLowerInvariant()); }),
+					selectedWorkshop: ko.observable($.QueryString['workshopid']),
+					workshops: [
+						@Html.Raw(string.Join(",", Model.Workshops.Select(x => $"{{ id:'{x.Workshop.Id}', title:'{x.Workshop.Title} ({My.TicketsLeft} {x.TicketsLeft})' }}")))
+					],
 					promoCode: ko.observable(),
 					currentPrice: ko.observable()
 				};
@@ -277,8 +341,7 @@
 				}
 
 				ticketModel.isAnyTicketSelected = ko.computed(function() {
-					return ticketModel.isConferenceTicket()
-						|| (ticketModel.isWorkshopTicket() && ticketModel.selectedWorkshop() > 0)
+					return ticketModel.isConferenceTicket() || (ticketModel.isWorkshopTicket() && ticketModel.selectedWorkshop() > 0);
 				});
 
 				ticketModel.promoCode.subscribe(function(newPromoCode) {
@@ -306,22 +369,29 @@
 				});
 
 				ko.applyBindings(ticketModel, document.getElementById('divTicket'));
+
+				var workshopId = ticketModel.isWorkshopTicket() ? ticketModel.selectedWorkshop() : 0;
+				calculateNewPrice(ticketModel.isConferenceTicket(), workshopId, ticketModel.promoCode());
 			})();
 
 			$('#btnPayKaznachey').click(function() {
 				$('#paymentType').val('Kaznachey');
+				$('[name="hasConferenceTicket"]').val($('#cbConferenceTicket').is(":checked"));
+				$('[name="hasWorkshopTicket"]').val($('#cbWorkshopTicket').is(":checked"));
 				setTimeout(function() {
 					modal.showModal();
 				});
-				$('#formPayConf').submit();
+				$('#formPay').submit();
 			});
 
 			$('#btnPayLiqPay').click(function() {
 				$('#paymentType').val('LiqPay');
+				$('[name="hasConferenceTicket"]').val($('#cbConferenceTicket').is(":checked"));
+				$('[name="hasWorkshopTicket"]').val($('#cbWorkshopTicket').is(":checked"));
 				setTimeout(function() {
 					modal.showModal();
 				});
-				$('#formPayConf').submit();
+				$('#formPay').submit();
 			});
 		});
 
@@ -330,9 +400,15 @@
 				return;
 			}
 
-			var img = $('#imgGravatar');
-			img.attr('src', profile.entry[0].thumbnailUrl);
-			img.show();
+			var avatarUrl = profile.entry[0].thumbnailUrl;
+
+			var img1 = $('#imgGravatar1');
+			img1.attr('src', avatarUrl);
+			img1.show();
+
+			var img2 = $('#imgGravatar2');
+			img2.attr('src', avatarUrl);
+			img2.show();
 		}
 	</script>
 

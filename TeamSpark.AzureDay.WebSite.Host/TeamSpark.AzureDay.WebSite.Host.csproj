@@ -426,6 +426,8 @@
     <Content Include="Theme\img\_slides\2017\en\02-discounts-en.jpg" />
     <Content Include="Theme\img\_slides\2017\en\speakers-en.jpg" />
     <Content Include="Theme\img\_slides\2017\en\workshops-en.jpg" />
+    <Content Include="Theme\img\_slides\2017\speakers-en.jpg" />
+    <Content Include="Theme\img\_slides\2017\workshops-en.jpg" />
     <Content Include="Theme\img\_slides\date.jpg" />
     <Content Include="Theme\img\_slides\date.png" />
     <Content Include="Theme\img\_slides\kyiv01.jpg" />
@@ -545,6 +547,9 @@
     <Content Include="Theme\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Theme\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Views\Profile\PersonalSchedule.cshtml" />
+    <Content Include="Views\Home\Speakers.cshtml" />
+    <Content Include="Views\Shared\_Workshop.cshtml" />
+    <Content Include="Views\Shared\_Topic.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -554,7 +559,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KaznacheyPayment\Kaznachey.KaznacheyPayment.csproj">
+    <ProjectReference Include="..\KaznacheyPayment2017\Kaznachey.KaznacheyPayment.csproj">
       <Project>{4046e6c4-b151-47c9-9076-16e13f0cec14}</Project>
       <Name>Kaznachey.KaznacheyPayment</Name>
     </ProjectReference>

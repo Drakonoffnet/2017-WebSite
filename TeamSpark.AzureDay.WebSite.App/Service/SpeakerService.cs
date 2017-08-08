@@ -49,6 +49,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			_speakers.Add(JessicaEngstrom());
 
 			_speakers.Add(JimmyEngstrom());
+			_speakers.Add(EAuberix());
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
@@ -778,6 +779,30 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				WebUrl = "",
 				CompanyName = "",
 				JobTitle = ""
+			};
+		}
+
+		public Speaker EAuberix()
+		{
+			return new Speaker
+			{
+				Id = "EAuberix",
+				FirstName = Localization.App.Service.Speaker.EAuberix.FirstName,
+				LastName = Localization.App.Service.Speaker.EAuberix.LastName,
+				Bio = Localization.App.Service.Speaker.EAuberix.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.France,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/EAuberix.jpg",
+				FacebookUrl = "https://www.facebook.com/estelle.inomniaparatus",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "https://www.linkedin.com/in/inomniaparatus/",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "https://twitter.com/FollowEstelle",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "In Omnia Paratus",
+				JobTitle = "CEO / IT Consultant"
 			};
 		}
 	}

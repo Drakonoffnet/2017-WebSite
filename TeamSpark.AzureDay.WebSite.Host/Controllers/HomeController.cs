@@ -83,7 +83,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			return View(model);
 		}
 
-		public async Task<ActionResult> Workshops()
+        public async Task<ActionResult> Workshops()
 		{
 			var model = new WorkshopsModel
 			{

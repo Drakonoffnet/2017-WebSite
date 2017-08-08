@@ -16,6 +16,7 @@ using TeamSpark.AzureDay.WebSite.Host.Models.Home;
 using TeamSpark.AzureDay.WebSite.Host.Models.Profile;
 using TeamSpark.AzureDay.WebSite.Notification;
 using TeamSpark.AzureDay.WebSite.Notification.Email.Model;
+using TeamSpark.AzureDay.WebSite.Host.Models.Home;
 
 namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 {
@@ -461,16 +462,34 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			return View();
 		}
 
-		//[Authorize]
-		//public ActionResult Quiz()
-		//{
-		//	return View();
-		//}
+        public async Task<ActionResult> PersonalSchedule()
+        {
+            var model = new ScheduleModel();
 
-		//[Authorize]
-		//public ActionResult Feedback()
-		//{
-		//	return View();
-		//}
-	}
+            model.Rooms = new RoomService()
+                .GetRooms()
+                .Where(x => x.RoomType == RoomType.LectureRoom)
+                .ToList();
+
+            model.Timetables = new TimetableService().GetTimetable()
+                .GroupBy(
+                    t => t.TimeStart,
+                    (key, timetables) => timetables.OrderBy(t => t.Room.ColorNumber).ToList())
+                .ToList();
+
+            return View(model);
+        }
+
+        //[Authorize]
+        //public ActionResult Quiz()
+        //{
+        //	return View();
+        //}
+
+        //[Authorize]
+        //public ActionResult Feedback()
+        //{
+        //	return View();
+        //}
+    }
 }

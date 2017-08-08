@@ -93,9 +93,9 @@
 
 <script>
 	function carouselNormalization() {
-		var items = $('#speakersCarousel .item'),
-			heights = [],
-			tallest;
+		var items = $('#speakersCarousel .item');
+		var heights = [];
+		var tallest;
 
 		if (items.length) {
 			function normalizeHeights() {
@@ -113,7 +113,8 @@
 			normalizeHeights();
 
 			$(window).on('resize orientationchange', function() {
-				tallest = 0, heights.length = 0;
+				tallest = 0;
+				heights.length = 0;
 
 				items.each(function() {
 					$(this).css('min-height', '0');
@@ -125,10 +126,6 @@
 	}
 
 	$(window).load(function() {
-		carouselNormalization();
-	});
-
-	$(window).resize(function () {
 		carouselNormalization();
 	});
 </script>

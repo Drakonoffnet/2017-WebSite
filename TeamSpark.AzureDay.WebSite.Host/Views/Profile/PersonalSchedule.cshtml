@@ -1,4 +1,5 @@
-﻿@using TeamSpark.AzureDay.WebSite.Config
+﻿@using TeamSpark.AzureDay.WebSite.App.Entity
+@using TeamSpark.AzureDay.WebSite.Config
 @using TeamSpark.AzureDay.WebSite.Data.Enum
 @using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home
 @model TeamSpark.AzureDay.WebSite.Host.Models.Home.ScheduleModel
@@ -32,95 +33,161 @@
 				</div>
 			}
 		</div>
-
-		@foreach (var timetables in Model.Timetables)
-		{
-			<div class="row">
-				@if (timetables.Count == 1)
-				{
-					if (timetables[0].Room.RoomType == RoomType.CoffeeRoom)
+		
+		<div id="personalizedSchedule">
+			@foreach (var timetables in Model.Timetables)
+			{
+				<div class="row">
+					@if (timetables.Count == 1)
 					{
-						<div class="col-md-12 col-sm-12">
-							<div class="box">
-								<div class="mySlotTime">
-									@($"{timetables[0].TimeStartHours}:{timetables[0].TimeStartMinutes.ToString("D2")}") -
-									@($"{timetables[0].TimeEndHours}:{timetables[0].TimeEndMinutes.ToString("D2")}")
-								</div>
-								<div style="text-align: center;">
-									<i>@timetables[0].Topic.Title</i>
+						if (timetables[0].Room.RoomType == RoomType.CoffeeRoom)
+						{
+							<div class="col-md-12 col-sm-12">
+								<div class="box">
+									<div class="mySlotTime">
+										@($"{timetables[0].TimeStart}") -
+										@($"{timetables[0].TimeEnd}")
+									</div>
+									<div style="text-align: center;">
+										<i>@timetables[0].Topic.Title</i>
+									</div>
 								</div>
 							</div>
-						</div>
+						}
+						else
+						{
+							<div class="col-md-12 col-sm-12">
+								<div class="box effect6 myAreaBoxBorder1">
+									<div class="mySlotTime">
+										@($"{timetables[0].TimeStart}") -
+										@($"{timetables[0].TimeEnd}")
+									</div>
+									@if (timetables[0].Topic.Speaker != null)
+									{
+										<div class="row">
+											<div class="mySlotAuthor col-sm-10 col-md-10" style="text-align: left; padding-left: 0;">
+												@timetables[0].Topic.Speaker.FullName
+											</div>
+											<div style="text-align: left;">
+												<b>@timetables[0].Topic.Title</b><br/><br/>
+												@if (timetables[0].Topic.Language != null && !string.IsNullOrEmpty(timetables[0].Topic.Language.Title))
+												{
+													@Html.Raw($"{Schedule.Language}: {timetables[0].Topic.Language.Title}")
+												}
+											</div>
+										</div>
+									}
+								</div>
+							</div>
+						}
 					}
 					else
 					{
-						<div class="col-md-12 col-sm-12">
-							<div class="box effect6 myAreaBoxBorder1">
-								<div class="mySlotTime">
-									@($"{timetables[0].TimeStartHours}:{timetables[0].TimeStartMinutes.ToString("D2")}") -
-									@($"{timetables[0].TimeEndHours}:{timetables[0].TimeEndMinutes.ToString("D2")}")
-								</div>
-								@if (timetables[0].Topic.Speaker != null)
-								{
-								<div class="row">
-									<div class="col-sm-2 col-md-2">
-										<img class="img-responsible" style="margin-bottom: 10px;" src="@timetables[0].Topic.Speaker.PhotoUrl" alt="@timetables[0].Topic.Speaker.FullName" />
+						for (var i = 0; i < timetables.Count; i++)
+						{
+							<div data-bind="click: setSchedule(@timetables[i].Topic.Id)"
+								 class="col-md-2 col-sm-2 col-schedule scheduleCell"
+								 style="padding: 0px 5px 0px 5px; @Html.Raw(timetables[i].HasLanguage ? string.Empty : "opacity: 0.5;")">
+
+								<div class="box effect2 @($"myAreaBoxBorder{timetables[i].Room.ColorNumber}")">
+									<div class="mySlotTime">
+										@($"{timetables[i].TimeStart}") -
+										@($"{timetables[i].TimeEnd}")
 									</div>
-									<div class="mySlotAuthor col-sm-10 col-md-10" style="text-align: left; padding-left: 0;">
-										@timetables[0].Topic.Speaker.FullName
-									</div>
-									<div style="text-align: left;">
-										<b>@timetables[0].Topic.Title</b><br /><br />
-										@if (timetables[0].Topic.Language != null && !string.IsNullOrEmpty(timetables[0].Topic.Language.Title))
-										{
-											@Html.Raw($"{Schedule.Language}: {timetables[0].Topic.Language.Title}")
-										}
-										@*@timetables[0].Topic.Description*@
-									</div>
-								</div>
-								
-								}
-								
-							</div>
-						</div>
-					}
-				}
-				else
-				{
-					for (var i = 0; i < timetables.Count; i++)
-					{
-						<div class="col-md-2 col-sm-2 col-schedule" style="padding: 0px 5px 0px 5px; @Html.Raw(timetables[i].HasLanguage ? string.Empty : "opacity: 0.5;")">
-							<div class="box effect2 @($"myAreaBoxBorder{timetables[i].Room.ColorNumber}")">
-								<div class="mySlotTime">
-									@($"{timetables[i].TimeStartHours}:{timetables[i].TimeStartMinutes.ToString("D2")}") -
-									@($"{timetables[i].TimeEndHours}:{timetables[i].TimeEndMinutes.ToString("D2")}")
-								</div>
-								@if (timetables[i].Topic.Speaker != null)
-								{
+									@if (timetables[i].Topic.Speaker != null)
+									{
+										<div class="mySlotAuthor">
+											@timetables[i].Topic.Speaker.FullName
+										</div>
+									}
 									<div>
-										<img class="img-responsible" style="margin-bottom: 10px;" src="@timetables[i].Topic.Speaker.PhotoUrl" alt="@timetables[i].Topic.Speaker.FullName" />
+										<b>@timetables[i].Topic.Title</b><br/><br/>
+										@if (timetables[i].HasLanguage)
+										{
+											@Html.Raw($"{Schedule.Language}: {timetables[i].Topic.Language.Title}<br /><br />")
+										}
 									</div>
 
-									<div class="mySlotAuthor">
-										@timetables[i].Topic.Speaker.FullName
+									<div data-bind="css: { hidden: !getSchedule(@timetables[i].Topic.Id) }"
+										 class="alert alert-success text-center">
+										<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
 									</div>
-								}
-								<div>
-									<b>@timetables[i].Topic.Title</b><br /><br />
-									@if (timetables[i].HasLanguage)
-									{
-										@Html.Raw($"{Schedule.Language}: {timetables[i].Topic.Language.Title}<br /><br />")
-									}
-									@*@Html.Raw(timetables[i].Topic.Description)*@
+
 								</div>
+
 							</div>
-						</div>
+						}
 					}
-				}
-			</div>
+				</div>
+			}
+		</div>
+	</div>
+	
+	<script>
+		(function () {
+			var model = {
+				schedule: ko.observableArray([])
+			};
+
+
+
+			model.getSchedule = function(topicId) {
+				var id = topicId;
+				return ko.pureComputed(function() {
+					return model.schedule()[id];
+				});
+			};
+
+			model.setSchedule = function (topicId) {
+				var id = topicId;
+				$.ajax('api/schedule/my/' + id, {
+					method: 'PUT',
+					success: function(data) {
+						model.schedule()[id] = data;
+					}
+				});
+			};
+
+			ko.applyBindings(model, document.getElementById('personalizedSchedule'));
+		})();
+
+		function heightNormalization() {
+			var items = $('.col-schedule.scheduleCell > div');
+			var heights = [];
+			var tallest;
+
+			if (items.length) {
+				function normalizeHeights() {
+					items.each(function() {
+						heights.push($(this).height());
+					});
+
+					tallest = Math.max.apply(null, heights);
+
+					items.each(function() {
+						$(this).css('min-height', tallest + 50 + 'px');
+					});
+				};
+
+				normalizeHeights();
+
+				$(window).on('resize orientationchange', function() {
+					tallest = 0;
+					heights.length = 0;
+
+					items.each(function() {
+						$(this).css('min-height', '0');
+					});
+
+					normalizeHeights();
+				});
+			}
 		}
 
-	</div>
+		$(window).load(function() {
+			heightNormalization();
+		});
+	</script>
 
 	@Html.Action("Footer", "Layout")
 

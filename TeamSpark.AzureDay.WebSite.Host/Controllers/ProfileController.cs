@@ -462,34 +462,35 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 			return View();
 		}
 
-        public async Task<ActionResult> PersonalSchedule()
-        {
-            var model = new ScheduleModel();
+		[System.Web.Mvc.Authorize]
+		public async Task<ActionResult> PersonalSchedule()
+		{
+			var model = new ScheduleModel();
 
-            model.Rooms = new RoomService()
-                .GetRooms()
-                .Where(x => x.RoomType == RoomType.LectureRoom)
-                .ToList();
+			model.Rooms = new RoomService()
+				.GetRooms()
+				.Where(x => x.RoomType == RoomType.LectureRoom)
+				.ToList();
 
-            model.Timetables = new TimetableService().GetTimetable()
-                .GroupBy(
-                    t => t.TimeStart,
-                    (key, timetables) => timetables.OrderBy(t => t.Room.ColorNumber).ToList())
-                .ToList();
+			model.Timetables = new TimetableService().GetTimetable()
+				.GroupBy(
+					t => t.TimeStart,
+					(key, timetables) => timetables.OrderBy(t => t.Room.ColorNumber).ToList())
+				.ToList();
 
-            return View(model);
-        }
+			return View(model);
+		}
 
-        //[Authorize]
-        //public ActionResult Quiz()
-        //{
-        //	return View();
-        //}
+		//[Authorize]
+		//public ActionResult Quiz()
+		//{
+		//	return View();
+		//}
 
-        //[Authorize]
-        //public ActionResult Feedback()
-        //{
-        //	return View();
-        //}
-    }
+		//[Authorize]
+		//public ActionResult Feedback()
+		//{
+		//	return View();
+		//}
+	}
 }

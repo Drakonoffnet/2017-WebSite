@@ -218,6 +218,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\Api\PriceController.cs" />
+    <Compile Include="Controllers\Api\ScheduleController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LanguageController.cs" />
     <Compile Include="Controllers\LayoutController.cs" />
@@ -240,6 +241,7 @@
     <Compile Include="Models\Profile\PayFormModel.cs" />
     <Compile Include="Models\Profile\PayModel.cs" />
     <Compile Include="Models\Profile\RegistrationModel.cs" />
+    <Compile Include="Models\Profile\PersonalScheduleModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

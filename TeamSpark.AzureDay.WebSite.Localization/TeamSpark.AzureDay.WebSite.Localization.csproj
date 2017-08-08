@@ -80,6 +80,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Speaker\AVidishchev.Designer.cs">
+      <DependentUpon>AVidishchev.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Speaker\AShamray.Designer.cs">
       <DependentUpon>AShamray.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -309,6 +314,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ABoyko.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Topics\AVidishchev_01.Designer.cs">
+      <DependentUpon>AVidishchev_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="App\Service\Topics\AShamray_01.Designer.cs">
       <DependentUpon>AShamray_01.resx</DependentUpon>
@@ -843,6 +853,10 @@
       <LastGenOutput>Room.ru.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\AVidishchev.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AVidishchev.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\AShamray.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AShamray.Designer.cs</LastGenOutput>
@@ -1028,6 +1042,10 @@
     <EmbeddedResource Include="App\Service\Speaker\ABoyko.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ABoyko.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\AVidishchev_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AVidishchev_01.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\AShamray_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

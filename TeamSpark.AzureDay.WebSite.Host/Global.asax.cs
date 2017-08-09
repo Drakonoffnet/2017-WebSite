@@ -44,6 +44,13 @@ namespace TeamSpark.AzureDay.WebSite.Host
 			var application = (HttpApplication)source;
 			var context = application.Context;
 
+			#if !DEBUG
+			if (!context.Request.Url.Host.Equals(Configuration.Host, StringComparison.InvariantCultureIgnoreCase))
+			{
+				context.Response.Redirect($"{Configuration.Host}{context.Request.Url.AbsolutePath}");
+			}
+			#endif
+
 			string culture;
 
 			var languageCookie = context.Request.Cookies[LanguageController.LANGUAGE_COOKIE];

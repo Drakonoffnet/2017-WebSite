@@ -24,10 +24,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 				{
 					SpeakersCollections = new List<List<Speaker>>()
 				},
-				Partners = new PartnersModel
-				{
-					PartnersCollection = new Dictionary<PartnerType, List<Partner>>()
-				}
+				Partners = AppFactory.PartnerService.Value.GetPartners().ToList()
 			};
 
 			var speakers = new SpeakerService().GetSpeakers();
@@ -56,11 +53,6 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 					i++;
 				}
 			}
-
-			var partners = new PartnerService().GetPartners();
-			model.Partners.PartnersCollection = partners
-				.GroupBy(p => p.PartnerType)
-				.ToDictionary(p => p.Key, group => group.OrderBy(p => p.OrderN).ToList());
 
 			return View(model);
 		}
@@ -221,9 +213,13 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 		{
 			var model = new PartnersModel();
 
-			model.PartnersCollection = new PartnerService().GetPartners()
-				.GroupBy(p => p.PartnerType)
-				.ToDictionary(p => p.Key, group => group.OrderBy(p => p.OrderN).ToList());
+			model.PartnersCollection = new Dictionary<PartnerType, List<Partner>>();
+
+			foreach (var partnerType in Enum.GetValues(typeof(PartnerType)))
+			{
+				var partners = AppFactory.PartnerService.Value.GetPartnersByType((PartnerType)partnerType).ToList();
+				model.PartnersCollection.Add((PartnerType)partnerType, partners);
+			}
 
 			return View(model);
 		}

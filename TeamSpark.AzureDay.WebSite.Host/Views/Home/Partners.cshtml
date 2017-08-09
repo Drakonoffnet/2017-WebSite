@@ -1,6 +1,7 @@
 ﻿@using TeamSpark.AzureDay.WebSite.Config
 @using TeamSpark.AzureDay.WebSite.Data.Enum
 @using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home
+@using PartnerType = TeamSpark.AzureDay.WebSite.Data.Enum.PartnerType
 @model TeamSpark.AzureDay.WebSite.Host.Models.Home.PartnersModel
 @{
 	ViewBag.Title = $"AzureDay {Configuration.Year} - {Partners.PartnersTitle}";
@@ -34,6 +35,9 @@
 				case PartnerType.Silver:
 					css = "fa-star";
 					break;
+				case PartnerType.Bronze:
+					css = "fa-star";
+					break;
 				case PartnerType.Raffle:
 					css = "fa-gift";
 					break;
@@ -46,14 +50,30 @@
 				case PartnerType.Tech:
 					css = "fa-cogs";
 					break;
+				case PartnerType.Workshop:
+					css = "fa-cogs";
+					break;
 			}
+
+			if (Model.PartnersCollection[partnersKey].Any())
+			{
+				<div class="row padding15">
+					<div class="col-md-12 text-center">
+						<div class="icon-box-top active">
+							@*<i class="fontawesome-icon medium circle-white center fa @css"></i>*@
+							<h3>@partnersKey.ToDisplayStringCategory()</h3>
+						</div>
+					</div>
+				</div>
+			}
+
 			foreach (var partner in Model.PartnersCollection[partnersKey])
 			{
 				<div class="row padding15">
 					<div class="col-md-2 text-center">
 						<div class="icon-box-top active">
 							<i class="fontawesome-icon medium circle-white center fa @css"></i>
-							<p>@partner.PartnerType.ToDisplayStringPartner()</p>
+							<p>@partnersKey.ToDisplayStringPartner()</p>
 						</div>
 					</div>
 					<div class="col-md-3">

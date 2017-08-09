@@ -45,7 +45,7 @@ namespace TeamSpark.AzureDay.WebSite.Host
 			var context = application.Context;
 
 			#if !DEBUG
-			if (!context.Request.Url.Host.Equals(Configuration.Host, StringComparison.InvariantCultureIgnoreCase))
+			if (!context.Request.Url.Host.Equals(Configuration.Host.Replace("https://", string.Empty), StringComparison.InvariantCultureIgnoreCase))
 			{
 				context.Response.Redirect($"{Configuration.Host}{context.Request.Url.AbsolutePath}");
 			}

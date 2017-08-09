@@ -1,9 +1,13 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
+using TeamSpark.AzureDay.WebSite.App.Service;
 
 namespace TeamSpark.AzureDay.WebSite.App.Entity
 {
 	public class Topic
 	{
+		private readonly Lazy<TimetableService> _timetableService = new Lazy<TimetableService>(() => new TimetableService());
+
 		public int Id { get; set; }
 		public string Title { get; set; }
 		public string Description { get; set; }
@@ -19,7 +23,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Entity
 			{
 				if (_timetable == null)
 				{
-					_timetable = AppFactory.TimetableService.Value.GetTimetable()
+					_timetable = _timetableService.Value.GetTimetable()
 						.Where(x => x.Topic != null)
 						.SingleOrDefault(x => x.Topic.Id == Id);
 				}

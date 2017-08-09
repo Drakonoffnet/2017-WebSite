@@ -30,11 +30,7 @@ namespace TeamSpark.AzureDay.WebSite.App
 		});
 
 		public static readonly Lazy<AttendeeService> AttendeeService = new Lazy<AttendeeService>(() => new AttendeeService());
-		public static readonly Lazy<SpeakerService> SpeakerService = new Lazy<SpeakerService>(() => new SpeakerService());
 		public static readonly Lazy<QuickAuthTokenService> QuickAuthTokenService = new Lazy<QuickAuthTokenService>(() => new QuickAuthTokenService());
-		public static readonly Lazy<RoomService> RoomService = new Lazy<RoomService>(() => new RoomService());
-		public static readonly Lazy<TimetableService> TimetableService = new Lazy<TimetableService>(() => new TimetableService());
-		public static readonly Lazy<PartnerService> PartnerService = new Lazy<PartnerService>(() => new PartnerService());
 		public static readonly Lazy<CouponService> CouponService = new Lazy<CouponService>(() => new CouponService());
 		public static readonly Lazy<TicketService> TicketService = new Lazy<TicketService>(() => new TicketService());
 	}

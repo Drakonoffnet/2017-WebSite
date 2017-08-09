@@ -11,7 +11,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		private readonly SpeakerService _speakerService = new SpeakerService();
 		private readonly RoomService _roomService = new RoomService();
 
-		private readonly List<Workshop> _workshops = new List<Workshop>();
+		private readonly List<Workshop> _workshops;
 
 		public WorkshopService()
 		{

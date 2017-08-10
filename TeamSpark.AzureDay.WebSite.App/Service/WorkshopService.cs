@@ -139,6 +139,6 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		public Workshop ADeren_01 { get { return _workshops.Single(x => x.Id == 7); } }
 		public Workshop SPoplavskiy_02 { get { return _workshops.Single(x => x.Id == 8); } }
 		public Workshop VRadchuk_01 { get { return _workshops.Single(x => x.Id == 9); } }
-		public Workshop AShamray_01 { get { return _workshops.Single(x => x.Id == 9); } }
+		public Workshop AShamray_01 { get { return _workshops.Single(x => x.Id == 10); } }
 	}
 }

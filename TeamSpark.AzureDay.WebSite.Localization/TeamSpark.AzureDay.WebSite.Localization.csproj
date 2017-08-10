@@ -105,6 +105,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Speaker\VBezmaly.Designer.cs">
+      <DependentUpon>VBezmaly.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Speaker\EAuberix.Designer.cs">
       <DependentUpon>EAuberix.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -952,6 +957,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Room.ru.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\VBezmaly.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VBezmaly.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\EAuberix.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

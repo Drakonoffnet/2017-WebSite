@@ -51,6 +51,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			_speakers.Add(JimmyEngstrom());
 			_speakers.Add(EAuberix());
 			_speakers.Add(VBezmaly());
+			_speakers.Add(VTolmachov());
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
@@ -827,6 +828,30 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				YouTubeUrl = "",
 				WebUrl = "",
 				CompanyName = "MBP",
+				JobTitle = ""
+			};
+		}
+
+		public Speaker VTolmachov()
+		{
+			return new Speaker
+			{
+				Id = "VTolmachov",
+				FirstName = Localization.App.Service.Speaker.VTolmachov.FirstName,
+				LastName = Localization.App.Service.Speaker.VTolmachov.LastName,
+				Bio = Localization.App.Service.Speaker.VTolmachov.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/VTolmachov.jpg",
+				FacebookUrl = "",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "EasyPay",
 				JobTitle = ""
 			};
 		}

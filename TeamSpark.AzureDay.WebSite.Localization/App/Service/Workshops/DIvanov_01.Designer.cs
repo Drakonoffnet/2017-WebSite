@@ -69,7 +69,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Workshops {
         ///- Подключение к Azure
         ///
         ///Практическая часть
-        ///- Создание проекта Xamarin.Froms
+        ///- Создание проекта Xamarin.Forms
         ///- Создание страниц и элементов форм
         ///- Верстка приложения создание дизайна
         ///- Написание логики работы приложения

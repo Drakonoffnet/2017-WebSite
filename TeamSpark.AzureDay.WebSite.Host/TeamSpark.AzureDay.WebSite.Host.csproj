@@ -510,7 +510,7 @@
     <Content Include="Theme\js\prettyPhoto.js" />
     <Content Include="Theme\js\respond.min.js" />
     <Content Include="Theme\js\testimonial.js" />
-    <Content Include="Theme\style.css" />
+    <Content Include="Theme\style.201708122331.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

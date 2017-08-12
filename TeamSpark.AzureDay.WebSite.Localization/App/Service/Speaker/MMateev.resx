@@ -117,28 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Belarus" xml:space="preserve">
-    <value>Belarus</value>
+  <data name="Bio" xml:space="preserve">
+    <value>Mihail Mateev is a Microsoft Regional Director currently living in Sofia, Bulgaria. His interests range from technology to entrepreneurship. He is also interested in programming, web development, and education.
+Mihail is a Technical Consultant, Community enthusiast, PASS Regional Mentor for Central Eastern Europe, chapter lead, Data Platform and Microsoft Azure MVP, Organizer of SQLSaturday, Azure Bootcamp, IoT and JavaScript conferences.
+His experience is in various areas related to Microsoft technologies, including Windows Platform, ASP.Net MVC, MS SQL Server and Microsoft Azure.
+Mihail has a PhD in cloud computing and am a university lecturer on Smart Homes and Smart Energy IoT Solutions</value>
   </data>
-  <data name="Bulgaria" xml:space="preserve">
-    <value>Bulgaria</value>
+  <data name="FirstName" xml:space="preserve">
+    <value>Mihail</value>
   </data>
-  <data name="France" xml:space="preserve">
-    <value>France</value>
-  </data>
-  <data name="Poland" xml:space="preserve">
-    <value>Poland</value>
-  </data>
-  <data name="Romania" xml:space="preserve">
-    <value>Romania</value>
-  </data>
-  <data name="Russia" xml:space="preserve">
-    <value>Russia</value>
-  </data>
-  <data name="Sweden" xml:space="preserve">
-    <value>Sweden</value>
-  </data>
-  <data name="Ukraine" xml:space="preserve">
-    <value>Ukraine</value>
+  <data name="LastName" xml:space="preserve">
+    <value>Mateev</value>
   </data>
 </root>

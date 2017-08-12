@@ -53,7 +53,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				new Timetable { TimeStart = "12:00", TimeEnd = "13:00", Room = _roomService.Room3, Topic = _topicService.DReznik_01 },
 				new Timetable { TimeStart = "13:15", TimeEnd = "14:15", Room = _roomService.Room3, Topic = _topicService.ALaysha_01 },
 				new Timetable { TimeStart = "14:45", TimeEnd = "15:45", Room = _roomService.Room3, Topic = _topicService.EWasilewski_01 },
-				new Timetable { TimeStart = "16:00", TimeEnd = "17:00", Room = _roomService.Room3 },
+				new Timetable { TimeStart = "16:00", TimeEnd = "17:00", Room = _roomService.Room3, Topic = _topicService.MMateev_01 },
 				new Timetable { TimeStart = "17:30", TimeEnd = "18:30", Room = _roomService.Room3 }
 			});
 

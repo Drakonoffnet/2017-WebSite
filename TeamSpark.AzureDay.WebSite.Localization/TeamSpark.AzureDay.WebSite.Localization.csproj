@@ -105,6 +105,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Speaker\MMateev.Designer.cs">
+      <DependentUpon>MMateev.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Speaker\VTolmachov.Designer.cs">
       <DependentUpon>VTolmachov.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -364,6 +369,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ABoyko.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Topics\MMateev_01.Designer.cs">
+      <DependentUpon>MMateev_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="App\Service\Topics\EAuberix_02.Designer.cs">
       <DependentUpon>EAuberix_02.resx</DependentUpon>
@@ -963,6 +973,11 @@
       <LastGenOutput>Room.ru.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\MMateev.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MMateev.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\VTolmachov.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>VTolmachov.Designer.cs</LastGenOutput>
@@ -1173,6 +1188,11 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ABoyko.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\MMateev_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MMateev_01.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\EAuberix_02.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>EAuberix_02.Designer.cs</LastGenOutput>
@@ -1354,6 +1374,7 @@
     <EmbeddedResource Include="App\Service\Workshops\DIvanov_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>DIvanov_01.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Home\Index.uk-UA.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

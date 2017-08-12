@@ -5,9 +5,7 @@
 	ViewBag.Title = $"AzureDay {Configuration.Year} - {Model.Speaker.FullName}";
 }
 
-<div class="boxedcontent">
-	@Html.Action("Header", "Layout")
-	
+<div class="boxedcontent" style="margin-top: 79px;">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -104,6 +102,4 @@
 			}
 		}
 	</div>
-
-	@Html.Action("Footer", "Layout")
 </div>

@@ -2099,7 +2099,7 @@ body {font-size: 13px;
 	
 	.boxedlayout .fixedmenu  {width:90%;margin:0px auto;}
 	.boxedcontent {z-index: 1;position: relative;margin-top:0px;}
-	.boxedlayout .boxedcontent {margin-top:79px;}
+	/*.boxedlayout .boxedcontent {margin-top:79px;}*/
 	.container {width: 95.25%; max-width: 100%;}
 	.boxedlayout{max-width: 90%;margin:0px auto;}
 	.fixedmenu.tiny {top: 0px !important;}

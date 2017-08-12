@@ -6,11 +6,11 @@
 	ViewBag.Title = $"AzureDay {Configuration.Year}";
 }
 
+<div class="boxedcontent" style="margin-top: 79px;">
+	@Html.Partial("_Banner")
+</div>
+
 <div class="boxedcontent">
-	@Html.Action("Header", "Layout")
-
-	@Html.Action("Banner", "Layout")
-
 	<section class="introblock whites">
 		<div class="container">
 			<div class="row">
@@ -25,9 +25,9 @@
 			</div>
 		</div>
 	</section>
-<!-- end introblock -->
+	<!-- end introblock -->
 
-<section class="service-box whites">
+	<section class="service-box whites">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 text-center">
@@ -123,7 +123,7 @@
 						<!-- begin box shadow -->
 						<div class="box effect2">
 							@Index.About05a <span class='colortext'>@Index.About05b</span> @Index.About05c
-</div>
+						</div>
 						<!-- end box shadow -->
 					</div>
 					<div class="col-md-6">
@@ -368,7 +368,5 @@
 		</div>
 	</section>*@
 	<!-- end homerecentportfolio -->
- 
-	@Html.Action("Footer", "Layout")
 
 </div><!-- end boxedcontent -->

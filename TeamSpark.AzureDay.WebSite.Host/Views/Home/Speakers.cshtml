@@ -6,9 +6,7 @@
 	ViewBag.Title = $"AzureDay {Configuration.Year} - {Speakers.Title}";
 }
 
-<div class="boxedcontent">
-	@Html.Action("Header", "Layout")
-
+<div class="boxedcontent" style="margin-top: 79px;">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -30,23 +28,21 @@
 			</div>
 		</div>
 
-				@foreach (var collection in Model.SpeakersCollections)
+		@foreach (var collection in Model.SpeakersCollections)
+		{
+			<div class="row">
+				@foreach (var speaker in collection)
 				{
-				<div class="row">
-					@foreach (var speaker in collection)
-				{
-				<div class="col-md-3">
-					<img class="mySpeakerFlagImg" src="@speaker.Country.ImageUrl" />
-					<div class="thumbnail">
-
-						<img src="@speaker.PhotoUrl" alt="@speaker.FullName" />
-						<div class="caption">
-							<h4>
-								<a href="/Speaker/@speaker.Id">@speaker.FullName <br />
-									<span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
-								</a>
-							</h4>
-
+					<div class="col-md-3">
+						<img class="mySpeakerFlagImg" src="@speaker.Country.ImageUrl" />
+						<div class="thumbnail">
+							<img src="@speaker.PhotoUrl" alt="@speaker.FullName" />
+							<div class="caption">
+								<h4>
+									<a href="/Speaker/@speaker.Id">@speaker.FullName <br />
+										<span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+									</a>
+								</h4>
 							<h6 style="letter-spacing: 0px;">@speaker.Occupation</h6>
 
 							<span class="fontitalic">@speaker.Country.Title</span>
@@ -92,13 +88,11 @@
 									<a href="@speaker.GitHubUrl" target="_blank"><i class="fa fa-github"></i></a>
 								}
 							</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				}
-				</div>
 				}
 			</div>
-
-			@Html.Action("Footer", "Layout")
-		</div>
+		}
+	</div>
+</div>

@@ -7,9 +7,19 @@
 	ViewBag.Title = $"AzureDay {Configuration.Year} - {Schedule.Title}";
 }
 
-<div class="boxedcontent">
-	@Html.Action("Header", "Layout")
+<style>
+	.boxedlayout {
+		max-width: 100% !important;
+		width: 100% !important;
+	}
 
+	.fixedmenu {
+		max-width: 100% !important;
+		width: 100% !important;
+	}
+</style>
+
+<div class="boxedcontent" style="margin-top: 79px;">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -26,7 +36,11 @@
 				</div>
 			</div>
 		</div>
+	</div>
+</div>
 
+<div class="boxedcontent">
+	<div class="container-fluid">
 		<div class="row">
 			@for (var i = 0; i < Model.Rooms.Count; i++)
 			{
@@ -67,25 +81,22 @@
 								</div>
 								@if (timetables[0].Topic.Speaker != null)
 								{
-								<div class="row">
-									<div class="col-sm-2 col-md-2">
-										<img class="img-responsible" style="margin-bottom: 10px;" src="@timetables[0].Topic.Speaker.PhotoUrl" alt="@timetables[0].Topic.Speaker.FullName" />
+									<div class="row">
+										<div class="col-sm-2 col-md-2">
+											<img class="img-responsible" style="margin-bottom: 10px;" src="@timetables[0].Topic.Speaker.PhotoUrl" alt="@timetables[0].Topic.Speaker.FullName"/>
+										</div>
+										<div class="mySlotAuthor col-sm-10 col-md-10" style="text-align: left; padding-left: 0;">
+											@timetables[0].Topic.Speaker.FullName
+										</div>
+										<div style="text-align: left;">
+											<b>@timetables[0].Topic.Title</b><br/><br/>
+											@if (timetables[0].Topic.Language != null && !string.IsNullOrEmpty(timetables[0].Topic.Language.Title))
+											{
+												@Html.Raw($"{Schedule.Language}: {timetables[0].Topic.Language.Title}")
+											}
+												@*@timetables[0].Topic.Description*@</div>
 									</div>
-									<div class="mySlotAuthor col-sm-10 col-md-10" style="text-align: left; padding-left: 0;">
-										@timetables[0].Topic.Speaker.FullName
-									</div>
-									<div style="text-align: left;">
-										<b>@timetables[0].Topic.Title</b><br /><br />
-										@if (timetables[0].Topic.Language != null && !string.IsNullOrEmpty(timetables[0].Topic.Language.Title))
-										{
-											@Html.Raw($"{Schedule.Language}: {timetables[0].Topic.Language.Title}")
-										}
-										@*@timetables[0].Topic.Description*@
-									</div>
-								</div>
-								
 								}
-								
 							</div>
 						</div>
 					}
@@ -102,8 +113,8 @@
 								</div>
 								@if (timetables[i].Topic.Speaker != null)
 								{
-									<div>
-										<img class="img-responsible" style="margin-bottom: 10px;" src="@timetables[i].Topic.Speaker.PhotoUrl" alt="@timetables[i].Topic.Speaker.FullName" />
+									<div class="text-center">
+										<img class="img-responsible" style="margin-bottom: 10px;" src="@timetables[i].Topic.Speaker.PhotoUrl" alt="@timetables[i].Topic.Speaker.FullName"/>
 									</div>
 
 									<div class="mySlotAuthor">
@@ -111,7 +122,7 @@
 									</div>
 								}
 								<div>
-									<b>@timetables[i].Topic.Title</b><br /><br />
+									<b>@timetables[i].Topic.Title</b><br/><br/>
 									@if (timetables[i].HasLanguage)
 									{
 										@Html.Raw($"{Schedule.Language}: {timetables[i].Topic.Language.Title}<br /><br />")
@@ -124,9 +135,5 @@
 				}
 			</div>
 		}
-
 	</div>
-
-	@Html.Action("Footer", "Layout")
-
-</div><!-- end boxedcontent -->
+</div>

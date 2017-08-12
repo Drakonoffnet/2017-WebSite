@@ -7,9 +7,7 @@
 	ViewBag.Title = $"AzureDay {Configuration.Year} - {My.PersonalCabinet}";
 }
 
-<div class="boxedcontent">
-	@Html.Action("Header", "Layout")
-
+<div class="boxedcontent" style="margin-top: 79px;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -239,10 +237,7 @@
 		</div>
 	</div>
 
-	@Html.Action("Footer", "Layout")
-
 	@Html.Partial("_ModalWait")
-
 </div>
 
 @section Scripts

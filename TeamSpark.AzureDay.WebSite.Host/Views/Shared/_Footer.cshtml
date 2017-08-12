@@ -1,7 +1,7 @@
 ﻿@using TeamSpark.AzureDay.WebSite.Config
+@using TeamSpark.AzureDay.WebSite.Host.Models.Shared
 @using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Shared
-<div class="beforefooter">
-</div>
+
 <footer id="colophon" class="site-footer " role="contentinfo">
 	<div class="footer">
 		<div class="container">
@@ -67,7 +67,6 @@
 	<div class="footerbottom">
 		<div class="container">
 			<div class="row">
-
 				<!-- col left -->
 				<div class="col-md-6">
 					<p id="back-top">
@@ -80,14 +79,13 @@
 				<div class="col-md-6 smallspacetop">
 					<div class="pull-right smaller">
 						<ul id="menu-footer" class="footermenu">
-							@Html.Partial("_MenuItems")
+							@Html.Partial("_MenuItems", new MenuItemsModel { ShowLanguages = false })
 						</ul>
 					</div>
 					<div class="clearfix">
 					</div>
 				</div>
 				<!-- end col right -->
-
 			</div>
 		</div>
 	</div>

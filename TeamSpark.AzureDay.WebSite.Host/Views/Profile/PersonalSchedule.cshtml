@@ -1,5 +1,4 @@
-﻿@using TeamSpark.AzureDay.WebSite.App.Entity
-@using TeamSpark.AzureDay.WebSite.Config
+﻿@using TeamSpark.AzureDay.WebSite.Config
 @using TeamSpark.AzureDay.WebSite.Data.Enum
 @using TeamSpark.AzureDay.WebSite.Localization.Host.Views.Home
 @model TeamSpark.AzureDay.WebSite.Host.Models.Home.ScheduleModel
@@ -8,9 +7,7 @@
 	ViewBag.Title = $"AzureDay {Configuration.Year} - {Schedule.Title}";
 }
 
-<div class="boxedcontent">
-	@Html.Action("Header", "Layout")
-
+<div class="boxedcontent" style="margin-top: 79px;">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -129,8 +126,6 @@
 				schedule: ko.observableArray([])
 			};
 
-
-
 			model.getSchedule = function(topicId) {
 				var id = topicId;
 				return ko.pureComputed(function() {
@@ -188,7 +183,4 @@
 			heightNormalization();
 		});
 	</script>
-
-	@Html.Action("Footer", "Layout")
-
 </div><!-- end boxedcontent -->

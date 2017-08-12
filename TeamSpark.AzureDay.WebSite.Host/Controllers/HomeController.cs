@@ -209,8 +209,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 
 			model.Topics = _topicService.Value
 				.GetTopics()
-				.Where(x => x.Speaker.Id != null) // ???
-				.Where(x => x.Speaker.Id.Equals(model.Speaker.Id, StringComparison.InvariantCultureIgnoreCase))
+				.Where(x => x.Speakers.Select(x1 => x1.Id).Any(x2 => x2.Equals(model.Speaker.Id, StringComparison.InvariantCultureIgnoreCase)))
 				.OrderBy(x => x.Timetable.TimeStart)
 				.ToList();
 

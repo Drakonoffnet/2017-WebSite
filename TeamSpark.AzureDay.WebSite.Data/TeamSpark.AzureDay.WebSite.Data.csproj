@@ -94,6 +94,10 @@
       <Project>{4d1ee387-7f67-4771-8d7a-43b73106696d}</Project>
       <Name>TeamSpark.AzureDay.WebSite.Config</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TeamSpark.AzureDay.WebSite.Localization\TeamSpark.AzureDay.WebSite.Localization.csproj">
+      <Project>{f4505160-e810-4927-9bf8-bd27d54735cf}</Project>
+      <Name>TeamSpark.AzureDay.WebSite.Localization</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

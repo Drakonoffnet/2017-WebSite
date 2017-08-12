@@ -30,7 +30,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		{
 			var data = AppFactory.Mapper.Value.Map<Data.Entity.Table.Ticket>(ticket);
 
-			await DataFactory.TicketService.Value.InsertAsync(data);
+			await DataFactory.TicketService.Value.InsertOrReplaceAsync(data);
 		}
 
 		public async Task SetTicketsPayedAsync(string email, TicketType ticketType)

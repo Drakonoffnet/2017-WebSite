@@ -65,6 +65,56 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Country.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Partners\DataArt.uk-UA.Designer.cs">
+      <DependentUpon>DataArt.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\DataArt.ru.Designer.cs">
+      <DependentUpon>DataArt.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\EasyPay.uk-UA.Designer.cs">
+      <DependentUpon>EasyPay.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\EasyPay.ru.Designer.cs">
+      <DependentUpon>EasyPay.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\EasyPay.Designer.cs">
+      <DependentUpon>EasyPay.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\Microsoft.Designer.cs">
+      <DependentUpon>Microsoft.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\Daxx.Designer.cs">
+      <DependentUpon>Daxx.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\Ciklum.Designer.cs">
+      <DependentUpon>Ciklum.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\ITStep.Designer.cs">
+      <DependentUpon>ITStep.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\DataArt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataArt.resx</DependentUpon>
+    </Compile>
     <Compile Include="App\Service\Room.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -79,6 +129,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Speaker\MMateev.Designer.cs">
+      <DependentUpon>MMateev.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\VTolmachov.Designer.cs">
+      <DependentUpon>VTolmachov.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\VBezmaly.Designer.cs">
+      <DependentUpon>VBezmaly.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="App\Service\Speaker\EAuberix.Designer.cs">
       <DependentUpon>EAuberix.resx</DependentUpon>
@@ -329,6 +394,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ABoyko.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Topics\MMateev_01.Designer.cs">
+      <DependentUpon>MMateev_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="App\Service\Topics\EAuberix_02.Designer.cs">
       <DependentUpon>EAuberix_02.resx</DependentUpon>
@@ -584,6 +654,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Partners.uk-UA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Host\Views\Home\PartnerCategoryType.Designer.cs">
+      <DependentUpon>PartnerCategoryType.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Host\Views\Home\PartnerType.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartnerType.resx</DependentUpon>
     </Compile>
     <Compile Include="Host\Views\Home\Schedule.uk-UA.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -878,6 +958,56 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Country.ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\DataArt.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DataArt.uk-UA.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\DataArt.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DataArt.ru.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\EasyPay.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EasyPay.uk-UA.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\EasyPay.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EasyPay.ru.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\EasyPay.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EasyPay.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\Microsoft.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Microsoft.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\Daxx.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Daxx.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\Ciklum.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Ciklum.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\ITStep.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ITStep.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\DataArt.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DataArt.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Room.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Room.Designer.cs</LastGenOutput>
@@ -892,6 +1022,19 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Room.ru.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\MMateev.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MMateev.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\VTolmachov.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VTolmachov.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\VBezmaly.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VBezmaly.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\EAuberix.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -1095,6 +1238,11 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ABoyko.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\MMateev_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MMateev_01.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\EAuberix_02.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>EAuberix_02.Designer.cs</LastGenOutput>
@@ -1276,6 +1424,7 @@
     <EmbeddedResource Include="App\Service\Workshops\DIvanov_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>DIvanov_01.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Home\Index.uk-UA.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -1300,6 +1449,14 @@
     <EmbeddedResource Include="Host\Views\Home\Partners.uk-UA.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Partners.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\PartnerCategoryType.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PartnerCategoryType.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\Views\Home\PartnerType.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PartnerType.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\Views\Home\Schedule.uk-UA.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

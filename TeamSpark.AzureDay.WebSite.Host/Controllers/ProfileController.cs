@@ -16,13 +16,14 @@ using TeamSpark.AzureDay.WebSite.Host.Models.Home;
 using TeamSpark.AzureDay.WebSite.Host.Models.Profile;
 using TeamSpark.AzureDay.WebSite.Notification;
 using TeamSpark.AzureDay.WebSite.Notification.Email.Model;
-using TeamSpark.AzureDay.WebSite.Host.Models.Home;
 
 namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 {
 	public class ProfileController : Controller
 	{
-		private readonly WorkshopService _workshopService = new WorkshopService();
+		private readonly Lazy<RoomService> _roomService = new Lazy<RoomService>(() => new RoomService());
+		private readonly Lazy<TimetableService> _timetableService = new Lazy<TimetableService>(() => new TimetableService());
+		private readonly Lazy<WorkshopService> _workshopService = new Lazy<WorkshopService>(() => new WorkshopService());
 
 		[System.Web.Mvc.Authorize]
 		public async Task<ActionResult> My()
@@ -45,7 +46,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 				Company = attendee.Company
 			};
 
-			var workshops = _workshopService.GetWorkshops().ToList();
+			var workshops = _workshopService.Value.GetWorkshops().ToList();
 
 			model.Workshops = new List<WorkshopEntityModel>();
 
@@ -78,7 +79,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 				model.PayedWorkshopTicket = tickets.SingleOrDefault(x => x.TicketType == TicketType.Workshop);
 				if (model.PayedWorkshopTicket != null)
 				{
-					model.PayedWorkshop = _workshopService.GetWorkshop(model.PayedWorkshopTicket.WorkshopId.Value);
+					model.PayedWorkshop = _workshopService.Value.GetWorkshop(model.PayedWorkshopTicket.WorkshopId.Value);
 				}
 			}
 
@@ -467,12 +468,12 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 		{
 			var model = new ScheduleModel();
 
-			model.Rooms = new RoomService()
+			model.Rooms = _roomService.Value
 				.GetRooms()
 				.Where(x => x.RoomType == RoomType.LectureRoom)
 				.ToList();
 
-			model.Timetables = new TimetableService().GetTimetable()
+			model.Timetables = _timetableService.Value.GetTimetable()
 				.GroupBy(
 					t => t.TimeStart,
 					(key, timetables) => timetables.OrderBy(t => t.Room.ColorNumber).ToList())

@@ -4,9 +4,7 @@
 	ViewBag.Title = $"AzureDay {Configuration.Year} - подтверждение регистрации";
 }
 
-<div class="boxedcontent">
-	@Html.Action("Header", "Layout")
-
+<div class="boxedcontent" style="margin-top: 79px;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -28,7 +26,4 @@
 			window.location.href = '/';
 		}, 5000)
 	</script>
-
-	@Html.Action("Footer", "Layout")
-
 </div>

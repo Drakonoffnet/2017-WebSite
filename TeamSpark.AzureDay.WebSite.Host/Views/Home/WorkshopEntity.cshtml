@@ -5,9 +5,7 @@
 	ViewBag.Title = $"AzureDay {Configuration.Year} - {Model.Workshop.Title}";
 }
 
-<div class="boxedcontent">
-	@Html.Action("Header", "Layout")
-
+<div class="boxedcontent" style="margin-top: 79px;">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -32,7 +30,4 @@
 		@Html.Partial("_Workshop", Model)
 
 	</div>
-
-	@Html.Action("Footer", "Layout")
-
 </div><!-- end boxedcontent -->

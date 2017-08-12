@@ -1,14 +1,19 @@
-﻿namespace TeamSpark.AzureDay.WebSite.Data.Enum
+﻿using System;
+
+namespace TeamSpark.AzureDay.WebSite.Data.Enum
 {
+	[Flags]
 	public enum PartnerType
 	{
-		VIP = 101,
-		Gold = 201,
-		Silver = 301,
-		Raffle = 401,
-		Info = 501,
-		Speaker = 601,
-		Tech = 701
+		VIP = 2,
+		Gold = 4,
+		Silver = 8,
+		Bronze = 16,
+		Raffle = 32,
+		Info = 64,
+		Speaker = 128,
+		Tech = 256,
+		Workshop = 512
 	}
 
 	public static class PartnerTypeExtension
@@ -18,19 +23,23 @@
 			switch (type)
 			{
 				case PartnerType.VIP:
-					return "Генеральный партнер";
+					return Localization.Host.Views.Home.PartnerCategoryType.VIP;
 				case PartnerType.Gold:
-					return "Золотые партнеры";
+					return Localization.Host.Views.Home.PartnerCategoryType.Gold;
 				case PartnerType.Silver:
-					return "Серебряные партнеры";
+					return Localization.Host.Views.Home.PartnerCategoryType.Silver;
+				case PartnerType.Bronze:
+					return Localization.Host.Views.Home.PartnerCategoryType.Bronze;
 				case PartnerType.Raffle:
-					return "Партнеры по призам";
+					return Localization.Host.Views.Home.PartnerCategoryType.Raffle;
 				case PartnerType.Info:
-					return "Информационные партнеры";
+					return Localization.Host.Views.Home.PartnerCategoryType.Info;
 				case PartnerType.Speaker:
-					return "Партнеры по докладчикам";
+					return Localization.Host.Views.Home.PartnerCategoryType.Speaker;
 				case PartnerType.Tech:
-					return "Технические партнеры";
+					return Localization.Host.Views.Home.PartnerCategoryType.Tech;
+				case PartnerType.Workshop:
+					return Localization.Host.Views.Home.PartnerCategoryType.Workshop;
 				default:
 					return string.Empty;
 			}
@@ -41,19 +50,23 @@
 			switch (type)
 			{
 				case PartnerType.VIP:
-					return "Генеральный партнер";
+					return Localization.Host.Views.Home.PartnerType.VIP;
 				case PartnerType.Gold:
-					return "Золотой партнер";
+					return Localization.Host.Views.Home.PartnerType.Gold;
 				case PartnerType.Silver:
-					return "Серебряный партнер";
+					return Localization.Host.Views.Home.PartnerType.Silver;
+				case PartnerType.Bronze:
+					return Localization.Host.Views.Home.PartnerType.Bronze;
 				case PartnerType.Raffle:
-					return "Партнер по призам";
+					return Localization.Host.Views.Home.PartnerType.Raffle;
 				case PartnerType.Info:
-					return "Информационный партнер";
+					return Localization.Host.Views.Home.PartnerType.Info;
 				case PartnerType.Speaker:
-					return "Партнер по докладчикам";
+					return Localization.Host.Views.Home.PartnerType.Speaker;
 				case PartnerType.Tech:
-					return "Технический партнер";
+					return Localization.Host.Views.Home.PartnerType.Tech;
+				case PartnerType.Workshop:
+					return Localization.Host.Views.Home.PartnerType.Workshop;
 				default:
 					return string.Empty;
 			}

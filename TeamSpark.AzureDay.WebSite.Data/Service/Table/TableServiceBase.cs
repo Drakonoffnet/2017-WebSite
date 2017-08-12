@@ -96,6 +96,13 @@ namespace TeamSpark.AzureDay.WebSite.Data.Service.Table
 			await Table.ExecuteAsync(operation);
 		}
 
+		public async Task InsertOrReplaceAsync(T entity)
+		{
+			var operation = TableOperation.InsertOrReplace(entity);
+
+			await Table.ExecuteAsync(operation);
+		}
+
 		public async Task ReplaceAsync(T entity)
 		{
 			entity.ETag = "*";

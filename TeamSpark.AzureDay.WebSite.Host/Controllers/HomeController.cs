@@ -16,6 +16,13 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 {
 	public class HomeController : Controller
 	{
+		private readonly Lazy<PartnerService> _partnerService = new Lazy<PartnerService>(() => new PartnerService());
+		private readonly Lazy<SpeakerService> _speakerService = new Lazy<SpeakerService>(() => new SpeakerService());
+		private readonly Lazy<RoomService> _roomService = new Lazy<RoomService>(() => new RoomService());
+		private readonly Lazy<TimetableService> _timetableService = new Lazy<TimetableService>(() => new TimetableService());
+		private readonly Lazy<WorkshopService> _workshopService = new Lazy<WorkshopService>(() => new WorkshopService());
+		private readonly Lazy<TopicService> _topicService = new Lazy<TopicService>(() => new TopicService());
+
 		public async Task<ActionResult> Index()
 		{
 			var model = new IndexModel
@@ -24,13 +31,10 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 				{
 					SpeakersCollections = new List<List<Speaker>>()
 				},
-				Partners = new PartnersModel
-				{
-					PartnersCollection = new Dictionary<PartnerType, List<Partner>>()
-				}
+				Partners = _partnerService.Value.GetPartners().ToList()
 			};
 
-			var speakers = new SpeakerService().GetSpeakers();
+			var speakers = _speakerService.Value.GetSpeakers();
 			var i = 0;
 			foreach (var speaker in speakers)
 			{
@@ -57,11 +61,6 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 				}
 			}
 
-			var partners = new PartnerService().GetPartners();
-			model.Partners.PartnersCollection = partners
-				.GroupBy(p => p.PartnerType)
-				.ToDictionary(p => p.Key, group => group.OrderBy(p => p.OrderN).ToList());
-
 			return View(model);
 		}
 
@@ -69,12 +68,13 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 		{
 			var model = new ScheduleModel();
 
-			model.Rooms = new RoomService()
+			model.Rooms = _roomService.Value
 				.GetRooms()
 				.Where(x => x.RoomType == RoomType.LectureRoom)
 				.ToList();
 
-			model.Timetables = new TimetableService().GetTimetable()
+			model.Timetables = _timetableService.Value
+				.GetTimetable()
 				.GroupBy(
 					t => t.TimeStart,
 					(key, timetables) => timetables.OrderBy(t => t.Room.ColorNumber).ToList())
@@ -90,7 +90,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 				Workshops = new List<WorkshopEntityModel>()
 			};
 
-			var workshops = new WorkshopService().GetWorkshops().ToList();
+			var workshops = _workshopService.Value.GetWorkshops().ToList();
 			var workshopTickets = await AppFactory.TicketService.Value.GetWorkshopsTicketsAsync();
 
 			foreach (var workshop in workshops)
@@ -119,7 +119,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 				ShowSpeakerInfo = true
 			};
 
-			model.Workshop = new WorkshopService()
+			model.Workshop = _workshopService.Value
 				.GetWorkshop(id);
 
 			if (model.Workshop == null)
@@ -143,7 +143,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 				SpeakersCollections = new List<List<Speaker>>()
 			};
 
-			var speakers = new SpeakerService().GetSpeakers();
+			var speakers = _speakerService.Value.GetSpeakers();
 			var i = 0;
 			foreach (var speaker in speakers)
 			{
@@ -177,14 +177,14 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 		{
 			var model = new SpeakerEntityModel();
 
-			model.Speaker = new SpeakerService().GetSpeaker(id);
+			model.Speaker = _speakerService.Value.GetSpeaker(id);
 
 			if (model.Speaker == null)
 			{
 				return RedirectToAction("Index");
 			}
 
-			var workshops = new WorkshopService()
+			var workshops = _workshopService.Value
 				.GetWorkshops()
 				.Where(x => x.Speaker.Id.Equals(model.Speaker.Id, StringComparison.InvariantCultureIgnoreCase))
 				.ToList();
@@ -207,7 +207,7 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 				});
 			}
 
-			model.Topics = new TopicService()
+			model.Topics = _topicService.Value
 				.GetTopics()
 				.Where(x => x.Speaker.Id != null) // ???
 				.Where(x => x.Speaker.Id.Equals(model.Speaker.Id, StringComparison.InvariantCultureIgnoreCase))
@@ -221,9 +221,13 @@ namespace TeamSpark.AzureDay.WebSite.Host.Controllers
 		{
 			var model = new PartnersModel();
 
-			model.PartnersCollection = new PartnerService().GetPartners()
-				.GroupBy(p => p.PartnerType)
-				.ToDictionary(p => p.Key, group => group.OrderBy(p => p.OrderN).ToList());
+			model.PartnersCollection = new Dictionary<PartnerType, List<Partner>>();
+
+			foreach (var partnerType in Enum.GetValues(typeof(PartnerType)))
+			{
+				var partners = _partnerService.Value.GetPartnersByType((PartnerType)partnerType).ToList();
+				model.PartnersCollection.Add((PartnerType)partnerType, partners);
+			}
 
 			return View(model);
 		}

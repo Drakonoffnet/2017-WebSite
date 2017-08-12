@@ -50,6 +50,10 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 
 			_speakers.Add(JimmyEngstrom());
 			_speakers.Add(EAuberix());
+			_speakers.Add(VBezmaly());
+			_speakers.Add(VTolmachov());
+
+			_speakers.Add(MMateev());
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
@@ -153,7 +157,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				TwitterUrl = "",
 				YouTubeUrl = "",
 				WebUrl = "",
-				CompanyName = "EPAM Systems",
+				CompanyName = "EPAM",
 				JobTitle = "Solution Architect"
 			};
 		}
@@ -647,16 +651,16 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				LastName = Localization.App.Service.Speaker.ILiashov.LastName,
 				Bio = Localization.App.Service.Speaker.ILiashov.Bio.Replace(Environment.NewLine, "<br/>"),
 				Country = _countryService.France,
-				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/ILiashov.jpg",
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",
-				LinkedInUrl = "",
+				LinkedInUrl = "https://www.linkedin.com/in/ievgen-liashov-05412145/",
 				MsdnUrl = "",
 				MvpUrl = "",
 				TwitterUrl = "",
 				YouTubeUrl = "",
-				WebUrl = "",
+				WebUrl = "http://liashov.com/",
 				CompanyName = "METSYS",
 				JobTitle = "System Engineer"
 			};
@@ -803,6 +807,78 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				WebUrl = "",
 				CompanyName = "In Omnia Paratus",
 				JobTitle = "CEO / IT Consultant"
+			};
+		}
+
+		public Speaker VBezmaly()
+		{
+			return new Speaker
+			{
+				Id = "VBezmaly",
+				FirstName = Localization.App.Service.Speaker.VBezmaly.FirstName,
+				LastName = Localization.App.Service.Speaker.VBezmaly.LastName,
+				Bio = Localization.App.Service.Speaker.VBezmaly.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/VBezmaly.jpg",
+				FacebookUrl = "",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "MBP",
+				JobTitle = ""
+			};
+		}
+
+		public Speaker VTolmachov()
+		{
+			return new Speaker
+			{
+				Id = "VTolmachov",
+				FirstName = Localization.App.Service.Speaker.VTolmachov.FirstName,
+				LastName = Localization.App.Service.Speaker.VTolmachov.LastName,
+				Bio = Localization.App.Service.Speaker.VTolmachov.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/VTolmachov.jpg",
+				FacebookUrl = "",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "EasyPay",
+				JobTitle = ""
+			};
+		}
+
+		public Speaker MMateev()
+		{
+			return new Speaker
+			{
+				Id = "MMateev",
+				FirstName = Localization.App.Service.Speaker.MMateev.FirstName,
+				LastName = Localization.App.Service.Speaker.MMateev.LastName,
+				Bio = Localization.App.Service.Speaker.MMateev.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Bulgaria,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/MMateev01.jpg",
+				FacebookUrl = "https://www.facebook.com/mihail.mateev",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "https://www.linkedin.com/in/mmateev/",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "https://twitter.com/mihailmateev",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "EPAM",
+				JobTitle = "Senior Solution Architect"
 			};
 		}
 	}

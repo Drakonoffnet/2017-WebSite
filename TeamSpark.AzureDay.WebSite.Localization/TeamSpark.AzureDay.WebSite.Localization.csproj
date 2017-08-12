@@ -65,6 +65,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Country.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Partners\DataArt.uk-UA.Designer.cs">
+      <DependentUpon>DataArt.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\DataArt.ru.Designer.cs">
+      <DependentUpon>DataArt.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\EasyPay.uk-UA.Designer.cs">
+      <DependentUpon>EasyPay.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\EasyPay.ru.Designer.cs">
+      <DependentUpon>EasyPay.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\EasyPay.Designer.cs">
+      <DependentUpon>EasyPay.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Partners\Microsoft.Designer.cs">
       <DependentUpon>Microsoft.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -932,6 +957,31 @@
     <EmbeddedResource Include="App\Service\Country.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Country.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\DataArt.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DataArt.uk-UA.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\DataArt.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DataArt.ru.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\EasyPay.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EasyPay.uk-UA.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\EasyPay.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EasyPay.ru.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\EasyPay.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EasyPay.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Partners\Microsoft.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

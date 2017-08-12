@@ -58,18 +58,30 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/microsoft.jpg",
 					WebUrl = "https://www.microsoft.com/uk-ua/",
 					PartnerType = PartnerType.Info | PartnerType.Gold
+				},
+				new Partner
+				{
+					Id = "EasyPay",
+					Title = Localization.App.Service.Partners.EasyPay.Title,
+					Description = Localization.App.Service.Partners.EasyPay.Description.Replace(Environment.NewLine, "<br/>"),
+					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/easypay.jpg",
+					WebUrl = "https://easypay.ua/",
+					PartnerType = PartnerType.Info | PartnerType.Speaker
 				}
 			};
 		}
 
 		public IEnumerable<Partner> GetPartners()
 		{
-			return _partners;
+			return _partners
+				.OrderBy(x => x.Id);
 		}
 
 		public IEnumerable<Partner> GetPartnersByType(PartnerType partnerType)
 		{
-			return _partners.Where(x => x.PartnerType.HasFlag(partnerType));
+			return _partners
+				.Where(x => x.PartnerType.HasFlag(partnerType))
+				.OrderBy(x => x.Id);
 		}
 
 		public Partner DataArt { get { return _partners.Single(x => x.Id == "DataArt"); } }

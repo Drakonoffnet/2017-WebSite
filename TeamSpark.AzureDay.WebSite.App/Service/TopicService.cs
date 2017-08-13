@@ -41,7 +41,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = -1,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.ABoyko(),
+					Speakers = new List<Speaker> {_speakerService.ABoyko() },
 					Title = Localization.App.Service.Topics.Special.Keynote.Title,
 					Description = Localization.App.Service.Topics.Special.Keynote.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -50,7 +50,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = -99,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.ABoyko(),
+					Speakers = new List<Speaker> {_speakerService.ABoyko() },
 					Title = Localization.App.Service.Topics.Special.Endnote.Title,
 					Description = Localization.App.Service.Topics.Special.Endnote.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -67,7 +67,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 2,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.ALaysha(),
+					Speakers = new List<Speaker> {_speakerService.ALaysha() },
 					Title = Localization.App.Service.Topics.ALaysha_01.Title,
 					Description = Localization.App.Service.Topics.ALaysha_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -75,7 +75,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 3,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.ASurkov(),
+					Speakers = new List<Speaker> {_speakerService.ASurkov() },
 					Title = Localization.App.Service.Topics.ASurkov_01.Title,
 					Description = Localization.App.Service.Topics.ASurkov_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -83,7 +83,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 4,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.DReznik(),
+					Speakers = new List<Speaker> {_speakerService.DReznik() },
 					Title = Localization.App.Service.Topics.DReznik_01.Title,
 					Description = Localization.App.Service.Topics.DReznik_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -91,7 +91,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 5,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.EPolonychko(),
+					Speakers = new List<Speaker> {_speakerService.EPolonychko() },
 					Title = Localization.App.Service.Topics.EPolonychko_01.Title,
 					Description = Localization.App.Service.Topics.EPolonychko_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -99,7 +99,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 6,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.OChorny(),
+					Speakers = new List<Speaker> {_speakerService.OChorny() },
 					Title = Localization.App.Service.Topics.OChorny_01.Title,
 					Description = Localization.App.Service.Topics.OChorny_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -107,7 +107,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 7,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.SKryshtop(),
+					Speakers = new List<Speaker> {_speakerService.SKryshtop() },
 					Title = Localization.App.Service.Topics.SKryshtop_01.Title,
 					Description = Localization.App.Service.Topics.SKryshtop_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -115,7 +115,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 8,
 					Language = _languageService.English,
-					Speaker = _speakerService.VThavonekham(),
+					Speakers = new List<Speaker> {_speakerService.VThavonekham() },
 					Title = Localization.App.Service.Topics.VThavonekham_01.Title,
 					Description = Localization.App.Service.Topics.VThavonekham_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -123,7 +123,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 9,
 					Language = _languageService.English,
-					Speaker = _speakerService.MSmereczynski(),
+					Speakers = new List<Speaker> {_speakerService.MSmereczynski() },
 					Title = Localization.App.Service.Topics.MSmereczynski_01.Title,
 					Description = Localization.App.Service.Topics.MSmereczynski_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -131,7 +131,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 10,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.SPoplavskiy(),
+					Speakers = new List<Speaker> {_speakerService.SPoplavskiy() },
 					Title = Localization.App.Service.Topics.SPoplavskiy_02.Title,
 					Description = Localization.App.Service.Topics.SPoplavskiy_02.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -139,7 +139,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 11,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.IFesenko(),
+					Speakers = new List<Speaker> {_speakerService.IFesenko() },
 					Title = Localization.App.Service.Topics.IFesenko_01.Title,
 					Description = Localization.App.Service.Topics.IFesenko_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -147,7 +147,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 12,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.ABoyko(),
+					Speakers = new List<Speaker> {_speakerService.ABoyko() },
 					Title = Localization.App.Service.Topics.ABoyko_02.Title,
 					Description = Localization.App.Service.Topics.ABoyko_02.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -155,7 +155,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 13,
 					Language = _languageService.Ukrainian,
-					Speaker = _speakerService.OKrakovetskyi(),
+					Speakers = new List<Speaker> {_speakerService.OKrakovetskyi() },
 					Title = Localization.App.Service.Topics.OKrakovetskyi_02.Title,
 					Description = Localization.App.Service.Topics.OKrakovetskyi_02.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -163,7 +163,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 14,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.AYurchenko(),
+					Speakers = new List<Speaker> {_speakerService.AYurchenko(), _speakerService.VTolmachov() },
 					Title = Localization.App.Service.Topics.AYurchenko_01.Title,
 					Description = Localization.App.Service.Topics.AYurchenko_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -171,7 +171,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 15,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.ILeontiev(),
+					Speakers = new List<Speaker> {_speakerService.ILeontiev() },
 					Title = Localization.App.Service.Topics.ILeontiev_01.Title,
 					Description = Localization.App.Service.Topics.ILeontiev_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -179,7 +179,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 16,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.ATkachenko(),
+					Speakers = new List<Speaker> {_speakerService.ATkachenko() },
 					Title = Localization.App.Service.Topics.ATkachenko_02.Title,
 					Description = Localization.App.Service.Topics.ATkachenko_02.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -187,7 +187,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 17,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.ATkachenko(),
+					Speakers = new List<Speaker> {_speakerService.ATkachenko() },
 					Title = Localization.App.Service.Topics.ATkachenko_01.Title,
 					Description = Localization.App.Service.Topics.ATkachenko_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -195,7 +195,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 18,
 					Language = _languageService.English,
-					Speaker = _speakerService.MFerdyn(),
+					Speakers = new List<Speaker> {_speakerService.MFerdyn() },
 					Title = Localization.App.Service.Topics.MFerdyn_02.Title,
 					Description = Localization.App.Service.Topics.MFerdyn_02.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -203,7 +203,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 19,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.ILiashov(),
+					Speakers = new List<Speaker> {_speakerService.ILiashov() },
 					Title = Localization.App.Service.Topics.ILiashov_01.Title,
 					Description = Localization.App.Service.Topics.ILiashov_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -211,7 +211,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 20,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.ILiashov(),
+					Speakers = new List<Speaker> {_speakerService.ILiashov() },
 					Title = Localization.App.Service.Topics.ILiashov_02.Title,
 					Description = Localization.App.Service.Topics.ILiashov_02.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -219,7 +219,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 21,
 					Language = _languageService.English,
-					Speaker = _speakerService.EWasilewski(),
+					Speakers = new List<Speaker> {_speakerService.EWasilewski() },
 					Title = Localization.App.Service.Topics.EWasilewski_01.Title,
 					Description = Localization.App.Service.Topics.EWasilewski_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -227,7 +227,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 22,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.AShamray(),
+					Speakers = new List<Speaker> {_speakerService.AShamray() },
 					Title = Localization.App.Service.Topics.AShamray_01.Title,
 					Description = Localization.App.Service.Topics.AShamray_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -235,7 +235,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 23,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.AVidishchev(),
+					Speakers = new List<Speaker> {_speakerService.AVidishchev() },
 					Title = Localization.App.Service.Topics.AVidishchev_01.Title,
 					Description = Localization.App.Service.Topics.AVidishchev_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -243,7 +243,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 24,
 					Language = _languageService.Russian,
-					Speaker = _speakerService.SKorzh(),
+					Speakers = new List<Speaker> {_speakerService.SKorzh() },
 					Title = Localization.App.Service.Topics.SKorzh_01.Title,
 					Description = Localization.App.Service.Topics.SKorzh_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -251,7 +251,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 25,
 					Language = _languageService.English,
-					Speaker = _speakerService.JessicaEngstrom(),
+					Speakers = new List<Speaker> {_speakerService.JessicaEngstrom() },
 					Title = Localization.App.Service.Topics.JessicaEngstrom_01.Title,
 					Description = Localization.App.Service.Topics.JessicaEngstrom_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -259,7 +259,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 26,
 					Language = _languageService.English,
-					Speaker = _speakerService.JimmyEngstrom(),
+					Speakers = new List<Speaker> {_speakerService.JimmyEngstrom() },
 					Title = Localization.App.Service.Topics.JimmyEngstrom_01.Title,
 					Description = Localization.App.Service.Topics.JimmyEngstrom_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -267,7 +267,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 27,
 					Language = _languageService.English,
-					Speaker = _speakerService.EAuberix(),
+					Speakers = new List<Speaker> {_speakerService.EAuberix() },
 					Title = Localization.App.Service.Topics.EAuberix_01.Title,
 					Description = Localization.App.Service.Topics.EAuberix_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -275,7 +275,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 28,
 					Language = _languageService.English,
-					Speaker = _speakerService.EAuberix(),
+					Speakers = new List<Speaker> {_speakerService.EAuberix() },
 					Title = Localization.App.Service.Topics.EAuberix_02.Title,
 					Description = Localization.App.Service.Topics.EAuberix_02.Description.Replace(Environment.NewLine, "<br/>")
 				},
@@ -283,7 +283,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				{
 					Id = 29,
 					Language = _languageService.English,
-					Speaker = _speakerService.MMateev(),
+					Speakers = new List<Speaker> {_speakerService.MMateev() },
 					Title = Localization.App.Service.Topics.MMateev_01.Title,
 					Description = Localization.App.Service.Topics.MMateev_01.Description.Replace(Environment.NewLine, "<br/>")
 				}

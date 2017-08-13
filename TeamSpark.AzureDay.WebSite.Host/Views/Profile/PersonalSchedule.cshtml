@@ -59,21 +59,22 @@
 										@($"{timetables[0].TimeStart}") -
 										@($"{timetables[0].TimeEnd}")
 									</div>
-									@if (timetables[0].Topic.Speaker != null)
-									{
-										<div class="row">
+									
+									<div class="row">
+										@foreach (var speaker in timetables[0].Topic.Speakers)
+										{
 											<div class="mySlotAuthor col-sm-10 col-md-10" style="text-align: left; padding-left: 0;">
-												@timetables[0].Topic.Speaker.FullName
+												@speaker.FullName
 											</div>
 											<div style="text-align: left;">
-												<b>@timetables[0].Topic.Title</b><br/><br/>
+												<b>@timetables[0].Topic.Title</b><br /><br />
 												@if (timetables[0].Topic.Language != null && !string.IsNullOrEmpty(timetables[0].Topic.Language.Title))
 												{
 													@Html.Raw($"{Schedule.Language}: {timetables[0].Topic.Language.Title}")
 												}
 											</div>
-										</div>
-									}
+										}
+									</div>
 								</div>
 							</div>
 						}
@@ -91,12 +92,14 @@
 										@($"{timetables[i].TimeStart}") -
 										@($"{timetables[i].TimeEnd}")
 									</div>
-									@if (timetables[i].Topic.Speaker != null)
+									
+									@foreach (var speaker in timetables[i].Topic.Speakers)
 									{
 										<div class="mySlotAuthor">
-											@timetables[i].Topic.Speaker.FullName
+											@speaker.FullName
 										</div>
 									}
+
 									<div>
 										<b>@timetables[i].Topic.Title</b><br/><br/>
 										@if (timetables[i].HasLanguage)

@@ -5,12 +5,13 @@
 	<div class="box effect6 @($"myAreaBoxBorder{Model.Timetable.Room.ColorNumber}")">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				@if (Model.Speaker != null)
+				@foreach (var speaker in Model.Speakers)
 				{
 					<div class="mySlotAuthor">
-						@Model.Speaker.FullName
+						@speaker.FullName
 					</div>
 				}
+
 				<div style="text-align: center;">
 					<div class="mySlotTime">
 						@Model.Timetable.TimeStart - @Model.Timetable.TimeEnd
@@ -21,7 +22,7 @@
 						@Html.Raw($"{Schedule.Language}: {Model.Language.Title}")
 					}
 				</div>
-				
+
 				<div style="text-align: justify;">
 					@Html.Raw(Model.Description);
 				</div>

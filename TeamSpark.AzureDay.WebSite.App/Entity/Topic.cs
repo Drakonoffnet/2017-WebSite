@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using TeamSpark.AzureDay.WebSite.App.Service;
 
@@ -13,7 +14,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Entity
 		public string Description { get; set; }
 		public Language Language { get; set; }
 
-		public Speaker Speaker { get; set; }
+		public List<Speaker> Speakers { get; set; }
 
 		private Timetable _timetable;
 
@@ -34,7 +35,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Entity
 		public Topic()
 		{
 			Language = new Language();
-			Speaker = new Speaker();
+			Speakers = new List<Speaker>();
 		}
 	}
 }

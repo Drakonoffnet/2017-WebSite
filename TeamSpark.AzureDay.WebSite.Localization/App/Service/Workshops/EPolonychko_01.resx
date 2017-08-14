@@ -118,7 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Description" xml:space="preserve">
-    <value />
+    <value>Последнее время многие проекты мигрируют в облако. На это есть множество причин и скорость, и инфраструктура и т.д., стек технологий Business Intelligence тоже не остался в стороне.
+
+В течение дня мы следаем следующее:
+- Мигрируем наше хранилище данных в облако(посмотрим на SQL Azure, SQL DWH).
+- Настроим и построим пакеты выгрузки в ХД с помощью Azure Data Factory.
+- Построим модель в Azure Analysis Services.</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>How to create a BI Solution in Azure (Azure Data Factory, Azure SQL, Azure Analysis Services)</value>

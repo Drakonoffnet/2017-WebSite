@@ -61,7 +61,12 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Workshops {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Последнее время многие проекты мигрируют в облако. На это есть множество причин и скорость, и инфраструктура и т.д., стек технологий Business Intelligence тоже не остался в стороне.
+        ///
+        ///В течение дня мы следаем следующее:
+        ///- Мигрируем наше хранилище данных в облако(посмотрим на SQL Azure, SQL DWH).
+        ///- Настроим и построим пакеты выгрузки в ХД с помощью Azure Data Factory.
+        ///- Построим модель в Azure Analysis Services..
         /// </summary>
         public static string Description {
             get {

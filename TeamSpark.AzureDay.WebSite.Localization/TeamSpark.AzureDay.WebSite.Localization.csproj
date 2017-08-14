@@ -395,6 +395,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ABoyko.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Topics\_Dummy.uk-UA.Designer.cs">
+      <DependentUpon>_Dummy.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\_Dummy.ru.Designer.cs">
+      <DependentUpon>_Dummy.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\_Dummy.Designer.cs">
+      <DependentUpon>_Dummy.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Topics\MMateev_01.Designer.cs">
       <DependentUpon>MMateev_01.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -1237,6 +1252,18 @@
     <EmbeddedResource Include="App\Service\Speaker\ABoyko.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ABoyko.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\_Dummy.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>_Dummy.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\_Dummy.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>_Dummy.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\_Dummy.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>_Dummy.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\MMateev_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

@@ -61,7 +61,14 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Workshops {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to В течении лабораторной работы мы будем разбираться что такое Docker и &quot;с чем его едят&quot;.
+        ///
+        ///Мы создадим базовый контейнер и научимся его публиковать в публичный/приватный репозиторий. Разберемся с построением собственных образов и каким образом компоновать несколько контейнеров и как правильно настраивать &quot;общение&quot; между ними.
+        ///
+        ///К концу дня вы: 
+        ///- Поймете что такое Docker и насколько это удобный инструмент.
+        ///- Сможете сами создавать свои контейнеры.
+        ///- Научитесь работать с публичными/приватными репозитория [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Description {
             get {

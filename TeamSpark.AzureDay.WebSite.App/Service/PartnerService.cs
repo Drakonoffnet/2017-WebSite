@@ -67,6 +67,15 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/easypay.jpg",
 					WebUrl = "https://easypay.ua/",
 					PartnerType = PartnerType.Info | PartnerType.Speaker
+				},
+				new Partner
+				{
+					Id = "ITEA",
+					Title = Localization.App.Service.Partners.ITEA.Title,
+					Description = Localization.App.Service.Partners.ITEA.Description.Replace(Environment.NewLine, "<br/>"),
+					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/ITEA.jpg",
+					WebUrl = "http://itea.ua/",
+					PartnerType = PartnerType.Info
 				}
 			};
 		}

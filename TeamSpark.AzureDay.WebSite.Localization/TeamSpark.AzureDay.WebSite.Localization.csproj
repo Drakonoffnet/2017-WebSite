@@ -65,6 +65,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Country.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Partners\ITEA.Designer.cs">
+      <DependentUpon>ITEA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Partners\DataArt.uk-UA.Designer.cs">
       <DependentUpon>DataArt.uk-UA.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -972,6 +977,11 @@
     <EmbeddedResource Include="App\Service\Country.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Country.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\ITEA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ITEA.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Partners\DataArt.uk-UA.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

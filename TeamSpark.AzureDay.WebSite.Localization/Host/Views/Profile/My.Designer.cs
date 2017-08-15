@@ -223,7 +223,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pay by card.
+        ///   Looks up a localized string similar to Pay by card (using kaznachey.ua).
         /// </summary>
         public static string PayByCard {
             get {

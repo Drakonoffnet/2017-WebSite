@@ -166,7 +166,7 @@
     <value>Password again</value>
   </data>
   <data name="PayByCard" xml:space="preserve">
-    <value>Pay by card</value>
+    <value>Pay by card (using kaznachey.ua)</value>
   </data>
   <data name="PayNow" xml:space="preserve">
     <value>If you didn't complete the purchase, you can again go to purchase form using</value>

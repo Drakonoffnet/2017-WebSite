@@ -166,7 +166,7 @@
     <value>Пароль еще раз</value>
   </data>
   <data name="PayByCard" xml:space="preserve">
-    <value>Оплатить картой</value>
+    <value>Оплатить картой (через kaznachey.ua)</value>
   </data>
   <data name="PayNow" xml:space="preserve">
     <value>Если вы не совершили оплату, то вы можете повторно перейти на форму оплаты используя</value>

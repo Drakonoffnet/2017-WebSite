@@ -118,7 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Description" xml:space="preserve">
-    <value />
+    <value>Основой любого IT-решения является хранилище данных. Поэтому производительность, надежность и безопасность решения напрямую зависит от корректного подбора и использования хранилища данных.
+
+Поэтому мы научимся:
+- Понимать почему нет «серебряной пули» для хранения данных.
+- Подбирать хранилище согласно требованиям проекта.
+- Создавать, настраивать и оптимизировать различные типы хранилищ в облаке Azure.
+- «Хакам», трюкам и «тюнингу» программного кода Вашего облачного решения для оптимизации работы с хранилищем.
+- Жизненному опыту использования облачных хранилищ в высокопроизводительных проектах.</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>Boosting complex IT solutions performance with Microsoft Azure storage services</value>

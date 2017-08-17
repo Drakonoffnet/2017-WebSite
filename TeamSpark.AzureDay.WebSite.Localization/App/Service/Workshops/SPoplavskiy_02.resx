@@ -118,7 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Description" xml:space="preserve">
-    <value />
+    <value>Во время воркшопа мы сперва ознакомимся с теоретическими аспектами создания ботов. Они включают в себя следующие темы:
+- Общая теория создания ботов.
+- Проектирование UX\UI.
+- Bot SDK &amp; Bot Connector – сервисы, облегчающие создание ботов.
+- Структура бота: Conversations, Dialogs, Flows.
+- Использование когнитивных сервисов ботах.
+
+Затем мы закрепим полученные знания на практике и сделаем следующее:
+- Создадим простого «линейного» и «древовидного» бота используя Dialogs.
+- Добавим Rich UI елементы: Prompts, Rich Cards и другие.
+- Добававим приветственные и проактивные сообщения.
+- Поработаем над авторизацией, локализацией и другими продвинутыми техниками, которые можно применять в ботах.</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>Dive into Bot Platform: create FAQ bot using Azure, Cognitive services and Bot Framework</value>

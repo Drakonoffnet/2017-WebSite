@@ -61,7 +61,16 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Workshops {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Во время воркшопа мы сперва ознакомимся с теоретическими аспектами создания ботов. Они включают в себя следующие темы:
+        ///- Общая теория создания ботов.
+        ///- Проектирование UX\UI.
+        ///- Bot SDK &amp; Bot Connector – сервисы, облегчающие создание ботов.
+        ///- Структура бота: Conversations, Dialogs, Flows.
+        ///- Использование когнитивных сервисов ботах.
+        ///
+        ///Затем мы закрепим полученные знания на практике и сделаем следующее:
+        ///- Создадим простого «линейного» и «древовидного» бота используя Dialogs.
+        ///- Добавим Rich UI елементы:  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Description {
             get {

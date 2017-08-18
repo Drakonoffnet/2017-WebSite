@@ -118,7 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bio" xml:space="preserve">
-    <value />
+    <value>Ever since Jimmy got his first ZX Spectrum at the age of 7 he hasn't stopped programming. During the day he is a .NET developer and he does all the fun stuff during his spare time. Together with his wife he also runs a company "AZM dev" which is focused on HoloLens and Windows development. He is really passionate about Windows development, HoloLens or well you could say the .NET platform really. He and his wife also runs a code intensive user group (Coding After Work) that focuses on helping participants with code and design problems, and a podcast with the same name. Back in 2011 he received the "geek of the year" award, a title well deserved. He is certainly living up to the title with everything from developing and gadgets to superheroes and cosplaying at the sci-fi faire. He speaks at various types of events including NDC, Devsum, hackathons, Swetugg and TechDays which led to him becoming a Microsoft MVP in Windows Development.
+
+He occasionally blogs at www.apeoholic.se
+Podcast: www.codingafterwork.se</value>
   </data>
   <data name="FirstName" xml:space="preserve">
     <value>Jimmy</value>

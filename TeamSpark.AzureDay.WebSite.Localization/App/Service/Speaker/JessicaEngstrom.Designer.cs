@@ -61,7 +61,10 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Being a geek shows in all parts of her life, whether it be organizing hackathons, running a user group and a podcast with her husband, game nights (retro or VR/MR) with friends, just catching the latest superhero movie or speaking internationally at conferences.
+        ///Her favorite topics is UX/UI and Mixed reality and other futuristic tech. She&apos;s a Windows Development MVP. Together with her husband she runs a company called &quot;AZM dev&quot; which is focused on HoloLens and Windows development.
+        ///
+        ///Occasionally blogs at  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Bio {
             get {

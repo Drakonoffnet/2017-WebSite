@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Ever since Jimmy got his first ZX Spectrum at the age of 7 he hasn&apos;t stopped programming. During the day he is a .NET developer and he does all the fun stuff during his spare time. Together with his wife he also runs a company &quot;AZM dev&quot; which is focused on HoloLens and Windows development. He is really passionate about Windows development, HoloLens or well you could say the .NET platform really. He and his wife also runs a code intensive user group (Coding After Work) that focuses on helping participants wi [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Bio {
             get {

@@ -85,18 +85,18 @@
 									{
 										<div class="col-sm-2 col-md-2">
 											<img class="img-responsible" style="margin-bottom: 10px;" src="@speaker.PhotoUrl" alt="@speaker.FullName" />
-										</div>
-										<div class="mySlotAuthor col-sm-10 col-md-10" style="text-align: left; padding-left: 0;">
-											@speaker.FullName
-										</div>
-										<div style="text-align: left;">
-											<b>@timetables[0].Topic.Title</b><br /><br />
-											@if (timetables[0].Topic.Language != null && !string.IsNullOrEmpty(timetables[0].Topic.Language.Title))
-											{
-												@Html.Raw($"{Schedule.Language}: {timetables[0].Topic.Language.Title}")
-											}
+											<div class="mySlotAuthor">
+												@speaker.FullName
+											</div>
 										</div>
 									}
+									<div style="text-align: left;">
+										<b>@timetables[0].Topic.Title</b><br /><br />
+										@if (timetables[0].Topic.Language != null && !string.IsNullOrEmpty(timetables[0].Topic.Language.Title))
+										{
+											@Html.Raw($"{Schedule.Language}: {timetables[0].Topic.Language.Title}")
+										}
+									</div>
 								</div>
 							</div>
 						</div>

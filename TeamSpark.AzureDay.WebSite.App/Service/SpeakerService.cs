@@ -54,6 +54,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			_speakers.Add(VTolmachov());
 
 			_speakers.Add(MMateev());
+			_speakers.Add(ATumanoff());
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
@@ -879,6 +880,30 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				WebUrl = "",
 				CompanyName = "EPAM",
 				JobTitle = "Senior Solution Architect"
+			};
+		}
+
+		public Speaker ATumanoff()
+		{
+			return new Speaker
+			{
+				Id = "ATumanoff",
+				FirstName = Localization.App.Service.Speaker.ATumanoff.FirstName,
+				LastName = Localization.App.Service.Speaker.ATumanoff.LastName,
+				Bio = Localization.App.Service.Speaker.ATumanoff.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/ATumanoff.jpg",
+				FacebookUrl = "https://www.facebook.com/alex.tumanoff",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "Computer Academy Step",
+				JobTitle = "Head of Educational Department \"Software Design\""
 			};
 		}
 	}

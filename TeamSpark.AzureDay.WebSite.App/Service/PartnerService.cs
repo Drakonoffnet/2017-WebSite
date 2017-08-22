@@ -76,6 +76,15 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/ITEA.jpg",
 					WebUrl = "http://itea.ua/",
 					PartnerType = PartnerType.Info
+				},
+				new Partner
+				{
+					Id = "EPAM",
+					Title = Localization.App.Service.Partners.EPAM.Title,
+					Description = Localization.App.Service.Partners.EPAM.Description.Replace(Environment.NewLine, "<br/>"),
+					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/epam_logo.png",
+					WebUrl = "https://www.epam.com/careers",
+					PartnerType = PartnerType.Gold
 				}
 			};
 		}

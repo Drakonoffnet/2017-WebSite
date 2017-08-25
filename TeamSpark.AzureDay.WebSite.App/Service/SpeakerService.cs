@@ -272,7 +272,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",
-				LinkedInUrl = "",
+				LinkedInUrl = "https://www.linkedin.com/in/leontievihor/",
 				MsdnUrl = "",
 				MvpUrl = "",
 				TwitterUrl = "",

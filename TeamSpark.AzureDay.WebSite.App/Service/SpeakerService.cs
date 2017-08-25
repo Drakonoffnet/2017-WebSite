@@ -50,7 +50,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 
 			_speakers.Add(JimmyEngstrom());
 			_speakers.Add(EAuberix());
-			_speakers.Add(VBezmaly());
+			//_speakers.Add(VBezmaly());
 			_speakers.Add(VTolmachov());
 
 			_speakers.Add(MMateev());
@@ -811,29 +811,29 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			};
 		}
 
-		public Speaker VBezmaly()
-		{
-			return new Speaker
-			{
-				Id = "VBezmaly",
-				FirstName = Localization.App.Service.Speaker.VBezmaly.FirstName,
-				LastName = Localization.App.Service.Speaker.VBezmaly.LastName,
-				Bio = Localization.App.Service.Speaker.VBezmaly.Bio.Replace(Environment.NewLine, "<br/>"),
-				Country = _countryService.Ukraine,
-				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/VBezmaly.jpg",
-				FacebookUrl = "",
-				GitHubUrl = "",
-				GoogleUrl = "",
-				LinkedInUrl = "",
-				MsdnUrl = "",
-				MvpUrl = "",
-				TwitterUrl = "",
-				YouTubeUrl = "",
-				WebUrl = "",
-				CompanyName = "MBP",
-				JobTitle = ""
-			};
-		}
+		//public Speaker VBezmaly()
+		//{
+		//	return new Speaker
+		//	{
+		//		Id = "VBezmaly",
+		//		FirstName = Localization.App.Service.Speaker.VBezmaly.FirstName,
+		//		LastName = Localization.App.Service.Speaker.VBezmaly.LastName,
+		//		Bio = Localization.App.Service.Speaker.VBezmaly.Bio.Replace(Environment.NewLine, "<br/>"),
+		//		Country = _countryService.Ukraine,
+		//		PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/VBezmaly.jpg",
+		//		FacebookUrl = "",
+		//		GitHubUrl = "",
+		//		GoogleUrl = "",
+		//		LinkedInUrl = "",
+		//		MsdnUrl = "",
+		//		MvpUrl = "",
+		//		TwitterUrl = "",
+		//		YouTubeUrl = "",
+		//		WebUrl = "",
+		//		CompanyName = "MBP",
+		//		JobTitle = ""
+		//	};
+		//}
 
 		public Speaker VTolmachov()
 		{

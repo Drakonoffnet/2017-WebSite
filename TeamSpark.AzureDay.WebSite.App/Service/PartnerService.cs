@@ -85,6 +85,33 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/epam_logo.png",
 					WebUrl = "https://www.epam.com/careers",
 					PartnerType = PartnerType.Gold
+				},
+				new Partner
+				{
+					Id = "XamarinUA",
+					Title = Localization.App.Service.Partners.XamarinUA.Title,
+					Description = Localization.App.Service.Partners.XamarinUA.Description.Replace(Environment.NewLine, "<br/>"),
+					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/XamarinUA.png",
+					WebUrl = "https://www.facebook.com/groups/xamarin.ua/",
+					PartnerType = PartnerType.Info
+				},
+				new Partner
+				{
+					Id = "dotNetCore",
+					Title = Localization.App.Service.Partners.dotNetCore.Title,
+					Description = Localization.App.Service.Partners.dotNetCore.Description.Replace(Environment.NewLine, "<br/>"),
+					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/dotNetCore.jpg",
+					WebUrl = "http://dot-net.in.ua/",
+					PartnerType = PartnerType.Info
+				},
+				new Partner
+				{
+					Id = "AzureUA",
+					Title = Localization.App.Service.Partners.AzureUA.Title,
+					Description = Localization.App.Service.Partners.AzureUA.Description.Replace(Environment.NewLine, "<br/>"),
+					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/AzureUA.png",
+					WebUrl = "https://www.facebook.com/groups/azure.ua/",
+					PartnerType = PartnerType.Info
 				}
 			};
 		}

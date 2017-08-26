@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Partners {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Сообщество посвящено технологии .NET Core – кроссплатформенной реализации платформы .NET Framework, с открытым исходным кодом..
         /// </summary>
         public static string Description {
             get {

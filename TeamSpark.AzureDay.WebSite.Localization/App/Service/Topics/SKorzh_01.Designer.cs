@@ -61,13 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to В докладе будут расмотрены практики разработки и развертывания достаточно крупного .NET Core решения, состоящего из нескольких проектов и даже разбитого по нескольким Git репозиториям.
-        ///
-        ///Используемые технологии и инструменты: .NET Core 1.x, VSTS, Azure, Git, MyGet, Nuget, PowerShell.
-        ///
-        ///Поговорим про следующее:
-        ///- Как организовать разработку и тестирование достаточно сильно связанных проектов, если код хранится в разных репозиториях.
-        ///- Настройка конфигураций в солюшене: связывание через проекты на машине  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string Description {
             get {
@@ -76,7 +70,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DevOps практики: разработка и развертывание .NET Core проекта с несколькими репозиториями.
+        ///   Looks up a localized string similar to Использование ASP.NET Identity с Azure Table Storage в приложениях на ASP.NET Core 2.0.
         /// </summary>
         public static string Title {
             get {

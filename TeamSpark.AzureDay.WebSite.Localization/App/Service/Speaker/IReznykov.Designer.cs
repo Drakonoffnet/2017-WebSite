@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to I have 20+ years of programming, 10+ years of experience in the full cycle of ERP system developing, 5+ years of experience in the integration between processing and technological data systems. Mainly my expertise is related to Microsoft&apos;s technologies. I am using Azure in projects since 2014..
         /// </summary>
         public static string Bio {
             get {

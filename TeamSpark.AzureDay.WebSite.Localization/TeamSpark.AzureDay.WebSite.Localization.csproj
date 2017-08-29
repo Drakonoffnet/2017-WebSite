@@ -65,6 +65,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Country.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Partners\Jetbrains.Designer.cs">
+      <DependentUpon>Jetbrains.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\CloudMonix.Designer.cs">
+      <DependentUpon>CloudMonix.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\EnglishDom.Designer.cs">
+      <DependentUpon>EnglishDom.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\OReilly.Designer.cs">
+      <DependentUpon>OReilly.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\DevArt.Designer.cs">
+      <DependentUpon>DevArt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Partners\Yakaboo.Designer.cs">
       <DependentUpon>Yakaboo.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -1017,6 +1042,31 @@
     <EmbeddedResource Include="App\Service\Country.ru.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Country.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\Jetbrains.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Jetbrains.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\CloudMonix.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CloudMonix.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\EnglishDom.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EnglishDom.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\OReilly.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OReilly.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\DevArt.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DevArt.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Partners\Yakaboo.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

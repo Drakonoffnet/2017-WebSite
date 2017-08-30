@@ -61,7 +61,20 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Workshops {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to &lt;div class=&quot;row text-left&quot;&gt;
+        ///    &lt;div class=&quot;col-md-4&quot;&gt;
+        ///        &lt;ol type=&quot;1&quot;&gt;
+        ///            &lt;li&gt;
+        ///                Introduction:
+        ///                &lt;ol type=&quot;a&quot; style=&quot;margin-left: 15px; margin-bottom: 10px;&quot;&gt;
+        ///                    &lt;li&gt;Acquaintance;&lt;/li&gt;
+        ///                    &lt;li&gt;Course overview;&lt;/li&gt;
+        ///                    &lt;li&gt;Set up environment, check required software.&lt;/li&gt;
+        ///                &lt;/ol&gt;
+        ///            &lt;/li&gt;
+        ///            &lt;li&gt;
+        ///                Prepare environment:
+        ///                &lt;ol type=&quot;a&quot; style=&quot;marg [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Description {
             get {

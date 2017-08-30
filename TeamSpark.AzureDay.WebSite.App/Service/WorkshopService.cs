@@ -75,7 +75,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Speaker = _speakerService.IReznykov(),
 					MaxTickets = 10,
 					Title = Localization.App.Service.Workshops.IReznykov_01.Title,
-					Description = Localization.App.Service.Workshops.IReznykov_01.Description.Replace(Environment.NewLine, "<br/>")
+					Description = Localization.App.Service.Workshops.IReznykov_01.Description
 				},
 				new Workshop
 				{

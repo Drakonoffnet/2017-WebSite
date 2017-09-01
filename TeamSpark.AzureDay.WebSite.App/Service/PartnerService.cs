@@ -166,6 +166,15 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/jetbrains.jpg",
 					WebUrl = "https://www.jetbrains.com/",
 					PartnerType = PartnerType.Info
+				},
+				new Partner
+				{
+					Id = "Trudua",
+					Title = Localization.App.Service.Partners.Trudua.Title,
+					Description = Localization.App.Service.Partners.Trudua.Description.Replace(Environment.NewLine, "<br/>"),
+					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/trud_ua.png",
+					WebUrl = "http://kiev.trud.com/",
+					PartnerType = PartnerType.Info
 				}
 			};
 		}

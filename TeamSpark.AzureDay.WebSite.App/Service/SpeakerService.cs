@@ -366,16 +366,16 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				Country = _countryService.Ukraine,
 				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/IReznykov.jpg",
 				FacebookUrl = "https://www.facebook.com/ireznykov",
-				GitHubUrl = "",
+				GitHubUrl = "https://github.com/IReznykov",
 				GoogleUrl = "",
 				LinkedInUrl = "https://www.linkedin.com/in/illya-reznykov-783a2930/",
 				MsdnUrl = "",
 				MvpUrl = "",
-				TwitterUrl = "",
+				TwitterUrl = "https://twitter.com/reznykov",
 				YouTubeUrl = "",
 				WebUrl = "https://ireznykov.com",
-				CompanyName = "",
-				JobTitle = "Private employee"
+				CompanyName = "Svitla Systems",
+				JobTitle = "Senior Developer"
 			};
 		}
 

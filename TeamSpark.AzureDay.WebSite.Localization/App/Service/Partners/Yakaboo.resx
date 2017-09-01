@@ -117,13 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Bio" xml:space="preserve">
-    <value>I have 20+ years of programming, 10+ years of experience in the full cycle of ERP system developing, 5+ years of experience in the integration between processing and technological data systems. Mainly my expertise is related to Microsoft's technologies. I am using Azure in projects since 2014.</value>
+  <data name="Description" xml:space="preserve">
+    <value>Yakaboo.ua – крупнейший в Украине интернет-магазин, имеющий двенадцатилетний опыт работы в области онлайн-маркетинга. Более 200 000 изданий, более 600 000 постоянных клиентов, только качественная, лицензированная продукция, специально разработанная система логистики, позволяющая курьерской службе доставлять заказ "день в день", 100% рост дохода в течение нескольких лет подряд – преимущества и достижения Yakaboo.ua, которые выделяют нашу компанию среди других, формируют ее уникальность.</value>
   </data>
-  <data name="FirstName" xml:space="preserve">
-    <value>Илья</value>
-  </data>
-  <data name="LastName" xml:space="preserve">
-    <value>Резников</value>
+  <data name="Title" xml:space="preserve">
+    <value>Yakaboo</value>
   </data>
 </root>

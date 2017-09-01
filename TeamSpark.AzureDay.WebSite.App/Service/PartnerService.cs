@@ -112,6 +112,60 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/AzureUA.png",
 					WebUrl = "https://www.facebook.com/groups/azure.ua/",
 					PartnerType = PartnerType.Info
+				},
+				new Partner
+				{
+					Id = "Yakaboo",
+					Title = Localization.App.Service.Partners.Yakaboo.Title,
+					Description = Localization.App.Service.Partners.Yakaboo.Description.Replace(Environment.NewLine, "<br/>"),
+					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/yakaboo.jpg",
+					WebUrl = "http://www.yakaboo.ua/",
+					PartnerType = PartnerType.Info
+				},
+				new Partner
+				{
+					Id = "Devart",
+					Title = Localization.App.Service.Partners.DevArt.Title,
+					Description = Localization.App.Service.Partners.DevArt.Description.Replace(Environment.NewLine, "<br/>"),
+					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/devart.png",
+					WebUrl = "https://www.devart.com/",
+					PartnerType = PartnerType.Info
+				},
+				new Partner
+				{
+					Id = "OReilly",
+					Title = Localization.App.Service.Partners.OReilly.Title,
+					Description = Localization.App.Service.Partners.OReilly.Description.Replace(Environment.NewLine, "<br/>"),
+					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/ORM.jpg",
+					WebUrl = "oreilly.com",
+					PartnerType = PartnerType.Info
+				},
+				new Partner
+				{
+					Id = "EnglishDom",
+					Title = Localization.App.Service.Partners.EnglishDom.Title,
+					Description = Localization.App.Service.Partners.EnglishDom.Description.Replace(Environment.NewLine, "<br/>"),
+					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/ED.png",
+					WebUrl = "https://www.englishdom.com/",
+					PartnerType = PartnerType.Info
+				},
+				new Partner
+				{
+					Id = "CloudMonix",
+					Title = Localization.App.Service.Partners.CloudMonix.Title,
+					Description = Localization.App.Service.Partners.CloudMonix.Description.Replace(Environment.NewLine, "<br/>"),
+					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/CM.png",
+					WebUrl = "http://www.cloudmonix.com/",
+					PartnerType = PartnerType.Info
+				},
+				new Partner
+				{
+					Id = "Jetbrains",
+					Title = Localization.App.Service.Partners.Jetbrains.Title,
+					Description = Localization.App.Service.Partners.Jetbrains.Description.Replace(Environment.NewLine, "<br/>"),
+					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/jetbrains.jpg",
+					WebUrl = "https://www.jetbrains.com/",
+					PartnerType = PartnerType.Info
 				}
 			};
 		}

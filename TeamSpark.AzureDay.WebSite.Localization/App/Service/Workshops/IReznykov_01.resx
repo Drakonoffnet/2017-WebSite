@@ -118,7 +118,108 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Description" xml:space="preserve">
-    <value />
+    <value>&lt;div class="row text-left"&gt;
+    &lt;div class="col-md-4"&gt;
+        &lt;ol type="1"&gt;
+            &lt;li&gt;
+                Introduction:
+                &lt;ol type="a" style="margin-left: 15px; margin-bottom: 10px;"&gt;
+                    &lt;li&gt;Acquaintance;&lt;/li&gt;
+                    &lt;li&gt;Course overview;&lt;/li&gt;
+                    &lt;li&gt;Set up environment, check required software.&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                Prepare environment:
+                &lt;ol type="a" style="margin-left: 15px; margin-bottom: 10px;"&gt;
+                    &lt;li value="1"&gt;Create Azure resource group;&lt;/li&gt;
+                    &lt;li&gt;Create Azure storage;&lt;/li&gt;
+                    &lt;li&gt;Create App Service plan;&lt;/li&gt;
+                    &lt;li&gt;Check AAD.&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                Data source and model library:
+                &lt;ol type="a" style="margin-left: 15px; margin-bottom: 10px;"&gt;
+                    &lt;li value="1"&gt;Create Azure SQL server;&lt;/li&gt;
+                    &lt;li&gt;Create database project;&lt;/li&gt;
+                    &lt;li&gt;Deploy to Azure SQL database as data-tier application;&lt;/li&gt;
+                    &lt;li&gt;Connect to SQL Azure from Visual Studio, check data;&lt;/li&gt;
+                    &lt;li&gt;Create class library;&lt;/li&gt;
+                    &lt;li&gt;Add data models with Entity Framework.&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                API app - basic:
+                &lt;ol type="a" style="margin-left: 15px; margin-bottom: 10px;"&gt;
+                    &lt;li&gt;Overview;&lt;/li&gt;
+                    &lt;li&gt;Types of web apps, app plan, pricing;&lt;/li&gt;
+                    &lt;li&gt;Create App plan and API app;&lt;/li&gt;
+                    &lt;li&gt;Tune swagger package;&lt;/li&gt;
+                    &lt;li&gt;Launch local instance, deploy to Azure.&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4"&gt;
+        &lt;ol type="1"&gt;
+            &lt;li value="5"&gt;
+                API app - intermediate:
+                &lt;ol type="a" style="margin-left: 15px; margin-bottom: 10px;"&gt;
+                    &lt;li&gt;Add models from SQL database;&lt;/li&gt;
+                    &lt;li&gt;Create new controllers;&lt;/li&gt;
+                    &lt;li&gt;Deploy to Azure;&lt;/li&gt;
+                    &lt;li&gt;Create Asp.Net MVC site as consumer;&lt;/li&gt;
+                    &lt;li&gt;Add Rest service;&lt;/li&gt;
+                    &lt;li&gt;Deploy Asp.Net MVC site to Azure;&lt;/li&gt;
+                    &lt;li&gt;Check Rest API.&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                Web jobs - basics:
+                &lt;ol type="a" style="margin-left: 15px; margin-bottom: 10px;"&gt;
+                    &lt;li value="1"&gt;Overview;&lt;/li&gt;
+                    &lt;li&gt;Create console application that convert images;&lt;/li&gt;
+                    &lt;li&gt;Update application to convert image in storage;&lt;/li&gt;
+                    &lt;li&gt;Discuss possible triggers;&lt;/li&gt;
+                    &lt;li&gt;Convert console application to web job;&lt;/li&gt;
+                    &lt;li&gt;Deploy to API app to Azure;&lt;/li&gt;
+                    &lt;li&gt;Check web job.&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4"&gt;
+        &lt;ol type="1"&gt;
+            &lt;li value="7"&gt;
+                Web jobs - intermediate:
+                &lt;ol type="a" style="margin-left: 15px; margin-bottom: 10px;"&gt;
+                    &lt;li value="1"&gt;Add logging;&lt;/li&gt;
+                    &lt;li&gt;Add async methods;&lt;/li&gt;
+                    &lt;li&gt;Debug web jobs.&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                API app - advanced:
+                &lt;ol type="a" style="margin-left: 15px; margin-bottom: 10px;"&gt;
+                    &lt;li value="1"&gt;Add authentication with Easy Auth;&lt;/li&gt;
+                    &lt;li&gt;Create AAD application;&lt;/li&gt;
+                    &lt;li&gt;Add authorize attribute.&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                Web jobs - advanced:
+                &lt;ol type="a" style="margin-left: 15px; margin-bottom: 10px;"&gt;
+                    &lt;li value="1"&gt;Create new web job with trigger;&lt;/li&gt;
+                    &lt;li&gt;Consume API app from web job;&lt;/li&gt;
+                    &lt;li&gt;Create AAD application for web job;&lt;/li&gt;
+                    &lt;li&gt;Check results.&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+            &lt;li&gt;Conclusions.&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>Create Api App with authentication and web jobs</value>

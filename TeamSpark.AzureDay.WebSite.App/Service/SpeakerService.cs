@@ -412,18 +412,18 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				LastName = Localization.App.Service.Speaker.VThavonekham.LastName,
 				Bio = Localization.App.Service.Speaker.VThavonekham.Bio.Replace(Environment.NewLine, "<br/>"),
 				Country = _countryService.France,
-				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/VThavonekham.jpg",
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",
-				LinkedInUrl = "",
+				LinkedInUrl = "https://www.linkedin.com/in/thavo/",
 				MsdnUrl = "",
 				MvpUrl = "",
-				TwitterUrl = "",
+				TwitterUrl = "https://twitter.com/vThavo",
 				YouTubeUrl = "",
-				WebUrl = "",
+				WebUrl = "http://thavonekham.me/",
 				CompanyName = "VISEO",
-				JobTitle = ""
+				JobTitle = "Microsoft Regional Director | MVP Azure"
 			};
 		}
 

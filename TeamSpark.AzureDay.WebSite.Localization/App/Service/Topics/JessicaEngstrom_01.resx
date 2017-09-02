@@ -118,11 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Description" xml:space="preserve">
-    <value>HoloLens breached a barrier, a barrier between the digital and the real world, bringing digital content into our world. Over the past year the HoloLens has continued to create new ways to visualize, to change education and the medical industry. HoloLens is not only for games it is a Business platform (that is game enabled). Using Unity we can create an experience that lets you bring digital content and interact with the real world.
+    <value>All the big companies are making huge investments in AI personal assistants. Amazon has Alexa, Google has Google assistant, Apple has Siri and Microsoft has Cortana to name a few. For most people talking to their devices still feels a bit strange. According to Comscore, 50% of all searches will be made by voice by the year 2020. Today 40% of adults use voice once per day.
 
-During this session we will take a look at the HoloLens hardware, the possibilities, the limitations and tooling. We will take a look at the basics of Unity and also create a HoloLens app from scratch complete with Gaze, Air Tap, Spatial mapping and Voice using HoloToolkit.</value>
+Designing a natural language interface can be difficult, is the interface supposed to be able to interpret every single nuance of speech and how about slang? Or should we aim more towards forced language and make our users learn how to interact with simple commands?</value>
   </data>
   <data name="Title" xml:space="preserve">
-    <value>Holo world - create your first HoloLens app with Unity</value>
+    <value>Designing for speech</value>
   </data>
 </root>

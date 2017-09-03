@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BestBefore01" xml:space="preserve">
-    <value>цена до 1го сентября</value>
+    <value>цена до 7го сентября</value>
   </data>
   <data name="Company" xml:space="preserve">
     <value>Компания</value>

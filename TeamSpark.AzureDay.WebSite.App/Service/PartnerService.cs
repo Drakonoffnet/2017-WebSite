@@ -175,6 +175,15 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/trud_ua.png",
 					WebUrl = "http://kiev.trud.com/",
 					PartnerType = PartnerType.Info
+				},
+				new Partner
+				{
+					Id = "Developex",
+					Title = Localization.App.Service.Partners.Developex.Title,
+					Description = Localization.App.Service.Partners.Developex.Description.Replace(Environment.NewLine, "<br/>"),
+					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/developex_logo.png",
+					WebUrl = "http://developex.com/",
+					PartnerType = PartnerType.Info
 				}
 			};
 		}

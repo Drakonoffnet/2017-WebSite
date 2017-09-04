@@ -55,6 +55,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 
 			_speakers.Add(MMateev());
 			_speakers.Add(ATumanoff());
+			_speakers.Add(VTsykunov());
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
@@ -904,6 +905,30 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				WebUrl = "",
 				CompanyName = "Computer Academy Step",
 				JobTitle = "Head of Educational Department \"Software Design\""
+			};
+		}
+
+		public Speaker VTsykunov()
+		{
+			return new Speaker
+			{
+				Id = "VTsykunov",
+				FirstName = Localization.App.Service.Speaker.VTsykunov.FirstName,
+				LastName = Localization.App.Service.Speaker.VTsykunov.LastName,
+				Bio = Localization.App.Service.Speaker.VTsykunov.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/ViktorTsykunov.jpg",
+				FacebookUrl = "https://www.facebook.com/vtsykunov",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "Microsoft Ukraine",
+				JobTitle = "Principal Technical Evangelist "
 			};
 		}
 	}

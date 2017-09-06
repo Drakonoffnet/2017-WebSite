@@ -46,7 +46,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 						_speakerService.ABoyko(),
 						_speakerService.GShopnik(),
 						_speakerService.ATumanoff(),
-						_speakerService.VTsykunov()
+						_speakerService.VTsykunov(),
+						_speakerService.ILeontiev()
 					},
 					Title = Localization.App.Service.Topics.Special.Keynote.Title,
 					Description = Localization.App.Service.Topics.Special.Keynote.Description.Replace(Environment.NewLine, "<br/>")

@@ -314,8 +314,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Id = 32,
 					Language = _languageService.English,
 					Speakers = new List<Speaker> {_speakerService.AMang() },
-					Title = Localization.App.Service.Topics._Dummy.Title,
-					Description = Localization.App.Service.Topics._Dummy.Description.Replace(Environment.NewLine, "<br/>")
+					Title = Localization.App.Service.Topics.AMang_01.Title,
+					Description = Localization.App.Service.Topics.AMang_01.Description.Replace(Environment.NewLine, "<br/>")
 				}
 			};
 		}

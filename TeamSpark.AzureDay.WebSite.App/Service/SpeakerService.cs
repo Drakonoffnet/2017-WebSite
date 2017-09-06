@@ -56,6 +56,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			_speakers.Add(MMateev());
 			_speakers.Add(ATumanoff());
 			_speakers.Add(GShopnik());
+			_speakers.Add(VTsykunov());
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
@@ -367,16 +368,16 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				Country = _countryService.Ukraine,
 				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/IReznykov.jpg",
 				FacebookUrl = "https://www.facebook.com/ireznykov",
-				GitHubUrl = "",
+				GitHubUrl = "https://github.com/IReznykov",
 				GoogleUrl = "",
 				LinkedInUrl = "https://www.linkedin.com/in/illya-reznykov-783a2930/",
 				MsdnUrl = "",
 				MvpUrl = "",
-				TwitterUrl = "",
+				TwitterUrl = "https://twitter.com/reznykov",
 				YouTubeUrl = "",
 				WebUrl = "https://ireznykov.com",
-				CompanyName = "",
-				JobTitle = "Private employee"
+				CompanyName = "Svitla Systems",
+				JobTitle = "Senior Developer"
 			};
 		}
 
@@ -413,18 +414,18 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				LastName = Localization.App.Service.Speaker.VThavonekham.LastName,
 				Bio = Localization.App.Service.Speaker.VThavonekham.Bio.Replace(Environment.NewLine, "<br/>"),
 				Country = _countryService.France,
-				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/VThavonekham.jpg",
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",
-				LinkedInUrl = "",
+				LinkedInUrl = "https://www.linkedin.com/in/thavo/",
 				MsdnUrl = "",
 				MvpUrl = "",
-				TwitterUrl = "",
+				TwitterUrl = "https://twitter.com/vThavo",
 				YouTubeUrl = "",
-				WebUrl = "",
+				WebUrl = "http://thavonekham.me/",
 				CompanyName = "VISEO",
-				JobTitle = ""
+				JobTitle = "Microsoft Regional Director | MVP Azure"
 			};
 		}
 
@@ -929,6 +930,30 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				WebUrl = "",
 				CompanyName = "Microsoft",
 				JobTitle = "MVP Award Program Lead"
+			};
+		}
+
+		public Speaker VTsykunov()
+		{
+			return new Speaker
+			{
+				Id = "VTsykunov",
+				FirstName = Localization.App.Service.Speaker.VTsykunov.FirstName,
+				LastName = Localization.App.Service.Speaker.VTsykunov.LastName,
+				Bio = Localization.App.Service.Speaker.VTsykunov.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/ViktorTsykunov.jpg",
+				FacebookUrl = "https://www.facebook.com/vtsykunov",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "Microsoft Ukraine",
+				JobTitle = "Principal Technical Evangelist "
 			};
 		}
 	}

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
+namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class IReznykov {
+    public class DDurasau_01 {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal IReznykov() {
+        internal DDurasau_01() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker.IReznykov", typeof(IReznykov).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics.DDurasau_01", typeof(DDurasau_01).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,29 +61,21 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I have 20+ years of programming, 10+ years of experience in the full cycle of ERP system developing, 5+ years of experience in the integration between processing and technological data systems. Mainly my expertise is related to Microsoft&apos;s technologies. I am using Azure in projects since 2014..
+        ///   Looks up a localized string similar to В докладе будет рассмотрен опыт построения высоконагруженных инфраструктур в Azure.  Из первых рук вы узнаете, как работают с платформой Microsoft Azure ведущие мировые корпорации, как развертывать тысячи серверов в Microsoft Azure, хранить в облаке десятки терабайт данных и миллионы файлов, как строятся облачные инфраструктуры в крупных компаниях, как обойти подводные камни и узкие места и с чем сталкиваются архитекторы при планировании миграции данных в облако. 
+        ///Доклад ориентирован на опытных системных а [rest of string was truncated]&quot;;.
         /// </summary>
-        public static string Bio {
+        public static string Description {
             get {
-                return ResourceManager.GetString("Bio", resourceCulture);
+                return ResourceManager.GetString("Description", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Illya.
+        ///   Looks up a localized string similar to Построение корпоративных высоконагруженных инфраструктур в Azure.
         /// </summary>
-        public static string FirstName {
+        public static string Title {
             get {
-                return ResourceManager.GetString("FirstName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Reznykov.
-        /// </summary>
-        public static string LastName {
-            get {
-                return ResourceManager.GetString("LastName", resourceCulture);
+                return ResourceManager.GetString("Title", resourceCulture);
             }
         }
     }

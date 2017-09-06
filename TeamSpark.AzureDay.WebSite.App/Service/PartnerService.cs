@@ -57,7 +57,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Description = Localization.App.Service.Partners.Microsoft.Description.Replace(Environment.NewLine, "<br/>"),
 					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/microsoft.jpg",
 					WebUrl = "https://www.microsoft.com/uk-ua/",
-					PartnerType = PartnerType.Info | PartnerType.Gold
+					PartnerType = PartnerType.Info | PartnerType.Gold | PartnerType.Workshop
 				},
 				new Partner
 				{
@@ -183,7 +183,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Description = Localization.App.Service.Partners.Developex.Description.Replace(Environment.NewLine, "<br/>"),
 					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/developex_logo.png",
 					WebUrl = "http://developex.com/",
-					PartnerType = PartnerType.Info
+					PartnerType = PartnerType.Info | PartnerType.Workshop
 				}
 			};
 		}

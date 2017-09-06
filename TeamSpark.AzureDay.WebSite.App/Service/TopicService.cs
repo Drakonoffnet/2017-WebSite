@@ -44,7 +44,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Speakers = new List<Speaker>
 					{
 						_speakerService.ABoyko(),
-						_speakerService.ATumanoff()
+						_speakerService.ATumanoff(),
+						_speakerService.VTsykunov()
 					},
 					Title = Localization.App.Service.Topics.Special.Keynote.Title,
 					Description = Localization.App.Service.Topics.Special.Keynote.Description.Replace(Environment.NewLine, "<br/>")
@@ -304,8 +305,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Id = 31,
 					Language = _languageService.Russian,
 					Speakers = new List<Speaker> {_speakerService.DDurasau() },
-					Title = Localization.App.Service.Topics._Dummy.Title,
-					Description = Localization.App.Service.Topics._Dummy.Description.Replace(Environment.NewLine, "<br/>")
+					Title = Localization.App.Service.Topics.DDurasau_01.Title,
+					Description = Localization.App.Service.Topics.DDurasau_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
 				new Topic
 				{

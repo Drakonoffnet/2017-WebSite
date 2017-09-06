@@ -61,7 +61,9 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Provides consulting and training; works in large IoT projects and Cloud Azure projects. Designs Innovative IT offers for VISEO (Cloud OPEX/CAPEX/Architecture, IoT, Blockchain, Industry 4.0), and develops strategic partnerships..
+        ///   Looks up a localized string similar to Azure MVP and Microsoft Regional Director at VISEO.
+        ///Provides consulting and training; working on large IoT projects and Cloud Azure projects.
+        ///Design Innovative IT offers for VISEO (Cloud OPEX/CAPEX/Architecture, IoT, Blockchain, Industry 4.0), and develop strategic partnership..
         /// </summary>
         public static string Bio {
             get {

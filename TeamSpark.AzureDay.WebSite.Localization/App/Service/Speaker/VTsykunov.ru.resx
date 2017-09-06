@@ -118,14 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bio" xml:space="preserve">
-    <value>Azure MVP and Microsoft Regional Director at VISEO.
-Provides consulting and training; working on large IoT projects and Cloud Azure projects.
-Design Innovative IT offers for VISEO (Cloud OPEX/CAPEX/Architecture, IoT, Blockchain, Industry 4.0), and develop strategic partnership.</value>
+    <value>Виктор Цикунов, технический евангелист  в Майкрософт Украина.
+Эксперт в облачных технологиях Microsoft. Более 10 лет работает в сфере информационных технологий. Последние 10 лет работает в компании Microsoft на разных должностях в продуктовом маркетинге, корпоративных продажах и техническом консалтинге.</value>
   </data>
   <data name="FirstName" xml:space="preserve">
-    <value>Vincent</value>
+    <value>Виктор</value>
   </data>
   <data name="LastName" xml:space="preserve">
-    <value>Thavonekham</value>
+    <value>Цикунов</value>
   </data>
 </root>

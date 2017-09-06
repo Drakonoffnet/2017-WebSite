@@ -22,14 +22,14 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class IReznykov {
+    public class VTsykunov {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal IReznykov() {
+        internal VTsykunov() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker.IReznykov", typeof(IReznykov).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker.VTsykunov", typeof(VTsykunov).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,8 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I have 20+ years of programming, 10+ years of experience in the full cycle of ERP system developing, 5+ years of experience in the integration between processing and technological data systems. Mainly my expertise is related to Microsoft&apos;s technologies. I am using Azure in projects since 2014..
+        ///   Looks up a localized string similar to Viktor Tsykunov, Principal Technical Evangelist at Microsoft Ukraine.
+        ///Microsoft cloud technologies expert. More than 10 years’ experience in IT. During the last 10 years has been working at Microsoft on different roles in product marketing, corporate sales and technical consulting..
         /// </summary>
         public static string Bio {
             get {
@@ -70,7 +71,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Illya.
+        ///   Looks up a localized string similar to Viktor.
         /// </summary>
         public static string FirstName {
             get {
@@ -79,7 +80,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Reznykov.
+        ///   Looks up a localized string similar to Tsykunov.
         /// </summary>
         public static string LastName {
             get {

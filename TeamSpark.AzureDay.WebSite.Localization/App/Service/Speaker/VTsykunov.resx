@@ -118,14 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bio" xml:space="preserve">
-    <value>Azure MVP and Microsoft Regional Director at VISEO.
-Provides consulting and training; working on large IoT projects and Cloud Azure projects.
-Design Innovative IT offers for VISEO (Cloud OPEX/CAPEX/Architecture, IoT, Blockchain, Industry 4.0), and develop strategic partnership.</value>
+    <value>Viktor Tsykunov, Principal Technical Evangelist at Microsoft Ukraine.
+Microsoft cloud technologies expert. More than 10 years’ experience in IT. During the last 10 years has been working at Microsoft on different roles in product marketing, corporate sales and technical consulting.</value>
   </data>
   <data name="FirstName" xml:space="preserve">
-    <value>Vincent</value>
+    <value>Viktor</value>
   </data>
   <data name="LastName" xml:space="preserve">
-    <value>Thavonekham</value>
+    <value>Tsykunov</value>
   </data>
 </root>

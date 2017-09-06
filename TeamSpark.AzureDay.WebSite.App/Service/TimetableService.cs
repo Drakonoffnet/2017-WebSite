@@ -32,8 +32,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				new Timetable { TimeStart = "12:00", TimeEnd = "13:00", Room = _roomService.Room1, Topic = _topicService.IFesenko_01 },
 				new Timetable { TimeStart = "13:15", TimeEnd = "14:15", Room = _roomService.Room1, Topic = _topicService.ABoyko_02 },
 				new Timetable { TimeStart = "14:45", TimeEnd = "15:45", Room = _roomService.Room1, Topic = _topicService.SKorzh_01 },
-				new Timetable { TimeStart = "16:00", TimeEnd = "17:00", Room = _roomService.Room1, Topic = _topicService.EAuberix_01 },
-				new Timetable { TimeStart = "17:30", TimeEnd = "18:30", Room = _roomService.Room1, Topic = _topicService.ILeontiev_01 },
+				new Timetable { TimeStart = "16:00", TimeEnd = "17:00", Room = _roomService.Room1, Topic = _topicService.ILeontiev_01 },
+				new Timetable { TimeStart = "17:30", TimeEnd = "18:30", Room = _roomService.Room1, Topic = _topicService.EAuberix_01 },
 				new Timetable { TimeStart = "18:30", TimeEnd = "19:15", Room = _roomService.Room1, Topic = _topicService.Endnote }
 			});
 
@@ -43,8 +43,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				new Timetable { TimeStart = "12:00", TimeEnd = "13:00", Room = _roomService.Room2, Topic = _topicService.ASurkov_01 },
 				new Timetable { TimeStart = "13:15", TimeEnd = "14:15", Room = _roomService.Room2, Topic = _topicService.EAuberix_02 },
 				new Timetable { TimeStart = "14:45", TimeEnd = "15:45", Room = _roomService.Room2, Topic = _topicService.VThavonekham_01 },
-				new Timetable { TimeStart = "16:00", TimeEnd = "17:00", Room = _roomService.Room2, Topic = _topicService.JimmyEngstrom_01 },
-				new Timetable { TimeStart = "17:30", TimeEnd = "18:30", Room = _roomService.Room2, Topic = _topicService.JessicaEngstrom_01 }
+				new Timetable { TimeStart = "16:00", TimeEnd = "17:00", Room = _roomService.Room2, Topic = _topicService.JessicaEngstrom_01 },
+				new Timetable { TimeStart = "17:30", TimeEnd = "18:30", Room = _roomService.Room2, Topic = _topicService.JimmyEngstrom_01 }
 			});
 
 			_timetables.AddRange(new List<Timetable> // data

@@ -210,6 +210,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="App\Service\Speaker\VTsykunov.uk-UA.Designer.cs">
+      <DependentUpon>VTsykunov.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\VTsykunov.ru.Designer.cs">
+      <DependentUpon>VTsykunov.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\VTsykunov.Designer.cs">
+      <DependentUpon>VTsykunov.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Speaker\ATumanoff.Designer.cs">
       <DependentUpon>ATumanoff.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -479,6 +494,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ABoyko.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Topics\DDurasau_01.Designer.cs">
+      <DependentUpon>DDurasau_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="App\Service\Topics\_Dummy.uk-UA.Designer.cs">
       <DependentUpon>_Dummy.uk-UA.resx</DependentUpon>
@@ -1202,6 +1222,18 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>GShopnik.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\VTsykunov.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VTsykunov.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\VTsykunov.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VTsykunov.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\VTsykunov.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VTsykunov.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\ATumanoff.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ATumanoff.Designer.cs</LastGenOutput>
@@ -1420,6 +1452,10 @@
     <EmbeddedResource Include="App\Service\Speaker\ABoyko.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ABoyko.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\DDurasau_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DDurasau_01.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\_Dummy.uk-UA.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

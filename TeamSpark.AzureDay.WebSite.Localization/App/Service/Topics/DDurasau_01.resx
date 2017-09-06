@@ -117,15 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Bio" xml:space="preserve">
-    <value>Azure MVP and Microsoft Regional Director at VISEO.
-Provides consulting and training; working on large IoT projects and Cloud Azure projects.
-Design Innovative IT offers for VISEO (Cloud OPEX/CAPEX/Architecture, IoT, Blockchain, Industry 4.0), and develop strategic partnership.</value>
+  <data name="Description" xml:space="preserve">
+    <value>В докладе будет рассмотрен опыт построения высоконагруженных инфраструктур в Azure.  Из первых рук вы узнаете, как работают с платформой Microsoft Azure ведущие мировые корпорации, как развертывать тысячи серверов в Microsoft Azure, хранить в облаке десятки терабайт данных и миллионы файлов, как строятся облачные инфраструктуры в крупных компаниях, как обойти подводные камни и узкие места и с чем сталкиваются архитекторы при планировании миграции данных в облако. 
+Доклад ориентирован на опытных системных администраторов, архитекторов и инженеров DevOps и основан на реальных практиках работы с Azure в компании, входящей в Top 10 Azure Enterprise Customer.</value>
   </data>
-  <data name="FirstName" xml:space="preserve">
-    <value>Vincent</value>
-  </data>
-  <data name="LastName" xml:space="preserve">
-    <value>Thavonekham</value>
+  <data name="Title" xml:space="preserve">
+    <value>Построение корпоративных высоконагруженных инфраструктур в Azure</value>
   </data>
 </root>

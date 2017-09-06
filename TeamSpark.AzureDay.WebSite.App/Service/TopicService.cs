@@ -44,6 +44,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Speakers = new List<Speaker>
 					{
 						_speakerService.ABoyko(),
+						_speakerService.GShopnik(),
 						_speakerService.ATumanoff(),
 						_speakerService.VTsykunov()
 					},

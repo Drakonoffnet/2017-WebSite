@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Description" xml:space="preserve">
-    <value />
+    <value>In this topic we will learn how to start building and deploying containerized applications in Azure using existing Continuous Integration and Continuous Delivery tools like Visual Studio Team Services and Octopus Deploy. Target audience is developers, system engineers and solution/system architects who has some experience in Docker and interested in how Azure helps to accelerate adoption of containers and microservice architecture.</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>Containers in Azure: from infrastructure to deployment</value>

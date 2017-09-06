@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to In this topic we will learn how to start building and deploying containerized applications in Azure using existing Continuous Integration and Continuous Delivery tools like Visual Studio Team Services and Octopus Deploy. Target audience is developers, system engineers and solution/system architects who has some experience in Docker and interested in how Azure helps to accelerate adoption of containers and microservice architecture..
         /// </summary>
         public static string Description {
             get {

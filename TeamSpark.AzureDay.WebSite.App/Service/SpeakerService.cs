@@ -55,6 +55,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 
 			_speakers.Add(MMateev());
 			_speakers.Add(ATumanoff());
+			_speakers.Add(GShopnik());
 			_speakers.Add(VTsykunov());
 		}
 
@@ -905,6 +906,30 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				WebUrl = "",
 				CompanyName = "Computer Academy Step",
 				JobTitle = "Head of Educational Department \"Software Design\""
+			};
+		}
+
+		public Speaker GShopnik()
+		{
+			return new Speaker
+			{
+				Id = "GShopnik",
+				FirstName = Localization.App.Service.Speaker.GShopnik.FirstName,
+				LastName = Localization.App.Service.Speaker.GShopnik.LastName,
+				Bio = Localization.App.Service.Speaker.GShopnik.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/Gerbert_Shopnik_photo.jpg",
+				FacebookUrl = "",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "https://www.linkedin.com/in/gshopnik/",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "Microsoft",
+				JobTitle = "MVP Award Program Lead"
 			};
 		}
 

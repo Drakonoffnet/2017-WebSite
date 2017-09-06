@@ -205,6 +205,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Speaker\GShopnik.Designer.cs">
+      <DependentUpon>GShopnik.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Speaker\VTsykunov.uk-UA.Designer.cs">
       <DependentUpon>VTsykunov.uk-UA.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -1212,6 +1217,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Room.ru.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\GShopnik.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GShopnik.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\VTsykunov.uk-UA.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

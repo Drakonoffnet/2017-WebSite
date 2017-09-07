@@ -117,10 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Description" xml:space="preserve">
-    <value>In this topic we will learn how to start building and deploying containerized applications in Azure using existing Continuous Integration and Continuous Delivery tools like Visual Studio Team Services and Octopus Deploy. Target audience is developers, system engineers and solution/system architects who has some experience in Docker and interested in how Azure helps to accelerate adoption of containers and microservice architecture.</value>
+  <data name="Bio" xml:space="preserve">
+    <value>Before joining Microsoft in 2012, I worked for VMware and some of the biggest local system integrators as a technical presale and cloud virtualization subject matter – focused on evangelizing, marketing, engaging with partners, and being part of user group activities. I am a Microsoft Certified Trainer since 2005 with 5+ years practice (IT Pro and Dev), and the author of several self-developed IT training courses. I was excited to join MVP Award Program global team as the Central and Eastern Europe (CEE) community as a Community Program Manager in the beginning of 2016!
+My career at Microsoft began where I worked within the Enterprise &amp; Partner Group, responsible for hybrid cloud solutions business development in top Enterprise customers for 4 years. My professional background combines unique technical and sales experience with ability to communicate at both TDM and BDM levels. I was awarded as a member of EMEA Circle of Excellence Gold Club in 2015. MCT, MCITP, MCSE, VSP, VTSP, ITIL</value>
   </data>
-  <data name="Title" xml:space="preserve">
-    <value>Containers in Azure: from infrastructure to deployment</value>
+  <data name="FirstName" xml:space="preserve">
+    <value>Gerbert</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Shopnik</value>
   </data>
 </root>

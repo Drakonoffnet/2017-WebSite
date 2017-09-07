@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
+namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class SKryshtop_01 {
+    public class GShopnik {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal SKryshtop_01() {
+        internal GShopnik() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics.SKryshtop_01", typeof(SKryshtop_01).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker.GShopnik", typeof(GShopnik).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,20 +61,29 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to In this topic we will learn how to start building and deploying containerized applications in Azure using existing Continuous Integration and Continuous Delivery tools like Visual Studio Team Services and Octopus Deploy. Target audience is developers, system engineers and solution/system architects who has some experience in Docker and interested in how Azure helps to accelerate adoption of containers and microservice architecture..
+        ///   Looks up a localized string similar to Before joining Microsoft in 2012, I worked for VMware and some of the biggest local system integrators as a technical presale and cloud virtualization subject matter – focused on evangelizing, marketing, engaging with partners, and being part of user group activities. I am a Microsoft Certified Trainer since 2005 with 5+ years practice (IT Pro and Dev), and the author of several self-developed IT training courses. I was excited to join MVP Award Program global team as the Central and Eastern Europe (CEE) co [rest of string was truncated]&quot;;.
         /// </summary>
-        public static string Description {
+        public static string Bio {
             get {
-                return ResourceManager.GetString("Description", resourceCulture);
+                return ResourceManager.GetString("Bio", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Containers in Azure: from infrastructure to deployment.
+        ///   Looks up a localized string similar to Gerbert.
         /// </summary>
-        public static string Title {
+        public static string FirstName {
             get {
-                return ResourceManager.GetString("Title", resourceCulture);
+                return ResourceManager.GetString("FirstName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shopnik.
+        /// </summary>
+        public static string LastName {
+            get {
+                return ResourceManager.GetString("LastName", resourceCulture);
             }
         }
     }

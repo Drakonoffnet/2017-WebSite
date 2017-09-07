@@ -22,14 +22,14 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class SKryshtop_01 {
+    public class AMang_01 {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal SKryshtop_01() {
+        internal AMang_01() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics.SKryshtop_01", typeof(SKryshtop_01).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics.AMang_01", typeof(AMang_01).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,8 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to In this topic we will learn how to start building and deploying containerized applications in Azure using existing Continuous Integration and Continuous Delivery tools like Visual Studio Team Services and Octopus Deploy. Target audience is developers, system engineers and solution/system architects who has some experience in Docker and interested in how Azure helps to accelerate adoption of containers and microservice architecture..
+        ///   Looks up a localized string similar to Azure Functions is getting a lot of traction, which is completely understandable in the fast-paced world of applications developed using Agile methodologies. Comparing the world of IT and software development today with the one 10 years ago, when we knew not only what operating system our application was going to run on but also the exact part number of the server that was running the workload, we can only conclude that PaaS infrastructures have gone a far way! 
+        ///But how far? How far can you go and is actua [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Description {
             get {
@@ -70,7 +71,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Containers in Azure: from infrastructure to deployment.
+        ///   Looks up a localized string similar to How Far Can ‘Serverless’ Actually Go?.
         /// </summary>
         public static string Title {
             get {

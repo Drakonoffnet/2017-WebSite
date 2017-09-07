@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
+namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class VThavonekham_01 {
+    public class ENiedaszkowski {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal VThavonekham_01() {
+        internal ENiedaszkowski() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics.VThavonekham_01", typeof(VThavonekham_01).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker.ENiedaszkowski", typeof(ENiedaszkowski).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,20 +61,29 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The European Union has enforced a regulation that will protect the personal data privacy. It has got a MAJOR impact on companies in Europe with a HEAVY fine (&gt;10 million €). This session will present the work done by Microsoft in this area, and how the Microsoft Cloud WILL help.
+        ///   Looks up a localized string similar to .
         /// </summary>
-        public static string Description {
+        public static string Bio {
             get {
-                return ResourceManager.GetString("Description", resourceCulture);
+                return ResourceManager.GetString("Bio", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GDPR: Be prepared with a major IT change similar to Y2K bug. How Azure can help?.
+        ///   Looks up a localized string similar to Eugen.
         /// </summary>
-        public static string Title {
+        public static string FirstName {
             get {
-                return ResourceManager.GetString("Title", resourceCulture);
+                return ResourceManager.GetString("FirstName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Niedaszkowski.
+        /// </summary>
+        public static string LastName {
+            get {
+                return ResourceManager.GetString("LastName", resourceCulture);
             }
         }
     }

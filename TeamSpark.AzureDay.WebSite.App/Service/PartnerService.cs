@@ -138,7 +138,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Description = Localization.App.Service.Partners.OReilly.Description.Replace(Environment.NewLine, "<br/>"),
 					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/ORM.jpg",
 					WebUrl = "oreilly.com",
-					PartnerType = PartnerType.Info
+					PartnerType = PartnerType.Raffle
 				},
 				new Partner
 				{
@@ -156,7 +156,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Description = Localization.App.Service.Partners.CloudMonix.Description.Replace(Environment.NewLine, "<br/>"),
 					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/CM.png",
 					WebUrl = "http://www.cloudmonix.com/",
-					PartnerType = PartnerType.Info
+					PartnerType = PartnerType.Raffle
 				},
 				new Partner
 				{
@@ -165,7 +165,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Description = Localization.App.Service.Partners.Jetbrains.Description.Replace(Environment.NewLine, "<br/>"),
 					LogoUrl = "https://azureday2017ua.blob.core.windows.net/images/logos/jetbrains.jpg",
 					WebUrl = "https://www.jetbrains.com/",
-					PartnerType = PartnerType.Info
+					PartnerType = PartnerType.Raffle
 				},
 				new Partner
 				{

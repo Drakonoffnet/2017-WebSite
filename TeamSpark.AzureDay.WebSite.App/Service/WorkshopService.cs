@@ -93,7 +93,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Language = _languageService.Russian,
 					Room = _roomService.Workshop8,
 					Speaker = _speakerService.SPoplavskiy(),
-					MaxTickets = 10,
+					MaxTickets = 0,
 					Title = Localization.App.Service.Workshops.SPoplavskiy_02.Title,
 					Description = Localization.App.Service.Workshops.SPoplavskiy_02.Description.Replace(Environment.NewLine, "<br/>")
 				},

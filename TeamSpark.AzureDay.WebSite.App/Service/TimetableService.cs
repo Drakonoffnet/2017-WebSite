@@ -29,8 +29,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			{
 				new Timetable { TimeStart = "9:00", TimeEnd = "10:15", Room = _roomService.Room1, Topic = _topicService.Keynote },
 				new Timetable { TimeStart = "10:30", TimeEnd = "11:30", Room = _roomService.Room1, Topic = _topicService.OKrakovetskyi_02 },
-				new Timetable { TimeStart = "12:00", TimeEnd = "13:00", Room = _roomService.Room1, Topic = _topicService.IFesenko_01 },
-				new Timetable { TimeStart = "13:15", TimeEnd = "14:15", Room = _roomService.Room1, Topic = _topicService.ABoyko_02 },
+				new Timetable { TimeStart = "12:00", TimeEnd = "13:00", Room = _roomService.Room1, Topic = _topicService.ABoyko_02 },
+				new Timetable { TimeStart = "13:15", TimeEnd = "14:15", Room = _roomService.Room1, Topic = _topicService.IFesenko_01 },
 				new Timetable { TimeStart = "14:45", TimeEnd = "15:45", Room = _roomService.Room1, Topic = _topicService.SKorzh_01 },
 				new Timetable { TimeStart = "16:00", TimeEnd = "17:00", Room = _roomService.Room1, Topic = _topicService.ILeontiev_01 },
 				new Timetable { TimeStart = "17:30", TimeEnd = "18:30", Room = _roomService.Room1, Topic = _topicService.EAuberix_01 },
@@ -41,16 +41,16 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			{
 				new Timetable { TimeStart = "10:30", TimeEnd = "11:30", Room = _roomService.Room2, Topic = _topicService.SPoplavskiy_02 },
 				new Timetable { TimeStart = "12:00", TimeEnd = "13:00", Room = _roomService.Room2, Topic = _topicService.ASurkov_01 },
-				new Timetable { TimeStart = "13:15", TimeEnd = "14:15", Room = _roomService.Room2, Topic = _topicService.EAuberix_02 },
-				new Timetable { TimeStart = "14:45", TimeEnd = "15:45", Room = _roomService.Room2, Topic = _topicService.VThavonekham_01 },
+				new Timetable { TimeStart = "13:15", TimeEnd = "14:15", Room = _roomService.Room2, Topic = _topicService.VThavonekham_02 },
+				new Timetable { TimeStart = "14:45", TimeEnd = "15:45", Room = _roomService.Room2, Topic = _topicService.EAuberix_02 },
 				new Timetable { TimeStart = "16:00", TimeEnd = "17:00", Room = _roomService.Room2, Topic = _topicService.JessicaEngstrom_01 },
 				new Timetable { TimeStart = "17:30", TimeEnd = "18:30", Room = _roomService.Room2, Topic = _topicService.JimmyEngstrom_01 }
 			});
 
 			_timetables.AddRange(new List<Timetable> // data
 			{
-				new Timetable { TimeStart = "10:30", TimeEnd = "11:30", Room = _roomService.Room3, Topic = _topicService.EPolonychko_01},
-				new Timetable { TimeStart = "12:00", TimeEnd = "13:00", Room = _roomService.Room3, Topic = _topicService.AMang_01 },
+				new Timetable { TimeStart = "10:30", TimeEnd = "11:30", Room = _roomService.Room3, Topic = _topicService.AMang_01 },
+				new Timetable { TimeStart = "12:00", TimeEnd = "13:00", Room = _roomService.Room3, Topic = _topicService.EPolonychko_01 },
 				new Timetable { TimeStart = "13:15", TimeEnd = "14:15", Room = _roomService.Room3, Topic = _topicService.ALaysha_01 },
 				new Timetable { TimeStart = "14:45", TimeEnd = "15:45", Room = _roomService.Room3, Topic = _topicService.EWasilewski_01 },
 				new Timetable { TimeStart = "16:00", TimeEnd = "17:00", Room = _roomService.Room3, Topic = _topicService.DReznik_01 },
@@ -69,11 +69,11 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 
 			_timetables.AddRange(new List<Timetable> // it-pro
 			{
-				new Timetable { TimeStart = "10:30", TimeEnd = "11:30", Room = _roomService.Room5, Topic = _topicService.ATkachenko_01 },
+				new Timetable { TimeStart = "10:30", TimeEnd = "11:30", Room = _roomService.Room5, Topic = _topicService.ENiedaszkowski_01 },
 				new Timetable { TimeStart = "12:00", TimeEnd = "13:00", Room = _roomService.Room5, Topic = _topicService.ILiashov_02 },
 				new Timetable { TimeStart = "13:15", TimeEnd = "14:15", Room = _roomService.Room5, Topic = _topicService.MFerdyn_02 },
 				new Timetable { TimeStart = "14:45", TimeEnd = "15:45", Room = _roomService.Room5, Topic = _topicService.MSmereczynski_01 },
-				new Timetable { TimeStart = "16:00", TimeEnd = "17:00", Room = _roomService.Room5, Topic = _topicService.ATkachenko_02 },
+				new Timetable { TimeStart = "16:00", TimeEnd = "17:00", Room = _roomService.Room5, Topic = _topicService.VThavonekham_01 },
 				new Timetable { TimeStart = "17:30", TimeEnd = "18:30", Room = _roomService.Room5, Topic = _topicService.ILiashov_01 }
 			});
 		}

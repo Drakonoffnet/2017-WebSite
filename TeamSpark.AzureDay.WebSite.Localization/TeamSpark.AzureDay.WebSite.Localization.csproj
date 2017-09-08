@@ -215,6 +215,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Speaker\ENiedaszkowski.Designer.cs">
+      <DependentUpon>ENiedaszkowski.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Speaker\GShopnik.Designer.cs">
       <DependentUpon>GShopnik.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -512,6 +517,11 @@
     </Compile>
     <Compile Include="App\Service\Topics\DDurasau_01.Designer.cs">
       <DependentUpon>DDurasau_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\VThavonekham_02.Designer.cs">
+      <DependentUpon>VThavonekham_02.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -1243,6 +1253,10 @@
       <LastGenOutput>Room.ru.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ENiedaszkowski.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ENiedaszkowski.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\GShopnik.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>GShopnik.Designer.cs</LastGenOutput>
@@ -1485,6 +1499,10 @@
     <EmbeddedResource Include="App\Service\Topics\DDurasau_01.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>DDurasau_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\VThavonekham_02.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VThavonekham_02.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\_Dummy.uk-UA.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

@@ -38,7 +38,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			_speakers.Add(AYurchenko());
 			_speakers.Add(VRadchuk());
 
-			_speakers.Add(ATkachenko());
+			//_speakers.Add(ATkachenko());
 			_speakers.Add(AMang());
 			_speakers.Add(MFerdyn());
 			_speakers.Add(ILiashov());
@@ -57,6 +57,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			_speakers.Add(ATumanoff());
 			_speakers.Add(GShopnik());
 			_speakers.Add(VTsykunov());
+
+			_speakers.Add(ENiedaszkowski());
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
@@ -573,29 +575,29 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			};
 		}
 
-		public Speaker ATkachenko()
-		{
-			return new Speaker
-			{
-				Id = "ATkachenko",
-				FirstName = Localization.App.Service.Speaker.ATkachenko.FirstName,
-				LastName = Localization.App.Service.Speaker.ATkachenko.LastName,
-				Bio = Localization.App.Service.Speaker.ATkachenko.Bio.Replace(Environment.NewLine, "<br/>"),
-				Country = _countryService.Ukraine,
-				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/ATkachenko.jpg",
-				FacebookUrl = "",
-				GitHubUrl = "",
-				GoogleUrl = "",
-				LinkedInUrl = "",
-				MsdnUrl = "",
-				MvpUrl = "",
-				TwitterUrl = "",
-				YouTubeUrl = "",
-				WebUrl = "",
-				CompanyName = "",
-				JobTitle = ""
-			};
-		}
+		//public Speaker ATkachenko()
+		//{
+		//	return new Speaker
+		//	{
+		//		Id = "ATkachenko",
+		//		FirstName = Localization.App.Service.Speaker.ATkachenko.FirstName,
+		//		LastName = Localization.App.Service.Speaker.ATkachenko.LastName,
+		//		Bio = Localization.App.Service.Speaker.ATkachenko.Bio.Replace(Environment.NewLine, "<br/>"),
+		//		Country = _countryService.Ukraine,
+		//		PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/ATkachenko.jpg",
+		//		FacebookUrl = "",
+		//		GitHubUrl = "",
+		//		GoogleUrl = "",
+		//		LinkedInUrl = "",
+		//		MsdnUrl = "",
+		//		MvpUrl = "",
+		//		TwitterUrl = "",
+		//		YouTubeUrl = "",
+		//		WebUrl = "",
+		//		CompanyName = "",
+		//		JobTitle = ""
+		//	};
+		//}
 
 		public Speaker AMang()
 		{
@@ -953,7 +955,31 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				YouTubeUrl = "",
 				WebUrl = "",
 				CompanyName = "Microsoft Ukraine",
-				JobTitle = "Principal Technical Evangelist "
+				JobTitle = "Principal Technical Evangelist"
+			};
+		}
+
+		public Speaker ENiedaszkowski()
+		{
+			return new Speaker
+			{
+				Id = "ENiedaszkowski",
+				FirstName = Localization.App.Service.Speaker.ENiedaszkowski.FirstName,
+				LastName = Localization.App.Service.Speaker.ENiedaszkowski.LastName,
+				Bio = Localization.App.Service.Speaker.ENiedaszkowski.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/ENiedaszkowski.jpg",
+				FacebookUrl = "",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
 			};
 		}
 	}

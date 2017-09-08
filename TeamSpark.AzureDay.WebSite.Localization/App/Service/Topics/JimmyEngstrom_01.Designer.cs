@@ -61,9 +61,9 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to All the big companies are making huge investments in AI personal assistants. Amazon has Alexa, Google has Google assistant, Apple has Siri and Microsoft has Cortana to name a few. For most people talking to their devices still feels a bit strange. According to Comscore, 50% of all searches will be made by voice by the year 2020. Today 40% of adults use voice once per day.
+        ///   Looks up a localized string similar to HoloLens breached a barrier, a barrier between the digital and the real world, bringing digital content into our world. Over the past year the HoloLens has continued to create new ways to visualize, to change education and the medical industry. HoloLens is not only for games it is a Business platform (that is game enabled). Using Unity we can create an experience that lets you bring digital content and interact with the real world.
         ///
-        ///Designing a natural language interface can be difficult, is the interface supposed to be able to interpret every single nuance of speec [rest of string was truncated]&quot;;.
+        ///During this session we will take a look at the HoloLens hardware, the possi [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Description {
             get {
@@ -72,7 +72,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Designing for speech.
+        ///   Looks up a localized string similar to Holo world - create your first HoloLens app with Unity.
         /// </summary>
         public static string Title {
             get {

@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to There is only one standard that exists worldwide for Industrial IoT: OPC UA. Germany is well ahead. We will illustrate through architecture examples and Industry 4.0 usecases why this is important, and how to work with existing communication protocols..
+        ///   Looks up a localized string similar to The European Union has enforced a regulation that will protect the personal data privacy. It has got a MAJOR impact on companies in Europe with a HEAVY fine (&gt;10 million €). This session will present the work done by Microsoft in this area, and how the Microsoft Cloud WILL help.
         /// </summary>
         public static string Description {
             get {
@@ -70,7 +70,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Industry 4.0 IoT standard: why Azure Cloud fits with OPC UA, IoT Edge technologies and Data Science?.
+        ///   Looks up a localized string similar to GDPR: Be prepared with a major IT change similar to Y2K bug. How Azure can help?.
         /// </summary>
         public static string Title {
             get {

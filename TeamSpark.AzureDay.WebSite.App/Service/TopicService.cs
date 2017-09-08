@@ -44,7 +44,10 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Speakers = new List<Speaker>
 					{
 						_speakerService.ABoyko(),
-						_speakerService.ATumanoff()
+						_speakerService.GShopnik(),
+						_speakerService.ATumanoff(),
+						_speakerService.VTsykunov(),
+						_speakerService.ILeontiev()
 					},
 					Title = Localization.App.Service.Topics.Special.Keynote.Title,
 					Description = Localization.App.Service.Topics.Special.Keynote.Description.Replace(Environment.NewLine, "<br/>")
@@ -179,22 +182,22 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Title = Localization.App.Service.Topics.ILeontiev_01.Title,
 					Description = Localization.App.Service.Topics.ILeontiev_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
-				new Topic
-				{
-					Id = 16,
-					Language = _languageService.Russian,
-					Speakers = new List<Speaker> {_speakerService.ATkachenko() },
-					Title = Localization.App.Service.Topics.ATkachenko_02.Title,
-					Description = Localization.App.Service.Topics.ATkachenko_02.Description.Replace(Environment.NewLine, "<br/>")
-				},
-				new Topic
-				{
-					Id = 17,
-					Language = _languageService.Russian,
-					Speakers = new List<Speaker> {_speakerService.ATkachenko() },
-					Title = Localization.App.Service.Topics.ATkachenko_01.Title,
-					Description = Localization.App.Service.Topics.ATkachenko_01.Description.Replace(Environment.NewLine, "<br/>")
-				},
+				//new Topic
+				//{
+				//	Id = 16,
+				//	Language = _languageService.Russian,
+				//	Speakers = new List<Speaker> {_speakerService.ATkachenko() },
+				//	Title = Localization.App.Service.Topics.ATkachenko_02.Title,
+				//	Description = Localization.App.Service.Topics.ATkachenko_02.Description.Replace(Environment.NewLine, "<br/>")
+				//},
+				//new Topic
+				//{
+				//	Id = 17,
+				//	Language = _languageService.Russian,
+				//	Speakers = new List<Speaker> {_speakerService.ATkachenko() },
+				//	Title = Localization.App.Service.Topics.ATkachenko_01.Title,
+				//	Description = Localization.App.Service.Topics.ATkachenko_01.Description.Replace(Environment.NewLine, "<br/>")
+				//},
 				new Topic
 				{
 					Id = 18,
@@ -291,19 +294,43 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 					Title = Localization.App.Service.Topics.MMateev_01.Title,
 					Description = Localization.App.Service.Topics.MMateev_01.Description.Replace(Environment.NewLine, "<br/>")
 				},
-				new Topic
-				{
-					Id = 30,
-					Language = _languageService.Russian,
-					Speakers = new List<Speaker> {_speakerService.VBezmaly() },
-					Title = Localization.App.Service.Topics._Dummy.Title,
-					Description = Localization.App.Service.Topics._Dummy.Description.Replace(Environment.NewLine, "<br/>")
-				},
+				//new Topic
+				//{
+				//	Id = 30,
+				//	Language = _languageService.Russian,
+				//	Speakers = new List<Speaker> {_speakerService.VBezmaly() },
+				//	Title = Localization.App.Service.Topics._Dummy.Title,
+				//	Description = Localization.App.Service.Topics._Dummy.Description.Replace(Environment.NewLine, "<br/>")
+				//},
 				new Topic
 				{
 					Id = 31,
 					Language = _languageService.Russian,
 					Speakers = new List<Speaker> {_speakerService.DDurasau() },
+					Title = Localization.App.Service.Topics.DDurasau_01.Title,
+					Description = Localization.App.Service.Topics.DDurasau_01.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 32,
+					Language = _languageService.English,
+					Speakers = new List<Speaker> {_speakerService.AMang() },
+					Title = Localization.App.Service.Topics.AMang_01.Title,
+					Description = Localization.App.Service.Topics.AMang_01.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 33,
+					Language = _languageService.English,
+					Speakers = new List<Speaker> {_speakerService.VThavonekham() },
+					Title = Localization.App.Service.Topics.VThavonekham_02.Title,
+					Description = Localization.App.Service.Topics.VThavonekham_02.Description.Replace(Environment.NewLine, "<br/>")
+				},
+				new Topic
+				{
+					Id = 34,
+					Language = _languageService.Ukrainian,
+					Speakers = new List<Speaker> {_speakerService.ENiedaszkowski() },
 					Title = Localization.App.Service.Topics._Dummy.Title,
 					Description = Localization.App.Service.Topics._Dummy.Description.Replace(Environment.NewLine, "<br/>")
 				}
@@ -338,8 +365,8 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		public Topic OKrakovetskyi_02 { get { return _topics.Single(x => x.Id == 13); } }
 		public Topic AYurchenko_01 { get { return _topics.Single(x => x.Id == 14); } }
 		public Topic ILeontiev_01 { get { return _topics.Single(x => x.Id == 15); } }
-		public Topic ATkachenko_02 { get { return _topics.Single(x => x.Id == 16); } }
-		public Topic ATkachenko_01 { get { return _topics.Single(x => x.Id == 17); } }
+		//public Topic ATkachenko_02 { get { return _topics.Single(x => x.Id == 16); } }
+		//public Topic ATkachenko_01 { get { return _topics.Single(x => x.Id == 17); } }
 		public Topic MFerdyn_02 { get { return _topics.Single(x => x.Id == 18); } }
 		public Topic ILiashov_01 { get { return _topics.Single(x => x.Id == 19); } }
 		public Topic ILiashov_02 { get { return _topics.Single(x => x.Id == 20); } }
@@ -352,7 +379,11 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 		public Topic EAuberix_01 { get { return _topics.Single(x => x.Id == 27); } }
 		public Topic EAuberix_02 { get { return _topics.Single(x => x.Id == 28); } }
 		public Topic MMateev_01 { get { return _topics.Single(x => x.Id == 29); } }
-		public Topic VBezmaly_01 { get { return _topics.Single(x => x.Id == 30); } }
+		//public Topic VBezmaly_01 { get { return _topics.Single(x => x.Id == 30); } }
 		public Topic DDurasau_01 { get { return _topics.Single(x => x.Id == 31); } }
+		public Topic AMang_01 { get { return _topics.Single(x => x.Id == 32); } }
+		public Topic VThavonekham_02 { get { return _topics.Single(x => x.Id == 33); } }
+		public Topic ENiedaszkowski_01 { get { return _topics.Single(x => x.Id == 34); } }
+		
 	}
 }

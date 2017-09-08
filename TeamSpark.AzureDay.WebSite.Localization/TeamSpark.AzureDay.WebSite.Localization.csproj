@@ -65,6 +65,86 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Country.ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="App\Service\Partners\GL.Designer.cs">
+      <DependentUpon>GL.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\Dbbest.Designer.cs">
+      <DependentUpon>Dbbest.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\Developex.Designer.cs">
+      <DependentUpon>Developex.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\Trudua.Designer.cs">
+      <DependentUpon>Trudua.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\Jetbrains.Designer.cs">
+      <DependentUpon>Jetbrains.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\CloudMonix.Designer.cs">
+      <DependentUpon>CloudMonix.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\EnglishDom.Designer.cs">
+      <DependentUpon>EnglishDom.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\OReilly.Designer.cs">
+      <DependentUpon>OReilly.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\DevArt.Designer.cs">
+      <DependentUpon>DevArt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\Yakaboo.Designer.cs">
+      <DependentUpon>Yakaboo.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\dotNetCore.Designer.cs">
+      <DependentUpon>dotNetCore.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\AzureUA.Designer.cs">
+      <DependentUpon>AzureUA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\XamarinUA.Designer.cs">
+      <DependentUpon>XamarinUA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\EPAM.ru.Designer.cs">
+      <DependentUpon>EPAM.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\EPAM.uk-UA.Designer.cs">
+      <DependentUpon>EPAM.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Partners\EPAM.Designer.cs">
+      <DependentUpon>EPAM.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App\Service\Partners\ITEA.Designer.cs">
       <DependentUpon>ITEA.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -134,6 +214,31 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Room.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Speaker\ENiedaszkowski.Designer.cs">
+      <DependentUpon>ENiedaszkowski.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\GShopnik.Designer.cs">
+      <DependentUpon>GShopnik.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\VTsykunov.uk-UA.Designer.cs">
+      <DependentUpon>VTsykunov.uk-UA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\VTsykunov.ru.Designer.cs">
+      <DependentUpon>VTsykunov.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Speaker\VTsykunov.Designer.cs">
+      <DependentUpon>VTsykunov.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="App\Service\Speaker\ATumanoff.Designer.cs">
       <DependentUpon>ATumanoff.resx</DependentUpon>
@@ -404,6 +509,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ABoyko.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Topics\AMang_01.Designer.cs">
+      <DependentUpon>AMang_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\DDurasau_01.Designer.cs">
+      <DependentUpon>DDurasau_01.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App\Service\Topics\VThavonekham_02.Designer.cs">
+      <DependentUpon>VThavonekham_02.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="App\Service\Topics\_Dummy.uk-UA.Designer.cs">
       <DependentUpon>_Dummy.uk-UA.resx</DependentUpon>
@@ -983,6 +1103,86 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Country.ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\GL.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GL.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\Dbbest.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Dbbest.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\Developex.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Developex.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\Trudua.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Trudua.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\Jetbrains.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Jetbrains.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\CloudMonix.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CloudMonix.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\EnglishDom.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EnglishDom.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\OReilly.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OReilly.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\DevArt.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DevArt.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\Yakaboo.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Yakaboo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\dotNetCore.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>dotNetCore.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\AzureUA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AzureUA.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\XamarinUA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>XamarinUA.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\EPAM.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EPAM.ru.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\EPAM.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EPAM.uk-UA.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\EPAM.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EPAM.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Partners\ITEA.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ITEA.Designer.cs</LastGenOutput>
@@ -1052,6 +1252,26 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Room.ru.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\ENiedaszkowski.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ENiedaszkowski.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\GShopnik.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GShopnik.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\VTsykunov.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VTsykunov.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\VTsykunov.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VTsykunov.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\VTsykunov.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VTsykunov.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\ATumanoff.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -1271,6 +1491,18 @@
     <EmbeddedResource Include="App\Service\Speaker\ABoyko.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ABoyko.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\AMang_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AMang_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\DDurasau_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DDurasau_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\VThavonekham_02.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VThavonekham_02.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\_Dummy.uk-UA.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

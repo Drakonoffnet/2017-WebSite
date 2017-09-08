@@ -8,7 +8,7 @@ using System.Web.Routing;
 using Microsoft.ApplicationInsights.Extensibility;
 using TeamSpark.AzureDay.WebSite.Config;
 using TeamSpark.AzureDay.WebSite.Host.Controllers;
-//using TeamSpark.AzureDay.WebSite.Data;
+using TeamSpark.AzureDay.WebSite.Data;
 
 namespace TeamSpark.AzureDay.WebSite.Host
 {
@@ -34,7 +34,7 @@ namespace TeamSpark.AzureDay.WebSite.Host
 
 			#region initialize
 
-			//DataFactory.InitializeAsync().Wait();
+			DataFactory.InitializeAsync().Wait();
 
 			#endregion
 		}

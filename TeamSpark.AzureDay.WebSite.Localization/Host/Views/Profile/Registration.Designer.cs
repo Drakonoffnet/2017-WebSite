@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.Host.Views.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to price before 1st of September.
+        ///   Looks up a localized string similar to price before 7th of September.
         /// </summary>
         public static string BestBefore01 {
             get {

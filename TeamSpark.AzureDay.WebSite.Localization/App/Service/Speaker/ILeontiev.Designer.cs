@@ -61,7 +61,7 @@ namespace TeamSpark.AzureDay.WebSite.Localization.App.Service.Speaker {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Started career as a .Net Developer for a machine building company in Ukraine, in 2013 I became interested in cloud computing and the Microsoft Azure platform. In 2015 struck off in a new direction with the “Creation of Innovative Enterprises” at a French-Ukrainian master’s program in France. Is Lead Architect on all Blockchain projects of Viseo group.  Active participant and a regular speaker in Ukrainian Microsoft Azure Community and Azure User Group France. Now living and working as Azure Architect in Fra [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Bio {
             get {

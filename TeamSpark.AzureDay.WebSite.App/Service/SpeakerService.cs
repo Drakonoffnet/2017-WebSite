@@ -38,7 +38,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			_speakers.Add(AYurchenko());
 			_speakers.Add(VRadchuk());
 
-			_speakers.Add(ATkachenko());
+			//_speakers.Add(ATkachenko());
 			_speakers.Add(AMang());
 			_speakers.Add(MFerdyn());
 			_speakers.Add(ILiashov());
@@ -50,11 +50,15 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 
 			_speakers.Add(JimmyEngstrom());
 			_speakers.Add(EAuberix());
-			_speakers.Add(VBezmaly());
+			//_speakers.Add(VBezmaly());
 			_speakers.Add(VTolmachov());
 
 			_speakers.Add(MMateev());
 			_speakers.Add(ATumanoff());
+			_speakers.Add(GShopnik());
+			_speakers.Add(VTsykunov());
+
+			_speakers.Add(ENiedaszkowski());
 		}
 
 		public IEnumerable<Speaker> GetSpeakers()
@@ -272,7 +276,7 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",
-				LinkedInUrl = "",
+				LinkedInUrl = "https://www.linkedin.com/in/leontievihor/",
 				MsdnUrl = "",
 				MvpUrl = "",
 				TwitterUrl = "",
@@ -366,16 +370,16 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				Country = _countryService.Ukraine,
 				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/IReznykov.jpg",
 				FacebookUrl = "https://www.facebook.com/ireznykov",
-				GitHubUrl = "",
+				GitHubUrl = "https://github.com/IReznykov",
 				GoogleUrl = "",
 				LinkedInUrl = "https://www.linkedin.com/in/illya-reznykov-783a2930/",
 				MsdnUrl = "",
 				MvpUrl = "",
-				TwitterUrl = "",
+				TwitterUrl = "https://twitter.com/reznykov",
 				YouTubeUrl = "",
 				WebUrl = "https://ireznykov.com",
-				CompanyName = "",
-				JobTitle = "Private employee"
+				CompanyName = "Svitla Systems",
+				JobTitle = "Senior Developer"
 			};
 		}
 
@@ -412,18 +416,18 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				LastName = Localization.App.Service.Speaker.VThavonekham.LastName,
 				Bio = Localization.App.Service.Speaker.VThavonekham.Bio.Replace(Environment.NewLine, "<br/>"),
 				Country = _countryService.France,
-				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/_Person.png",
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/VThavonekham.jpg",
 				FacebookUrl = "",
 				GitHubUrl = "",
 				GoogleUrl = "",
-				LinkedInUrl = "",
+				LinkedInUrl = "https://www.linkedin.com/in/thavo/",
 				MsdnUrl = "",
 				MvpUrl = "",
-				TwitterUrl = "",
+				TwitterUrl = "https://twitter.com/vThavo",
 				YouTubeUrl = "",
-				WebUrl = "",
+				WebUrl = "http://thavonekham.me/",
 				CompanyName = "VISEO",
-				JobTitle = ""
+				JobTitle = "Microsoft Regional Director | MVP Azure"
 			};
 		}
 
@@ -571,29 +575,29 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			};
 		}
 
-		public Speaker ATkachenko()
-		{
-			return new Speaker
-			{
-				Id = "ATkachenko",
-				FirstName = Localization.App.Service.Speaker.ATkachenko.FirstName,
-				LastName = Localization.App.Service.Speaker.ATkachenko.LastName,
-				Bio = Localization.App.Service.Speaker.ATkachenko.Bio.Replace(Environment.NewLine, "<br/>"),
-				Country = _countryService.Ukraine,
-				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/ATkachenko.jpg",
-				FacebookUrl = "",
-				GitHubUrl = "",
-				GoogleUrl = "",
-				LinkedInUrl = "",
-				MsdnUrl = "",
-				MvpUrl = "",
-				TwitterUrl = "",
-				YouTubeUrl = "",
-				WebUrl = "",
-				CompanyName = "",
-				JobTitle = ""
-			};
-		}
+		//public Speaker ATkachenko()
+		//{
+		//	return new Speaker
+		//	{
+		//		Id = "ATkachenko",
+		//		FirstName = Localization.App.Service.Speaker.ATkachenko.FirstName,
+		//		LastName = Localization.App.Service.Speaker.ATkachenko.LastName,
+		//		Bio = Localization.App.Service.Speaker.ATkachenko.Bio.Replace(Environment.NewLine, "<br/>"),
+		//		Country = _countryService.Ukraine,
+		//		PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/ATkachenko.jpg",
+		//		FacebookUrl = "",
+		//		GitHubUrl = "",
+		//		GoogleUrl = "",
+		//		LinkedInUrl = "",
+		//		MsdnUrl = "",
+		//		MvpUrl = "",
+		//		TwitterUrl = "",
+		//		YouTubeUrl = "",
+		//		WebUrl = "",
+		//		CompanyName = "",
+		//		JobTitle = ""
+		//	};
+		//}
 
 		public Speaker AMang()
 		{
@@ -811,29 +815,29 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 			};
 		}
 
-		public Speaker VBezmaly()
-		{
-			return new Speaker
-			{
-				Id = "VBezmaly",
-				FirstName = Localization.App.Service.Speaker.VBezmaly.FirstName,
-				LastName = Localization.App.Service.Speaker.VBezmaly.LastName,
-				Bio = Localization.App.Service.Speaker.VBezmaly.Bio.Replace(Environment.NewLine, "<br/>"),
-				Country = _countryService.Ukraine,
-				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/VBezmaly.jpg",
-				FacebookUrl = "",
-				GitHubUrl = "",
-				GoogleUrl = "",
-				LinkedInUrl = "",
-				MsdnUrl = "",
-				MvpUrl = "",
-				TwitterUrl = "",
-				YouTubeUrl = "",
-				WebUrl = "",
-				CompanyName = "MBP",
-				JobTitle = ""
-			};
-		}
+		//public Speaker VBezmaly()
+		//{
+		//	return new Speaker
+		//	{
+		//		Id = "VBezmaly",
+		//		FirstName = Localization.App.Service.Speaker.VBezmaly.FirstName,
+		//		LastName = Localization.App.Service.Speaker.VBezmaly.LastName,
+		//		Bio = Localization.App.Service.Speaker.VBezmaly.Bio.Replace(Environment.NewLine, "<br/>"),
+		//		Country = _countryService.Ukraine,
+		//		PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/VBezmaly.jpg",
+		//		FacebookUrl = "",
+		//		GitHubUrl = "",
+		//		GoogleUrl = "",
+		//		LinkedInUrl = "",
+		//		MsdnUrl = "",
+		//		MvpUrl = "",
+		//		TwitterUrl = "",
+		//		YouTubeUrl = "",
+		//		WebUrl = "",
+		//		CompanyName = "MBP",
+		//		JobTitle = ""
+		//	};
+		//}
 
 		public Speaker VTolmachov()
 		{
@@ -904,6 +908,78 @@ namespace TeamSpark.AzureDay.WebSite.App.Service
 				WebUrl = "",
 				CompanyName = "Computer Academy Step",
 				JobTitle = "Head of Educational Department \"Software Design\""
+			};
+		}
+
+		public Speaker GShopnik()
+		{
+			return new Speaker
+			{
+				Id = "GShopnik",
+				FirstName = Localization.App.Service.Speaker.GShopnik.FirstName,
+				LastName = Localization.App.Service.Speaker.GShopnik.LastName,
+				Bio = Localization.App.Service.Speaker.GShopnik.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/Gerbert_Shopnik_photo.jpg",
+				FacebookUrl = "",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "https://www.linkedin.com/in/gshopnik/",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "Microsoft",
+				JobTitle = "MVP Award Program Lead"
+			};
+		}
+
+		public Speaker VTsykunov()
+		{
+			return new Speaker
+			{
+				Id = "VTsykunov",
+				FirstName = Localization.App.Service.Speaker.VTsykunov.FirstName,
+				LastName = Localization.App.Service.Speaker.VTsykunov.LastName,
+				Bio = Localization.App.Service.Speaker.VTsykunov.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/ViktorTsykunov.jpg",
+				FacebookUrl = "https://www.facebook.com/vtsykunov",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "Microsoft Ukraine",
+				JobTitle = "Principal Technical Evangelist"
+			};
+		}
+
+		public Speaker ENiedaszkowski()
+		{
+			return new Speaker
+			{
+				Id = "ENiedaszkowski",
+				FirstName = Localization.App.Service.Speaker.ENiedaszkowski.FirstName,
+				LastName = Localization.App.Service.Speaker.ENiedaszkowski.LastName,
+				Bio = Localization.App.Service.Speaker.ENiedaszkowski.Bio.Replace(Environment.NewLine, "<br/>"),
+				Country = _countryService.Ukraine,
+				PhotoUrl = "https://azureday2017ua.blob.core.windows.net/images/avatars/ENiedaszkowski.jpg",
+				FacebookUrl = "",
+				GitHubUrl = "",
+				GoogleUrl = "",
+				LinkedInUrl = "",
+				MsdnUrl = "",
+				MvpUrl = "",
+				TwitterUrl = "",
+				YouTubeUrl = "",
+				WebUrl = "",
+				CompanyName = "",
+				JobTitle = ""
 			};
 		}
 	}

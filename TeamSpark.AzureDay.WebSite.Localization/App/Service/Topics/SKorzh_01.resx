@@ -118,19 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Description" xml:space="preserve">
-    <value>В докладе будут расмотрены практики разработки и развертывания достаточно крупного .NET Core решения, состоящего из нескольких проектов и даже разбитого по нескольким Git репозиториям.
-
-Используемые технологии и инструменты: .NET Core 1.x, VSTS, Azure, Git, MyGet, Nuget, PowerShell.
-
-Поговорим про следующее:
-- Как организовать разработку и тестирование достаточно сильно связанных проектов, если код хранится в разных репозиториях.
-- Настройка конфигураций в солюшене: связывание через проекты на машине разработчика и через Nuget пакеты - при сборках.
-- Как настроить автоматическую сборку и тестирование в VSTS для таких проектов.
-- Проблемы версионности при публикации в Nuget. Как тут может помочь MyGet.
-- Публикация исходных кодов на GitHub.
-- Публикация демо-приложений в Azure.</value>
+    <value />
   </data>
   <data name="Title" xml:space="preserve">
-    <value>DevOps практики: разработка и развертывание .NET Core проекта с несколькими репозиториями</value>
+    <value>Использование ASP.NET Identity с Azure Table Storage в приложениях на ASP.NET Core 2.0</value>
   </data>
 </root>
